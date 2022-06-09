@@ -1,0 +1,59 @@
+{
+  "address": "0xa22eF7fA838086378C1bae4aB77915407a126D9d",
+  "abi": [],
+  "transactionHash": "0x08a1c3957179ae55df87ce86c2eb846cf17ebac30ccfe784e3b45b4b4a5f0173",
+  "receipt": {
+    "to": null,
+    "from": "0x218513C58A4781a5B88De6230caA29aBCe2Ccd75",
+    "contractAddress": "0xa22eF7fA838086378C1bae4aB77915407a126D9d",
+    "transactionIndex": 45,
+    "gasUsed": "72217",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000800000000000040000000100000000000000000000000000400000000000000000000000000000000080000000000000000000000000000000000000000400000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000004000000000000000000001000000000000080000000000000000100000000000000000000000000000000000000000000000000000000004000000000000100020",
+    "blockHash": "0x8806bda51095c4985990a1dff1bddb79ca5301d3cf0f822b6a7d7203d88c62ba",
+    "transactionHash": "0x08a1c3957179ae55df87ce86c2eb846cf17ebac30ccfe784e3b45b4b4a5f0173",
+    "logs": [
+      {
+        "transactionIndex": 45,
+        "blockNumber": 29179349,
+        "transactionHash": "0x08a1c3957179ae55df87ce86c2eb846cf17ebac30ccfe784e3b45b4b4a5f0173",
+        "address": "0x0000000000000000000000000000000000001010",
+        "topics": [
+          "0x4dfe1bbbcf077ddc3e01291eea2d5c70c2b422b415d95645b9adcfd678cb1d63",
+          "0x0000000000000000000000000000000000000000000000000000000000001010",
+          "0x000000000000000000000000218513c58a4781a5b88de6230caa29abce2ccd75",
+          "0x000000000000000000000000127685d6dd6683085da4b6a041efcef1681e5c9c"
+        ],
+        "data": "0x000000000000000000000000000000000000000000000000000cd40c879539e70000000000000000000000000000000000000000000000002fa3c134a43b1890000000000000000000000000000000000000000000000ad44b24c9dcbdcc96990000000000000000000000000000000000000000000000002f96ed281ca5dea9000000000000000000000000000000000000000000000ad44b319de94561d080",
+        "logIndex": 174,
+        "blockHash": "0x8806bda51095c4985990a1dff1bddb79ca5301d3cf0f822b6a7d7203d88c62ba"
+      }
+    ],
+    "blockNumber": 29179349,
+    "cumulativeGasUsed": "3932017",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "903b6e0b7a82abf3fd1d087256b904a8",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"author\":\"Aave\",\"details\":\"Percentages are defined by default with 2 decimals of precision (100.00). The precision is indicated by PERCENTAGE_FACTOROperations are rounded half up*\",\"kind\":\"dev\",\"methods\":{},\"title\":\"PercentageMath library\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"notice\":\"Provides functions to perform percentage calculations\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/libraries/math/PercentageMath.sol\":\"PercentageMath\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/libraries/helpers/Errors.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nlibrary Errors {\\n    \\n    // common\\n    string public constant MATH_MULTIPLICATION_OVERFLOW = '100';\\n    string public constant MATH_ADDITION_OVERFLOW = '101';\\n    string public constant MATH_DIVISION_BY_ZERO = '102';\\n\\n    string public constant ETH_TRANSFER_FAILED = '110';\\n    string public constant RECEIVE_NOT_ALLOWED = '111';\\n    string public constant FALLBACK_NOT_ALLOWED = '112';\\n\\n    // settings/acl\\n    string public constant ACL_ONLY_GOVERNANCE_CAN_CALL = '200';\\n    string public constant ACL_ONLY_EMERGENCY_ADMIN_CAN_CALL = '201';\\n    string public constant ACL_ONLY_POOL_ADMIN_CAN_CALL = '202';\\n    string public constant ACL_ONLY_LIQUIDATOR_CAN_CALL = '203';\\n    string public constant ACL_ONLY_LIQUIDATION_OPERATOR_CAN_CALL = '204';\\n    string public constant ACL_ONLY_AIRDROP_OPERATOR_CAN_CALL = '205';\\n    string public constant ACL_ONLY_POOL_CAN_CALL = '206';\\n\\n    // lending & borrowing \\n    // reserve\\n    string public constant RESERVE_DOES_NOT_EXIST = '300';\\n    string public constant RESERVE_LIQUIDITY_INSUFFICIENT = '301';\\n    string public constant RESERVE_INDEX_OVERFLOW = '302';\\n    string public constant RESERVE_SWITCH_MONEY_MARKET_STATE_ERROR = '303';\\n\\n    // token\\n    string public constant AMOUNT_SCALED_IS_ZERO = '310';\\n    string public constant AMOUNT_TRANSFER_OWERFLOW = '311';\\n    \\n    //deposit\\n    string public constant DEPOSIT_AMOUNT_SHOULD_BE_BIGGER_THAN_ZERO = '320';\\n\\n    // withdraw\\n    string public constant WITHDRAW_AMOUNT_NOT_ALLOWED = '321';\\n    string public constant WITHDRAW_LIQUIDITY_NOT_SUFFIENCE = '322';\\n\\n    // borrow\\n    string public constant BORROW_DURATION_NOT_ALLOWED = '330';\\n    string public constant BORROW_AMOUNT_EXCEED_BORROW_LIMIT = '331';\\n    string public constant NFT_ADDRESS_IS_NOT_IN_WHITELIST = '332';\\n\\n    // repay\\n    string public constant REPAY_STATUS_ERROR = '333';\\n    string public constant REPAY_AMOUNT_NOT_ENOUGH = '334';\\n\\n    // extend\\n    string public constant EXTEND_STATUS_ERROR = '335';\\n    string public constant EXTEND_MSG_VALUE_ERROR = '336';\\n\\n    // liquidate\\n    string public constant START_LIQUIDATION_STATUS_ERROR = '360';\\n    string public constant END_LIQUIDATION_STATUS_ERROR = '361';\\n    string public constant END_LIQUIDATION_AMOUNT_ERROR = '362';\\n\\n    // loan\\n    string public constant LOAN_DOES_NOT_EXIST = '400';\\n    string public constant LOAN_SET_STATUS_ERROR = '401';\\n    string public constant LOAN_REPAYER_IS_NOT_OWNER = '402';\\n    string public constant LOAN_LIQUIDATING_STATUS_CAN_NOT_BE_UPDATED = '403';\\n    string public constant LOAN_CALLER_IS_NOT_OWNER = '404';\\n    string public constant LOAN_COLLATERAL_NFT_CAN_NOT_BE_CLAIMED = '405';\\n\\n    string public constant FLASH_CLAIM_EXECUTOR_ERROR = '410';\\n    string public constant FLASH_CLAIM_STATUS_ERROR = '411';\\n\\n    // money market\\n    string public constant MONEY_MARKET_DEPOSIT_AMOUNT_ALLOWED = '500';\\n    string public constant MONEY_MARKET_WITHDRAW_AMOUNT_NOT_ALLOWED = '501';\\n    string public constant MONEY_MARKET_APPROVAL_FAILED = '502';\\n    string public constant MONEY_MARKET_DELEGATE_CALL_ERROR = '503';\\n\\n    // price oracle\\n    string public constant PRICE_ORACLE_ROUND_INTERVAL_CAN_NOT_BE_0 = '600';\\n    string public constant PRICE_ORACLE_HAS_NO_PRICE_FEED = '601';\\n    string public constant PRICE_ORACLE_INCORRECT_TIMESTAMP = '602';\\n    string public constant PRICE_ORACLE_PARAMS_ERROR = '603';\\n}\\n\",\"keccak256\":\"0x0f14f9c13c9fe6dcca2379449db7e6f1a20c236113548432d0351bacc71df76f\",\"license\":\"MIT\"},\"contracts/libraries/math/PercentageMath.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nimport '../helpers/Errors.sol';\\n\\n/**\\n * @title PercentageMath library\\n * @author Aave\\n * @notice Provides functions to perform percentage calculations\\n * @dev Percentages are defined by default with 2 decimals of precision (100.00). The precision is indicated by PERCENTAGE_FACTOR\\n * @dev Operations are rounded half up\\n **/\\n\\nlibrary PercentageMath {\\n  uint256 constant PERCENTAGE_FACTOR = 1e4; //percentage plus two decimals\\n  uint256 constant HALF_PERCENT = PERCENTAGE_FACTOR / 2;\\n\\n  /**\\n   * @dev Executes a percentage multiplication\\n   * @param value The value of which the percentage needs to be calculated\\n   * @param percentage The percentage of the value to be calculated\\n   * @return The percentage of value\\n   **/\\n  function percentMul(uint256 value, uint256 percentage) internal pure returns (uint256) {\\n    if (value == 0 || percentage == 0) {\\n      return 0;\\n    }\\n\\n    require(\\n      value <= (type(uint256).max - HALF_PERCENT) / percentage,\\n      Errors.MATH_MULTIPLICATION_OVERFLOW\\n    );\\n\\n    return (value * percentage + HALF_PERCENT) / PERCENTAGE_FACTOR;\\n  }\\n\\n  /**\\n   * @dev Executes a percentage division\\n   * @param value The value of which the percentage needs to be calculated\\n   * @param percentage The percentage of the value to be calculated\\n   * @return The value divided the percentage\\n   **/\\n  function percentDiv(uint256 value, uint256 percentage) internal pure returns (uint256) {\\n    require(percentage != 0, Errors.MATH_DIVISION_BY_ZERO);\\n    uint256 halfPercentage = percentage / 2;\\n\\n    require(\\n      value <= (type(uint256).max - halfPercentage) / PERCENTAGE_FACTOR,\\n      Errors.MATH_MULTIPLICATION_OVERFLOW\\n    );\\n\\n    return (value * PERCENTAGE_FACTOR + halfPercentage) / percentage;\\n  }\\n}\\n\",\"keccak256\":\"0xe8333e1a929245e4198f87645eae3fc8749e8e29f505427b38ec8ca035434953\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220751efb261953dee927965966e9ac6a1d58fd999a592a089914b6b13019989c4f64736f6c634300080a0033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220751efb261953dee927965966e9ac6a1d58fd999a592a089914b6b13019989c4f64736f6c634300080a0033",
+  "devdoc": {
+    "author": "Aave",
+    "details": "Percentages are defined by default with 2 decimals of precision (100.00). The precision is indicated by PERCENTAGE_FACTOROperations are rounded half up*",
+    "kind": "dev",
+    "methods": {},
+    "title": "PercentageMath library",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "notice": "Provides functions to perform percentage calculations",
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}

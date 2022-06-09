@@ -1,0 +1,129 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "fromAsset",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "toAsset",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "fromAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "receivedAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "Swapped",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "pullERC20FromDaoVault",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "assetToSwapFrom",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "assetToSwapTo",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountToSwap",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minAmountOut",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "useEthPath",
+        "type": "bool"
+      }
+    ],
+    "name": "swapExactTokensForTokens",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "assetToSwapFrom",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "assetToSwapTo",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxAmountToSwap",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountToReceive",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "useEthPath",
+        "type": "bool"
+      }
+    ],
+    "name": "swapTokensForExactTokens",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

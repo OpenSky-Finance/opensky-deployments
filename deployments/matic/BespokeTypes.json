@@ -1,0 +1,55 @@
+{
+  "address": "0x681e6C44Ca63882D0c17b9dE3cf3d736406F1ed3",
+  "abi": [],
+  "transactionHash": "0x7e4aad397fbe8960ed16bfc894ee46dce883106f88bdd619a819e6d621510290",
+  "receipt": {
+    "to": null,
+    "from": "0x218513C58A4781a5B88De6230caA29aBCe2Ccd75",
+    "contractAddress": "0x681e6C44Ca63882D0c17b9dE3cf3d736406F1ed3",
+    "transactionIndex": 63,
+    "gasUsed": "72217",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000800000000000040000000100000000000000000000000000400000000000000000000000000000000084000000000000000000000000000000000000000400000000000000000000000000000000000000200000000000000000000000000000000000000000100000000000000000004000000000000000000001000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000100000",
+    "blockHash": "0xd1e4efd7ad6f51e83d93838a18ebb1d587fe9ae93ef40ecf4a1658a62b0faff0",
+    "transactionHash": "0x7e4aad397fbe8960ed16bfc894ee46dce883106f88bdd619a819e6d621510290",
+    "logs": [
+      {
+        "transactionIndex": 63,
+        "blockNumber": 29179722,
+        "transactionHash": "0x7e4aad397fbe8960ed16bfc894ee46dce883106f88bdd619a819e6d621510290",
+        "address": "0x0000000000000000000000000000000000001010",
+        "topics": [
+          "0x4dfe1bbbcf077ddc3e01291eea2d5c70c2b422b415d95645b9adcfd678cb1d63",
+          "0x0000000000000000000000000000000000000000000000000000000000001010",
+          "0x000000000000000000000000218513c58a4781a5b88de6230caa29abce2ccd75",
+          "0x00000000000000000000000040314efbc35bc0db441969bce451bf0167efded1"
+        ],
+        "data": "0x0000000000000000000000000000000000000000000000000008f5946ca342640000000000000000000000000000000000000000000000001dd12f09118eb71e0000000000000000000000000000000000000000000014701d8a2f7e59a3f2390000000000000000000000000000000000000000000000001dc83974a4eb74ba0000000000000000000000000000000000000000000014701d932512c647349d",
+        "logIndex": 302,
+        "blockHash": "0xd1e4efd7ad6f51e83d93838a18ebb1d587fe9ae93ef40ecf4a1658a62b0faff0"
+      }
+    ],
+    "blockNumber": 29179722,
+    "cumulativeGasUsed": "9339510",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "903b6e0b7a82abf3fd1d087256b904a8",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/bespokemarket/libraries/BespokeTypes.sol\":\"BespokeTypes\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/bespokemarket/libraries/BespokeTypes.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nlibrary BespokeTypes {\\n    struct BorrowOffer {\\n        uint256 reserveId;\\n        address nftAddress;\\n        uint256 tokenId;\\n        uint256 tokenAmount; // 1 for ERC721, 1+ for ERC1155\\n        address borrower;\\n        uint256 borrowAmountMin;\\n        uint256 borrowAmountMax;\\n        uint40 borrowDurationMin;\\n        uint40 borrowDurationMax;\\n        uint128 borrowRate;\\n        address currency;\\n        uint256 nonce;\\n        uint256 deadline;\\n        uint8 v; // v: parameter (27 or 28)\\n        bytes32 r; // r: parameter\\n        bytes32 s; // s: parameter\\n    }\\n\\n    struct LoanData {\\n        uint256 reserveId;\\n        address nftAddress;\\n        uint256 tokenId;\\n        uint256 tokenAmount; // 1 for ERC721, 1+ for ERC1155\\n        address borrower;\\n        uint256 amount;\\n        uint128 borrowRate;\\n        uint128 interestPerSecond;\\n        address currency;\\n        uint40 borrowDuration;\\n        // after take offer\\n        uint40 borrowBegin;\\n        uint40 borrowOverdueTime;\\n        uint40 liquidatableTime;\\n        address lender;\\n        LoanStatus status;\\n    }\\n\\n    enum LoanStatus {\\n        NONE,\\n        BORROWING,\\n        OVERDUE,\\n        LIQUIDATABLE\\n        // the following statuses are not stored onchain\\n        // END,\\n        // CANCELED,\\n        // LIQUIDATED\\n    }\\n\\n    struct WhitelistInfo {\\n        bool enabled;\\n        uint256 minBorrowDuration;\\n        uint256 maxBorrowDuration;\\n        uint256 overdueDuration;\\n    }\\n}\\n\",\"keccak256\":\"0xba4dd9d17fae5033cfde402206d049ac9fa4a44169d7c2c6cba8b6249ae114df\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212200346a008c7a3a89dfdb1c76b57f70fbb628794b207046fa67f7b264a969bd0be64736f6c634300080a0033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212200346a008c7a3a89dfdb1c76b57f70fbb628794b207046fa67f7b264a969bd0be64736f6c634300080a0033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}

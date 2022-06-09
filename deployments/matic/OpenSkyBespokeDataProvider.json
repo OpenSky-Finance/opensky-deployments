@@ -1,0 +1,201 @@
+{
+  "address": "0xB384947BB7a0d77233f9e7b1e4652D3a1b08E9B3",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract IOpenSkyBespokeMarket",
+          "name": "MARKET_",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "MARKET",
+      "outputs": [
+        {
+          "internalType": "contract IOpenSkyBespokeMarket",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "loanId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getLoanData",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "reserveId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "nftAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tokenAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "borrower",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint128",
+              "name": "borrowRate",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "interestPerSecond",
+              "type": "uint128"
+            },
+            {
+              "internalType": "address",
+              "name": "currency",
+              "type": "address"
+            },
+            {
+              "internalType": "uint40",
+              "name": "borrowDuration",
+              "type": "uint40"
+            },
+            {
+              "internalType": "uint40",
+              "name": "borrowBegin",
+              "type": "uint40"
+            },
+            {
+              "internalType": "uint40",
+              "name": "borrowOverdueTime",
+              "type": "uint40"
+            },
+            {
+              "internalType": "uint40",
+              "name": "liquidatableTime",
+              "type": "uint40"
+            },
+            {
+              "internalType": "address",
+              "name": "lender",
+              "type": "address"
+            },
+            {
+              "internalType": "enum BespokeTypes.LoanStatus",
+              "name": "status",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "loanId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "borrowBalance",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "penalty",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "borrowInterest",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct IOpenSkyBespokeDataProvider.LoanDataUI",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x6bc751a976400fe32f40ef3225fb24b1dc5be18087f5a81bdd6b6f25cb7768ab",
+  "receipt": {
+    "to": null,
+    "from": "0x218513C58A4781a5B88De6230caA29aBCe2Ccd75",
+    "contractAddress": "0xB384947BB7a0d77233f9e7b1e4652D3a1b08E9B3",
+    "transactionIndex": 28,
+    "gasUsed": "501379",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000800000000000040000000100000000000000000000000000400000000000000000000000000000000080000000000000000000000000000000000000000400000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000004000000000000000000001000000000000080000000000000000100000000000000000000000000000000000000000000000000000000004000000000000100020",
+    "blockHash": "0x711679f027efc3a817926db86de7fe3e6b433173cbdc74e77fa2d5bb00548bce",
+    "transactionHash": "0x6bc751a976400fe32f40ef3225fb24b1dc5be18087f5a81bdd6b6f25cb7768ab",
+    "logs": [
+      {
+        "transactionIndex": 28,
+        "blockNumber": 29188264,
+        "transactionHash": "0x6bc751a976400fe32f40ef3225fb24b1dc5be18087f5a81bdd6b6f25cb7768ab",
+        "address": "0x0000000000000000000000000000000000001010",
+        "topics": [
+          "0x4dfe1bbbcf077ddc3e01291eea2d5c70c2b422b415d95645b9adcfd678cb1d63",
+          "0x0000000000000000000000000000000000000000000000000000000000001010",
+          "0x000000000000000000000000218513c58a4781a5b88de6230caa29abce2ccd75",
+          "0x000000000000000000000000127685d6dd6683085da4b6a041efcef1681e5c9c"
+        ],
+        "data": "0x00000000000000000000000000000000000000000000000000591013c3ac028300000000000000000000000000000000000000000000000015c12da5d5fbfa49000000000000000000000000000000000000000000000aeec2ffef8659127c8c00000000000000000000000000000000000000000000000015681d92124ff7c6000000000000000000000000000000000000000000000aeec358ff9a1cbe7f0f",
+        "logIndex": 98,
+        "blockHash": "0x711679f027efc3a817926db86de7fe3e6b433173cbdc74e77fa2d5bb00548bce"
+      }
+    ],
+    "blockNumber": 29188264,
+    "cumulativeGasUsed": "4593488",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0x1BC00070c6Bd23481D6F6C1f27Cd8C923d94a54C"
+  ],
+  "solcInputHash": "903b6e0b7a82abf3fd1d087256b904a8",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract IOpenSkyBespokeMarket\",\"name\":\"MARKET_\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"MARKET\",\"outputs\":[{\"internalType\":\"contract IOpenSkyBespokeMarket\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"loanId\",\"type\":\"uint256\"}],\"name\":\"getLoanData\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"reserveId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"nftAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"tokenAmount\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"borrower\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"uint128\",\"name\":\"borrowRate\",\"type\":\"uint128\"},{\"internalType\":\"uint128\",\"name\":\"interestPerSecond\",\"type\":\"uint128\"},{\"internalType\":\"address\",\"name\":\"currency\",\"type\":\"address\"},{\"internalType\":\"uint40\",\"name\":\"borrowDuration\",\"type\":\"uint40\"},{\"internalType\":\"uint40\",\"name\":\"borrowBegin\",\"type\":\"uint40\"},{\"internalType\":\"uint40\",\"name\":\"borrowOverdueTime\",\"type\":\"uint40\"},{\"internalType\":\"uint40\",\"name\":\"liquidatableTime\",\"type\":\"uint40\"},{\"internalType\":\"address\",\"name\":\"lender\",\"type\":\"address\"},{\"internalType\":\"enum BespokeTypes.LoanStatus\",\"name\":\"status\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"loanId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"borrowBalance\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"penalty\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"borrowInterest\",\"type\":\"uint256\"}],\"internalType\":\"struct IOpenSkyBespokeDataProvider.LoanDataUI\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/bespokemarket/OpenSkyBespokeDataProvider.sol\":\"OpenSkyBespokeDataProvider\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/bespokemarket/OpenSkyBespokeDataProvider.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nimport './interfaces/IOpenSkyBespokeMarket.sol';\\nimport './interfaces/IOpenSkyBespokeDataProvider.sol';\\nimport './libraries/BespokeTypes.sol';\\n\\n/*\\n *  a helper contract to aggregate data for front-end\\n */\\ncontract OpenSkyBespokeDataProvider is  IOpenSkyBespokeDataProvider{\\n    IOpenSkyBespokeMarket public immutable MARKET;\\n\\n    constructor(IOpenSkyBespokeMarket MARKET_) {\\n        MARKET = MARKET_;\\n    }\\n\\n    function getLoanData(uint256 loanId) external view override returns (LoanDataUI memory) {\\n        BespokeTypes.LoanData memory loan = MARKET.getLoanData(loanId);\\n        \\n        return\\n            LoanDataUI({\\n                reserveId: loan.reserveId,\\n                nftAddress: loan.nftAddress,\\n                tokenId: loan.tokenId,\\n                tokenAmount: loan.tokenAmount,\\n                borrower: loan.borrower,\\n                amount:loan.amount,\\n                borrowRate: loan.borrowRate,\\n                interestPerSecond: loan.interestPerSecond,\\n                currency: loan.currency,\\n                borrowDuration: loan.borrowDuration,\\n                borrowBegin: loan.borrowBegin,\\n                borrowOverdueTime: loan.borrowOverdueTime,\\n                liquidatableTime: loan.liquidatableTime,\\n                lender: loan.lender,\\n                status: loan.status,\\n                // extra\\n                loanId: loanId,\\n                borrowBalance: MARKET.getBorrowBalance(loanId),\\n                penalty: MARKET.getPenalty(loanId),\\n                borrowInterest:MARKET.getBorrowInterest(loanId)\\n            });\\n    }\\n}\\n\",\"keccak256\":\"0xd1c54b492fd013624f58d69a813a4b3a0a86d94516fe115de7b8fe291ac38c2b\",\"license\":\"MIT\"},\"contracts/bespokemarket/interfaces/IOpenSkyBespokeDataProvider.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nimport './IOpenSkyBespokeMarket.sol';\\nimport '../libraries/BespokeTypes.sol';\\n\\ninterface IOpenSkyBespokeDataProvider {\\n    struct LoanDataUI {\\n        // same as  BespokeTypes.LoanData\\n        uint256 reserveId;\\n        address nftAddress;\\n        uint256 tokenId;\\n        uint256 tokenAmount;\\n        address borrower;\\n        uint256 amount;\\n        uint128 borrowRate;\\n        uint128 interestPerSecond;\\n        address currency;\\n        uint40 borrowDuration;\\n        uint40 borrowBegin;\\n        uint40 borrowOverdueTime;\\n        uint40 liquidatableTime;\\n        address lender;\\n        BespokeTypes.LoanStatus status;\\n        // extra fields\\n        uint256 loanId;\\n        uint256 borrowBalance;\\n        uint256 penalty;\\n        uint256 borrowInterest;\\n    }\\n\\n    function getLoanData(uint256 loanId) external view returns (LoanDataUI memory);\\n}\\n\",\"keccak256\":\"0x3d2e5ce8711a14b1cf7d2a2ebcee2f5ef35533138cc70f146896d24705bd1399\",\"license\":\"MIT\"},\"contracts/bespokemarket/interfaces/IOpenSkyBespokeMarket.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nimport '../libraries/BespokeTypes.sol';\\n\\ninterface IOpenSkyBespokeMarket {\\n    event CancelAllOffers(address indexed sender, uint256 nonce);\\n\\n    event CancelMultipleOffers(address indexed sender, uint256[] nonces);\\n\\n    event TakeBorrowOffer(uint256 indexed loanId, address indexed lender, address indexed borrower, uint256 nonce);\\n\\n    event TakeBorrowOfferETH(uint256 indexed loanId, address indexed lender, address indexed borrower, uint256 nonce);\\n\\n    event Repay(uint256 indexed loanId, address indexed borrower);\\n\\n    event RepayETH(uint256 indexed loanId, address indexed borrower);\\n\\n    event Foreclose(uint256 indexed loanId, address indexed lender);\\n\\n    event FlashClaim(address indexed receiver, address sender, address indexed nftAddress, uint256 indexed tokenId);\\n    event ClaimERC20Airdrop(address indexed token, address indexed to, uint256 amount);\\n    event ClaimERC721Airdrop(address indexed token, address indexed to, uint256[] ids);\\n    event ClaimERC1155Airdrop(address indexed token, address indexed to, uint256[] ids, uint256[] amounts, bytes data);\\n\\n    function takeBorrowOffer(\\n        BespokeTypes.BorrowOffer memory offerData,\\n        uint256 supplyAmount,\\n        uint256 supplyDuration\\n    ) external;\\n\\n    function takeBorrowOfferETH(\\n        BespokeTypes.BorrowOffer memory offerData,\\n        uint256 supplyAmount,\\n        uint256 supplyDuration\\n    ) external payable;\\n\\n    function repay(uint256 loanId) external;\\n\\n    function repayETH(uint256 loanId) external payable;\\n\\n    function foreclose(uint256 loanId) external;\\n\\n    function cancelAllBorrowOffersForSender(uint256 minNonce_) external;\\n\\n    function cancelMultipleBorrowOffers(uint256[] calldata offerNonces) external;\\n\\n    function isValidNonce(address account, uint256 nonce) external view returns (bool);\\n\\n    function getLoanData(uint256 loanId) external view returns (BespokeTypes.LoanData memory);\\n\\n    function getStatus(uint256 loanId) external view returns (BespokeTypes.LoanStatus);\\n\\n    function getBorrowInterest(uint256 loanId) external view returns (uint256);\\n\\n    function getBorrowBalance(uint256 loanId) external view returns (uint256);\\n\\n    function getPenalty(uint256 loanId) external view returns (uint256);\\n\\n    /**\\n     * @notice Allows smart contracts to access the collateralized NFT within one transaction,\\n     * as long as the amount taken plus a fee is returned\\n     * @dev IMPORTANT There are security concerns for developers of flash loan receiver contracts that must be carefully considered\\n     * @param receiverAddress The address of the contract receiving the funds, implementing IFlashClaimReceiver interface\\n     * @param loanIds The ID of loan being flash-borrowed\\n     * @param params packed params to pass to the receiver as extra information\\n     **/\\n    function flashClaim(\\n        address receiverAddress,\\n        uint256[] calldata loanIds,\\n        bytes calldata params\\n    ) external;\\n\\n    /**\\n     * @notice Claim the ERC20 token which has been airdropped to the loan contract\\n     * @param token The address of the airdropped token\\n     * @param to The address which will receive ERC20 token\\n     * @param amount The amount of the ERC20 token\\n     **/\\n    function claimERC20Airdrop(\\n        address token,\\n        address to,\\n        uint256 amount\\n    ) external;\\n\\n    /**\\n     * @notice Claim the ERC721 token which has been airdropped to the loan contract\\n     * @param token The address of the airdropped token\\n     * @param to The address which will receive the ERC721 token\\n     * @param ids The ID of the ERC721 token\\n     **/\\n    function claimERC721Airdrop(\\n        address token,\\n        address to,\\n        uint256[] calldata ids\\n    ) external;\\n\\n    /**\\n     * @notice Claim the ERC1155 token which has been airdropped to the loan contract\\n     * @param token The address of the airdropped token\\n     * @param to The address which will receive the ERC1155 tokens\\n     * @param ids The ID of the ERC1155 token\\n     * @param amounts The amount of the ERC1155 tokens\\n     * @param data packed params to pass to the receiver as extra information\\n     **/\\n    function claimERC1155Airdrop(\\n        address token,\\n        address to,\\n        uint256[] calldata ids,\\n        uint256[] calldata amounts,\\n        bytes calldata data\\n    ) external;\\n}\\n\",\"keccak256\":\"0xbd81949c0cbeb6a4a525e9127d8cd2716895913079af9a5c61fe7732a524a1d9\",\"license\":\"MIT\"},\"contracts/bespokemarket/libraries/BespokeTypes.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nlibrary BespokeTypes {\\n    struct BorrowOffer {\\n        uint256 reserveId;\\n        address nftAddress;\\n        uint256 tokenId;\\n        uint256 tokenAmount; // 1 for ERC721, 1+ for ERC1155\\n        address borrower;\\n        uint256 borrowAmountMin;\\n        uint256 borrowAmountMax;\\n        uint40 borrowDurationMin;\\n        uint40 borrowDurationMax;\\n        uint128 borrowRate;\\n        address currency;\\n        uint256 nonce;\\n        uint256 deadline;\\n        uint8 v; // v: parameter (27 or 28)\\n        bytes32 r; // r: parameter\\n        bytes32 s; // s: parameter\\n    }\\n\\n    struct LoanData {\\n        uint256 reserveId;\\n        address nftAddress;\\n        uint256 tokenId;\\n        uint256 tokenAmount; // 1 for ERC721, 1+ for ERC1155\\n        address borrower;\\n        uint256 amount;\\n        uint128 borrowRate;\\n        uint128 interestPerSecond;\\n        address currency;\\n        uint40 borrowDuration;\\n        // after take offer\\n        uint40 borrowBegin;\\n        uint40 borrowOverdueTime;\\n        uint40 liquidatableTime;\\n        address lender;\\n        LoanStatus status;\\n    }\\n\\n    enum LoanStatus {\\n        NONE,\\n        BORROWING,\\n        OVERDUE,\\n        LIQUIDATABLE\\n        // the following statuses are not stored onchain\\n        // END,\\n        // CANCELED,\\n        // LIQUIDATED\\n    }\\n\\n    struct WhitelistInfo {\\n        bool enabled;\\n        uint256 minBorrowDuration;\\n        uint256 maxBorrowDuration;\\n        uint256 overdueDuration;\\n    }\\n}\\n\",\"keccak256\":\"0xba4dd9d17fae5033cfde402206d049ac9fa4a44169d7c2c6cba8b6249ae114df\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x60a060405234801561001057600080fd5b506040516108bd3803806108bd83398101604081905261002f91610040565b6001600160a01b0316608052610070565b60006020828403121561005257600080fd5b81516001600160a01b038116811461006957600080fd5b9392505050565b6080516108176100a660003960008181606901528181610158015281816102e201528181610376015261040a01526108176000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c8063622fe39f1461003b578063f46f16c214610064575b600080fd5b61004e6100493660046104a0565b6100a3565b60405161005b91906104f1565b60405180910390f35b61008b7f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b03909116815260200161005b565b61013f6040805161026081018252600080825260208201819052918101829052606081018290526080810182905260a0810182905260c0810182905260e08101829052610100810182905261012081018290526101408101829052610160810182905261018081018290526101a08101829052906101c08201908152602001600081526020016000815260200160008152602001600081525090565b60405163622fe39f60e01b8152600481018390526000907f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03169063622fe39f906024016101e060405180830381865afa1580156101a8573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906101cc91906106c2565b90506040518061026001604052808260000151815260200182602001516001600160a01b03168152602001826040015181526020018260600151815260200182608001516001600160a01b031681526020018260a0015181526020018260c001516001600160801b031681526020018260e001516001600160801b031681526020018261010001516001600160a01b0316815260200182610120015164ffffffffff16815260200182610140015164ffffffffff16815260200182610160015164ffffffffff16815260200182610180015164ffffffffff168152602001826101a001516001600160a01b03168152602001826101c0015160038111156102d5576102d56104b9565b81526020018481526020017f00000000000000000000000000000000000000000000000000000000000000006001600160a01b0316636b52b365866040518263ffffffff1660e01b815260040161032e91815260200190565b602060405180830381865afa15801561034b573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061036f91906107c8565b81526020017f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03166396e59682866040518263ffffffff1660e01b81526004016103c291815260200190565b602060405180830381865afa1580156103df573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061040391906107c8565b81526020017f00000000000000000000000000000000000000000000000000000000000000006001600160a01b0316631c187495866040518263ffffffff1660e01b815260040161045691815260200190565b602060405180830381865afa158015610473573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061049791906107c8565b90529392505050565b6000602082840312156104b257600080fd5b5035919050565b634e487b7160e01b600052602160045260246000fd5b600481106104ed57634e487b7160e01b600052602160045260246000fd5b9052565b81518152602080830151610260830191610515908401826001600160a01b03169052565b506040830151604083015260608301516060830152608083015161054460808401826001600160a01b03169052565b5060a083015160a083015260c083015161056960c08401826001600160801b03169052565b5060e083015161058460e08401826001600160801b03169052565b50610100838101516001600160a01b03908116918401919091526101208085015164ffffffffff90811691850191909152610140808601518216908501526101608086015182169085015261018080860151909116908401526101a080850151909116908301526101c0808401516105fe828501826104cf565b50506101e083810151908301526102008084015190830152610220808401519083015261024092830151929091019190915290565b6040516101e0810167ffffffffffffffff8111828210171561066557634e487b7160e01b600052604160045260246000fd5b60405290565b80516001600160a01b038116811461068257600080fd5b919050565b80516001600160801b038116811461068257600080fd5b805164ffffffffff8116811461068257600080fd5b80516004811061068257600080fd5b60006101e082840312156106d557600080fd5b6106dd610633565b825181526106ed6020840161066b565b602082015260408301516040820152606083015160608201526107126080840161066b565b608082015260a083015160a082015261072d60c08401610687565b60c082015261073e60e08401610687565b60e082015261010061075181850161066b565b9082015261012061076384820161069e565b9082015261014061077584820161069e565b9082015261016061078784820161069e565b9082015261018061079984820161069e565b908201526101a06107ab84820161066b565b908201526101c06107bd8482016106b3565b908201529392505050565b6000602082840312156107da57600080fd5b505191905056fea26469706673582212201843ecaad7a8ea7040f9157022b402c4dd0198baec747af6e63d4e9f47b2ebb064736f6c634300080a0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c8063622fe39f1461003b578063f46f16c214610064575b600080fd5b61004e6100493660046104a0565b6100a3565b60405161005b91906104f1565b60405180910390f35b61008b7f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b03909116815260200161005b565b61013f6040805161026081018252600080825260208201819052918101829052606081018290526080810182905260a0810182905260c0810182905260e08101829052610100810182905261012081018290526101408101829052610160810182905261018081018290526101a08101829052906101c08201908152602001600081526020016000815260200160008152602001600081525090565b60405163622fe39f60e01b8152600481018390526000907f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03169063622fe39f906024016101e060405180830381865afa1580156101a8573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906101cc91906106c2565b90506040518061026001604052808260000151815260200182602001516001600160a01b03168152602001826040015181526020018260600151815260200182608001516001600160a01b031681526020018260a0015181526020018260c001516001600160801b031681526020018260e001516001600160801b031681526020018261010001516001600160a01b0316815260200182610120015164ffffffffff16815260200182610140015164ffffffffff16815260200182610160015164ffffffffff16815260200182610180015164ffffffffff168152602001826101a001516001600160a01b03168152602001826101c0015160038111156102d5576102d56104b9565b81526020018481526020017f00000000000000000000000000000000000000000000000000000000000000006001600160a01b0316636b52b365866040518263ffffffff1660e01b815260040161032e91815260200190565b602060405180830381865afa15801561034b573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061036f91906107c8565b81526020017f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03166396e59682866040518263ffffffff1660e01b81526004016103c291815260200190565b602060405180830381865afa1580156103df573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061040391906107c8565b81526020017f00000000000000000000000000000000000000000000000000000000000000006001600160a01b0316631c187495866040518263ffffffff1660e01b815260040161045691815260200190565b602060405180830381865afa158015610473573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061049791906107c8565b90529392505050565b6000602082840312156104b257600080fd5b5035919050565b634e487b7160e01b600052602160045260246000fd5b600481106104ed57634e487b7160e01b600052602160045260246000fd5b9052565b81518152602080830151610260830191610515908401826001600160a01b03169052565b506040830151604083015260608301516060830152608083015161054460808401826001600160a01b03169052565b5060a083015160a083015260c083015161056960c08401826001600160801b03169052565b5060e083015161058460e08401826001600160801b03169052565b50610100838101516001600160a01b03908116918401919091526101208085015164ffffffffff90811691850191909152610140808601518216908501526101608086015182169085015261018080860151909116908401526101a080850151909116908301526101c0808401516105fe828501826104cf565b50506101e083810151908301526102008084015190830152610220808401519083015261024092830151929091019190915290565b6040516101e0810167ffffffffffffffff8111828210171561066557634e487b7160e01b600052604160045260246000fd5b60405290565b80516001600160a01b038116811461068257600080fd5b919050565b80516001600160801b038116811461068257600080fd5b805164ffffffffff8116811461068257600080fd5b80516004811061068257600080fd5b60006101e082840312156106d557600080fd5b6106dd610633565b825181526106ed6020840161066b565b602082015260408301516040820152606083015160608201526107126080840161066b565b608082015260a083015160a082015261072d60c08401610687565b60c082015261073e60e08401610687565b60e082015261010061075181850161066b565b9082015261012061076384820161069e565b9082015261014061077584820161069e565b9082015261016061078784820161069e565b9082015261018061079984820161069e565b908201526101a06107ab84820161066b565b908201526101c06107bd8482016106b3565b908201529392505050565b6000602082840312156107da57600080fd5b505191905056fea26469706673582212201843ecaad7a8ea7040f9157022b402c4dd0198baec747af6e63d4e9f47b2ebb064736f6c634300080a0033",
+  "libraries": {
+    "BespokeTypes": "0x681e6C44Ca63882D0c17b9dE3cf3d736406F1ed3"
+  },
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}

@@ -1,0 +1,705 @@
+{
+  "address": "0x0ed7E11148d6c1e9df1677Ea3242C47b9c8A6251",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract IOpenSkySettings",
+          "name": "settings",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "nftAddress",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "price",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "roundId",
+          "type": "uint256"
+        }
+      ],
+      "name": "UpdatePrice",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "SETTINGS",
+      "outputs": [
+        {
+          "internalType": "contract IOpenSkySettings",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "nftAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getLatestRoundId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "reserveId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "nftAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "nftAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getPriceData",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "roundId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "price",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "cumulativePrice",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct OpenSkyCollateralPriceOracle.NFTPriceData",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "nftAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getPriceFeedLength",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "length",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "nftAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "roundInterval",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTwapPriceByRoundInterval",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "nftAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "timeInterval",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTwapPriceByTimeInterval",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "nftPriceFeedMap",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "roundId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "price",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "cumulativePrice",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "nftAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "price",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "updatePrice",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "nftAddresses",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "prices",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "updatePrices",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "roundInterval",
+          "type": "uint256"
+        }
+      ],
+      "name": "updateRoundInterval",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "timeInterval",
+          "type": "uint256"
+        }
+      ],
+      "name": "updateTimeInterval",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xbf5197de992e8f66ed4d2e978fa3bb265a1880418d32b28ccd5c4d098c663d0d",
+  "receipt": {
+    "to": null,
+    "from": "0x218513C58A4781a5B88De6230caA29aBCe2Ccd75",
+    "contractAddress": "0x0ed7E11148d6c1e9df1677Ea3242C47b9c8A6251",
+    "transactionIndex": 51,
+    "gasUsed": "1096783",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000800001000000040000000100000000000000000000020000400000000000000800000000000000000080000000000000400000000000000000000000200400000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000004000000000000000000001000000000000080000000000000000100000000020000000000000002000080000000000000000000000000004000000000000100020",
+    "blockHash": "0xf32e8541863cb60fad8b36d8cd43fab473eb3b4321c8068614d096e9e9c383c4",
+    "transactionHash": "0xbf5197de992e8f66ed4d2e978fa3bb265a1880418d32b28ccd5c4d098c663d0d",
+    "logs": [
+      {
+        "transactionIndex": 51,
+        "blockNumber": 29179370,
+        "transactionHash": "0xbf5197de992e8f66ed4d2e978fa3bb265a1880418d32b28ccd5c4d098c663d0d",
+        "address": "0x0ed7E11148d6c1e9df1677Ea3242C47b9c8A6251",
+        "topics": [
+          "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+          "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "0x000000000000000000000000218513c58a4781a5b88de6230caa29abce2ccd75"
+        ],
+        "data": "0x",
+        "logIndex": 211,
+        "blockHash": "0xf32e8541863cb60fad8b36d8cd43fab473eb3b4321c8068614d096e9e9c383c4"
+      },
+      {
+        "transactionIndex": 51,
+        "blockNumber": 29179370,
+        "transactionHash": "0xbf5197de992e8f66ed4d2e978fa3bb265a1880418d32b28ccd5c4d098c663d0d",
+        "address": "0x0000000000000000000000000000000000001010",
+        "topics": [
+          "0x4dfe1bbbcf077ddc3e01291eea2d5c70c2b422b415d95645b9adcfd678cb1d63",
+          "0x0000000000000000000000000000000000000000000000000000000000001010",
+          "0x000000000000000000000000218513c58a4781a5b88de6230caa29abce2ccd75",
+          "0x000000000000000000000000127685d6dd6683085da4b6a041efcef1681e5c9c"
+        ],
+        "data": "0x0000000000000000000000000000000000000000000000000078cb117151e8c10000000000000000000000000000000000000000000000002e5c5b9134c6c9e2000000000000000000000000000000000000000000000ad4dee2684f6aefeb140000000000000000000000000000000000000000000000002de3907fc374e121000000000000000000000000000000000000000000000ad4df5b3360dc41d3d5",
+        "logIndex": 212,
+        "blockHash": "0xf32e8541863cb60fad8b36d8cd43fab473eb3b4321c8068614d096e9e9c383c4"
+      }
+    ],
+    "blockNumber": 29179370,
+    "cumulativeGasUsed": "6646809",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0x57528D98c3a8762c78f4D02a89CBc0Eaf77FD322"
+  ],
+  "solcInputHash": "903b6e0b7a82abf3fd1d087256b904a8",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract IOpenSkySettings\",\"name\":\"settings\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"nftAddress\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"roundId\",\"type\":\"uint256\"}],\"name\":\"UpdatePrice\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"SETTINGS\",\"outputs\":[{\"internalType\":\"contract IOpenSkySettings\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"nftAddress\",\"type\":\"address\"}],\"name\":\"getLatestRoundId\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"reserveId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"nftAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"nftAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"getPriceData\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"roundId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"cumulativePrice\",\"type\":\"uint256\"}],\"internalType\":\"struct OpenSkyCollateralPriceOracle.NFTPriceData\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"nftAddress\",\"type\":\"address\"}],\"name\":\"getPriceFeedLength\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"length\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"nftAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"roundInterval\",\"type\":\"uint256\"}],\"name\":\"getTwapPriceByRoundInterval\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"nftAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"timeInterval\",\"type\":\"uint256\"}],\"name\":\"getTwapPriceByTimeInterval\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"nftPriceFeedMap\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"roundId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"cumulativePrice\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"nftAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"}],\"name\":\"updatePrice\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"nftAddresses\",\"type\":\"address[]\"},{\"internalType\":\"uint256[]\",\"name\":\"prices\",\"type\":\"uint256[]\"},{\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"}],\"name\":\"updatePrices\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"roundInterval\",\"type\":\"uint256\"}],\"name\":\"updateRoundInterval\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"timeInterval\",\"type\":\"uint256\"}],\"name\":\"updateTimeInterval\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"OpenSky Labs\",\"details\":\"Implements logics of the collateral price oracle for the OpenSky protocol*\",\"kind\":\"dev\",\"methods\":{\"getLatestRoundId(address)\":{\"params\":{\"nftAddress\":\"The address of the NFT\"},\"returns\":{\"_0\":\"The latest round id*\"}},\"getPrice(uint256,address,uint256)\":{\"params\":{\"nftAddress\":\"The address of the NFT\",\"reserveId\":\"The id of the reserve\",\"tokenId\":\"The id of the NFT\"},\"returns\":{\"_0\":\"The price of the NFT*\"}},\"getPriceData(address,uint256)\":{\"params\":{\"index\":\"The index of the feed\",\"nftAddress\":\"The address of the NFT\"},\"returns\":{\"_0\":\"The data of the price feed*\"}},\"getPriceFeedLength(address)\":{\"params\":{\"nftAddress\":\"The address of the NFT\"},\"returns\":{\"length\":\"The count of price feeds*\"}},\"getTwapPriceByRoundInterval(address,uint256)\":{\"params\":{\"nftAddress\":\"The address of the NFT\",\"roundInterval\":\"The round interval\"},\"returns\":{\"_0\":\"The price of the NFT*\"}},\"getTwapPriceByTimeInterval(address,uint256)\":{\"params\":{\"nftAddress\":\"The address of the NFT\",\"timeInterval\":\"The time interval\"},\"returns\":{\"_0\":\"The price of the NFT*\"}},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"},\"updatePrice(address,uint256,uint256)\":{\"params\":{\"nftAddress\":\"The address of the NFT\",\"price\":\"The price of the NFT\",\"timestamp\":\"The timestamp when the price happened*\"}},\"updatePrices(address[],uint256[],uint256)\":{\"params\":{\"nftAddresses\":\"Addresses of NFT collections\",\"prices\":\"Floor prices of NFT collections\",\"timestamp\":\"The timestamp when prices happened*\"}},\"updateRoundInterval(uint256)\":{\"params\":{\"roundInterval\":\"The round interval will be set*\"}},\"updateTimeInterval(uint256)\":{\"params\":{\"timeInterval\":\"The time interval will be set*\"}}},\"title\":\"OpenSkyCollateralPriceOracle contract\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"getLatestRoundId(address)\":{\"notice\":\"Returns the latest round id of the particular NFT\"},\"getPrice(uint256,address,uint256)\":{\"notice\":\"Returns the NFT price in ETH\"},\"getPriceData(address,uint256)\":{\"notice\":\"Returns the data of the particular price feed\"},\"getPriceFeedLength(address)\":{\"notice\":\"Returns the count of price feeds about the particular NFT\"},\"getTwapPriceByRoundInterval(address,uint256)\":{\"notice\":\"Returns the TWAP price of NFT during the particular round interval\"},\"getTwapPriceByTimeInterval(address,uint256)\":{\"notice\":\"Returns the TWAP price of NFT during the particular time interval\"},\"updatePrice(address,uint256,uint256)\":{\"notice\":\"Updates the floor price of the NFT collection\"},\"updatePrices(address[],uint256[],uint256)\":{\"notice\":\"Updates floor prices of NFT collections\"},\"updateRoundInterval(uint256)\":{\"notice\":\"Updates round interval that is used for calculating TWAP price\"},\"updateTimeInterval(uint256)\":{\"notice\":\"Updates time interval that is used for calculating TWAP price\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/OpenSkyCollateralPriceOracle.sol\":\"OpenSkyCollateralPriceOracle\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/access/Ownable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../utils/Context.sol\\\";\\n\\n/**\\n * @dev Contract module which provides a basic access control mechanism, where\\n * there is an account (an owner) that can be granted exclusive access to\\n * specific functions.\\n *\\n * By default, the owner account will be the one that deploys the contract. This\\n * can later be changed with {transferOwnership}.\\n *\\n * This module is used through inheritance. It will make available the modifier\\n * `onlyOwner`, which can be applied to your functions to restrict their use to\\n * the owner.\\n */\\nabstract contract Ownable is Context {\\n    address private _owner;\\n\\n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\\n\\n    /**\\n     * @dev Initializes the contract setting the deployer as the initial owner.\\n     */\\n    constructor() {\\n        _setOwner(_msgSender());\\n    }\\n\\n    /**\\n     * @dev Returns the address of the current owner.\\n     */\\n    function owner() public view virtual returns (address) {\\n        return _owner;\\n    }\\n\\n    /**\\n     * @dev Throws if called by any account other than the owner.\\n     */\\n    modifier onlyOwner() {\\n        require(owner() == _msgSender(), \\\"Ownable: caller is not the owner\\\");\\n        _;\\n    }\\n\\n    /**\\n     * @dev Leaves the contract without owner. It will not be possible to call\\n     * `onlyOwner` functions anymore. Can only be called by the current owner.\\n     *\\n     * NOTE: Renouncing ownership will leave the contract without an owner,\\n     * thereby removing any functionality that is only available to the owner.\\n     */\\n    function renounceOwnership() public virtual onlyOwner {\\n        _setOwner(address(0));\\n    }\\n\\n    /**\\n     * @dev Transfers ownership of the contract to a new account (`newOwner`).\\n     * Can only be called by the current owner.\\n     */\\n    function transferOwnership(address newOwner) public virtual onlyOwner {\\n        require(newOwner != address(0), \\\"Ownable: new owner is the zero address\\\");\\n        _setOwner(newOwner);\\n    }\\n\\n    function _setOwner(address newOwner) private {\\n        address oldOwner = _owner;\\n        _owner = newOwner;\\n        emit OwnershipTransferred(oldOwner, newOwner);\\n    }\\n}\\n\",\"keccak256\":\"0x6bb804a310218875e89d12c053e94a13a4607cdf7cc2052f3e52bd32a0dc50a1\",\"license\":\"MIT\"},\"@openzeppelin/contracts/utils/Context.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Provides information about the current execution context, including the\\n * sender of the transaction and its data. While these are generally available\\n * via msg.sender and msg.data, they should not be accessed in such a direct\\n * manner, since when dealing with meta-transactions the account sending and\\n * paying for execution may not be the actual sender (as far as an application\\n * is concerned).\\n *\\n * This contract is only required for intermediate, library-like contracts.\\n */\\nabstract contract Context {\\n    function _msgSender() internal view virtual returns (address) {\\n        return msg.sender;\\n    }\\n\\n    function _msgData() internal view virtual returns (bytes calldata) {\\n        return msg.data;\\n    }\\n}\\n\",\"keccak256\":\"0x90565a39ae45c80f0468dc96c7b20d0afc3055f344c8203a0c9258239f350b9f\",\"license\":\"MIT\"},\"contracts/OpenSkyCollateralPriceOracle.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nimport '@openzeppelin/contracts/access/Ownable.sol';\\nimport './interfaces/IOpenSkyCollateralPriceOracle.sol';\\nimport './interfaces/IOpenSkySettings.sol';\\nimport './libraries/helpers/Errors.sol';\\n\\ninterface IOpenSkyPriceSource {\\n    function getPrice(address nftAddress) external view returns (uint256 price); \\n}\\n\\n/**\\n * @title OpenSkyCollateralPriceOracle contract\\n * @author OpenSky Labs\\n * @dev Implements logics of the collateral price oracle for the OpenSky protocol\\n **/\\ncontract OpenSkyCollateralPriceOracle is Ownable, IOpenSkyCollateralPriceOracle {\\n    IOpenSkySettings public immutable SETTINGS;\\n\\n    mapping(address => NFTPriceData[]) public nftPriceFeedMap;\\n    mapping(address => mapping(uint256 => uint256)) private _prices;\\n\\n    mapping(address => address) private _sources;\\n\\n    uint256 internal _roundInterval;\\n    uint256 internal _timeInterval;\\n\\n    struct NFTPriceData {\\n        uint256 roundId;\\n        uint256 price;\\n        uint256 timestamp;\\n        uint256 cumulativePrice;\\n    }\\n\\n    constructor(IOpenSkySettings settings) Ownable() {\\n        SETTINGS = settings;\\n    }\\n\\n    /// @inheritdoc IOpenSkyCollateralPriceOracle\\n    function updatePrice(\\n        address nftAddress,\\n        uint256 price,\\n        uint256 timestamp\\n    ) public override onlyOwner {\\n        NFTPriceData[] storage prices = nftPriceFeedMap[nftAddress];\\n        NFTPriceData memory latestPriceData = prices.length > 0\\n            ? prices[prices.length - 1]\\n            : NFTPriceData({roundId: 0, price: 0, timestamp: 0, cumulativePrice: 0});\\n        require(timestamp > latestPriceData.timestamp, Errors.PRICE_ORACLE_INCORRECT_TIMESTAMP);\\n        uint256 cumulativePrice = latestPriceData.timestamp > 0\\n            ? latestPriceData.cumulativePrice + (timestamp - latestPriceData.timestamp) * latestPriceData.price\\n            : 0;\\n        uint256 roundId = latestPriceData.roundId + 1;\\n        NFTPriceData memory data = NFTPriceData({\\n            price: price,\\n            timestamp: timestamp,\\n            roundId: roundId,\\n            cumulativePrice: cumulativePrice\\n        });\\n        prices.push(data);\\n\\n        emit UpdatePrice(nftAddress, price, timestamp, roundId);\\n    }\\n\\n    /**\\n     * @notice Updates floor prices of NFT collections\\n     * @param nftAddresses Addresses of NFT collections\\n     * @param prices Floor prices of NFT collections\\n     * @param timestamp The timestamp when prices happened\\n     **/\\n    function updatePrices(\\n        address[] memory nftAddresses,\\n        uint256[] memory prices,\\n        uint256 timestamp\\n    ) external onlyOwner {\\n        require(nftAddresses.length == prices.length, Errors.PRICE_ORACLE_PARAMS_ERROR);\\n        for (uint256 i = 0; i < nftAddresses.length; i++) {\\n            updatePrice(nftAddresses[i], prices[i], timestamp);\\n        }\\n    }\\n\\n    /**\\n     * @notice Updates round interval that is used for calculating TWAP price\\n     * @param roundInterval The round interval will be set\\n     **/\\n    function updateRoundInterval(uint256 roundInterval) external onlyOwner {\\n        _roundInterval = roundInterval;\\n    }\\n\\n    /**\\n     * @notice Updates time interval that is used for calculating TWAP price\\n     * @param timeInterval The time interval will be set\\n     **/\\n    function updateTimeInterval(uint256 timeInterval) external onlyOwner {\\n        _timeInterval = timeInterval;\\n    }\\n\\n    /// @inheritdoc IOpenSkyCollateralPriceOracle\\n    function getPrice(\\n        uint256 reserveId,\\n        address nftAddress,\\n        uint256 tokenId\\n    ) external view override returns (uint256) {\\n        if (!SETTINGS.inWhitelist(reserveId, nftAddress)) {\\n            return 0;\\n        }\\n        if (_timeInterval > 0) {\\n            return getTwapPriceByTimeInterval(nftAddress, _timeInterval);\\n        } else {\\n            return getTwapPriceByRoundInterval(nftAddress, _roundInterval);\\n        }\\n    }\\n\\n    /**\\n     * @notice Returns the TWAP price of NFT during the particular round interval\\n     * @param nftAddress The address of the NFT\\n     * @param roundInterval The round interval\\n     * @return The price of the NFT\\n     **/\\n    function getTwapPriceByRoundInterval(address nftAddress, uint256 roundInterval) public view returns (uint256) {\\n        uint256 priceFeedLength = getPriceFeedLength(nftAddress);\\n        if (priceFeedLength == 0) {\\n            return 0;\\n        }\\n        uint256 currentRound = priceFeedLength - 1;\\n        NFTPriceData memory currentPriceData = nftPriceFeedMap[nftAddress][currentRound];\\n        if (roundInterval == 0 || priceFeedLength == 1) {\\n            return currentPriceData.price;\\n        }\\n        uint256 previousRound = currentRound > roundInterval ? currentRound - roundInterval : 0;\\n        NFTPriceData memory previousPriceData = nftPriceFeedMap[nftAddress][previousRound];\\n        return\\n            (currentPriceData.price *\\n                (block.timestamp - currentPriceData.timestamp) +\\n                currentPriceData.cumulativePrice -\\n                previousPriceData.cumulativePrice) / (block.timestamp - previousPriceData.timestamp);\\n    }\\n\\n    /**\\n     * @notice Returns the TWAP price of NFT during the particular time interval\\n     * @param nftAddress The address of the NFT\\n     * @param timeInterval The time interval\\n     * @return The price of the NFT\\n     **/\\n    function getTwapPriceByTimeInterval(address nftAddress, uint256 timeInterval) public view returns (uint256) { \\n        uint256 priceFeedLength = getPriceFeedLength(nftAddress);\\n        if (priceFeedLength == 0) {\\n            return 0;\\n        }\\n\\n        NFTPriceData memory currentPriceData = nftPriceFeedMap[nftAddress][priceFeedLength - 1];\\n        uint256 baseTimestamp = block.timestamp - timeInterval;\\n\\n        if (currentPriceData.timestamp <= baseTimestamp) {\\n            return currentPriceData.price;\\n        }\\n\\n        NFTPriceData memory firstPriceData = nftPriceFeedMap[nftAddress][0];\\n        if (firstPriceData.timestamp >= baseTimestamp) {\\n            return\\n                (currentPriceData.price *\\n                    (block.timestamp - currentPriceData.timestamp) +\\n                    (currentPriceData.cumulativePrice - firstPriceData.cumulativePrice)) /\\n                (block.timestamp - firstPriceData.timestamp);\\n        }\\n\\n        uint256 roundIndex = priceFeedLength - 1;\\n        NFTPriceData memory basePriceData = nftPriceFeedMap[nftAddress][roundIndex];\\n\\n        while (roundIndex > 0 && basePriceData.timestamp > baseTimestamp) {\\n            basePriceData = nftPriceFeedMap[nftAddress][--roundIndex];\\n        }\\n\\n        uint256 cumulativePrice = currentPriceData.price *\\n            (block.timestamp - currentPriceData.timestamp) +\\n            (currentPriceData.cumulativePrice - basePriceData.cumulativePrice);\\n        cumulativePrice -= basePriceData.price * (baseTimestamp - basePriceData.timestamp);\\n        return cumulativePrice / timeInterval;\\n    }\\n\\n    /**\\n     * @notice Returns the data of the particular price feed\\n     * @param nftAddress The address of the NFT\\n     * @param index The index of the feed\\n     * @return The data of the price feed\\n     **/\\n    function getPriceData(address nftAddress, uint256 index) public view returns (NFTPriceData memory) {\\n        return nftPriceFeedMap[nftAddress][index];\\n    }\\n\\n    /**\\n     * @notice Returns the count of price feeds about the particular NFT\\n     * @param nftAddress The address of the NFT\\n     * @return length The count of price feeds\\n     **/\\n    function getPriceFeedLength(address nftAddress) public view returns (uint256 length) {\\n        return nftPriceFeedMap[nftAddress].length;\\n    }\\n\\n    /**\\n     * @notice Returns the latest round id of the particular NFT\\n     * @param nftAddress The address of the NFT\\n     * @return The latest round id\\n     **/\\n    function getLatestRoundId(address nftAddress) public view returns (uint256) {\\n        uint256 len = getPriceFeedLength(nftAddress);\\n        if (len == 0) {\\n            return 0;\\n        }\\n        return nftPriceFeedMap[nftAddress][len - 1].roundId;\\n    }\\n\\n}\\n\",\"keccak256\":\"0x3e2dfb9fdc25c977821c4e7e2733ee87602d8242d379bf4d0caa27bafb534ebe\",\"license\":\"MIT\"},\"contracts/interfaces/IOpenSkyCollateralPriceOracle.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\n/**\\n * @title IOpenSkyPriceOracle\\n * @author OpenSky Labs\\n * @notice Defines the basic interface for a price oracle.\\n **/\\ninterface IOpenSkyCollateralPriceOracle {\\n    /**\\n     * @dev Emitted on updatePrice()\\n     * @param nftAddress The address of the NFT\\n     * @param price The price of the NFT\\n     * @param timestamp The timestamp when the price happened\\n     * @param roundId The round id\\n     **/\\n    event UpdatePrice(address indexed nftAddress, uint256 price, uint256 timestamp, uint256 roundId);\\n\\n    /**\\n     * @notice Returns the NFT price in ETH\\n     * @param reserveId The id of the reserve\\n     * @param nftAddress The address of the NFT\\n     * @param tokenId The id of the NFT\\n     * @return The price of the NFT\\n     **/\\n    function getPrice(uint256 reserveId, address nftAddress, uint256 tokenId) external view returns (uint256);\\n\\n    /**\\n     * @notice Updates the floor price of the NFT collection\\n     * @param nftAddress The address of the NFT\\n     * @param price The price of the NFT\\n     * @param timestamp The timestamp when the price happened\\n     **/\\n    function updatePrice(address nftAddress, uint256 price, uint256 timestamp) external;\\n}\\n\",\"keccak256\":\"0xc4cd7555250705042d2fe4e9942817167dc8692bdc8b1e028bc3026b6ab4b7bc\",\"license\":\"MIT\"},\"contracts/interfaces/IOpenSkySettings.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\nimport '../libraries/types/DataTypes.sol';\\n\\ninterface IOpenSkySettings {\\n    event InitPoolAddress(address operator, address address_);\\n    event InitLoanAddress(address operator, address address_);\\n    event InitVaultFactoryAddress(address operator, address address_);\\n    event InitIncentiveControllerAddress(address operator, address address_);\\n    event InitWETHGatewayAddress(address operator, address address_);\\n    event InitPunkGatewayAddress(address operator, address address_);\\n\\n    event AddToWhitelist(address operator, uint256 reserveId, address nft);\\n    event RemoveFromWhitelist(address operator, uint256 reserveId, address nft);\\n    event SetReserveFactor(address operator, uint256 factor);\\n    event SetPrepaymentFeeFactor(address operator, uint256 factor);\\n    event SetOverdueLoanFeeFactor(address operator, uint256 factor);\\n    event SetMoneyMarketAddress(address operator, address address_);\\n    event SetTreasuryAddress(address operator, address address_);\\n    event SetDaoVaultAddress(address operator, address address_);\\n    event SetACLManagerAddress(address operator, address address_);\\n    event SetLoanDescriptorAddress(address operator, address address_);\\n    event SetNftPriceOracleAddress(address operator, address address_);\\n    event SetInterestRateStrategyAddress(address operator, address address_);\\n    event AddLiquidator(address operator, address address_);\\n    event RemoveLiquidator(address operator, address address_);\\n\\n    function poolAddress() external view returns (address);\\n\\n    function loanAddress() external view returns (address);\\n\\n    function vaultFactoryAddress() external view returns (address);\\n\\n    function incentiveControllerAddress() external view returns (address);\\n\\n    function wethGatewayAddress() external view returns (address);\\n\\n    function punkGatewayAddress() external view returns (address);\\n\\n    function inWhitelist(uint256 reserveId, address nft) external view returns (bool);\\n\\n    function getWhitelistDetail(uint256 reserveId, address nft) external view returns (DataTypes.WhitelistInfo memory);\\n\\n    function reserveFactor() external view returns (uint256); // treasury ratio\\n\\n    function MAX_RESERVE_FACTOR() external view returns (uint256);\\n\\n    function prepaymentFeeFactor() external view returns (uint256);\\n\\n    function overdueLoanFeeFactor() external view returns (uint256);\\n\\n    function moneyMarketAddress() external view returns (address);\\n\\n    function treasuryAddress() external view returns (address);\\n\\n    function daoVaultAddress() external view returns (address);\\n\\n    function ACLManagerAddress() external view returns (address);\\n\\n    function loanDescriptorAddress() external view returns (address);\\n\\n    function nftPriceOracleAddress() external view returns (address);\\n\\n    function interestRateStrategyAddress() external view returns (address);\\n    \\n    function isLiquidator(address liquidator) external view returns (bool);\\n}\\n\",\"keccak256\":\"0xd6d7e8c1b7751de0f65d85310c1e2d8274b74c7e3dc74920ea2546b65d8f659f\",\"license\":\"MIT\"},\"contracts/libraries/helpers/Errors.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nlibrary Errors {\\n    \\n    // common\\n    string public constant MATH_MULTIPLICATION_OVERFLOW = '100';\\n    string public constant MATH_ADDITION_OVERFLOW = '101';\\n    string public constant MATH_DIVISION_BY_ZERO = '102';\\n\\n    string public constant ETH_TRANSFER_FAILED = '110';\\n    string public constant RECEIVE_NOT_ALLOWED = '111';\\n    string public constant FALLBACK_NOT_ALLOWED = '112';\\n\\n    // settings/acl\\n    string public constant ACL_ONLY_GOVERNANCE_CAN_CALL = '200';\\n    string public constant ACL_ONLY_EMERGENCY_ADMIN_CAN_CALL = '201';\\n    string public constant ACL_ONLY_POOL_ADMIN_CAN_CALL = '202';\\n    string public constant ACL_ONLY_LIQUIDATOR_CAN_CALL = '203';\\n    string public constant ACL_ONLY_LIQUIDATION_OPERATOR_CAN_CALL = '204';\\n    string public constant ACL_ONLY_AIRDROP_OPERATOR_CAN_CALL = '205';\\n    string public constant ACL_ONLY_POOL_CAN_CALL = '206';\\n\\n    // lending & borrowing \\n    // reserve\\n    string public constant RESERVE_DOES_NOT_EXIST = '300';\\n    string public constant RESERVE_LIQUIDITY_INSUFFICIENT = '301';\\n    string public constant RESERVE_INDEX_OVERFLOW = '302';\\n    string public constant RESERVE_SWITCH_MONEY_MARKET_STATE_ERROR = '303';\\n\\n    // token\\n    string public constant AMOUNT_SCALED_IS_ZERO = '310';\\n    string public constant AMOUNT_TRANSFER_OWERFLOW = '311';\\n    \\n    //deposit\\n    string public constant DEPOSIT_AMOUNT_SHOULD_BE_BIGGER_THAN_ZERO = '320';\\n\\n    // withdraw\\n    string public constant WITHDRAW_AMOUNT_NOT_ALLOWED = '321';\\n    string public constant WITHDRAW_LIQUIDITY_NOT_SUFFIENCE = '322';\\n\\n    // borrow\\n    string public constant BORROW_DURATION_NOT_ALLOWED = '330';\\n    string public constant BORROW_AMOUNT_EXCEED_BORROW_LIMIT = '331';\\n    string public constant NFT_ADDRESS_IS_NOT_IN_WHITELIST = '332';\\n\\n    // repay\\n    string public constant REPAY_STATUS_ERROR = '333';\\n    string public constant REPAY_AMOUNT_NOT_ENOUGH = '334';\\n\\n    // extend\\n    string public constant EXTEND_STATUS_ERROR = '335';\\n    string public constant EXTEND_MSG_VALUE_ERROR = '336';\\n\\n    // liquidate\\n    string public constant START_LIQUIDATION_STATUS_ERROR = '360';\\n    string public constant END_LIQUIDATION_STATUS_ERROR = '361';\\n    string public constant END_LIQUIDATION_AMOUNT_ERROR = '362';\\n\\n    // loan\\n    string public constant LOAN_DOES_NOT_EXIST = '400';\\n    string public constant LOAN_SET_STATUS_ERROR = '401';\\n    string public constant LOAN_REPAYER_IS_NOT_OWNER = '402';\\n    string public constant LOAN_LIQUIDATING_STATUS_CAN_NOT_BE_UPDATED = '403';\\n    string public constant LOAN_CALLER_IS_NOT_OWNER = '404';\\n    string public constant LOAN_COLLATERAL_NFT_CAN_NOT_BE_CLAIMED = '405';\\n\\n    string public constant FLASH_CLAIM_EXECUTOR_ERROR = '410';\\n    string public constant FLASH_CLAIM_STATUS_ERROR = '411';\\n\\n    // money market\\n    string public constant MONEY_MARKET_DEPOSIT_AMOUNT_ALLOWED = '500';\\n    string public constant MONEY_MARKET_WITHDRAW_AMOUNT_NOT_ALLOWED = '501';\\n    string public constant MONEY_MARKET_APPROVAL_FAILED = '502';\\n    string public constant MONEY_MARKET_DELEGATE_CALL_ERROR = '503';\\n\\n    // price oracle\\n    string public constant PRICE_ORACLE_ROUND_INTERVAL_CAN_NOT_BE_0 = '600';\\n    string public constant PRICE_ORACLE_HAS_NO_PRICE_FEED = '601';\\n    string public constant PRICE_ORACLE_INCORRECT_TIMESTAMP = '602';\\n    string public constant PRICE_ORACLE_PARAMS_ERROR = '603';\\n}\\n\",\"keccak256\":\"0x0f14f9c13c9fe6dcca2379449db7e6f1a20c236113548432d0351bacc71df76f\",\"license\":\"MIT\"},\"contracts/libraries/types/DataTypes.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nlibrary DataTypes {\\n    struct ReserveData {\\n        uint256 reserveId;\\n        address underlyingAsset;\\n        address oTokenAddress;\\n        address moneyMarketAddress;\\n        uint128 lastSupplyIndex;\\n        uint256 borrowingInterestPerSecond;\\n        uint256 lastMoneyMarketBalance;\\n        uint40 lastUpdateTimestamp;\\n        uint256 totalBorrows;\\n        address interestModelAddress;\\n        uint256 treasuryFactor;\\n        bool isMoneyMarketOn;\\n    }\\n\\n    struct LoanData {\\n        uint256 reserveId;\\n        address nftAddress;\\n        uint256 tokenId;\\n        address borrower;\\n        uint256 amount;\\n        uint128 borrowRate;\\n        uint128 interestPerSecond;\\n        uint40 borrowBegin;\\n        uint40 borrowDuration;\\n        uint40 borrowOverdueTime;\\n        uint40 liquidatableTime;\\n        uint40 extendableTime;\\n        uint40 borrowEnd;\\n        LoanStatus status;\\n    }\\n\\n    enum LoanStatus {\\n        NONE,\\n        BORROWING,\\n        EXTENDABLE,\\n        OVERDUE,\\n        LIQUIDATABLE,\\n        LIQUIDATING\\n    }\\n\\n    struct WhitelistInfo {\\n        bool enabled;\\n        string name;\\n        string symbol;\\n        uint256 LTV;\\n        uint256 minBorrowDuration;\\n        uint256 maxBorrowDuration;\\n        uint256 extendableDuration;\\n        uint256 overdueDuration;\\n    }\\n}\\n\",\"keccak256\":\"0x487cd1dedb3146da46144bc8f0e5b970c5173efa8c19700184b8207c1ee3fc55\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x60a060405234801561001057600080fd5b5060405161135138038061135183398101604081905261002f91610099565b61003833610049565b6001600160a01b03166080526100c9565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b6000602082840312156100ab57600080fd5b81516001600160a01b03811681146100c257600080fd5b9392505050565b6080516112666100eb6000396000818161022c01526104fa01526112666000f3fe608060405234801561001057600080fd5b50600436106100f55760003560e01c80638e1db39d11610097578063c1c060eb11610066578063c1c060eb1461024e578063e57d6fb714610261578063ef1d95b114610274578063f2fde38b1461029d57600080fd5b80638e1db39d146101ce57806398f5ec89146102015780639f8d01cf14610214578063ade97ab51461022757600080fd5b806350d16d9f116100d357806350d16d9f14610148578063715018a61461015b57806371da4232146101635780638da5cb5b146101a957600080fd5b80632ef9bb56146100fa5780633838bada1461012057806349e9f1c714610135575b600080fd5b61010d610108366004610e51565b6102b0565b6040519081526020015b60405180910390f35b61013361012e366004610e7b565b61046a565b005b610133610143366004610e7b565b6104a2565b61010d610156366004610e94565b6104d1565b6101336105a1565b610176610171366004610e51565b6105d7565b60405161011791908151815260208083015190820152604080830151908201526060918201519181019190915260800190565b6000546001600160a01b03165b6040516001600160a01b039091168152602001610117565b6101e16101dc366004610e51565b610675565b604080519485526020850193909352918301526060820152608001610117565b61010d61020f366004610ec9565b6106bb565b61010d610222366004610e51565b610732565b6101b67f000000000000000000000000000000000000000000000000000000000000000081565b61013361025c366004610fba565b610a61565b61013361026f366004611083565b610b2c565b61010d610282366004610ec9565b6001600160a01b031660009081526001602052604090205490565b6101336102ab366004610ec9565b610d4a565b6001600160a01b038216600090815260016020526040812054806102d8576000915050610464565b60006102e56001836110cc565b6001600160a01b03861660009081526001602052604081208054929350909183908110610314576103146110e3565b9060005260206000209060040201604051806080016040529081600082015481526020016001820154815260200160028201548152602001600382015481525050905084600014806103665750826001145b1561037957602001519250610464915050565b6000858311610389576000610393565b61039386846110cc565b6001600160a01b038816600090815260016020526040812080549293509091839081106103c2576103c26110e3565b9060005260206000209060040201604051806080016040529081600082015481526020016001820154815260200160028201548152602001600382015481525050905080604001514261041591906110cc565b8160600151846060015185604001514261042f91906110cc565b866020015161043e91906110f9565b6104489190611118565b61045291906110cc565b61045c9190611130565b955050505050505b92915050565b6000546001600160a01b0316331461049d5760405162461bcd60e51b815260040161049490611152565b60405180910390fd5b600555565b6000546001600160a01b031633146104cc5760405162461bcd60e51b815260040161049490611152565b600455565b6040516346296c6960e01b8152600481018490526001600160a01b0383811660248301526000917f0000000000000000000000000000000000000000000000000000000000000000909116906346296c6990604401602060405180830381865afa158015610543573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906105679190611187565b6105735750600061059a565b6005541561058e5761058783600554610732565b905061059a565b610587836004546102b0565b9392505050565b6000546001600160a01b031633146105cb5760405162461bcd60e51b815260040161049490611152565b6105d56000610de5565b565b6106026040518060800160405280600081526020016000815260200160008152602001600081525090565b6001600160a01b038316600090815260016020526040902080548390811061062c5761062c6110e3565b9060005260206000209060040201604051806080016040529081600082015481526020016001820154815260200160028201548152602001600382015481525050905092915050565b6001602052816000526040600020818154811061069157600080fd5b60009182526020909120600490910201805460018201546002830154600390930154919450925084565b6001600160a01b038116600090815260016020526040812054806106e25750600092915050565b6001600160a01b03831660009081526001602081905260409091209061070890836110cc565b81548110610718576107186110e3565b906000526020600020906004020160000154915050919050565b6001600160a01b0382166000908152600160205260408120548061075a576000915050610464565b6001600160a01b038416600090815260016020819052604082209061077f90846110cc565b8154811061078f5761078f6110e3565b600091825260208083206040805160808101825260049094029091018054845260018101549284019290925260028201549083015260030154606082015291506107d985426110cc565b9050808260400151116107f457506020015191506104649050565b6001600160a01b03861660009081526001602052604081208054829061081c5761081c6110e3565b90600052602060002090600402016040518060800160405290816000820154815260200160018201548152602001600282015481526020016003820154815250509050818160400151106108ca57604081015161087990426110cc565b8160600151846060015161088d91906110cc565b604085015161089c90426110cc565b85602001516108ab91906110f9565b6108b59190611118565b6108bf9190611130565b945050505050610464565b60006108d76001866110cc565b6001600160a01b03891660009081526001602052604081208054929350909183908110610906576109066110e3565b906000526020600020906004020160405180608001604052908160008201548152602001600182015481526020016002820154815260200160038201548152505090505b60008211801561095d5750838160400151115b156109de576001600160a01b0389166000908152600160205260409020610983836111a9565b92508281548110610996576109966110e3565b9060005260206000209060040201604051806080016040529081600082015481526020016001820154815260200160028201548152602001600382015481525050905061094a565b6000816060015186606001516109f491906110cc565b6040870151610a0390426110cc565b8760200151610a1291906110f9565b610a1c9190611118565b9050816040015185610a2e91906110cc565b8260200151610a3d91906110f9565b610a4790826110cc565b9050610a538982611130565b9a9950505050505050505050565b6000546001600160a01b03163314610a8b5760405162461bcd60e51b815260040161049490611152565b81518351146040518060400160405280600381526020016236303360e81b81525090610aca5760405162461bcd60e51b815260040161049491906111c0565b5060005b8351811015610b2657610b14848281518110610aec57610aec6110e3565b6020026020010151848381518110610b0657610b066110e3565b602002602001015184610b2c565b80610b1e81611215565b915050610ace565b50505050565b6000546001600160a01b03163314610b565760405162461bcd60e51b815260040161049490611152565b6001600160a01b03831660009081526001602052604081208054909190610ba15760405180608001604052806000815260200160008152602001600081526020016000815250610c03565b81548290610bb1906001906110cc565b81548110610bc157610bc16110e3565b90600052602060002090600402016040518060800160405290816000820154815260200160018201548152602001600282015481526020016003820154815250505b905080604001518311604051806040016040528060038152602001621b181960e91b81525090610c465760405162461bcd60e51b815260040161049491906111c0565b50600080826040015111610c5b576000610c88565b60208201516040830151610c6f90866110cc565b610c7991906110f9565b8260600151610c889190611118565b8251909150600090610c9b906001611118565b6040805160808101825282815260208082018a81528284018a815260608085018981528b5460018082018e5560008e8152879020885160049093020191825594519481019490945591516002840155905160039092019190915583518b81529182018a9052928101849052929350916001600160a01b038a16917f4d6cdc4bf30d671bff4fa58d357739401159d387074fda59c92b40a7872fd9ed910160405180910390a25050505050505050565b6000546001600160a01b03163314610d745760405162461bcd60e51b815260040161049490611152565b6001600160a01b038116610dd95760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b6064820152608401610494565b610de281610de5565b50565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b80356001600160a01b0381168114610e4c57600080fd5b919050565b60008060408385031215610e6457600080fd5b610e6d83610e35565b946020939093013593505050565b600060208284031215610e8d57600080fd5b5035919050565b600080600060608486031215610ea957600080fd5b83359250610eb960208501610e35565b9150604084013590509250925092565b600060208284031215610edb57600080fd5b61059a82610e35565b634e487b7160e01b600052604160045260246000fd5b604051601f8201601f1916810167ffffffffffffffff81118282101715610f2357610f23610ee4565b604052919050565b600067ffffffffffffffff821115610f4557610f45610ee4565b5060051b60200190565b600082601f830112610f6057600080fd5b81356020610f75610f7083610f2b565b610efa565b82815260059290921b84018101918181019086841115610f9457600080fd5b8286015b84811015610faf5780358352918301918301610f98565b509695505050505050565b600080600060608486031215610fcf57600080fd5b833567ffffffffffffffff80821115610fe757600080fd5b818601915086601f830112610ffb57600080fd5b8135602061100b610f7083610f2b565b82815260059290921b8401810191818101908a84111561102a57600080fd5b948201945b8386101561104f5761104086610e35565b8252948201949082019061102f565b9750508701359250508082111561106557600080fd5b5061107286828701610f4f565b925050604084013590509250925092565b60008060006060848603121561109857600080fd5b6110a184610e35565b95602085013595506040909401359392505050565b634e487b7160e01b600052601160045260246000fd5b6000828210156110de576110de6110b6565b500390565b634e487b7160e01b600052603260045260246000fd5b6000816000190483118215151615611113576111136110b6565b500290565b6000821982111561112b5761112b6110b6565b500190565b60008261114d57634e487b7160e01b600052601260045260246000fd5b500490565b6020808252818101527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604082015260600190565b60006020828403121561119957600080fd5b8151801515811461059a57600080fd5b6000816111b8576111b86110b6565b506000190190565b600060208083528351808285015260005b818110156111ed578581018301518582016040015282016111d1565b818111156111ff576000604083870101525b50601f01601f1916929092016040019392505050565b6000600019821415611229576112296110b6565b506001019056fea264697066735822122032f9d9c39421e9819ee9f5e16dfb6d9b0c85161b2b182dcf8950718b70b16ebe64736f6c634300080a0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100f55760003560e01c80638e1db39d11610097578063c1c060eb11610066578063c1c060eb1461024e578063e57d6fb714610261578063ef1d95b114610274578063f2fde38b1461029d57600080fd5b80638e1db39d146101ce57806398f5ec89146102015780639f8d01cf14610214578063ade97ab51461022757600080fd5b806350d16d9f116100d357806350d16d9f14610148578063715018a61461015b57806371da4232146101635780638da5cb5b146101a957600080fd5b80632ef9bb56146100fa5780633838bada1461012057806349e9f1c714610135575b600080fd5b61010d610108366004610e51565b6102b0565b6040519081526020015b60405180910390f35b61013361012e366004610e7b565b61046a565b005b610133610143366004610e7b565b6104a2565b61010d610156366004610e94565b6104d1565b6101336105a1565b610176610171366004610e51565b6105d7565b60405161011791908151815260208083015190820152604080830151908201526060918201519181019190915260800190565b6000546001600160a01b03165b6040516001600160a01b039091168152602001610117565b6101e16101dc366004610e51565b610675565b604080519485526020850193909352918301526060820152608001610117565b61010d61020f366004610ec9565b6106bb565b61010d610222366004610e51565b610732565b6101b67f000000000000000000000000000000000000000000000000000000000000000081565b61013361025c366004610fba565b610a61565b61013361026f366004611083565b610b2c565b61010d610282366004610ec9565b6001600160a01b031660009081526001602052604090205490565b6101336102ab366004610ec9565b610d4a565b6001600160a01b038216600090815260016020526040812054806102d8576000915050610464565b60006102e56001836110cc565b6001600160a01b03861660009081526001602052604081208054929350909183908110610314576103146110e3565b9060005260206000209060040201604051806080016040529081600082015481526020016001820154815260200160028201548152602001600382015481525050905084600014806103665750826001145b1561037957602001519250610464915050565b6000858311610389576000610393565b61039386846110cc565b6001600160a01b038816600090815260016020526040812080549293509091839081106103c2576103c26110e3565b9060005260206000209060040201604051806080016040529081600082015481526020016001820154815260200160028201548152602001600382015481525050905080604001514261041591906110cc565b8160600151846060015185604001514261042f91906110cc565b866020015161043e91906110f9565b6104489190611118565b61045291906110cc565b61045c9190611130565b955050505050505b92915050565b6000546001600160a01b0316331461049d5760405162461bcd60e51b815260040161049490611152565b60405180910390fd5b600555565b6000546001600160a01b031633146104cc5760405162461bcd60e51b815260040161049490611152565b600455565b6040516346296c6960e01b8152600481018490526001600160a01b0383811660248301526000917f0000000000000000000000000000000000000000000000000000000000000000909116906346296c6990604401602060405180830381865afa158015610543573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906105679190611187565b6105735750600061059a565b6005541561058e5761058783600554610732565b905061059a565b610587836004546102b0565b9392505050565b6000546001600160a01b031633146105cb5760405162461bcd60e51b815260040161049490611152565b6105d56000610de5565b565b6106026040518060800160405280600081526020016000815260200160008152602001600081525090565b6001600160a01b038316600090815260016020526040902080548390811061062c5761062c6110e3565b9060005260206000209060040201604051806080016040529081600082015481526020016001820154815260200160028201548152602001600382015481525050905092915050565b6001602052816000526040600020818154811061069157600080fd5b60009182526020909120600490910201805460018201546002830154600390930154919450925084565b6001600160a01b038116600090815260016020526040812054806106e25750600092915050565b6001600160a01b03831660009081526001602081905260409091209061070890836110cc565b81548110610718576107186110e3565b906000526020600020906004020160000154915050919050565b6001600160a01b0382166000908152600160205260408120548061075a576000915050610464565b6001600160a01b038416600090815260016020819052604082209061077f90846110cc565b8154811061078f5761078f6110e3565b600091825260208083206040805160808101825260049094029091018054845260018101549284019290925260028201549083015260030154606082015291506107d985426110cc565b9050808260400151116107f457506020015191506104649050565b6001600160a01b03861660009081526001602052604081208054829061081c5761081c6110e3565b90600052602060002090600402016040518060800160405290816000820154815260200160018201548152602001600282015481526020016003820154815250509050818160400151106108ca57604081015161087990426110cc565b8160600151846060015161088d91906110cc565b604085015161089c90426110cc565b85602001516108ab91906110f9565b6108b59190611118565b6108bf9190611130565b945050505050610464565b60006108d76001866110cc565b6001600160a01b03891660009081526001602052604081208054929350909183908110610906576109066110e3565b906000526020600020906004020160405180608001604052908160008201548152602001600182015481526020016002820154815260200160038201548152505090505b60008211801561095d5750838160400151115b156109de576001600160a01b0389166000908152600160205260409020610983836111a9565b92508281548110610996576109966110e3565b9060005260206000209060040201604051806080016040529081600082015481526020016001820154815260200160028201548152602001600382015481525050905061094a565b6000816060015186606001516109f491906110cc565b6040870151610a0390426110cc565b8760200151610a1291906110f9565b610a1c9190611118565b9050816040015185610a2e91906110cc565b8260200151610a3d91906110f9565b610a4790826110cc565b9050610a538982611130565b9a9950505050505050505050565b6000546001600160a01b03163314610a8b5760405162461bcd60e51b815260040161049490611152565b81518351146040518060400160405280600381526020016236303360e81b81525090610aca5760405162461bcd60e51b815260040161049491906111c0565b5060005b8351811015610b2657610b14848281518110610aec57610aec6110e3565b6020026020010151848381518110610b0657610b066110e3565b602002602001015184610b2c565b80610b1e81611215565b915050610ace565b50505050565b6000546001600160a01b03163314610b565760405162461bcd60e51b815260040161049490611152565b6001600160a01b03831660009081526001602052604081208054909190610ba15760405180608001604052806000815260200160008152602001600081526020016000815250610c03565b81548290610bb1906001906110cc565b81548110610bc157610bc16110e3565b90600052602060002090600402016040518060800160405290816000820154815260200160018201548152602001600282015481526020016003820154815250505b905080604001518311604051806040016040528060038152602001621b181960e91b81525090610c465760405162461bcd60e51b815260040161049491906111c0565b50600080826040015111610c5b576000610c88565b60208201516040830151610c6f90866110cc565b610c7991906110f9565b8260600151610c889190611118565b8251909150600090610c9b906001611118565b6040805160808101825282815260208082018a81528284018a815260608085018981528b5460018082018e5560008e8152879020885160049093020191825594519481019490945591516002840155905160039092019190915583518b81529182018a9052928101849052929350916001600160a01b038a16917f4d6cdc4bf30d671bff4fa58d357739401159d387074fda59c92b40a7872fd9ed910160405180910390a25050505050505050565b6000546001600160a01b03163314610d745760405162461bcd60e51b815260040161049490611152565b6001600160a01b038116610dd95760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b6064820152608401610494565b610de281610de5565b50565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b80356001600160a01b0381168114610e4c57600080fd5b919050565b60008060408385031215610e6457600080fd5b610e6d83610e35565b946020939093013593505050565b600060208284031215610e8d57600080fd5b5035919050565b600080600060608486031215610ea957600080fd5b83359250610eb960208501610e35565b9150604084013590509250925092565b600060208284031215610edb57600080fd5b61059a82610e35565b634e487b7160e01b600052604160045260246000fd5b604051601f8201601f1916810167ffffffffffffffff81118282101715610f2357610f23610ee4565b604052919050565b600067ffffffffffffffff821115610f4557610f45610ee4565b5060051b60200190565b600082601f830112610f6057600080fd5b81356020610f75610f7083610f2b565b610efa565b82815260059290921b84018101918181019086841115610f9457600080fd5b8286015b84811015610faf5780358352918301918301610f98565b509695505050505050565b600080600060608486031215610fcf57600080fd5b833567ffffffffffffffff80821115610fe757600080fd5b818601915086601f830112610ffb57600080fd5b8135602061100b610f7083610f2b565b82815260059290921b8401810191818101908a84111561102a57600080fd5b948201945b8386101561104f5761104086610e35565b8252948201949082019061102f565b9750508701359250508082111561106557600080fd5b5061107286828701610f4f565b925050604084013590509250925092565b60008060006060848603121561109857600080fd5b6110a184610e35565b95602085013595506040909401359392505050565b634e487b7160e01b600052601160045260246000fd5b6000828210156110de576110de6110b6565b500390565b634e487b7160e01b600052603260045260246000fd5b6000816000190483118215151615611113576111136110b6565b500290565b6000821982111561112b5761112b6110b6565b500190565b60008261114d57634e487b7160e01b600052601260045260246000fd5b500490565b6020808252818101527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604082015260600190565b60006020828403121561119957600080fd5b8151801515811461059a57600080fd5b6000816111b8576111b86110b6565b506000190190565b600060208083528351808285015260005b818110156111ed578581018301518582016040015282016111d1565b818111156111ff576000604083870101525b50601f01601f1916929092016040019392505050565b6000600019821415611229576112296110b6565b506001019056fea264697066735822122032f9d9c39421e9819ee9f5e16dfb6d9b0c85161b2b182dcf8950718b70b16ebe64736f6c634300080a0033",
+  "devdoc": {
+    "author": "OpenSky Labs",
+    "details": "Implements logics of the collateral price oracle for the OpenSky protocol*",
+    "kind": "dev",
+    "methods": {
+      "getLatestRoundId(address)": {
+        "params": {
+          "nftAddress": "The address of the NFT"
+        },
+        "returns": {
+          "_0": "The latest round id*"
+        }
+      },
+      "getPrice(uint256,address,uint256)": {
+        "params": {
+          "nftAddress": "The address of the NFT",
+          "reserveId": "The id of the reserve",
+          "tokenId": "The id of the NFT"
+        },
+        "returns": {
+          "_0": "The price of the NFT*"
+        }
+      },
+      "getPriceData(address,uint256)": {
+        "params": {
+          "index": "The index of the feed",
+          "nftAddress": "The address of the NFT"
+        },
+        "returns": {
+          "_0": "The data of the price feed*"
+        }
+      },
+      "getPriceFeedLength(address)": {
+        "params": {
+          "nftAddress": "The address of the NFT"
+        },
+        "returns": {
+          "length": "The count of price feeds*"
+        }
+      },
+      "getTwapPriceByRoundInterval(address,uint256)": {
+        "params": {
+          "nftAddress": "The address of the NFT",
+          "roundInterval": "The round interval"
+        },
+        "returns": {
+          "_0": "The price of the NFT*"
+        }
+      },
+      "getTwapPriceByTimeInterval(address,uint256)": {
+        "params": {
+          "nftAddress": "The address of the NFT",
+          "timeInterval": "The time interval"
+        },
+        "returns": {
+          "_0": "The price of the NFT*"
+        }
+      },
+      "owner()": {
+        "details": "Returns the address of the current owner."
+      },
+      "renounceOwnership()": {
+        "details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+      },
+      "transferOwnership(address)": {
+        "details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+      },
+      "updatePrice(address,uint256,uint256)": {
+        "params": {
+          "nftAddress": "The address of the NFT",
+          "price": "The price of the NFT",
+          "timestamp": "The timestamp when the price happened*"
+        }
+      },
+      "updatePrices(address[],uint256[],uint256)": {
+        "params": {
+          "nftAddresses": "Addresses of NFT collections",
+          "prices": "Floor prices of NFT collections",
+          "timestamp": "The timestamp when prices happened*"
+        }
+      },
+      "updateRoundInterval(uint256)": {
+        "params": {
+          "roundInterval": "The round interval will be set*"
+        }
+      },
+      "updateTimeInterval(uint256)": {
+        "params": {
+          "timeInterval": "The time interval will be set*"
+        }
+      }
+    },
+    "title": "OpenSkyCollateralPriceOracle contract",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "getLatestRoundId(address)": {
+        "notice": "Returns the latest round id of the particular NFT"
+      },
+      "getPrice(uint256,address,uint256)": {
+        "notice": "Returns the NFT price in ETH"
+      },
+      "getPriceData(address,uint256)": {
+        "notice": "Returns the data of the particular price feed"
+      },
+      "getPriceFeedLength(address)": {
+        "notice": "Returns the count of price feeds about the particular NFT"
+      },
+      "getTwapPriceByRoundInterval(address,uint256)": {
+        "notice": "Returns the TWAP price of NFT during the particular round interval"
+      },
+      "getTwapPriceByTimeInterval(address,uint256)": {
+        "notice": "Returns the TWAP price of NFT during the particular time interval"
+      },
+      "updatePrice(address,uint256,uint256)": {
+        "notice": "Updates the floor price of the NFT collection"
+      },
+      "updatePrices(address[],uint256[],uint256)": {
+        "notice": "Updates floor prices of NFT collections"
+      },
+      "updateRoundInterval(uint256)": {
+        "notice": "Updates round interval that is used for calculating TWAP price"
+      },
+      "updateTimeInterval(uint256)": {
+        "notice": "Updates time interval that is used for calculating TWAP price"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 387,
+        "contract": "contracts/OpenSkyCollateralPriceOracle.sol:OpenSkyCollateralPriceOracle",
+        "label": "_owner",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 7869,
+        "contract": "contracts/OpenSkyCollateralPriceOracle.sol:OpenSkyCollateralPriceOracle",
+        "label": "nftPriceFeedMap",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_address,t_array(t_struct(NFTPriceData)7892_storage)dyn_storage)"
+      },
+      {
+        "astId": 7875,
+        "contract": "contracts/OpenSkyCollateralPriceOracle.sol:OpenSkyCollateralPriceOracle",
+        "label": "_prices",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_mapping(t_address,t_mapping(t_uint256,t_uint256))"
+      },
+      {
+        "astId": 7879,
+        "contract": "contracts/OpenSkyCollateralPriceOracle.sol:OpenSkyCollateralPriceOracle",
+        "label": "_sources",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_mapping(t_address,t_address)"
+      },
+      {
+        "astId": 7881,
+        "contract": "contracts/OpenSkyCollateralPriceOracle.sol:OpenSkyCollateralPriceOracle",
+        "label": "_roundInterval",
+        "offset": 0,
+        "slot": "4",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 7883,
+        "contract": "contracts/OpenSkyCollateralPriceOracle.sol:OpenSkyCollateralPriceOracle",
+        "label": "_timeInterval",
+        "offset": 0,
+        "slot": "5",
+        "type": "t_uint256"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_array(t_struct(NFTPriceData)7892_storage)dyn_storage": {
+        "base": "t_struct(NFTPriceData)7892_storage",
+        "encoding": "dynamic_array",
+        "label": "struct OpenSkyCollateralPriceOracle.NFTPriceData[]",
+        "numberOfBytes": "32"
+      },
+      "t_mapping(t_address,t_address)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => address)",
+        "numberOfBytes": "32",
+        "value": "t_address"
+      },
+      "t_mapping(t_address,t_array(t_struct(NFTPriceData)7892_storage)dyn_storage)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => struct OpenSkyCollateralPriceOracle.NFTPriceData[])",
+        "numberOfBytes": "32",
+        "value": "t_array(t_struct(NFTPriceData)7892_storage)dyn_storage"
+      },
+      "t_mapping(t_address,t_mapping(t_uint256,t_uint256))": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => mapping(uint256 => uint256))",
+        "numberOfBytes": "32",
+        "value": "t_mapping(t_uint256,t_uint256)"
+      },
+      "t_mapping(t_uint256,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_uint256",
+        "label": "mapping(uint256 => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_struct(NFTPriceData)7892_storage": {
+        "encoding": "inplace",
+        "label": "struct OpenSkyCollateralPriceOracle.NFTPriceData",
+        "members": [
+          {
+            "astId": 7885,
+            "contract": "contracts/OpenSkyCollateralPriceOracle.sol:OpenSkyCollateralPriceOracle",
+            "label": "roundId",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 7887,
+            "contract": "contracts/OpenSkyCollateralPriceOracle.sol:OpenSkyCollateralPriceOracle",
+            "label": "price",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 7889,
+            "contract": "contracts/OpenSkyCollateralPriceOracle.sol:OpenSkyCollateralPriceOracle",
+            "label": "timestamp",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 7891,
+            "contract": "contracts/OpenSkyCollateralPriceOracle.sol:OpenSkyCollateralPriceOracle",
+            "label": "cumulativePrice",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_uint256"
+          }
+        ],
+        "numberOfBytes": "128"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}
