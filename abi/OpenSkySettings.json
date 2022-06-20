@@ -70,6 +70,25 @@
         "type": "address"
       }
     ],
+    "name": "InitDaoVaultAddress",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "address_",
+        "type": "address"
+      }
+    ],
     "name": "InitIncentiveControllerAddress",
     "type": "event"
   },
@@ -248,25 +267,6 @@
       }
     ],
     "name": "SetACLManagerAddress",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": false,
-        "internalType": "address",
-        "name": "operator",
-        "type": "address"
-      },
-      {
-        "indexed": false,
-        "internalType": "address",
-        "name": "address_",
-        "type": "address"
-      }
-    ],
-    "name": "SetDaoVaultAddress",
     "type": "event"
   },
   {
@@ -637,6 +637,19 @@
         "type": "address"
       }
     ],
+    "name": "initDaoVaultAddress",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "address_",
+        "type": "address"
+      }
+    ],
     "name": "initIncentiveControllerAddress",
     "outputs": [],
     "stateMutability": "nonpayable",
@@ -905,19 +918,6 @@
       }
     ],
     "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "address_",
-        "type": "address"
-      }
-    ],
-    "name": "setDaoVaultAddress",
-    "outputs": [],
-    "stateMutability": "nonpayable",
     "type": "function"
   },
   {

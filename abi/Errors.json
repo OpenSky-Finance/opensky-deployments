@@ -40,19 +40,6 @@
   },
   {
     "inputs": [],
-    "name": "ACL_ONLY_LIQUIDATION_OPERATOR_CAN_CALL",
-    "outputs": [
-      {
-        "internalType": "string",
-        "name": "",
-        "type": "string"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
     "name": "ACL_ONLY_LIQUIDATOR_CAN_CALL",
     "outputs": [
       {
@@ -105,7 +92,7 @@
   },
   {
     "inputs": [],
-    "name": "AMOUNT_TRANSFER_OWERFLOW",
+    "name": "AMOUNT_TRANSFER_OVERFLOW",
     "outputs": [
       {
         "internalType": "string",
@@ -235,7 +222,7 @@
   },
   {
     "inputs": [],
-    "name": "FLASH_CLAIM_EXECUTOR_ERROR",
+    "name": "FLASHCLAIM_EXECUTOR_ERROR",
     "outputs": [
       {
         "internalType": "string",
@@ -248,7 +235,7 @@
   },
   {
     "inputs": [],
-    "name": "FLASH_CLAIM_STATUS_ERROR",
+    "name": "FLASHCLAIM_STATUS_ERROR",
     "outputs": [
       {
         "internalType": "string",
@@ -404,7 +391,20 @@
   },
   {
     "inputs": [],
-    "name": "MONEY_MARKET_DEPOSIT_AMOUNT_ALLOWED",
+    "name": "MONEY_MARKET_DEPOSIT_AMOUNT_NOT_ALLOWED",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MONEY_MARKET_REQUIRE_DELEGATE_CALL",
     "outputs": [
       {
         "internalType": "string",
@@ -482,19 +482,6 @@
   },
   {
     "inputs": [],
-    "name": "PRICE_ORACLE_ROUND_INTERVAL_CAN_NOT_BE_0",
-    "outputs": [
-      {
-        "internalType": "string",
-        "name": "",
-        "type": "string"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
     "name": "RECEIVE_NOT_ALLOWED",
     "outputs": [
       {
@@ -508,7 +495,7 @@
   },
   {
     "inputs": [],
-    "name": "REPAY_AMOUNT_NOT_ENOUGH",
+    "name": "REPAY_MSG_VALUE_ERROR",
     "outputs": [
       {
         "internalType": "string",
@@ -586,6 +573,32 @@
   },
   {
     "inputs": [],
+    "name": "RESERVE_TOKEN_CAN_NOT_BE_CLAIMED",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "RESERVE_TREASURY_FACTOR_NOT_ALLOWED",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
     "name": "START_LIQUIDATION_STATUS_ERROR",
     "outputs": [
       {
@@ -612,7 +625,7 @@
   },
   {
     "inputs": [],
-    "name": "WITHDRAW_LIQUIDITY_NOT_SUFFIENCE",
+    "name": "WITHDRAW_LIQUIDITY_NOT_SUFFICIENT",
     "outputs": [
       {
         "internalType": "string",

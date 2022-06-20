@@ -124,6 +124,16 @@
             "type": "uint40"
           },
           {
+            "internalType": "uint40",
+            "name": "liquidatableTime",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "extendableTime",
+            "type": "uint40"
+          },
+          {
             "internalType": "uint128",
             "name": "borrowRate",
             "type": "uint128"
