@@ -105,6 +105,19 @@
   },
   {
     "inputs": [],
+    "name": "APPROVAL_FAILED",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
     "name": "BORROW_AMOUNT_EXCEED_BORROW_LIMIT",
     "outputs": [
       {
@@ -430,6 +443,19 @@
   },
   {
     "inputs": [],
+    "name": "MONEY_MARKET_WITHDRAW_AMOUNT_NOT_MATCH",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
     "name": "NFT_ADDRESS_IS_NOT_IN_WHITELIST",
     "outputs": [
       {
@@ -587,6 +613,58 @@
   {
     "inputs": [],
     "name": "RESERVE_TREASURY_FACTOR_NOT_ALLOWED",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "SETTING_RESERVE_FACTOR_NOT_ALLOWED",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "SETTING_WHITELIST_INVALID_RESERVE_ID",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "SETTING_WHITELIST_NFT_ADDRESS_IS_ZERO",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "SETTING_ZERO_ADDRESS_NOT_ALLOWED",
     "outputs": [
       {
         "internalType": "string",

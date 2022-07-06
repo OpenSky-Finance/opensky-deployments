@@ -1,40 +1,40 @@
 {
-  "address": "0x1638eE00A47203C9d9F709805e2b8E2338cDa072",
+  "address": "0x50BfDd87F3eAcA66bAE40D21532D97Add06004CC",
   "abi": [],
-  "transactionHash": "0xb11a1e2b355f9eb601c60ac9b0eaacd6458a395119c042dde0623b2550b7ed90",
+  "transactionHash": "0xf4b2327bde48b9341c292be97f94ac94f600bd305d054b74a9644af49fead436",
   "receipt": {
     "to": null,
     "from": "0x218513C58A4781a5B88De6230caA29aBCe2Ccd75",
-    "contractAddress": "0x1638eE00A47203C9d9F709805e2b8E2338cDa072",
-    "transactionIndex": 26,
+    "contractAddress": "0x50BfDd87F3eAcA66bAE40D21532D97Add06004CC",
+    "transactionIndex": 64,
     "gasUsed": "72217",
-    "logsBloom": "0x00000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000800000000000040000000100000000000000000000000000400000000000000000000000000000000080000004000000000000000000000000000000000400000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000004000000000000000000001000000000000000000000000000000100000000000000000000000040000000000000000000000000000000000000000000000100000",
-    "blockHash": "0x3d8e318a122e5f39845d340d1e634250aa22c1f86c464bbcbb685db69878f95b",
-    "transactionHash": "0xb11a1e2b355f9eb601c60ac9b0eaacd6458a395119c042dde0623b2550b7ed90",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000001800000000000040000000100000000000000000000000000400000000000000000000000000000000080000000000000000000000000000000000000000400000000000000000000100000000000000000200000000000000000000040000000000000000000000000000000000000004000000000000000000001000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000100000",
+    "blockHash": "0xac62ca9eba88626c35371def87986aa5e1de40cd755835f54bd7df8cc81b5a53",
+    "transactionHash": "0xf4b2327bde48b9341c292be97f94ac94f600bd305d054b74a9644af49fead436",
     "logs": [
       {
-        "transactionIndex": 26,
-        "blockNumber": 29783016,
-        "transactionHash": "0xb11a1e2b355f9eb601c60ac9b0eaacd6458a395119c042dde0623b2550b7ed90",
+        "transactionIndex": 64,
+        "blockNumber": 30355188,
+        "transactionHash": "0xf4b2327bde48b9341c292be97f94ac94f600bd305d054b74a9644af49fead436",
         "address": "0x0000000000000000000000000000000000001010",
         "topics": [
           "0x4dfe1bbbcf077ddc3e01291eea2d5c70c2b422b415d95645b9adcfd678cb1d63",
           "0x0000000000000000000000000000000000000000000000000000000000001010",
           "0x000000000000000000000000218513c58a4781a5b88de6230caa29abce2ccd75",
-          "0x000000000000000000000000bdbd4347b082d9d6bdf2da4555a37ce52a2e2120"
+          "0x000000000000000000000000e77bbfd8ed65720f187efdd109e38d75eaca7385"
         ],
-        "data": "0x000000000000000000000000000000000000000000000000000cd40c879cf096000000000000000000000000000000000000000000000000392bc84609f84346000000000000000000000000000000000000000000001ac1145ad6c5c702e787000000000000000000000000000000000000000000000000391ef439825b52b0000000000000000000000000000000000000000000001ac11467aad24e9fd81d",
-        "logIndex": 135,
-        "blockHash": "0x3d8e318a122e5f39845d340d1e634250aa22c1f86c464bbcbb685db69878f95b"
+        "data": "0x00000000000000000000000000000000000000000000000000119474aeeb784a00000000000000000000000000000000000000000000000003af2174370712490000000000000000000000000000000000000000000009c37318cb00b86d8631000000000000000000000000000000000000000000000000039d8cff881b99ff0000000000000000000000000000000000000000000009c3732a5f756758fe7b",
+        "logIndex": 210,
+        "blockHash": "0xac62ca9eba88626c35371def87986aa5e1de40cd755835f54bd7df8cc81b5a53"
       }
     ],
-    "blockNumber": 29783016,
-    "cumulativeGasUsed": "4573552",
+    "blockNumber": 30355188,
+    "cumulativeGasUsed": "8300379",
     "status": 1,
     "byzantium": true
   },
   "args": [],
-  "solcInputHash": "597fe0c822de038e67f456c392a88115",
+  "solcInputHash": "fb80df0c083f4166f8e17cc8f4ebb48d",
   "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/bespokemarket/libraries/BespokeTypes.sol\":\"BespokeTypes\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/bespokemarket/libraries/BespokeTypes.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nlibrary BespokeTypes {\\n    struct BorrowOffer {\\n        uint256 reserveId;\\n        address nftAddress;\\n        uint256 tokenId;\\n        uint256 tokenAmount; // 1 for ERC721, 1+ for ERC1155\\n        address borrower;\\n        uint256 borrowAmountMin;\\n        uint256 borrowAmountMax;\\n        uint40 borrowDurationMin;\\n        uint40 borrowDurationMax;\\n        uint128 borrowRate;\\n        address currency;\\n        uint256 nonce;\\n        uint256 deadline;\\n        uint8 v; // v: parameter (27 or 28)\\n        bytes32 r; // r: parameter\\n        bytes32 s; // s: parameter\\n    }\\n\\n    struct LoanData {\\n        uint256 reserveId;\\n        address nftAddress;\\n        uint256 tokenId;\\n        uint256 tokenAmount; // 1 for ERC721, 1+ for ERC1155\\n        address borrower;\\n        uint256 amount;\\n        uint128 borrowRate;\\n        uint128 interestPerSecond;\\n        address currency;\\n        uint40 borrowDuration;\\n        // after take offer\\n        uint40 borrowBegin;\\n        uint40 borrowOverdueTime;\\n        uint40 liquidatableTime;\\n        address lender;\\n        LoanStatus status;\\n    }\\n\\n    enum LoanStatus {\\n        NONE,\\n        BORROWING,\\n        OVERDUE,\\n        LIQUIDATABLE\\n    }\\n\\n    struct WhitelistInfo {\\n        bool enabled;\\n        uint256 minBorrowDuration;\\n        uint256 maxBorrowDuration;\\n        uint256 overdueDuration;\\n    }\\n}\\n\",\"keccak256\":\"0x7adc607a70cf9d822f93a7f214937e57c769da7e3e304c594fee1b86fa8d68b0\",\"license\":\"MIT\"}},\"version\":1}",
   "bytecode": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220be77a3c0338b1de4dfcce51286f2c24fa594db8a16f241d507742a76ba69259c64736f6c634300080a0033",
   "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220be77a3c0338b1de4dfcce51286f2c24fa594db8a16f241d507742a76ba69259c64736f6c634300080a0033",
