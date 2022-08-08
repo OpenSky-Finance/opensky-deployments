@@ -32,6 +32,12 @@
         "type": "string"
       },
       {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "decimals",
+        "type": "uint8"
+      },
+      {
         "indexed": true,
         "internalType": "address",
         "name": "underlyingAsset",
@@ -70,6 +76,11 @@
         "internalType": "string",
         "name": "symbol",
         "type": "string"
+      },
+      {
+        "internalType": "uint8",
+        "name": "decimals",
+        "type": "uint8"
       },
       {
         "internalType": "address",

@@ -75,6 +75,12 @@
         "internalType": "string",
         "name": "symbol",
         "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "decimals",
+        "type": "uint8"
       }
     ],
     "name": "Create",
@@ -420,6 +426,11 @@
         "internalType": "string",
         "name": "symbol",
         "type": "string"
+      },
+      {
+        "internalType": "uint8",
+        "name": "decimals",
+        "type": "uint8"
       }
     ],
     "name": "create",
