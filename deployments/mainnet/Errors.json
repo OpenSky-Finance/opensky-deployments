@@ -1,0 +1,807 @@
+{
+  "address": "0x6013C249197Ea88260B24A1549249c9B876814AB",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "ACL_ONLY_AIRDROP_OPERATOR_CAN_CALL",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ACL_ONLY_EMERGENCY_ADMIN_CAN_CALL",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ACL_ONLY_GOVERNANCE_CAN_CALL",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ACL_ONLY_LIQUIDATOR_CAN_CALL",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ACL_ONLY_POOL_ADMIN_CAN_CALL",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ACL_ONLY_POOL_CAN_CALL",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "AMOUNT_SCALED_IS_ZERO",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "AMOUNT_TRANSFER_OVERFLOW",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "APPROVAL_FAILED",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "BORROW_AMOUNT_EXCEED_BORROW_LIMIT",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "BORROW_DURATION_NOT_ALLOWED",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "DEPOSIT_AMOUNT_SHOULD_BE_BIGGER_THAN_ZERO",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "END_LIQUIDATION_AMOUNT_ERROR",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "END_LIQUIDATION_STATUS_ERROR",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ETH_TRANSFER_FAILED",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "EXTEND_MSG_VALUE_ERROR",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "EXTEND_STATUS_ERROR",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "FALLBACK_NOT_ALLOWED",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "FLASHCLAIM_EXECUTOR_ERROR",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "FLASHCLAIM_STATUS_ERROR",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "LOAN_CALLER_IS_NOT_OWNER",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "LOAN_COLLATERAL_NFT_CAN_NOT_BE_CLAIMED",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "LOAN_DOES_NOT_EXIST",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "LOAN_LIQUIDATING_STATUS_CAN_NOT_BE_UPDATED",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "LOAN_REPAYER_IS_NOT_OWNER",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "LOAN_SET_STATUS_ERROR",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "MATH_ADDITION_OVERFLOW",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "MATH_DIVISION_BY_ZERO",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "MATH_MULTIPLICATION_OVERFLOW",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "MONEY_MARKET_APPROVAL_FAILED",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "MONEY_MARKET_DELEGATE_CALL_ERROR",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "MONEY_MARKET_DEPOSIT_AMOUNT_NOT_ALLOWED",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "MONEY_MARKET_REQUIRE_DELEGATE_CALL",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "MONEY_MARKET_WITHDRAW_AMOUNT_NOT_ALLOWED",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "MONEY_MARKET_WITHDRAW_AMOUNT_NOT_MATCH",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "NFT_ADDRESS_IS_NOT_IN_WHITELIST",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "PRICE_ORACLE_HAS_NO_PRICE_FEED",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "PRICE_ORACLE_INCORRECT_TIMESTAMP",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "PRICE_ORACLE_PARAMS_ERROR",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "RECEIVE_NOT_ALLOWED",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "REPAY_MSG_VALUE_ERROR",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "REPAY_STATUS_ERROR",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "RESERVE_DOES_NOT_EXIST",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "RESERVE_INDEX_OVERFLOW",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "RESERVE_LIQUIDITY_INSUFFICIENT",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "RESERVE_SWITCH_MONEY_MARKET_STATE_ERROR",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "RESERVE_TOKEN_CAN_NOT_BE_CLAIMED",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "RESERVE_TREASURY_FACTOR_NOT_ALLOWED",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "SETTING_RESERVE_FACTOR_NOT_ALLOWED",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "SETTING_WHITELIST_INVALID_RESERVE_ID",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "SETTING_WHITELIST_NFT_ADDRESS_IS_ZERO",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "SETTING_WHITELIST_NFT_DURATION_OUT_OF_ORDER",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "SETTING_WHITELIST_NFT_LTV_NOT_ALLOWED",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "SETTING_WHITELIST_NFT_NAME_EMPTY",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "SETTING_WHITELIST_NFT_SYMBOL_EMPTY",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "SETTING_ZERO_ADDRESS_NOT_ALLOWED",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "START_LIQUIDATION_STATUS_ERROR",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "WITHDRAW_AMOUNT_NOT_ALLOWED",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "WITHDRAW_LIQUIDITY_NOT_SUFFICIENT",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x2d545ffbd3ee1b6cd0ed57ed8435ac270fed0ba1d04578d9e526e1300d077b2d",
+  "receipt": {
+    "to": null,
+    "from": "0x1a347f2aac8758E139C7401aEC878aD174C19c8a",
+    "contractAddress": "0x6013C249197Ea88260B24A1549249c9B876814AB",
+    "transactionIndex": 169,
+    "gasUsed": "724003",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xfb280f63d94d0ed8046c8e18c174cc88757808f92dbc572781c2f976eeddf41a",
+    "transactionHash": "0x2d545ffbd3ee1b6cd0ed57ed8435ac270fed0ba1d04578d9e526e1300d077b2d",
+    "logs": [],
+    "blockNumber": 15223128,
+    "cumulativeGasUsed": "19340298",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "0ca3f66e9bd5de21ebb7765f6cea382a",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"ACL_ONLY_AIRDROP_OPERATOR_CAN_CALL\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"ACL_ONLY_EMERGENCY_ADMIN_CAN_CALL\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"ACL_ONLY_GOVERNANCE_CAN_CALL\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"ACL_ONLY_LIQUIDATOR_CAN_CALL\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"ACL_ONLY_POOL_ADMIN_CAN_CALL\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"ACL_ONLY_POOL_CAN_CALL\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"AMOUNT_SCALED_IS_ZERO\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"AMOUNT_TRANSFER_OVERFLOW\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"APPROVAL_FAILED\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"BORROW_AMOUNT_EXCEED_BORROW_LIMIT\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"BORROW_DURATION_NOT_ALLOWED\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"DEPOSIT_AMOUNT_SHOULD_BE_BIGGER_THAN_ZERO\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"END_LIQUIDATION_AMOUNT_ERROR\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"END_LIQUIDATION_STATUS_ERROR\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"ETH_TRANSFER_FAILED\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"EXTEND_MSG_VALUE_ERROR\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"EXTEND_STATUS_ERROR\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"FALLBACK_NOT_ALLOWED\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"FLASHCLAIM_EXECUTOR_ERROR\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"FLASHCLAIM_STATUS_ERROR\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"LOAN_CALLER_IS_NOT_OWNER\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"LOAN_COLLATERAL_NFT_CAN_NOT_BE_CLAIMED\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"LOAN_DOES_NOT_EXIST\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"LOAN_LIQUIDATING_STATUS_CAN_NOT_BE_UPDATED\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"LOAN_REPAYER_IS_NOT_OWNER\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"LOAN_SET_STATUS_ERROR\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"MATH_ADDITION_OVERFLOW\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"MATH_DIVISION_BY_ZERO\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"MATH_MULTIPLICATION_OVERFLOW\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"MONEY_MARKET_APPROVAL_FAILED\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"MONEY_MARKET_DELEGATE_CALL_ERROR\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"MONEY_MARKET_DEPOSIT_AMOUNT_NOT_ALLOWED\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"MONEY_MARKET_REQUIRE_DELEGATE_CALL\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"MONEY_MARKET_WITHDRAW_AMOUNT_NOT_ALLOWED\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"MONEY_MARKET_WITHDRAW_AMOUNT_NOT_MATCH\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"NFT_ADDRESS_IS_NOT_IN_WHITELIST\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"PRICE_ORACLE_HAS_NO_PRICE_FEED\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"PRICE_ORACLE_INCORRECT_TIMESTAMP\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"PRICE_ORACLE_PARAMS_ERROR\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"RECEIVE_NOT_ALLOWED\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"REPAY_MSG_VALUE_ERROR\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"REPAY_STATUS_ERROR\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"RESERVE_DOES_NOT_EXIST\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"RESERVE_INDEX_OVERFLOW\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"RESERVE_LIQUIDITY_INSUFFICIENT\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"RESERVE_SWITCH_MONEY_MARKET_STATE_ERROR\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"RESERVE_TOKEN_CAN_NOT_BE_CLAIMED\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"RESERVE_TREASURY_FACTOR_NOT_ALLOWED\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"SETTING_RESERVE_FACTOR_NOT_ALLOWED\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"SETTING_WHITELIST_INVALID_RESERVE_ID\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"SETTING_WHITELIST_NFT_ADDRESS_IS_ZERO\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"SETTING_WHITELIST_NFT_DURATION_OUT_OF_ORDER\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"SETTING_WHITELIST_NFT_LTV_NOT_ALLOWED\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"SETTING_WHITELIST_NFT_NAME_EMPTY\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"SETTING_WHITELIST_NFT_SYMBOL_EMPTY\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"SETTING_ZERO_ADDRESS_NOT_ALLOWED\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"START_LIQUIDATION_STATUS_ERROR\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"WITHDRAW_AMOUNT_NOT_ALLOWED\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"WITHDRAW_LIQUIDITY_NOT_SUFFICIENT\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/libraries/helpers/Errors.sol\":\"Errors\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/libraries/helpers/Errors.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nlibrary Errors {\\n    // common\\n    string public constant MATH_MULTIPLICATION_OVERFLOW = '100';\\n    string public constant MATH_ADDITION_OVERFLOW = '101';\\n    string public constant MATH_DIVISION_BY_ZERO = '102';\\n\\n    string public constant ETH_TRANSFER_FAILED = '110';\\n    string public constant RECEIVE_NOT_ALLOWED = '111';\\n    string public constant FALLBACK_NOT_ALLOWED = '112';\\n    string public constant APPROVAL_FAILED = '113';\\n\\n    // setting/factor\\n    string public constant SETTING_ZERO_ADDRESS_NOT_ALLOWED = '115';\\n    string public constant SETTING_RESERVE_FACTOR_NOT_ALLOWED = '116';\\n    string public constant SETTING_WHITELIST_INVALID_RESERVE_ID = '117';\\n    string public constant SETTING_WHITELIST_NFT_ADDRESS_IS_ZERO = '118';\\n    string public constant SETTING_WHITELIST_NFT_DURATION_OUT_OF_ORDER = '119';\\n    string public constant SETTING_WHITELIST_NFT_NAME_EMPTY = '120';\\n    string public constant SETTING_WHITELIST_NFT_SYMBOL_EMPTY = '121';\\n    string public constant SETTING_WHITELIST_NFT_LTV_NOT_ALLOWED = '122';\\n\\n    // settings/acl\\n    string public constant ACL_ONLY_GOVERNANCE_CAN_CALL = '200';\\n    string public constant ACL_ONLY_EMERGENCY_ADMIN_CAN_CALL = '201';\\n    string public constant ACL_ONLY_POOL_ADMIN_CAN_CALL = '202';\\n    string public constant ACL_ONLY_LIQUIDATOR_CAN_CALL = '203';\\n    string public constant ACL_ONLY_AIRDROP_OPERATOR_CAN_CALL = '204';\\n    string public constant ACL_ONLY_POOL_CAN_CALL = '205';\\n\\n    // lending & borrowing\\n    // reserve\\n    string public constant RESERVE_DOES_NOT_EXIST = '300';\\n    string public constant RESERVE_LIQUIDITY_INSUFFICIENT = '301';\\n    string public constant RESERVE_INDEX_OVERFLOW = '302';\\n    string public constant RESERVE_SWITCH_MONEY_MARKET_STATE_ERROR = '303';\\n    string public constant RESERVE_TREASURY_FACTOR_NOT_ALLOWED = '304';\\n    string public constant RESERVE_TOKEN_CAN_NOT_BE_CLAIMED = '305';\\n\\n    // token\\n    string public constant AMOUNT_SCALED_IS_ZERO = '310';\\n    string public constant AMOUNT_TRANSFER_OVERFLOW = '311';\\n\\n    //deposit\\n    string public constant DEPOSIT_AMOUNT_SHOULD_BE_BIGGER_THAN_ZERO = '320';\\n\\n    // withdraw\\n    string public constant WITHDRAW_AMOUNT_NOT_ALLOWED = '321';\\n    string public constant WITHDRAW_LIQUIDITY_NOT_SUFFICIENT = '322';\\n\\n    // borrow\\n    string public constant BORROW_DURATION_NOT_ALLOWED = '330';\\n    string public constant BORROW_AMOUNT_EXCEED_BORROW_LIMIT = '331';\\n    string public constant NFT_ADDRESS_IS_NOT_IN_WHITELIST = '332';\\n\\n    // repay\\n    string public constant REPAY_STATUS_ERROR = '333';\\n    string public constant REPAY_MSG_VALUE_ERROR = '334';\\n\\n    // extend\\n    string public constant EXTEND_STATUS_ERROR = '335';\\n    string public constant EXTEND_MSG_VALUE_ERROR = '336';\\n\\n    // liquidate\\n    string public constant START_LIQUIDATION_STATUS_ERROR = '360';\\n    string public constant END_LIQUIDATION_STATUS_ERROR = '361';\\n    string public constant END_LIQUIDATION_AMOUNT_ERROR = '362';\\n\\n    // loan\\n    string public constant LOAN_DOES_NOT_EXIST = '400';\\n    string public constant LOAN_SET_STATUS_ERROR = '401';\\n    string public constant LOAN_REPAYER_IS_NOT_OWNER = '402';\\n    string public constant LOAN_LIQUIDATING_STATUS_CAN_NOT_BE_UPDATED = '403';\\n    string public constant LOAN_CALLER_IS_NOT_OWNER = '404';\\n    string public constant LOAN_COLLATERAL_NFT_CAN_NOT_BE_CLAIMED = '405';\\n\\n    string public constant FLASHCLAIM_EXECUTOR_ERROR = '410';\\n    string public constant FLASHCLAIM_STATUS_ERROR = '411';\\n\\n    // money market\\n    string public constant MONEY_MARKET_DEPOSIT_AMOUNT_NOT_ALLOWED = '500';\\n    string public constant MONEY_MARKET_WITHDRAW_AMOUNT_NOT_ALLOWED = '501';\\n    string public constant MONEY_MARKET_APPROVAL_FAILED = '502';\\n    string public constant MONEY_MARKET_DELEGATE_CALL_ERROR = '503';\\n    string public constant MONEY_MARKET_REQUIRE_DELEGATE_CALL = '504';\\n    string public constant MONEY_MARKET_WITHDRAW_AMOUNT_NOT_MATCH = '505';\\n\\n    // price oracle\\n    string public constant PRICE_ORACLE_HAS_NO_PRICE_FEED = '600';\\n    string public constant PRICE_ORACLE_INCORRECT_TIMESTAMP = '601';\\n    string public constant PRICE_ORACLE_PARAMS_ERROR = '602';\\n}\\n\",\"keccak256\":\"0xc4e38b51f80e5ad6eeacd323b4ac0798c5ca51d7a2d0c9fc2ba52aafa8a064b8\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x610c1e61003a600b82828239805160001a60731461002d57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600436106103a25760003560e01c8063788fe575116101f3578063b5539a7111610119578063d6ab80cf116100b7578063f77048ae11610086578063f77048ae14610b0b578063fc1b646b14610b2d578063fcce050214610b4f578063fce162d614610b7157600080fd5b8063d6ab80cf14610a83578063dad907a514610aa5578063e7e3349214610ac7578063f69a13f414610ae957600080fd5b8063c7dbca0c116100f3578063c7dbca0c146109fb578063c888ea6214610a1d578063d22edf8814610a3f578063d34d3bb114610a6157600080fd5b8063b5539a7114610995578063b6400862146109b7578063bf9c5c90146109d957600080fd5b8063961cdae711610191578063a02b5e9b11610160578063a02b5e9b1461090d578063acd8da711461092f578063b2ba002d14610951578063b470db331461097357600080fd5b8063961cdae714610885578063989762e4146108a757806398ce269a146108c9578063a00febcc146108eb57600080fd5b80637c80d99e116101cd5780637c80d99e146107fd578063803b78951461081f57806383d452aa146108415780638854971d1461086357600080fd5b8063788fe575146107975780637ab2bbb7146107b95780637c76aa24146107db57600080fd5b80634349e3d8116102d85780635fab3fae11610276578063697c011d11610245578063697c011d1461070f5780636b1460d2146107315780636cfcdf5d1461075357806370f38c801461077557600080fd5b80635fab3fae146106875780636020ba73146106a957806366e82b97146106cb578063691f0527146106ed57600080fd5b80634d942ab6116102b25780634d942ab6146105ff57806350c73ba6146106215780635cd296b3146106435780635de930631461066557600080fd5b80634349e3d81461059957806343c7bd07146105bb578063498d86e9146105dd57600080fd5b8063189e318711610345578063342521b01161031f578063342521b014610511578063391f8784146105335780633bdd7b11146105555780633cb252581461057757600080fd5b8063189e3187146104ab5780632399a74b146104cd5780632ba13416146104ef57600080fd5b806309b6c42b1161038157806309b6c42b146104235780630b93d4f3146104455780630f5ee482146104675780631758f2531461048957600080fd5b8062371bb5146103a7578063029d2344146103df5780630876a60f14610401575b600080fd5b6103c96040518060400160405280600381526020016203331360ec1b81525081565b6040516103d69190610b93565b60405180910390f35b6103c96040518060400160405280600381526020016203130360ec1b81525081565b6103c96040518060400160405280600381526020016231313360e81b81525081565b6103c96040518060400160405280600381526020016203630360ec1b81525081565b6103c96040518060400160405280600381526020016203230360ec1b81525081565b6103c96040518060400160405280600381526020016231303160e81b81525081565b6103c96040518060400160405280600381526020016232303160e81b81525081565b6103c96040518060400160405280600381526020016203431360ec1b81525081565b6103c96040518060400160405280600381526020016233303360e81b81525081565b6103c96040518060400160405280600381526020016219999b60e91b81525081565b6103c96040518060400160405280600381526020016234303160e81b81525081565b6103c960405180604001604052806003815260200162199b1960e91b81525081565b6103c9604051806040016040528060038152602001621b181960e91b81525081565b6103c96040518060400160405280600381526020016206262760eb1b81525081565b6103c96040518060400160405280600381526020016218981960e91b81525081565b6103c96040518060400160405280600381526020016235303160e81b81525081565b6103c9604051806040016040528060038152602001620c8c0d60ea1b81525081565b6103c96040518060400160405280600381526020016233333360e81b81525081565b6103c96040518060400160405280600381526020016219999960e91b81525081565b6103c96040518060400160405280600381526020016233333560e81b81525081565b6103c96040518060400160405280600381526020016233323160e81b81525081565b6103c96040518060400160405280600381526020016203430360ec1b81525081565b6103c9604051806040016040528060038152602001620d4c0d60ea1b81525081565b6103c96040518060400160405280600381526020016203333360ec1b81525081565b6103c9604051806040016040528060038152602001621a981960e91b81525081565b6103c96040518060400160405280600381526020016234303360e81b81525081565b6103c96040518060400160405280600381526020016203530360ec1b81525081565b6103c96040518060400160405280600381526020016233303560e81b81525081565b6103c96040518060400160405280600381526020016231313160e81b81525081565b6103c9604051806040016040528060038152602001620d0c0d60ea1b81525081565b6103c96040518060400160405280600381526020016233303160e81b81525081565b6103c9604051806040016040528060038152602001620ccccd60ea1b81525081565b6103c96040518060400160405280600381526020016218989b60e91b81525081565b6103c9604051806040016040528060038152602001621a181960e91b81525081565b6103c96040518060400160405280600381526020016233333160e81b81525081565b6103c96040518060400160405280600381526020016203332360ec1b81525081565b6103c96040518060400160405280600381526020016231313960e81b81525081565b6103c96040518060400160405280600381526020016203132360ec1b81525081565b6103c96040518060400160405280600381526020016203131360ec1b81525081565b6103c96040518060400160405280600381526020016231313760e81b81525081565b6103c96040518060400160405280600381526020016232303360e81b81525081565b6103c96040518060400160405280600381526020016219181960e91b81525081565b6103c96040518060400160405280600381526020016218989960e91b81525081565b6103c96040518060400160405280600381526020016235303360e81b81525081565b6103c96040518060400160405280600381526020016219991960e91b81525081565b6103c96040518060400160405280600381526020016232303560e81b81525081565b6103c96040518060400160405280600381526020016236303160e81b81525081565b6103c96040518060400160405280600381526020016231323160e81b81525081565b6103c96040518060400160405280600381526020016203330360ec1b81525081565b6103c96040518060400160405280600381526020016235303560e81b81525081565b6103c9604051806040016040528060038152602001620ccc0d60ea1b81525081565b6103c96040518060400160405280600381526020016219981960e91b81525081565b6103c96040518060400160405280600381526020016233313160e81b81525081565b6103c96040518060400160405280600381526020016234303560e81b81525081565b6103c96040518060400160405280600381526020016234313160e81b81525081565b6103c96040518060400160405280600381526020016218991960e91b81525081565b6103c96040518060400160405280600381526020016231313560e81b81525081565b6103c96040518060400160405280600381526020016233363160e81b81525081565b6103c96040518060400160405280600381526020016203336360ec1b81525081565b600060208083528351808285015260005b81811015610bc057858101830151858201604001528201610ba4565b81811115610bd2576000604083870101525b50601f01601f191692909201604001939250505056fea2646970667358221220addd28b9f8edb38e2c3d7a091b5172ffaa48bb8ba8a12a495026e3c292e444a064736f6c634300080a0033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600436106103a25760003560e01c8063788fe575116101f3578063b5539a7111610119578063d6ab80cf116100b7578063f77048ae11610086578063f77048ae14610b0b578063fc1b646b14610b2d578063fcce050214610b4f578063fce162d614610b7157600080fd5b8063d6ab80cf14610a83578063dad907a514610aa5578063e7e3349214610ac7578063f69a13f414610ae957600080fd5b8063c7dbca0c116100f3578063c7dbca0c146109fb578063c888ea6214610a1d578063d22edf8814610a3f578063d34d3bb114610a6157600080fd5b8063b5539a7114610995578063b6400862146109b7578063bf9c5c90146109d957600080fd5b8063961cdae711610191578063a02b5e9b11610160578063a02b5e9b1461090d578063acd8da711461092f578063b2ba002d14610951578063b470db331461097357600080fd5b8063961cdae714610885578063989762e4146108a757806398ce269a146108c9578063a00febcc146108eb57600080fd5b80637c80d99e116101cd5780637c80d99e146107fd578063803b78951461081f57806383d452aa146108415780638854971d1461086357600080fd5b8063788fe575146107975780637ab2bbb7146107b95780637c76aa24146107db57600080fd5b80634349e3d8116102d85780635fab3fae11610276578063697c011d11610245578063697c011d1461070f5780636b1460d2146107315780636cfcdf5d1461075357806370f38c801461077557600080fd5b80635fab3fae146106875780636020ba73146106a957806366e82b97146106cb578063691f0527146106ed57600080fd5b80634d942ab6116102b25780634d942ab6146105ff57806350c73ba6146106215780635cd296b3146106435780635de930631461066557600080fd5b80634349e3d81461059957806343c7bd07146105bb578063498d86e9146105dd57600080fd5b8063189e318711610345578063342521b01161031f578063342521b014610511578063391f8784146105335780633bdd7b11146105555780633cb252581461057757600080fd5b8063189e3187146104ab5780632399a74b146104cd5780632ba13416146104ef57600080fd5b806309b6c42b1161038157806309b6c42b146104235780630b93d4f3146104455780630f5ee482146104675780631758f2531461048957600080fd5b8062371bb5146103a7578063029d2344146103df5780630876a60f14610401575b600080fd5b6103c96040518060400160405280600381526020016203331360ec1b81525081565b6040516103d69190610b93565b60405180910390f35b6103c96040518060400160405280600381526020016203130360ec1b81525081565b6103c96040518060400160405280600381526020016231313360e81b81525081565b6103c96040518060400160405280600381526020016203630360ec1b81525081565b6103c96040518060400160405280600381526020016203230360ec1b81525081565b6103c96040518060400160405280600381526020016231303160e81b81525081565b6103c96040518060400160405280600381526020016232303160e81b81525081565b6103c96040518060400160405280600381526020016203431360ec1b81525081565b6103c96040518060400160405280600381526020016233303360e81b81525081565b6103c96040518060400160405280600381526020016219999b60e91b81525081565b6103c96040518060400160405280600381526020016234303160e81b81525081565b6103c960405180604001604052806003815260200162199b1960e91b81525081565b6103c9604051806040016040528060038152602001621b181960e91b81525081565b6103c96040518060400160405280600381526020016206262760eb1b81525081565b6103c96040518060400160405280600381526020016218981960e91b81525081565b6103c96040518060400160405280600381526020016235303160e81b81525081565b6103c9604051806040016040528060038152602001620c8c0d60ea1b81525081565b6103c96040518060400160405280600381526020016233333360e81b81525081565b6103c96040518060400160405280600381526020016219999960e91b81525081565b6103c96040518060400160405280600381526020016233333560e81b81525081565b6103c96040518060400160405280600381526020016233323160e81b81525081565b6103c96040518060400160405280600381526020016203430360ec1b81525081565b6103c9604051806040016040528060038152602001620d4c0d60ea1b81525081565b6103c96040518060400160405280600381526020016203333360ec1b81525081565b6103c9604051806040016040528060038152602001621a981960e91b81525081565b6103c96040518060400160405280600381526020016234303360e81b81525081565b6103c96040518060400160405280600381526020016203530360ec1b81525081565b6103c96040518060400160405280600381526020016233303560e81b81525081565b6103c96040518060400160405280600381526020016231313160e81b81525081565b6103c9604051806040016040528060038152602001620d0c0d60ea1b81525081565b6103c96040518060400160405280600381526020016233303160e81b81525081565b6103c9604051806040016040528060038152602001620ccccd60ea1b81525081565b6103c96040518060400160405280600381526020016218989b60e91b81525081565b6103c9604051806040016040528060038152602001621a181960e91b81525081565b6103c96040518060400160405280600381526020016233333160e81b81525081565b6103c96040518060400160405280600381526020016203332360ec1b81525081565b6103c96040518060400160405280600381526020016231313960e81b81525081565b6103c96040518060400160405280600381526020016203132360ec1b81525081565b6103c96040518060400160405280600381526020016203131360ec1b81525081565b6103c96040518060400160405280600381526020016231313760e81b81525081565b6103c96040518060400160405280600381526020016232303360e81b81525081565b6103c96040518060400160405280600381526020016219181960e91b81525081565b6103c96040518060400160405280600381526020016218989960e91b81525081565b6103c96040518060400160405280600381526020016235303360e81b81525081565b6103c96040518060400160405280600381526020016219991960e91b81525081565b6103c96040518060400160405280600381526020016232303560e81b81525081565b6103c96040518060400160405280600381526020016236303160e81b81525081565b6103c96040518060400160405280600381526020016231323160e81b81525081565b6103c96040518060400160405280600381526020016203330360ec1b81525081565b6103c96040518060400160405280600381526020016235303560e81b81525081565b6103c9604051806040016040528060038152602001620ccc0d60ea1b81525081565b6103c96040518060400160405280600381526020016219981960e91b81525081565b6103c96040518060400160405280600381526020016233313160e81b81525081565b6103c96040518060400160405280600381526020016234303560e81b81525081565b6103c96040518060400160405280600381526020016234313160e81b81525081565b6103c96040518060400160405280600381526020016218991960e91b81525081565b6103c96040518060400160405280600381526020016231313560e81b81525081565b6103c96040518060400160405280600381526020016233363160e81b81525081565b6103c96040518060400160405280600381526020016203336360ec1b81525081565b600060208083528351808285015260005b81811015610bc057858101830151858201604001528201610ba4565b81811115610bd2576000604083870101525b50601f01601f191692909201604001939250505056fea2646970667358221220addd28b9f8edb38e2c3d7a091b5172ffaa48bb8ba8a12a495026e3c292e444a064736f6c634300080a0033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}

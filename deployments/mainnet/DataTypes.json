@@ -1,0 +1,39 @@
+{
+  "address": "0xc2BC820114508fA4B10486223E932b27f5D17f4e",
+  "abi": [],
+  "transactionHash": "0x1051d423250891832c1be7dbd1f23b4bc84194a260fa6b0742ccf222dc22b2a3",
+  "receipt": {
+    "to": null,
+    "from": "0x1a347f2aac8758E139C7401aEC878aD174C19c8a",
+    "contractAddress": "0xc2BC820114508fA4B10486223E932b27f5D17f4e",
+    "transactionIndex": 178,
+    "gasUsed": "72217",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xa0d260f1a3b2b61fb9f2f7b753a6d40e875be12d1dfceb33e4efa470304c57f6",
+    "transactionHash": "0x1051d423250891832c1be7dbd1f23b4bc84194a260fa6b0742ccf222dc22b2a3",
+    "logs": [],
+    "blockNumber": 15223122,
+    "cumulativeGasUsed": "11676470",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "0ca3f66e9bd5de21ebb7765f6cea382a",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/libraries/types/DataTypes.sol\":\"DataTypes\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/libraries/types/DataTypes.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nlibrary DataTypes {\\n    struct ReserveData {\\n        uint256 reserveId;\\n        address underlyingAsset;\\n        address oTokenAddress;\\n        address moneyMarketAddress;\\n        uint128 lastSupplyIndex;\\n        uint256 borrowingInterestPerSecond;\\n        uint256 lastMoneyMarketBalance;\\n        uint40 lastUpdateTimestamp;\\n        uint256 totalBorrows;\\n        address interestModelAddress;\\n        uint256 treasuryFactor;\\n        bool isMoneyMarketOn;\\n    }\\n\\n    struct LoanData {\\n        uint256 reserveId;\\n        address nftAddress;\\n        uint256 tokenId;\\n        address borrower;\\n        uint256 amount;\\n        uint128 borrowRate;\\n        uint128 interestPerSecond;\\n        uint40 borrowBegin;\\n        uint40 borrowDuration;\\n        uint40 borrowOverdueTime;\\n        uint40 liquidatableTime;\\n        uint40 extendableTime;\\n        uint40 borrowEnd;\\n        LoanStatus status;\\n    }\\n\\n    enum LoanStatus {\\n        NONE,\\n        BORROWING,\\n        EXTENDABLE,\\n        OVERDUE,\\n        LIQUIDATABLE,\\n        LIQUIDATING\\n    }\\n\\n    struct WhitelistInfo {\\n        bool enabled;\\n        string name;\\n        string symbol;\\n        uint256 LTV;\\n        uint256 minBorrowDuration;\\n        uint256 maxBorrowDuration;\\n        uint256 extendableDuration;\\n        uint256 overdueDuration;\\n    }\\n}\\n\",\"keccak256\":\"0x487cd1dedb3146da46144bc8f0e5b970c5173efa8c19700184b8207c1ee3fc55\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220c244d5f51f193b1a1338f59ba9b0d72cde06e67e7b0ef48748b9cb3eea592d3e64736f6c634300080a0033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220c244d5f51f193b1a1338f59ba9b0d72cde06e67e7b0ef48748b9cb3eea592d3e64736f6c634300080a0033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "address": "0x76aFbdb519C270961D20ce58CEDa6D8DF10a5dC7",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "borrowRate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "duration",
+          "type": "uint256"
+        }
+      ],
+      "name": "calculateBorrowInterest",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "borrowRate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "calculateBorrowInterestPerSecond",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "rate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint40",
+          "name": "lastUpdateTimestamp",
+          "type": "uint40"
+        }
+      ],
+      "name": "calculateLinearInterest",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "availableLiquidity",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "totalBorrows",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "borrowRate",
+          "type": "uint256"
+        }
+      ],
+      "name": "calculateLoanSupplyRate",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "loanSupplyRate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "utilizationRate",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x98131bc25b86110ec83bbd2a5e21d37d4841d8bedb0251d1c987014416000a31",
+  "receipt": {
+    "to": null,
+    "from": "0x1a347f2aac8758E139C7401aEC878aD174C19c8a",
+    "contractAddress": "0x76aFbdb519C270961D20ce58CEDa6D8DF10a5dC7",
+    "transactionIndex": 176,
+    "gasUsed": "321124",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x1b2f6b4493b6ae198cab63794cf17b954cfce5ef12412167e127481ac2cf697e",
+    "transactionHash": "0x98131bc25b86110ec83bbd2a5e21d37d4841d8bedb0251d1c987014416000a31",
+    "logs": [],
+    "blockNumber": 15223130,
+    "cumulativeGasUsed": "13978880",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "0ca3f66e9bd5de21ebb7765f6cea382a",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"borrowRate\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"duration\",\"type\":\"uint256\"}],\"name\":\"calculateBorrowInterest\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"borrowRate\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"calculateBorrowInterestPerSecond\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"rate\",\"type\":\"uint256\"},{\"internalType\":\"uint40\",\"name\":\"lastUpdateTimestamp\",\"type\":\"uint40\"}],\"name\":\"calculateLinearInterest\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"availableLiquidity\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"totalBorrows\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"borrowRate\",\"type\":\"uint256\"}],\"name\":\"calculateLoanSupplyRate\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"loanSupplyRate\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"utilizationRate\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"calculateLinearInterest(uint256,uint40)\":{\"details\":\"Function to calculate the interest accumulated using a linear interest rate formula\",\"params\":{\"lastUpdateTimestamp\":\"The timestamp of the last update of the interest\",\"rate\":\"The interest rate, in ray\"},\"returns\":{\"_0\":\"The interest rate linearly accumulated during the timeDelta, in ray*\"}}},\"stateVariables\":{\"SECONDS_PER_YEAR\":{\"details\":\"Ignoring leap years\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/libraries/math/MathUtils.sol\":\"MathUtils\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/libraries/helpers/Errors.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nlibrary Errors {\\n    // common\\n    string public constant MATH_MULTIPLICATION_OVERFLOW = '100';\\n    string public constant MATH_ADDITION_OVERFLOW = '101';\\n    string public constant MATH_DIVISION_BY_ZERO = '102';\\n\\n    string public constant ETH_TRANSFER_FAILED = '110';\\n    string public constant RECEIVE_NOT_ALLOWED = '111';\\n    string public constant FALLBACK_NOT_ALLOWED = '112';\\n    string public constant APPROVAL_FAILED = '113';\\n\\n    // setting/factor\\n    string public constant SETTING_ZERO_ADDRESS_NOT_ALLOWED = '115';\\n    string public constant SETTING_RESERVE_FACTOR_NOT_ALLOWED = '116';\\n    string public constant SETTING_WHITELIST_INVALID_RESERVE_ID = '117';\\n    string public constant SETTING_WHITELIST_NFT_ADDRESS_IS_ZERO = '118';\\n    string public constant SETTING_WHITELIST_NFT_DURATION_OUT_OF_ORDER = '119';\\n    string public constant SETTING_WHITELIST_NFT_NAME_EMPTY = '120';\\n    string public constant SETTING_WHITELIST_NFT_SYMBOL_EMPTY = '121';\\n    string public constant SETTING_WHITELIST_NFT_LTV_NOT_ALLOWED = '122';\\n\\n    // settings/acl\\n    string public constant ACL_ONLY_GOVERNANCE_CAN_CALL = '200';\\n    string public constant ACL_ONLY_EMERGENCY_ADMIN_CAN_CALL = '201';\\n    string public constant ACL_ONLY_POOL_ADMIN_CAN_CALL = '202';\\n    string public constant ACL_ONLY_LIQUIDATOR_CAN_CALL = '203';\\n    string public constant ACL_ONLY_AIRDROP_OPERATOR_CAN_CALL = '204';\\n    string public constant ACL_ONLY_POOL_CAN_CALL = '205';\\n\\n    // lending & borrowing\\n    // reserve\\n    string public constant RESERVE_DOES_NOT_EXIST = '300';\\n    string public constant RESERVE_LIQUIDITY_INSUFFICIENT = '301';\\n    string public constant RESERVE_INDEX_OVERFLOW = '302';\\n    string public constant RESERVE_SWITCH_MONEY_MARKET_STATE_ERROR = '303';\\n    string public constant RESERVE_TREASURY_FACTOR_NOT_ALLOWED = '304';\\n    string public constant RESERVE_TOKEN_CAN_NOT_BE_CLAIMED = '305';\\n\\n    // token\\n    string public constant AMOUNT_SCALED_IS_ZERO = '310';\\n    string public constant AMOUNT_TRANSFER_OVERFLOW = '311';\\n\\n    //deposit\\n    string public constant DEPOSIT_AMOUNT_SHOULD_BE_BIGGER_THAN_ZERO = '320';\\n\\n    // withdraw\\n    string public constant WITHDRAW_AMOUNT_NOT_ALLOWED = '321';\\n    string public constant WITHDRAW_LIQUIDITY_NOT_SUFFICIENT = '322';\\n\\n    // borrow\\n    string public constant BORROW_DURATION_NOT_ALLOWED = '330';\\n    string public constant BORROW_AMOUNT_EXCEED_BORROW_LIMIT = '331';\\n    string public constant NFT_ADDRESS_IS_NOT_IN_WHITELIST = '332';\\n\\n    // repay\\n    string public constant REPAY_STATUS_ERROR = '333';\\n    string public constant REPAY_MSG_VALUE_ERROR = '334';\\n\\n    // extend\\n    string public constant EXTEND_STATUS_ERROR = '335';\\n    string public constant EXTEND_MSG_VALUE_ERROR = '336';\\n\\n    // liquidate\\n    string public constant START_LIQUIDATION_STATUS_ERROR = '360';\\n    string public constant END_LIQUIDATION_STATUS_ERROR = '361';\\n    string public constant END_LIQUIDATION_AMOUNT_ERROR = '362';\\n\\n    // loan\\n    string public constant LOAN_DOES_NOT_EXIST = '400';\\n    string public constant LOAN_SET_STATUS_ERROR = '401';\\n    string public constant LOAN_REPAYER_IS_NOT_OWNER = '402';\\n    string public constant LOAN_LIQUIDATING_STATUS_CAN_NOT_BE_UPDATED = '403';\\n    string public constant LOAN_CALLER_IS_NOT_OWNER = '404';\\n    string public constant LOAN_COLLATERAL_NFT_CAN_NOT_BE_CLAIMED = '405';\\n\\n    string public constant FLASHCLAIM_EXECUTOR_ERROR = '410';\\n    string public constant FLASHCLAIM_STATUS_ERROR = '411';\\n\\n    // money market\\n    string public constant MONEY_MARKET_DEPOSIT_AMOUNT_NOT_ALLOWED = '500';\\n    string public constant MONEY_MARKET_WITHDRAW_AMOUNT_NOT_ALLOWED = '501';\\n    string public constant MONEY_MARKET_APPROVAL_FAILED = '502';\\n    string public constant MONEY_MARKET_DELEGATE_CALL_ERROR = '503';\\n    string public constant MONEY_MARKET_REQUIRE_DELEGATE_CALL = '504';\\n    string public constant MONEY_MARKET_WITHDRAW_AMOUNT_NOT_MATCH = '505';\\n\\n    // price oracle\\n    string public constant PRICE_ORACLE_HAS_NO_PRICE_FEED = '600';\\n    string public constant PRICE_ORACLE_INCORRECT_TIMESTAMP = '601';\\n    string public constant PRICE_ORACLE_PARAMS_ERROR = '602';\\n}\\n\",\"keccak256\":\"0xc4e38b51f80e5ad6eeacd323b4ac0798c5ca51d7a2d0c9fc2ba52aafa8a064b8\",\"license\":\"MIT\"},\"contracts/libraries/math/MathUtils.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nimport {WadRayMath} from './WadRayMath.sol';\\n\\nlibrary MathUtils {\\n    using WadRayMath for uint256;\\n\\n    /// @dev Ignoring leap years\\n    uint256 internal constant SECONDS_PER_YEAR = 365 days;\\n\\n    /**\\n     * @dev Function to calculate the interest accumulated using a linear interest rate formula\\n     * @param rate The interest rate, in ray\\n     * @param lastUpdateTimestamp The timestamp of the last update of the interest\\n     * @return The interest rate linearly accumulated during the timeDelta, in ray\\n     **/\\n\\n    function calculateLinearInterest(uint256 rate, uint40 lastUpdateTimestamp) external view returns (uint256) {\\n        //solium-disable-next-line\\n        uint256 timeDifference = block.timestamp - (uint256(lastUpdateTimestamp));\\n\\n        return (rate * timeDifference) / SECONDS_PER_YEAR + WadRayMath.ray();\\n    }\\n\\n    function calculateBorrowInterest(\\n        uint256 borrowRate,\\n        uint256 amount,\\n        uint256 duration\\n    ) external pure returns (uint256) {\\n        return amount.rayMul(borrowRate.rayMul(duration).rayDiv(SECONDS_PER_YEAR));\\n    }\\n\\n    function calculateBorrowInterestPerSecond(uint256 borrowRate, uint256 amount) external pure returns (uint256) {\\n        return amount.rayMul(borrowRate).rayDiv(SECONDS_PER_YEAR);\\n    }\\n\\n    function calculateLoanSupplyRate(\\n        uint256 availableLiquidity,\\n        uint256 totalBorrows,\\n        uint256 borrowRate\\n    ) external pure returns (uint256 loanSupplyRate, uint256 utilizationRate) {\\n        utilizationRate = (totalBorrows == 0 && availableLiquidity == 0)\\n            ? 0\\n            : totalBorrows.rayDiv(availableLiquidity + totalBorrows);\\n        loanSupplyRate = utilizationRate.rayMul(borrowRate);\\n    }\\n}\\n\",\"keccak256\":\"0xe06262969c3e10f221573fd7bfdf3a89942957b5d957a6110cb5e933d2bdbff6\",\"license\":\"MIT\"},\"contracts/libraries/math/WadRayMath.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nimport {Errors} from '../helpers/Errors.sol';\\n\\n/**\\n * @title WadRayMath library\\n * @author Aave\\n * @dev Provides mul and div function for wads (decimal numbers with 18 digits precision) and rays (decimals with 27 digits)\\n **/\\n\\nlibrary WadRayMath {\\n    uint256 internal constant WAD = 1e18;\\n    uint256 internal constant halfWAD = WAD / 2;\\n\\n    uint256 internal constant RAY = 1e27;\\n    uint256 internal constant halfRAY = RAY / 2;\\n\\n    uint256 internal constant WAD_RAY_RATIO = 1e9;\\n\\n    /**\\n     * @return One ray, 1e27\\n     **/\\n    function ray() internal pure returns (uint256) {\\n        return RAY;\\n    }\\n\\n    /**\\n     * @return One wad, 1e18\\n     **/\\n\\n    function wad() internal pure returns (uint256) {\\n        return WAD;\\n    }\\n\\n    /**\\n     * @return Half ray, 1e27/2\\n     **/\\n    function halfRay() internal pure returns (uint256) {\\n        return halfRAY;\\n    }\\n\\n    /**\\n     * @return Half ray, 1e18/2\\n     **/\\n    function halfWad() internal pure returns (uint256) {\\n        return halfWAD;\\n    }\\n\\n    /**\\n     * @dev Multiplies two wad, rounding half up to the nearest wad\\n     * @param a Wad\\n     * @param b Wad\\n     * @return The result of a*b, in wad\\n     **/\\n    function wadMul(uint256 a, uint256 b) internal pure returns (uint256) {\\n        if (a == 0 || b == 0) {\\n            return 0;\\n        }\\n\\n        require(a <= (type(uint256).max - halfWAD) / b, Errors.MATH_MULTIPLICATION_OVERFLOW);\\n\\n        return (a * b + halfWAD) / WAD;\\n    }\\n\\n    /**\\n     * @dev Divides two wad, rounding half up to the nearest wad\\n     * @param a Wad\\n     * @param b Wad\\n     * @return The result of a/b, in wad\\n     **/\\n    function wadDiv(uint256 a, uint256 b) internal pure returns (uint256) {\\n        require(b != 0, Errors.MATH_DIVISION_BY_ZERO);\\n        uint256 halfB = b / 2;\\n\\n        require(a <= (type(uint256).max - halfB) / WAD, Errors.MATH_MULTIPLICATION_OVERFLOW);\\n\\n        return (a * WAD + halfB) / b;\\n    }\\n\\n    /**\\n     * @dev Multiplies two ray, rounding half up to the nearest ray\\n     * @param a Ray\\n     * @param b Ray\\n     * @return The result of a*b, in ray\\n     **/\\n    function rayMul(uint256 a, uint256 b) internal pure returns (uint256) {\\n        if (a == 0 || b == 0) {\\n            return 0;\\n        }\\n\\n        require(a <= (type(uint256).max - halfRAY) / b, Errors.MATH_MULTIPLICATION_OVERFLOW);\\n\\n        return (a * b + halfRAY) / RAY;\\n    }\\n\\n    /**\\n     * @dev Multiplies two ray, truncating the mantissa\\n     * @param a Ray\\n     * @param b Ray\\n     * @return The result of a*b, in ray\\n     **/\\n    function rayMulTruncate(uint256 a, uint256 b) internal pure returns (uint256) {\\n        if (a == 0 || b == 0) {\\n            return 0;\\n        }\\n        return (a * b) / RAY;\\n    }\\n\\n    /**\\n     * @dev Divides two ray, rounding half up to the nearest ray\\n     * @param a Ray\\n     * @param b Ray\\n     * @return The result of a/b, in ray\\n     **/\\n    function rayDiv(uint256 a, uint256 b) internal pure returns (uint256) {\\n        require(b != 0, Errors.MATH_DIVISION_BY_ZERO);\\n        uint256 halfB = b / 2;\\n\\n        require(a <= (type(uint256).max - halfB) / RAY, Errors.MATH_MULTIPLICATION_OVERFLOW);\\n\\n        return (a * RAY + halfB) / b;\\n    }\\n\\n    /**\\n     * @dev Divides two ray, truncating the mantissa\\n     * @param a Ray\\n     * @param b Ray\\n     * @return The result of a/b, in ray\\n     **/\\n    function rayDivTruncate(uint256 a, uint256 b) internal pure returns (uint256) {\\n        require(b != 0, Errors.MATH_DIVISION_BY_ZERO);\\n        return (a * RAY) / b;\\n    }\\n\\n    /**\\n     * @dev Casts ray down to wad\\n     * @param a Ray\\n     * @return a casted to wad, rounded half up to the nearest wad\\n     **/\\n    function rayToWad(uint256 a) internal pure returns (uint256) {\\n        uint256 halfRatio = WAD_RAY_RATIO / 2;\\n        uint256 result = halfRatio + a;\\n        require(result >= halfRatio, Errors.MATH_ADDITION_OVERFLOW);\\n\\n        return result / WAD_RAY_RATIO;\\n    }\\n\\n    /**\\n     * @dev Converts wad up to ray\\n     * @param a Wad\\n     * @return a converted in ray\\n     **/\\n    function wadToRay(uint256 a) internal pure returns (uint256) {\\n        uint256 result = a * WAD_RAY_RATIO;\\n        require(result / WAD_RAY_RATIO == a, Errors.MATH_MULTIPLICATION_OVERFLOW);\\n        return result;\\n    }\\n}\\n\",\"keccak256\":\"0x4bf6b9a00c5e9938726d173f11b56de8edd92e17593e4dfa61a3ce7336756c6b\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x6104d961003a600b82828239805160001a60731461002d57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600436106100565760003560e01c80630c2de0901461005b5780635806b3351461008157806369f2e69114610094578063db53f388146100a7575b600080fd5b61006e610069366004610340565b6100cf565b6040519081526020015b60405180910390f35b61006e61008f366004610362565b6100f2565b61006e6100a236600461038e565b610118565b6100ba6100b5366004610362565b61015e565b60408051928352602083019190915201610078565b60006100e96301e133806100e384866101a3565b90610268565b90505b92915050565b60006101106101096301e133806100e387866101a3565b84906101a3565b949350505050565b60008061012c64ffffffffff8416426103de565b90506b033b2e3c9fd0803ce80000006301e1338061014a83876103f5565b6101549190610414565b6101109190610436565b6000808315801561016d575084155b61018a5761018561017e8587610436565b8590610268565b61018d565b60005b905061019981846101a3565b9150935093915050565b60008215806101b0575081155b156101bd575060006100ec565b816101d560026b033b2e3c9fd0803ce8000000610414565b6101e1906000196103de565b6101eb9190610414565b8311156040518060400160405280600381526020016203130360ec1b815250906102315760405162461bcd60e51b8152600401610228919061044e565b60405180910390fd5b506b033b2e3c9fd0803ce800000061024a600282610414565b61025484866103f5565b61025e9190610436565b6100e99190610414565b60408051808201909152600381526218981960e91b6020820152600090826102a35760405162461bcd60e51b8152600401610228919061044e565b5060006102b1600284610414565b90506b033b2e3c9fd0803ce80000006102cc826000196103de565b6102d69190610414565b8411156040518060400160405280600381526020016203130360ec1b815250906103135760405162461bcd60e51b8152600401610228919061044e565b50828161032c6b033b2e3c9fd0803ce8000000876103f5565b6103369190610436565b6101109190610414565b6000806040838503121561035357600080fd5b50508035926020909101359150565b60008060006060848603121561037757600080fd5b505081359360208301359350604090920135919050565b600080604083850312156103a157600080fd5b82359150602083013564ffffffffff811681146103bd57600080fd5b809150509250929050565b634e487b7160e01b600052601160045260246000fd5b6000828210156103f0576103f06103c8565b500390565b600081600019048311821515161561040f5761040f6103c8565b500290565b60008261043157634e487b7160e01b600052601260045260246000fd5b500490565b60008219821115610449576104496103c8565b500190565b600060208083528351808285015260005b8181101561047b5785810183015185820160400152820161045f565b8181111561048d576000604083870101525b50601f01601f191692909201604001939250505056fea2646970667358221220d7a57651a85a3180e66dc7258c51579237fdf7443af8d5bbe6dbd7fc0334081764736f6c634300080a0033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600436106100565760003560e01c80630c2de0901461005b5780635806b3351461008157806369f2e69114610094578063db53f388146100a7575b600080fd5b61006e610069366004610340565b6100cf565b6040519081526020015b60405180910390f35b61006e61008f366004610362565b6100f2565b61006e6100a236600461038e565b610118565b6100ba6100b5366004610362565b61015e565b60408051928352602083019190915201610078565b60006100e96301e133806100e384866101a3565b90610268565b90505b92915050565b60006101106101096301e133806100e387866101a3565b84906101a3565b949350505050565b60008061012c64ffffffffff8416426103de565b90506b033b2e3c9fd0803ce80000006301e1338061014a83876103f5565b6101549190610414565b6101109190610436565b6000808315801561016d575084155b61018a5761018561017e8587610436565b8590610268565b61018d565b60005b905061019981846101a3565b9150935093915050565b60008215806101b0575081155b156101bd575060006100ec565b816101d560026b033b2e3c9fd0803ce8000000610414565b6101e1906000196103de565b6101eb9190610414565b8311156040518060400160405280600381526020016203130360ec1b815250906102315760405162461bcd60e51b8152600401610228919061044e565b60405180910390fd5b506b033b2e3c9fd0803ce800000061024a600282610414565b61025484866103f5565b61025e9190610436565b6100e99190610414565b60408051808201909152600381526218981960e91b6020820152600090826102a35760405162461bcd60e51b8152600401610228919061044e565b5060006102b1600284610414565b90506b033b2e3c9fd0803ce80000006102cc826000196103de565b6102d69190610414565b8411156040518060400160405280600381526020016203130360ec1b815250906103135760405162461bcd60e51b8152600401610228919061044e565b50828161032c6b033b2e3c9fd0803ce8000000876103f5565b6103369190610436565b6101109190610414565b6000806040838503121561035357600080fd5b50508035926020909101359150565b60008060006060848603121561037757600080fd5b505081359360208301359350604090920135919050565b600080604083850312156103a157600080fd5b82359150602083013564ffffffffff811681146103bd57600080fd5b809150509250929050565b634e487b7160e01b600052601160045260246000fd5b6000828210156103f0576103f06103c8565b500390565b600081600019048311821515161561040f5761040f6103c8565b500290565b60008261043157634e487b7160e01b600052601260045260246000fd5b500490565b60008219821115610449576104496103c8565b500190565b600060208083528351808285015260005b8181101561047b5785810183015185820160400152820161045f565b8181111561048d576000604083870101525b50601f01601f191692909201604001939250505056fea2646970667358221220d7a57651a85a3180e66dc7258c51579237fdf7443af8d5bbe6dbd7fc0334081764736f6c634300080a0033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "calculateLinearInterest(uint256,uint40)": {
+        "details": "Function to calculate the interest accumulated using a linear interest rate formula",
+        "params": {
+          "lastUpdateTimestamp": "The timestamp of the last update of the interest",
+          "rate": "The interest rate, in ray"
+        },
+        "returns": {
+          "_0": "The interest rate linearly accumulated during the timeDelta, in ray*"
+        }
+      }
+    },
+    "stateVariables": {
+      "SECONDS_PER_YEAR": {
+        "details": "Ignoring leap years"
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}

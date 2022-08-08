@@ -1,0 +1,987 @@
+{
+  "address": "0x453359aCa6D52A3A104A65741F80918f96aD81D4",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_ACLManagerAddress",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "currency",
+          "type": "address"
+        }
+      ],
+      "name": "AddCurrency",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "nft",
+          "type": "address"
+        }
+      ],
+      "name": "AddToWhitelist",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        }
+      ],
+      "name": "CloseWhitelist",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "borrowLoanAddress",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "lendLoanAddress",
+          "type": "address"
+        }
+      ],
+      "name": "InitLoanAddress",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "address_",
+          "type": "address"
+        }
+      ],
+      "name": "InitMarketAddress",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        }
+      ],
+      "name": "OpenWhitelist",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "currency",
+          "type": "address"
+        }
+      ],
+      "name": "RemoveCurrency",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "nft",
+          "type": "address"
+        }
+      ],
+      "name": "RemoveFromWhitelist",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "factor",
+          "type": "uint256"
+        }
+      ],
+      "name": "SetMaxBorrowDuration",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "factor",
+          "type": "uint256"
+        }
+      ],
+      "name": "SetMinBorrowDuration",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "factor",
+          "type": "uint256"
+        }
+      ],
+      "name": "SetOverdueDuration",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "factor",
+          "type": "uint256"
+        }
+      ],
+      "name": "SetOverdueLoanFeeFactor",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "factor",
+          "type": "uint256"
+        }
+      ],
+      "name": "SetReserveFactor",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "ACLManagerAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "MAX_RESERVE_FACTOR",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "_currencyWhitelist",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "currency",
+          "type": "address"
+        }
+      ],
+      "name": "addCurrency",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "nft",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "minBorrowDuration",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "maxBorrowDuration",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "overdueDuration",
+          "type": "uint256"
+        }
+      ],
+      "name": "addToWhitelist",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "borrowLoanAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "closeWhitelist",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "nftAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getBorrowDurationConfig",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "minBorrowDuration_",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "maxBorrowDuration_",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "overdueDuration_",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "nft",
+          "type": "address"
+        }
+      ],
+      "name": "getWhitelistDetail",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "bool",
+              "name": "enabled",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "minBorrowDuration",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "maxBorrowDuration",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "overdueDuration",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct BespokeTypes.WhitelistInfo",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "nft",
+          "type": "address"
+        }
+      ],
+      "name": "inWhitelist",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "borrowLoanAddress_",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "lendLoanAddress_",
+          "type": "address"
+        }
+      ],
+      "name": "initLoanAddress",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "address_",
+          "type": "address"
+        }
+      ],
+      "name": "initMarketAddress",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "currency",
+          "type": "address"
+        }
+      ],
+      "name": "isCurrencyWhitelisted",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "isWhitelistOn",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "lendLoanAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "marketAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "maxBorrowDuration",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "minBorrowDuration",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "openWhitelist",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "overdueDuration",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "overdueLoanFeeFactor",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "currency",
+          "type": "address"
+        }
+      ],
+      "name": "removeCurrency",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "nft",
+          "type": "address"
+        }
+      ],
+      "name": "removeFromWhitelist",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "reserveFactor",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "factor",
+          "type": "uint256"
+        }
+      ],
+      "name": "setMaxBorrowDuration",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "factor",
+          "type": "uint256"
+        }
+      ],
+      "name": "setMinBorrowDuration",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "factor",
+          "type": "uint256"
+        }
+      ],
+      "name": "setOverdueDuration",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "factor",
+          "type": "uint256"
+        }
+      ],
+      "name": "setOverdueLoanFeeFactor",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "factor",
+          "type": "uint256"
+        }
+      ],
+      "name": "setReserveFactor",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x4a7ca7f6850b9557c521ad4b667fda592d07aa6b9c790f3cf4a45bb2696054dd",
+  "receipt": {
+    "to": null,
+    "from": "0x1a347f2aac8758E139C7401aEC878aD174C19c8a",
+    "contractAddress": "0x453359aCa6D52A3A104A65741F80918f96aD81D4",
+    "transactionIndex": 239,
+    "gasUsed": "1414598",
+    "logsBloom": "0x00000000000000000000000800000000000000000000000000800000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000020000000000000000000800000000000000000000000000000004400000000000000000000000000008000020000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x0f7b3e823b8bbaa753a6fe46445a6b295e0f06315ae544ab1bd4d078c32e5c88",
+    "transactionHash": "0x4a7ca7f6850b9557c521ad4b667fda592d07aa6b9c790f3cf4a45bb2696054dd",
+    "logs": [
+      {
+        "transactionIndex": 239,
+        "blockNumber": 15223883,
+        "transactionHash": "0x4a7ca7f6850b9557c521ad4b667fda592d07aa6b9c790f3cf4a45bb2696054dd",
+        "address": "0x453359aCa6D52A3A104A65741F80918f96aD81D4",
+        "topics": [
+          "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+          "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "0x0000000000000000000000001a347f2aac8758e139c7401aec878ad174c19c8a"
+        ],
+        "data": "0x",
+        "logIndex": 290,
+        "blockHash": "0x0f7b3e823b8bbaa753a6fe46445a6b295e0f06315ae544ab1bd4d078c32e5c88"
+      }
+    ],
+    "blockNumber": 15223883,
+    "cumulativeGasUsed": "15739693",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0xc4F6A3334085EB4A27578bC0EA23bF301E9822F0"
+  ],
+  "solcInputHash": "0ca3f66e9bd5de21ebb7765f6cea382a",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_ACLManagerAddress\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"currency\",\"type\":\"address\"}],\"name\":\"AddCurrency\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"nft\",\"type\":\"address\"}],\"name\":\"AddToWhitelist\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"CloseWhitelist\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"borrowLoanAddress\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"lendLoanAddress\",\"type\":\"address\"}],\"name\":\"InitLoanAddress\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"address_\",\"type\":\"address\"}],\"name\":\"InitMarketAddress\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"OpenWhitelist\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"currency\",\"type\":\"address\"}],\"name\":\"RemoveCurrency\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"nft\",\"type\":\"address\"}],\"name\":\"RemoveFromWhitelist\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"factor\",\"type\":\"uint256\"}],\"name\":\"SetMaxBorrowDuration\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"factor\",\"type\":\"uint256\"}],\"name\":\"SetMinBorrowDuration\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"factor\",\"type\":\"uint256\"}],\"name\":\"SetOverdueDuration\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"factor\",\"type\":\"uint256\"}],\"name\":\"SetOverdueLoanFeeFactor\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"factor\",\"type\":\"uint256\"}],\"name\":\"SetReserveFactor\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"ACLManagerAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"MAX_RESERVE_FACTOR\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"_currencyWhitelist\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"currency\",\"type\":\"address\"}],\"name\":\"addCurrency\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"nft\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"minBorrowDuration\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"maxBorrowDuration\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"overdueDuration\",\"type\":\"uint256\"}],\"name\":\"addToWhitelist\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"borrowLoanAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"closeWhitelist\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"nftAddress\",\"type\":\"address\"}],\"name\":\"getBorrowDurationConfig\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"minBorrowDuration_\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"maxBorrowDuration_\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"overdueDuration_\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"nft\",\"type\":\"address\"}],\"name\":\"getWhitelistDetail\",\"outputs\":[{\"components\":[{\"internalType\":\"bool\",\"name\":\"enabled\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"minBorrowDuration\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"maxBorrowDuration\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"overdueDuration\",\"type\":\"uint256\"}],\"internalType\":\"struct BespokeTypes.WhitelistInfo\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"nft\",\"type\":\"address\"}],\"name\":\"inWhitelist\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"borrowLoanAddress_\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"lendLoanAddress_\",\"type\":\"address\"}],\"name\":\"initLoanAddress\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"address_\",\"type\":\"address\"}],\"name\":\"initMarketAddress\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"currency\",\"type\":\"address\"}],\"name\":\"isCurrencyWhitelisted\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"isWhitelistOn\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"lendLoanAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"marketAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"maxBorrowDuration\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"minBorrowDuration\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"openWhitelist\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"overdueDuration\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"overdueLoanFeeFactor\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"currency\",\"type\":\"address\"}],\"name\":\"removeCurrency\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"nft\",\"type\":\"address\"}],\"name\":\"removeFromWhitelist\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"reserveFactor\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"factor\",\"type\":\"uint256\"}],\"name\":\"setMaxBorrowDuration\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"factor\",\"type\":\"uint256\"}],\"name\":\"setMinBorrowDuration\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"factor\",\"type\":\"uint256\"}],\"name\":\"setOverdueDuration\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"factor\",\"type\":\"uint256\"}],\"name\":\"setOverdueLoanFeeFactor\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"factor\",\"type\":\"uint256\"}],\"name\":\"setReserveFactor\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/bespokemarket/OpenSkyBespokeSettings.sol\":\"OpenSkyBespokeSettings\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/access/Ownable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../utils/Context.sol\\\";\\n\\n/**\\n * @dev Contract module which provides a basic access control mechanism, where\\n * there is an account (an owner) that can be granted exclusive access to\\n * specific functions.\\n *\\n * By default, the owner account will be the one that deploys the contract. This\\n * can later be changed with {transferOwnership}.\\n *\\n * This module is used through inheritance. It will make available the modifier\\n * `onlyOwner`, which can be applied to your functions to restrict their use to\\n * the owner.\\n */\\nabstract contract Ownable is Context {\\n    address private _owner;\\n\\n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\\n\\n    /**\\n     * @dev Initializes the contract setting the deployer as the initial owner.\\n     */\\n    constructor() {\\n        _setOwner(_msgSender());\\n    }\\n\\n    /**\\n     * @dev Returns the address of the current owner.\\n     */\\n    function owner() public view virtual returns (address) {\\n        return _owner;\\n    }\\n\\n    /**\\n     * @dev Throws if called by any account other than the owner.\\n     */\\n    modifier onlyOwner() {\\n        require(owner() == _msgSender(), \\\"Ownable: caller is not the owner\\\");\\n        _;\\n    }\\n\\n    /**\\n     * @dev Leaves the contract without owner. It will not be possible to call\\n     * `onlyOwner` functions anymore. Can only be called by the current owner.\\n     *\\n     * NOTE: Renouncing ownership will leave the contract without an owner,\\n     * thereby removing any functionality that is only available to the owner.\\n     */\\n    function renounceOwnership() public virtual onlyOwner {\\n        _setOwner(address(0));\\n    }\\n\\n    /**\\n     * @dev Transfers ownership of the contract to a new account (`newOwner`).\\n     * Can only be called by the current owner.\\n     */\\n    function transferOwnership(address newOwner) public virtual onlyOwner {\\n        require(newOwner != address(0), \\\"Ownable: new owner is the zero address\\\");\\n        _setOwner(newOwner);\\n    }\\n\\n    function _setOwner(address newOwner) private {\\n        address oldOwner = _owner;\\n        _owner = newOwner;\\n        emit OwnershipTransferred(oldOwner, newOwner);\\n    }\\n}\\n\",\"keccak256\":\"0x6bb804a310218875e89d12c053e94a13a4607cdf7cc2052f3e52bd32a0dc50a1\",\"license\":\"MIT\"},\"@openzeppelin/contracts/utils/Context.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Provides information about the current execution context, including the\\n * sender of the transaction and its data. While these are generally available\\n * via msg.sender and msg.data, they should not be accessed in such a direct\\n * manner, since when dealing with meta-transactions the account sending and\\n * paying for execution may not be the actual sender (as far as an application\\n * is concerned).\\n *\\n * This contract is only required for intermediate, library-like contracts.\\n */\\nabstract contract Context {\\n    function _msgSender() internal view virtual returns (address) {\\n        return msg.sender;\\n    }\\n\\n    function _msgData() internal view virtual returns (bytes calldata) {\\n        return msg.data;\\n    }\\n}\\n\",\"keccak256\":\"0x90565a39ae45c80f0468dc96c7b20d0afc3055f344c8203a0c9258239f350b9f\",\"license\":\"MIT\"},\"contracts/bespokemarket/OpenSkyBespokeSettings.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nimport '@openzeppelin/contracts/access/Ownable.sol';\\n\\nimport '../interfaces/IACLManager.sol';\\nimport './interfaces/IOpenSkyBespokeSettings.sol';\\nimport './libraries/BespokeTypes.sol';\\n\\ncontract OpenSkyBespokeSettings is Ownable, IOpenSkyBespokeSettings {\\n    uint256 public constant MAX_RESERVE_FACTOR = 3000;\\n\\n    address public immutable ACLManagerAddress;\\n\\n    // nft whitelist\\n    bool public override isWhitelistOn = false;\\n    // nftAddress=>data\\n    mapping(address => BespokeTypes.WhitelistInfo) internal _whitelist;\\n\\n    // currency whitelist\\n    mapping(address => bool) public _currencyWhitelist;\\n\\n    // one-time initialization\\n    address public override marketAddress;\\n    address public override borrowLoanAddress;\\n    address public override lendLoanAddress;\\n\\n    // governance factors\\n    uint256 public override reserveFactor = 2000;\\n    uint256 public override overdueLoanFeeFactor = 100;\\n\\n    uint256 public override minBorrowDuration = 30 minutes;\\n    uint256 public override maxBorrowDuration = 60 days;\\n    uint256 public override overdueDuration = 2 days;\\n\\n    modifier onlyGovernance() {\\n        IACLManager ACLManager = IACLManager(ACLManagerAddress);\\n        require(ACLManager.isGovernance(_msgSender()), 'BM_ACL_ONLY_GOVERNANCE_CAN_CALL');\\n        _;\\n    }\\n    modifier onlyWhenNotInitialized(address address_) {\\n        require(address_ == address(0));\\n        _;\\n    }\\n\\n    constructor(address _ACLManagerAddress) Ownable() {\\n        ACLManagerAddress = _ACLManagerAddress;\\n    }\\n\\n    // OpenSkyBespokeMarket address\\n    function initMarketAddress(address address_) external onlyOwner onlyWhenNotInitialized(marketAddress) {\\n        require(address_ != address(0));\\n        marketAddress = address_;\\n        emit InitMarketAddress(msg.sender, address_);\\n    }\\n\\n    function initLoanAddress(address borrowLoanAddress_, address lendLoanAddress_)\\n        external\\n        onlyOwner\\n        onlyWhenNotInitialized(borrowLoanAddress)\\n        onlyWhenNotInitialized(lendLoanAddress)\\n    {\\n        require(borrowLoanAddress_ != address(0) && lendLoanAddress_ != address(0));\\n        borrowLoanAddress = borrowLoanAddress_;\\n        lendLoanAddress = lendLoanAddress_;\\n        emit InitLoanAddress(msg.sender, borrowLoanAddress_, lendLoanAddress_);\\n    }\\n    \\n    function setMinBorrowDuration(uint256 factor) external onlyGovernance {\\n        require(minBorrowDuration > 0);\\n        minBorrowDuration = factor;\\n        emit SetMinBorrowDuration(msg.sender, factor);\\n    }\\n\\n    function setMaxBorrowDuration(uint256 factor) external onlyGovernance {\\n        require(maxBorrowDuration > 0);\\n        maxBorrowDuration = factor;\\n        emit SetMaxBorrowDuration(msg.sender, factor);\\n    }\\n\\n    function setOverdueDuration(uint256 factor) external onlyGovernance {\\n        overdueDuration = factor;\\n        emit SetOverdueDuration(msg.sender, factor);\\n    }\\n\\n    function setReserveFactor(uint256 factor) external onlyGovernance {\\n        require(factor <= MAX_RESERVE_FACTOR);\\n        reserveFactor = factor;\\n        emit SetReserveFactor(msg.sender, factor);\\n    }\\n\\n    function setOverdueLoanFeeFactor(uint256 factor) external onlyGovernance {\\n        overdueLoanFeeFactor = factor;\\n        emit SetOverdueLoanFeeFactor(msg.sender, factor);\\n    }\\n\\n    function openWhitelist() external onlyGovernance {\\n        isWhitelistOn = true;\\n        emit OpenWhitelist(msg.sender);\\n    }\\n\\n    function closeWhitelist() external onlyGovernance {\\n        isWhitelistOn = false;\\n        emit CloseWhitelist(msg.sender);\\n    }\\n\\n    function addToWhitelist(\\n        address nft,\\n        uint256 minBorrowDuration,\\n        uint256 maxBorrowDuration,\\n        uint256 overdueDuration\\n    ) external onlyGovernance {\\n        require(nft != address(0));\\n        require(minBorrowDuration <= maxBorrowDuration);\\n        _whitelist[nft] = BespokeTypes.WhitelistInfo({\\n            enabled: true,\\n            minBorrowDuration: minBorrowDuration,\\n            maxBorrowDuration: maxBorrowDuration,\\n            overdueDuration: overdueDuration\\n        });\\n        emit AddToWhitelist(msg.sender, nft);\\n    }\\n\\n    function removeFromWhitelist(address nft) external onlyGovernance {\\n        if (_whitelist[nft].enabled) {\\n            _whitelist[nft].enabled = false;\\n            emit RemoveFromWhitelist(msg.sender, nft);\\n        }\\n    }\\n\\n    function inWhitelist(address nft) public view override returns (bool) {\\n        require(nft != address(0));\\n        return !isWhitelistOn || _whitelist[nft].enabled;\\n    }\\n\\n    function getWhitelistDetail(address nft) public view override returns (BespokeTypes.WhitelistInfo memory) {\\n        return _whitelist[nft];\\n    }\\n\\n    function getBorrowDurationConfig(address nftAddress)\\n        public\\n        view\\n        override\\n        returns (\\n            uint256 minBorrowDuration_,\\n            uint256 maxBorrowDuration_,\\n            uint256 overdueDuration_\\n        )\\n    {\\n        if (isWhitelistOn && inWhitelist(nftAddress)) {\\n            BespokeTypes.WhitelistInfo memory info = getWhitelistDetail(nftAddress);\\n            minBorrowDuration_ = info.minBorrowDuration;\\n            maxBorrowDuration_ = info.maxBorrowDuration;\\n            overdueDuration_ = info.overdueDuration;\\n        } else {\\n            minBorrowDuration_ = minBorrowDuration;\\n            maxBorrowDuration_ = maxBorrowDuration;\\n            overdueDuration_ = overdueDuration;\\n        }\\n    }\\n\\n    // currency whitelist\\n    function addCurrency(address currency) external onlyGovernance {\\n        require(currency != address(0));\\n        if (_currencyWhitelist[currency] != true) {\\n            _currencyWhitelist[currency] = true;\\n        }\\n        emit AddCurrency(msg.sender, currency);\\n    }\\n\\n    function removeCurrency(address currency) external onlyGovernance {\\n        require(currency != address(0));\\n        delete _currencyWhitelist[currency];\\n        emit RemoveCurrency(msg.sender, currency);\\n    }\\n\\n    function isCurrencyWhitelisted(address currency) external view override returns (bool) {\\n        return _currencyWhitelist[currency];\\n    }\\n}\\n\",\"keccak256\":\"0xd12a4100055ffc4565b35fc93e98b3911e3a56c21d44e63babdd4521f80317be\",\"license\":\"MIT\"},\"contracts/bespokemarket/interfaces/IOpenSkyBespokeSettings.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\nimport '../libraries/BespokeTypes.sol';\\n\\ninterface IOpenSkyBespokeSettings {\\n    event InitLoanAddress(address operator, address borrowLoanAddress, address lendLoanAddress);\\n    event InitMarketAddress(address operator, address address_);\\n\\n    event SetReserveFactor(address operator, uint256 factor);\\n    event SetOverdueLoanFeeFactor(address operator, uint256 factor);\\n\\n    event SetMinBorrowDuration(address operator, uint256 factor);\\n    event SetMaxBorrowDuration(address operator, uint256 factor);\\n    event SetOverdueDuration(address operator, uint256 factor);\\n\\n    event OpenWhitelist(address operator);\\n    event CloseWhitelist(address operator);\\n    event AddToWhitelist(address operator, address nft);\\n    event RemoveFromWhitelist(address operator, address nft);\\n\\n    event AddCurrency(address operator, address currency);\\n    event RemoveCurrency(address operator, address currency);\\n\\n    function marketAddress() external view returns (address);\\n\\n    function borrowLoanAddress() external view returns (address);\\n\\n    function lendLoanAddress() external view returns (address);\\n\\n\\n    function minBorrowDuration() external view returns (uint256);\\n\\n    function maxBorrowDuration() external view returns (uint256);\\n\\n    function overdueDuration() external view returns (uint256);\\n\\n    function reserveFactor() external view returns (uint256);\\n\\n    function MAX_RESERVE_FACTOR() external view returns (uint256);\\n\\n    function overdueLoanFeeFactor() external view returns (uint256);\\n\\n    function isWhitelistOn() external view returns (bool);\\n\\n    function inWhitelist(address nft) external view returns (bool);\\n\\n    function getWhitelistDetail(address nft) external view returns (BespokeTypes.WhitelistInfo memory);\\n\\n    function getBorrowDurationConfig(address nftAddress)\\n        external\\n        view\\n        returns (\\n            uint256 minBorrowDuration,\\n            uint256 maxBorrowDuration,\\n            uint256 overdueDuration\\n        );\\n\\n    function isCurrencyWhitelisted(address currency) external view returns (bool);\\n}\\n\",\"keccak256\":\"0x0b6cb91d7952c11b601d5431abbdc4836a0bec67c9deb37ff483a3b9d7984eb0\",\"license\":\"MIT\"},\"contracts/bespokemarket/libraries/BespokeTypes.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nlibrary BespokeTypes {\\n    struct BorrowOffer {\\n        uint256 reserveId;\\n        address nftAddress;\\n        uint256 tokenId;\\n        uint256 tokenAmount; // 1 for ERC721, 1+ for ERC1155\\n        address borrower;\\n        uint256 borrowAmountMin;\\n        uint256 borrowAmountMax;\\n        uint40 borrowDurationMin;\\n        uint40 borrowDurationMax;\\n        uint128 borrowRate;\\n        address currency;\\n        uint256 nonce;\\n        uint256 deadline;\\n        uint8 v; // v: parameter (27 or 28)\\n        bytes32 r; // r: parameter\\n        bytes32 s; // s: parameter\\n    }\\n\\n    struct LoanData {\\n        uint256 reserveId;\\n        address nftAddress;\\n        uint256 tokenId;\\n        uint256 tokenAmount; // 1 for ERC721, 1+ for ERC1155\\n        address borrower;\\n        uint256 amount;\\n        uint128 borrowRate;\\n        uint128 interestPerSecond;\\n        address currency;\\n        uint40 borrowDuration;\\n        // after take offer\\n        uint40 borrowBegin;\\n        uint40 borrowOverdueTime;\\n        uint40 liquidatableTime;\\n        address lender;\\n        LoanStatus status;\\n    }\\n\\n    enum LoanStatus {\\n        NONE,\\n        BORROWING,\\n        OVERDUE,\\n        LIQUIDATABLE\\n    }\\n\\n    struct WhitelistInfo {\\n        bool enabled;\\n        uint256 minBorrowDuration;\\n        uint256 maxBorrowDuration;\\n        uint256 overdueDuration;\\n    }\\n}\\n\",\"keccak256\":\"0x7adc607a70cf9d822f93a7f214937e57c769da7e3e304c594fee1b86fa8d68b0\",\"license\":\"MIT\"},\"contracts/interfaces/IACLManager.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\ninterface IACLManager {\\n    function addEmergencyAdmin(address admin) external;\\n    \\n    function isEmergencyAdmin(address admin) external view returns (bool);\\n    \\n    function removeEmergencyAdmin(address admin) external;\\n    \\n    function addGovernance(address admin) external;\\n    \\n    function isGovernance(address admin) external view returns (bool);\\n\\n    function removeGovernance(address admin) external;\\n\\n    function addPoolAdmin(address admin) external;\\n\\n    function isPoolAdmin(address admin) external view returns (bool);\\n\\n    function removePoolAdmin(address admin) external;\\n\\n    function addLiquidationOperator(address address_) external;\\n\\n    function isLiquidationOperator(address address_) external view returns (bool);\\n\\n    function removeLiquidationOperator(address address_) external;\\n\\n    function addAirdropOperator(address address_) external;\\n\\n    function isAirdropOperator(address address_) external view returns (bool);\\n\\n    function removeAirdropOperator(address address_) external;\\n}\\n\",\"keccak256\":\"0x0e77d3bdc88ba10cd78a9a80350bbf0d4120a1d0ac7c7911bef8c8cb389cf42f\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x60a06040526000805460ff60a01b191690556107d06006556064600755610708600855624f1a006009556202a300600a5534801561003c57600080fd5b5060405161178738038061178783398101604081905261005b916100c5565b61006433610075565b6001600160a01b03166080526100f5565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b6000602082840312156100d757600080fd5b81516001600160a01b03811681146100ee57600080fd5b9392505050565b60805161162a61015d600039600081816103a2015281816104c3015281816105cb015281816106d20152818161094601528181610a6e01528181610b5e01528181610c9001528181610eee0152818161105f015281816111cb01526112ca015261162a6000f3fe608060405234801561001057600080fd5b50600436106101f05760003560e01c8063956236411161010f578063c5d3a107116100a2578063e9772cd311610071578063e9772cd31461047f578063ee08fed614610492578063efc62f7a1461049b578063f2fde38b146104ae57600080fd5b8063c5d3a10714610447578063d23a65cf1461045a578063d7a5a9d314610463578063e2aafa211461046c57600080fd5b8063b3934838116100de578063b3934838146103fb578063b585945f1461040e578063bb322a8314610421578063bd33deb31461043457600080fd5b8063956236411461038a5780639a9dbb991461039d5780639ecdda21146103c4578063ab0868bc146103cd57600080fd5b8063659d4ba2116101875780638ab1d681116101565780638ab1d681146103365780638ab234b6146103495780638da5cb5b1461035c57806393aa28451461038157600080fd5b8063659d4ba2146102e4578063715018a614610307578063716f10bf1461030f57806389cdd47d1461032357600080fd5b80633bdd1235116101c35780633bdd1235146102385780634322b7141461028957806343b938c5146102a0578063586b9a7c146102dc57600080fd5b8063083bbe7f146101f55780631b52ba71146101ff5780631c4469831461021257806330aec12714610225575b600080fd5b6101fd6104c1565b005b6101fd61020d3660046114a3565b6105c9565b6101fd6102203660046114a3565b6106d0565b6101fd6102333660046114d8565b6107cf565b61024b61024636600461150b565b6108c5565b604051610280919081511515815260208083015190820152604080830151908201526060918201519181019190915260800190565b60405180910390f35b61029260065481565b604051908152602001610280565b6102cc6102ae36600461150b565b6001600160a01b031660009081526002602052604090205460ff1690565b6040519015158152602001610280565b6101fd610944565b6102cc6102f236600461150b565b60026020526000908152604090205460ff1681565b6101fd610a36565b6000546102cc90600160a01b900460ff1681565b6101fd6103313660046114a3565b610a6c565b6101fd61034436600461150b565b610b5c565b6101fd61035736600461150b565b610c8e565b6000546001600160a01b03165b6040516001600160a01b039091168152602001610280565b61029260095481565b600354610369906001600160a01b031681565b6103697f000000000000000000000000000000000000000000000000000000000000000081565b61029260085481565b6103e06103db36600461150b565b610ddd565b60408051938452602084019290925290820152606001610280565b600554610369906001600160a01b031681565b6101fd61041c36600461150b565b610e43565b600454610369906001600160a01b031681565b6101fd61044236600461152d565b610eec565b6101fd61045536600461150b565b61105d565b610292610bb881565b61029260075481565b6102cc61047a36600461150b565b61117d565b6101fd61048d3660046114a3565b6111c9565b610292600a5481565b6101fd6104a93660046114a3565b6112c8565b6101fd6104bc36600461150b565b6113b8565b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03811663dee1f0e4336040516001600160e01b031960e084901b1681526001600160a01b039091166004820152602401602060405180830381865afa158015610536573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061055a9190611566565b61057f5760405162461bcd60e51b815260040161057690611588565b60405180910390fd5b6000805460ff60a01b1916600160a01b1790556040513381527f89d8e5084cb20a926de5df07f7b8263f1228ed46d85d84afa6773e5d7ce813db906020015b60405180910390a150565b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03811663dee1f0e4336040516001600160e01b031960e084901b1681526001600160a01b039091166004820152602401602060405180830381865afa15801561063e573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906106629190611566565b61067e5760405162461bcd60e51b815260040161057690611588565b60006009541161068d57600080fd5b600982905560408051338152602081018490527fcccf2b6d79b744c1a827f0ad86745f230e1ef5e3aa0891d0a1a6b2e6e447b07491015b60405180910390a15050565b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03811663dee1f0e4336040516001600160e01b031960e084901b1681526001600160a01b039091166004820152602401602060405180830381865afa158015610745573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906107699190611566565b6107855760405162461bcd60e51b815260040161057690611588565b610bb882111561079457600080fd5b600682905560408051338152602081018490527faec3b0dfb932ebcf519716c413557fafef520bf9d7a371d8ef50799927c70ff391016106c4565b6000546001600160a01b031633146107f95760405162461bcd60e51b8152600401610576906115bf565b6004546001600160a01b0316801561081057600080fd5b6005546001600160a01b0316801561082757600080fd5b6001600160a01b0384161580159061084757506001600160a01b03831615155b61085057600080fd5b600480546001600160a01b038681166001600160a01b03199283168117909355600580549187169190921681179091556040805133815260208101939093528201527fb7ca9e57486893e0e5ce606ca83c7476f96585ff72732ee6e632c0695b72fbeb9060600160405180910390a150505050565b6108f260405180608001604052806000151581526020016000815260200160008152602001600081525090565b506001600160a01b03166000908152600160208181526040928390208351608081018552815460ff16151581529281015491830191909152600281015492820192909252600390910154606082015290565b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03811663dee1f0e4336040516001600160e01b031960e084901b1681526001600160a01b039091166004820152602401602060405180830381865afa1580156109b9573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906109dd9190611566565b6109f95760405162461bcd60e51b815260040161057690611588565b6000805460ff60a01b191690556040513381527f15d2336aba2921f545ef5492de5c469a1aa3b00e0816b075e36897bcd10bfe4a906020016105be565b6000546001600160a01b03163314610a605760405162461bcd60e51b8152600401610576906115bf565b610a6a6000611453565b565b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03811663dee1f0e4336040516001600160e01b031960e084901b1681526001600160a01b039091166004820152602401602060405180830381865afa158015610ae1573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610b059190611566565b610b215760405162461bcd60e51b815260040161057690611588565b600782905560408051338152602081018490527f7c711ee19f0c912a57665c93f4d4e5c0eadfe3547c2a7674d27e359ddcc0126e91016106c4565b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03811663dee1f0e4336040516001600160e01b031960e084901b1681526001600160a01b039091166004820152602401602060405180830381865afa158015610bd1573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610bf59190611566565b610c115760405162461bcd60e51b815260040161057690611588565b6001600160a01b03821660009081526001602052604090205460ff1615610c8a576001600160a01b038216600081815260016020908152604091829020805460ff191690558151338152908101929092527fd69d323ec27eb997f9c9466b0c1f1f37d65382a7caeee9c9cacaf093d6d0bb5791016106c4565b5050565b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03811663dee1f0e4336040516001600160e01b031960e084901b1681526001600160a01b039091166004820152602401602060405180830381865afa158015610d03573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610d279190611566565b610d435760405162461bcd60e51b815260040161057690611588565b6001600160a01b038216610d5657600080fd5b6001600160a01b03821660009081526002602052604090205460ff161515600114610d9f576001600160a01b0382166000908152600260205260409020805460ff191660011790555b604080513381526001600160a01b03841660208201527fbfa39708e75c2b57953423380dc6d5f9416972bae39f35b1eff332f8cc0d841991016106c4565b6000805481908190600160a01b900460ff168015610dff5750610dff8461117d565b15610e2c576000610e0f856108c5565b905080602001519350806040015192508060600151915050610e3c565b60085492506009549150600a5490505b9193909250565b6000546001600160a01b03163314610e6d5760405162461bcd60e51b8152600401610576906115bf565b6003546001600160a01b03168015610e8457600080fd5b6001600160a01b038216610e9757600080fd5b600380546001600160a01b0319166001600160a01b0384169081179091556040805133815260208101929092527fa7ebd3b8f60f1612c46fda3d490cf7627bf136da9c5d474a5bd1d1bcaa3c898d91016106c4565b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03811663dee1f0e4336040516001600160e01b031960e084901b1681526001600160a01b039091166004820152602401602060405180830381865afa158015610f61573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610f859190611566565b610fa15760405162461bcd60e51b815260040161057690611588565b6001600160a01b038516610fb457600080fd5b82841115610fc157600080fd5b6040805160808101825260018082526020808301888152838501888152606085018881526001600160a01b038c1660008181528686528890209651875460ff191690151517875592519486019490945551600285015591516003909301929092558251338152918201527f1d579ce37763c9894e144fe60df6d85b0eaa341ed20bcb7045de4a9327eb5115910160405180910390a15050505050565b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03811663dee1f0e4336040516001600160e01b031960e084901b1681526001600160a01b039091166004820152602401602060405180830381865afa1580156110d2573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906110f69190611566565b6111125760405162461bcd60e51b815260040161057690611588565b6001600160a01b03821661112557600080fd5b6001600160a01b038216600081815260026020908152604091829020805460ff191690558151338152908101929092527f16142d8f56d140e51ef5a88861836c9a65b9af1bab0bbb809efa6b7a9055d9c691016106c4565b60006001600160a01b03821661119257600080fd5b600054600160a01b900460ff1615806111c357506001600160a01b03821660009081526001602052604090205460ff165b92915050565b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03811663dee1f0e4336040516001600160e01b031960e084901b1681526001600160a01b039091166004820152602401602060405180830381865afa15801561123e573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906112629190611566565b61127e5760405162461bcd60e51b815260040161057690611588565b60006008541161128d57600080fd5b600882905560408051338152602081018490527fdb02dc087b6dff9517046962b8bebc2baf0dc57c322d08fd72d6ed4197f497cc91016106c4565b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03811663dee1f0e4336040516001600160e01b031960e084901b1681526001600160a01b039091166004820152602401602060405180830381865afa15801561133d573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906113619190611566565b61137d5760405162461bcd60e51b815260040161057690611588565b600a82905560408051338152602081018490527f84bb6fd7054b5db22ce3c0418c9d65f63ce3ba62f757223bde70dcfb7354dd1891016106c4565b6000546001600160a01b031633146113e25760405162461bcd60e51b8152600401610576906115bf565b6001600160a01b0381166114475760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b6064820152608401610576565b61145081611453565b50565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b6000602082840312156114b557600080fd5b5035919050565b80356001600160a01b03811681146114d357600080fd5b919050565b600080604083850312156114eb57600080fd5b6114f4836114bc565b9150611502602084016114bc565b90509250929050565b60006020828403121561151d57600080fd5b611526826114bc565b9392505050565b6000806000806080858703121561154357600080fd5b61154c856114bc565b966020860135965060408601359560600135945092505050565b60006020828403121561157857600080fd5b8151801515811461152657600080fd5b6020808252601f908201527f424d5f41434c5f4f4e4c595f474f5645524e414e43455f43414e5f43414c4c00604082015260600190565b6020808252818101527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657260408201526060019056fea264697066735822122008f85787680f9e67c599ccd5e8926be0873cd3a31b4fdd32ef036da13c954ef164736f6c634300080a0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106101f05760003560e01c8063956236411161010f578063c5d3a107116100a2578063e9772cd311610071578063e9772cd31461047f578063ee08fed614610492578063efc62f7a1461049b578063f2fde38b146104ae57600080fd5b8063c5d3a10714610447578063d23a65cf1461045a578063d7a5a9d314610463578063e2aafa211461046c57600080fd5b8063b3934838116100de578063b3934838146103fb578063b585945f1461040e578063bb322a8314610421578063bd33deb31461043457600080fd5b8063956236411461038a5780639a9dbb991461039d5780639ecdda21146103c4578063ab0868bc146103cd57600080fd5b8063659d4ba2116101875780638ab1d681116101565780638ab1d681146103365780638ab234b6146103495780638da5cb5b1461035c57806393aa28451461038157600080fd5b8063659d4ba2146102e4578063715018a614610307578063716f10bf1461030f57806389cdd47d1461032357600080fd5b80633bdd1235116101c35780633bdd1235146102385780634322b7141461028957806343b938c5146102a0578063586b9a7c146102dc57600080fd5b8063083bbe7f146101f55780631b52ba71146101ff5780631c4469831461021257806330aec12714610225575b600080fd5b6101fd6104c1565b005b6101fd61020d3660046114a3565b6105c9565b6101fd6102203660046114a3565b6106d0565b6101fd6102333660046114d8565b6107cf565b61024b61024636600461150b565b6108c5565b604051610280919081511515815260208083015190820152604080830151908201526060918201519181019190915260800190565b60405180910390f35b61029260065481565b604051908152602001610280565b6102cc6102ae36600461150b565b6001600160a01b031660009081526002602052604090205460ff1690565b6040519015158152602001610280565b6101fd610944565b6102cc6102f236600461150b565b60026020526000908152604090205460ff1681565b6101fd610a36565b6000546102cc90600160a01b900460ff1681565b6101fd6103313660046114a3565b610a6c565b6101fd61034436600461150b565b610b5c565b6101fd61035736600461150b565b610c8e565b6000546001600160a01b03165b6040516001600160a01b039091168152602001610280565b61029260095481565b600354610369906001600160a01b031681565b6103697f000000000000000000000000000000000000000000000000000000000000000081565b61029260085481565b6103e06103db36600461150b565b610ddd565b60408051938452602084019290925290820152606001610280565b600554610369906001600160a01b031681565b6101fd61041c36600461150b565b610e43565b600454610369906001600160a01b031681565b6101fd61044236600461152d565b610eec565b6101fd61045536600461150b565b61105d565b610292610bb881565b61029260075481565b6102cc61047a36600461150b565b61117d565b6101fd61048d3660046114a3565b6111c9565b610292600a5481565b6101fd6104a93660046114a3565b6112c8565b6101fd6104bc36600461150b565b6113b8565b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03811663dee1f0e4336040516001600160e01b031960e084901b1681526001600160a01b039091166004820152602401602060405180830381865afa158015610536573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061055a9190611566565b61057f5760405162461bcd60e51b815260040161057690611588565b60405180910390fd5b6000805460ff60a01b1916600160a01b1790556040513381527f89d8e5084cb20a926de5df07f7b8263f1228ed46d85d84afa6773e5d7ce813db906020015b60405180910390a150565b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03811663dee1f0e4336040516001600160e01b031960e084901b1681526001600160a01b039091166004820152602401602060405180830381865afa15801561063e573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906106629190611566565b61067e5760405162461bcd60e51b815260040161057690611588565b60006009541161068d57600080fd5b600982905560408051338152602081018490527fcccf2b6d79b744c1a827f0ad86745f230e1ef5e3aa0891d0a1a6b2e6e447b07491015b60405180910390a15050565b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03811663dee1f0e4336040516001600160e01b031960e084901b1681526001600160a01b039091166004820152602401602060405180830381865afa158015610745573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906107699190611566565b6107855760405162461bcd60e51b815260040161057690611588565b610bb882111561079457600080fd5b600682905560408051338152602081018490527faec3b0dfb932ebcf519716c413557fafef520bf9d7a371d8ef50799927c70ff391016106c4565b6000546001600160a01b031633146107f95760405162461bcd60e51b8152600401610576906115bf565b6004546001600160a01b0316801561081057600080fd5b6005546001600160a01b0316801561082757600080fd5b6001600160a01b0384161580159061084757506001600160a01b03831615155b61085057600080fd5b600480546001600160a01b038681166001600160a01b03199283168117909355600580549187169190921681179091556040805133815260208101939093528201527fb7ca9e57486893e0e5ce606ca83c7476f96585ff72732ee6e632c0695b72fbeb9060600160405180910390a150505050565b6108f260405180608001604052806000151581526020016000815260200160008152602001600081525090565b506001600160a01b03166000908152600160208181526040928390208351608081018552815460ff16151581529281015491830191909152600281015492820192909252600390910154606082015290565b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03811663dee1f0e4336040516001600160e01b031960e084901b1681526001600160a01b039091166004820152602401602060405180830381865afa1580156109b9573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906109dd9190611566565b6109f95760405162461bcd60e51b815260040161057690611588565b6000805460ff60a01b191690556040513381527f15d2336aba2921f545ef5492de5c469a1aa3b00e0816b075e36897bcd10bfe4a906020016105be565b6000546001600160a01b03163314610a605760405162461bcd60e51b8152600401610576906115bf565b610a6a6000611453565b565b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03811663dee1f0e4336040516001600160e01b031960e084901b1681526001600160a01b039091166004820152602401602060405180830381865afa158015610ae1573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610b059190611566565b610b215760405162461bcd60e51b815260040161057690611588565b600782905560408051338152602081018490527f7c711ee19f0c912a57665c93f4d4e5c0eadfe3547c2a7674d27e359ddcc0126e91016106c4565b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03811663dee1f0e4336040516001600160e01b031960e084901b1681526001600160a01b039091166004820152602401602060405180830381865afa158015610bd1573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610bf59190611566565b610c115760405162461bcd60e51b815260040161057690611588565b6001600160a01b03821660009081526001602052604090205460ff1615610c8a576001600160a01b038216600081815260016020908152604091829020805460ff191690558151338152908101929092527fd69d323ec27eb997f9c9466b0c1f1f37d65382a7caeee9c9cacaf093d6d0bb5791016106c4565b5050565b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03811663dee1f0e4336040516001600160e01b031960e084901b1681526001600160a01b039091166004820152602401602060405180830381865afa158015610d03573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610d279190611566565b610d435760405162461bcd60e51b815260040161057690611588565b6001600160a01b038216610d5657600080fd5b6001600160a01b03821660009081526002602052604090205460ff161515600114610d9f576001600160a01b0382166000908152600260205260409020805460ff191660011790555b604080513381526001600160a01b03841660208201527fbfa39708e75c2b57953423380dc6d5f9416972bae39f35b1eff332f8cc0d841991016106c4565b6000805481908190600160a01b900460ff168015610dff5750610dff8461117d565b15610e2c576000610e0f856108c5565b905080602001519350806040015192508060600151915050610e3c565b60085492506009549150600a5490505b9193909250565b6000546001600160a01b03163314610e6d5760405162461bcd60e51b8152600401610576906115bf565b6003546001600160a01b03168015610e8457600080fd5b6001600160a01b038216610e9757600080fd5b600380546001600160a01b0319166001600160a01b0384169081179091556040805133815260208101929092527fa7ebd3b8f60f1612c46fda3d490cf7627bf136da9c5d474a5bd1d1bcaa3c898d91016106c4565b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03811663dee1f0e4336040516001600160e01b031960e084901b1681526001600160a01b039091166004820152602401602060405180830381865afa158015610f61573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610f859190611566565b610fa15760405162461bcd60e51b815260040161057690611588565b6001600160a01b038516610fb457600080fd5b82841115610fc157600080fd5b6040805160808101825260018082526020808301888152838501888152606085018881526001600160a01b038c1660008181528686528890209651875460ff191690151517875592519486019490945551600285015591516003909301929092558251338152918201527f1d579ce37763c9894e144fe60df6d85b0eaa341ed20bcb7045de4a9327eb5115910160405180910390a15050505050565b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03811663dee1f0e4336040516001600160e01b031960e084901b1681526001600160a01b039091166004820152602401602060405180830381865afa1580156110d2573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906110f69190611566565b6111125760405162461bcd60e51b815260040161057690611588565b6001600160a01b03821661112557600080fd5b6001600160a01b038216600081815260026020908152604091829020805460ff191690558151338152908101929092527f16142d8f56d140e51ef5a88861836c9a65b9af1bab0bbb809efa6b7a9055d9c691016106c4565b60006001600160a01b03821661119257600080fd5b600054600160a01b900460ff1615806111c357506001600160a01b03821660009081526001602052604090205460ff165b92915050565b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03811663dee1f0e4336040516001600160e01b031960e084901b1681526001600160a01b039091166004820152602401602060405180830381865afa15801561123e573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906112629190611566565b61127e5760405162461bcd60e51b815260040161057690611588565b60006008541161128d57600080fd5b600882905560408051338152602081018490527fdb02dc087b6dff9517046962b8bebc2baf0dc57c322d08fd72d6ed4197f497cc91016106c4565b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03811663dee1f0e4336040516001600160e01b031960e084901b1681526001600160a01b039091166004820152602401602060405180830381865afa15801561133d573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906113619190611566565b61137d5760405162461bcd60e51b815260040161057690611588565b600a82905560408051338152602081018490527f84bb6fd7054b5db22ce3c0418c9d65f63ce3ba62f757223bde70dcfb7354dd1891016106c4565b6000546001600160a01b031633146113e25760405162461bcd60e51b8152600401610576906115bf565b6001600160a01b0381166114475760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b6064820152608401610576565b61145081611453565b50565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b6000602082840312156114b557600080fd5b5035919050565b80356001600160a01b03811681146114d357600080fd5b919050565b600080604083850312156114eb57600080fd5b6114f4836114bc565b9150611502602084016114bc565b90509250929050565b60006020828403121561151d57600080fd5b611526826114bc565b9392505050565b6000806000806080858703121561154357600080fd5b61154c856114bc565b966020860135965060408601359560600135945092505050565b60006020828403121561157857600080fd5b8151801515811461152657600080fd5b6020808252601f908201527f424d5f41434c5f4f4e4c595f474f5645524e414e43455f43414e5f43414c4c00604082015260600190565b6020808252818101527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657260408201526060019056fea264697066735822122008f85787680f9e67c599ccd5e8926be0873cd3a31b4fdd32ef036da13c954ef164736f6c634300080a0033",
+  "libraries": {
+    "BespokeTypes": "0xFF7882E12131066d80B9245BBeE23e113C815B98"
+  },
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "owner()": {
+        "details": "Returns the address of the current owner."
+      },
+      "renounceOwnership()": {
+        "details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+      },
+      "transferOwnership(address)": {
+        "details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 387,
+        "contract": "contracts/bespokemarket/OpenSkyBespokeSettings.sol:OpenSkyBespokeSettings",
+        "label": "_owner",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 15178,
+        "contract": "contracts/bespokemarket/OpenSkyBespokeSettings.sol:OpenSkyBespokeSettings",
+        "label": "isWhitelistOn",
+        "offset": 20,
+        "slot": "0",
+        "type": "t_bool"
+      },
+      {
+        "astId": 15183,
+        "contract": "contracts/bespokemarket/OpenSkyBespokeSettings.sol:OpenSkyBespokeSettings",
+        "label": "_whitelist",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_address,t_struct(WhitelistInfo)16693_storage)"
+      },
+      {
+        "astId": 15187,
+        "contract": "contracts/bespokemarket/OpenSkyBespokeSettings.sol:OpenSkyBespokeSettings",
+        "label": "_currencyWhitelist",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_mapping(t_address,t_bool)"
+      },
+      {
+        "astId": 15190,
+        "contract": "contracts/bespokemarket/OpenSkyBespokeSettings.sol:OpenSkyBespokeSettings",
+        "label": "marketAddress",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_address"
+      },
+      {
+        "astId": 15193,
+        "contract": "contracts/bespokemarket/OpenSkyBespokeSettings.sol:OpenSkyBespokeSettings",
+        "label": "borrowLoanAddress",
+        "offset": 0,
+        "slot": "4",
+        "type": "t_address"
+      },
+      {
+        "astId": 15196,
+        "contract": "contracts/bespokemarket/OpenSkyBespokeSettings.sol:OpenSkyBespokeSettings",
+        "label": "lendLoanAddress",
+        "offset": 0,
+        "slot": "5",
+        "type": "t_address"
+      },
+      {
+        "astId": 15200,
+        "contract": "contracts/bespokemarket/OpenSkyBespokeSettings.sol:OpenSkyBespokeSettings",
+        "label": "reserveFactor",
+        "offset": 0,
+        "slot": "6",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 15204,
+        "contract": "contracts/bespokemarket/OpenSkyBespokeSettings.sol:OpenSkyBespokeSettings",
+        "label": "overdueLoanFeeFactor",
+        "offset": 0,
+        "slot": "7",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 15208,
+        "contract": "contracts/bespokemarket/OpenSkyBespokeSettings.sol:OpenSkyBespokeSettings",
+        "label": "minBorrowDuration",
+        "offset": 0,
+        "slot": "8",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 15212,
+        "contract": "contracts/bespokemarket/OpenSkyBespokeSettings.sol:OpenSkyBespokeSettings",
+        "label": "maxBorrowDuration",
+        "offset": 0,
+        "slot": "9",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 15216,
+        "contract": "contracts/bespokemarket/OpenSkyBespokeSettings.sol:OpenSkyBespokeSettings",
+        "label": "overdueDuration",
+        "offset": 0,
+        "slot": "10",
+        "type": "t_uint256"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_mapping(t_address,t_bool)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => bool)",
+        "numberOfBytes": "32",
+        "value": "t_bool"
+      },
+      "t_mapping(t_address,t_struct(WhitelistInfo)16693_storage)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => struct BespokeTypes.WhitelistInfo)",
+        "numberOfBytes": "32",
+        "value": "t_struct(WhitelistInfo)16693_storage"
+      },
+      "t_struct(WhitelistInfo)16693_storage": {
+        "encoding": "inplace",
+        "label": "struct BespokeTypes.WhitelistInfo",
+        "members": [
+          {
+            "astId": 16686,
+            "contract": "contracts/bespokemarket/OpenSkyBespokeSettings.sol:OpenSkyBespokeSettings",
+            "label": "enabled",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool"
+          },
+          {
+            "astId": 16688,
+            "contract": "contracts/bespokemarket/OpenSkyBespokeSettings.sol:OpenSkyBespokeSettings",
+            "label": "minBorrowDuration",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 16690,
+            "contract": "contracts/bespokemarket/OpenSkyBespokeSettings.sol:OpenSkyBespokeSettings",
+            "label": "maxBorrowDuration",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 16692,
+            "contract": "contracts/bespokemarket/OpenSkyBespokeSettings.sol:OpenSkyBespokeSettings",
+            "label": "overdueDuration",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_uint256"
+          }
+        ],
+        "numberOfBytes": "128"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}
