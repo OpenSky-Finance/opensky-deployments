@@ -1,0 +1,253 @@
+{
+  "address": "0x04bcb758bB203ed6705eFEaa7a45d55Cf18Be868",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "aggregator",
+          "type": "address"
+        }
+      ],
+      "name": "SetAggregator",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "aggregators",
+      "outputs": [
+        {
+          "internalType": "contract AggregatorInterface",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        }
+      ],
+      "name": "getAssetPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "assets",
+          "type": "address[]"
+        },
+        {
+          "internalType": "contract AggregatorInterface[]",
+          "name": "_aggregators",
+          "type": "address[]"
+        }
+      ],
+      "name": "setAggregators",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x9a5db49e216ca3ced531a06c5cf33ad122b428ddb64593425fa8aacc5e21b73d",
+  "receipt": {
+    "to": null,
+    "from": "0x1a347f2aac8758E139C7401aEC878aD174C19c8a",
+    "contractAddress": "0x04bcb758bB203ed6705eFEaa7a45d55Cf18Be868",
+    "transactionIndex": 113,
+    "gasUsed": "477190",
+    "logsBloom": "0x00400000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000020000000000000000080800000000000000000000000000000004400000000000000000000000000008000020000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x7d2f278fc70abb24243769529193f6112c0e72f0f108e18eb80b9762d8f504e0",
+    "transactionHash": "0x9a5db49e216ca3ced531a06c5cf33ad122b428ddb64593425fa8aacc5e21b73d",
+    "logs": [
+      {
+        "transactionIndex": 113,
+        "blockNumber": 15326772,
+        "transactionHash": "0x9a5db49e216ca3ced531a06c5cf33ad122b428ddb64593425fa8aacc5e21b73d",
+        "address": "0x04bcb758bB203ed6705eFEaa7a45d55Cf18Be868",
+        "topics": [
+          "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+          "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "0x0000000000000000000000001a347f2aac8758e139c7401aec878ad174c19c8a"
+        ],
+        "data": "0x",
+        "logIndex": 241,
+        "blockHash": "0x7d2f278fc70abb24243769529193f6112c0e72f0f108e18eb80b9762d8f504e0"
+      }
+    ],
+    "blockNumber": 15326772,
+    "cumulativeGasUsed": "10527156",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "0ca3f66e9bd5de21ebb7765f6cea382a",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"aggregator\",\"type\":\"address\"}],\"name\":\"SetAggregator\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"aggregators\",\"outputs\":[{\"internalType\":\"contract AggregatorInterface\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"getAssetPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"assets\",\"type\":\"address[]\"},{\"internalType\":\"contract AggregatorInterface[]\",\"name\":\"_aggregators\",\"type\":\"address[]\"}],\"name\":\"setAggregators\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"OpenSky Labs\",\"kind\":\"dev\",\"methods\":{\"getAssetPrice(address)\":{\"params\":{\"asset\":\"The nft collection address*\"}},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"setAggregators(address[],address[])\":{\"params\":{\"_aggregators\":\"The address of the source of each asset*\",\"assets\":\"The addresses of the assets\"}},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}},\"title\":\"OpenSkyPriceAggregator Contract\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"getAssetPrice(address)\":{\"notice\":\"Gets the nft floor price by address\"},\"setAggregators(address[],address[])\":{\"notice\":\"External function called by the OpenSky governance to set or replace price aggregators of assets\"}},\"notice\":\"Proxy smart contract to get the price of a nft from a price aggregator, with Chainlink Aggregator         smart contracts as primary option - Owned by the OpenSky governance system, allowed to add aggregators for nfts, replace them*\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/OpenSkyPriceAggregator.sol\":\"OpenSkyPriceAggregator\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/access/Ownable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../utils/Context.sol\\\";\\n\\n/**\\n * @dev Contract module which provides a basic access control mechanism, where\\n * there is an account (an owner) that can be granted exclusive access to\\n * specific functions.\\n *\\n * By default, the owner account will be the one that deploys the contract. This\\n * can later be changed with {transferOwnership}.\\n *\\n * This module is used through inheritance. It will make available the modifier\\n * `onlyOwner`, which can be applied to your functions to restrict their use to\\n * the owner.\\n */\\nabstract contract Ownable is Context {\\n    address private _owner;\\n\\n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\\n\\n    /**\\n     * @dev Initializes the contract setting the deployer as the initial owner.\\n     */\\n    constructor() {\\n        _setOwner(_msgSender());\\n    }\\n\\n    /**\\n     * @dev Returns the address of the current owner.\\n     */\\n    function owner() public view virtual returns (address) {\\n        return _owner;\\n    }\\n\\n    /**\\n     * @dev Throws if called by any account other than the owner.\\n     */\\n    modifier onlyOwner() {\\n        require(owner() == _msgSender(), \\\"Ownable: caller is not the owner\\\");\\n        _;\\n    }\\n\\n    /**\\n     * @dev Leaves the contract without owner. It will not be possible to call\\n     * `onlyOwner` functions anymore. Can only be called by the current owner.\\n     *\\n     * NOTE: Renouncing ownership will leave the contract without an owner,\\n     * thereby removing any functionality that is only available to the owner.\\n     */\\n    function renounceOwnership() public virtual onlyOwner {\\n        _setOwner(address(0));\\n    }\\n\\n    /**\\n     * @dev Transfers ownership of the contract to a new account (`newOwner`).\\n     * Can only be called by the current owner.\\n     */\\n    function transferOwnership(address newOwner) public virtual onlyOwner {\\n        require(newOwner != address(0), \\\"Ownable: new owner is the zero address\\\");\\n        _setOwner(newOwner);\\n    }\\n\\n    function _setOwner(address newOwner) private {\\n        address oldOwner = _owner;\\n        _owner = newOwner;\\n        emit OwnershipTransferred(oldOwner, newOwner);\\n    }\\n}\\n\",\"keccak256\":\"0x6bb804a310218875e89d12c053e94a13a4607cdf7cc2052f3e52bd32a0dc50a1\",\"license\":\"MIT\"},\"@openzeppelin/contracts/utils/Context.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Provides information about the current execution context, including the\\n * sender of the transaction and its data. While these are generally available\\n * via msg.sender and msg.data, they should not be accessed in such a direct\\n * manner, since when dealing with meta-transactions the account sending and\\n * paying for execution may not be the actual sender (as far as an application\\n * is concerned).\\n *\\n * This contract is only required for intermediate, library-like contracts.\\n */\\nabstract contract Context {\\n    function _msgSender() internal view virtual returns (address) {\\n        return msg.sender;\\n    }\\n\\n    function _msgData() internal view virtual returns (bytes calldata) {\\n        return msg.data;\\n    }\\n}\\n\",\"keccak256\":\"0x90565a39ae45c80f0468dc96c7b20d0afc3055f344c8203a0c9258239f350b9f\",\"license\":\"MIT\"},\"contracts/OpenSkyPriceAggregator.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nimport './interfaces/IOpenSkyPriceAggregator.sol';\\nimport '@openzeppelin/contracts/access/Ownable.sol';\\n\\ninterface AggregatorInterface {\\n    function latestAnswer() external view returns (int256);\\n}\\n\\n/**\\n * @title OpenSkyPriceAggregator Contract\\n * @author OpenSky Labs\\n * @notice Proxy smart contract to get the price of a nft from a price aggregator, with Chainlink Aggregator\\n *         smart contracts as primary option\\n * - Owned by the OpenSky governance system, allowed to add aggregators for nfts, replace them\\n **/\\ncontract OpenSkyPriceAggregator is IOpenSkyPriceAggregator, Ownable {\\n    mapping (address => AggregatorInterface) public aggregators;\\n\\n    constructor() Ownable() {}\\n\\n    /**\\n     * @notice External function called by the OpenSky governance to set or replace price aggregators of assets\\n     * @param assets The addresses of the assets\\n     * @param _aggregators The address of the source of each asset\\n     **/\\n    function setAggregators(address[] memory assets, AggregatorInterface[] memory _aggregators) public onlyOwner {\\n        require(assets.length == _aggregators.length, 'INCONSISTENT_PARAMS_LENGTH');\\n        for (uint256 i = 0; i < assets.length; i++) {\\n            require(address(_aggregators[i]) != address(0), 'AGGREGATOR_CAN_NOT_BE_ZERO_ADDRESS');\\n            _setAggregator(assets[i], _aggregators[i]);\\n        }\\n    }\\n\\n    /**\\n     * @notice Internal function to set the sources for each asset\\n     * @param asset The address of the nft collection address\\n     * @param aggregator The address of the aggregator\\n     **/\\n    function _setAggregator(address asset, AggregatorInterface aggregator) internal {\\n        aggregators[asset] = aggregator;\\n        emit SetAggregator(asset, address(aggregator));\\n    }\\n\\n    /**\\n     * @notice Gets the nft floor price by address\\n     * @param asset The nft collection address\\n    **/\\n    function getAssetPrice(address asset) external view override returns (uint256) {\\n        if (address(aggregators[asset]) == address(0)) {\\n            return 0;\\n        }\\n        return uint256(aggregators[asset].latestAnswer());\\n    }\\n}\\n\",\"keccak256\":\"0xfc058171b0bf3e7779c9c6b6b667f2f2e18648369b6b8747293cb73f1d2a8164\",\"license\":\"MIT\"},\"contracts/interfaces/IOpenSkyPriceAggregator.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\ninterface IOpenSkyPriceAggregator {\\n    event SetAggregator(address indexed asset, address indexed aggregator);\\n\\n    function getAssetPrice(address nftAddress) external view returns (uint256);\\n}\\n\",\"keccak256\":\"0x65b26e4b63b54a8157ca0fd57bed0b663c9eacfd0ffb4318cdb78ded35cd9b38\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061001a3361001f565b61006f565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b6107378061007e6000396000f3fe608060405234801561001057600080fd5b50600436106100625760003560e01c8063112cdab9146100675780633f9fb505146100ad578063715018a6146100c25780638da5cb5b146100ca578063b3596f07146100db578063f2fde38b146100fc575b600080fd5b6100906100753660046104af565b6001602052600090815260409020546001600160a01b031681565b6040516001600160a01b0390911681526020015b60405180910390f35b6100c06100bb3660046105b2565b61010f565b005b6100c0610279565b6000546001600160a01b0316610090565b6100ee6100e93660046104af565b6102af565b6040519081526020016100a4565b6100c061010a3660046104af565b610358565b6000546001600160a01b031633146101425760405162461bcd60e51b815260040161013990610674565b60405180910390fd5b80518251146101935760405162461bcd60e51b815260206004820152601a60248201527f494e434f4e53495354454e545f504152414d535f4c454e4754480000000000006044820152606401610139565b60005b82518110156102745760006001600160a01b03168282815181106101bc576101bc6106a9565b60200260200101516001600160a01b031614156102265760405162461bcd60e51b815260206004820152602260248201527f41474752454741544f525f43414e5f4e4f545f42455f5a45524f5f4144445245604482015261535360f01b6064820152608401610139565b61026283828151811061023b5761023b6106a9565b6020026020010151838381518110610255576102556106a9565b60200260200101516103f3565b8061026c816106bf565b915050610196565b505050565b6000546001600160a01b031633146102a35760405162461bcd60e51b815260040161013990610674565b6102ad600061044a565b565b6001600160a01b038181166000908152600160205260408120549091166102d857506000919050565b6001600160a01b038083166000908152600160209081526040918290205482516350d25bcd60e01b815292519316926350d25bcd9260048082019392918290030181865afa15801561032e573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061035291906106e8565b92915050565b6000546001600160a01b031633146103825760405162461bcd60e51b815260040161013990610674565b6001600160a01b0381166103e75760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b6064820152608401610139565b6103f08161044a565b50565b6001600160a01b0382811660008181526001602052604080822080546001600160a01b0319169486169485179055517fc437dd54e22b198f1cbc09dee1a8e823dec5346dd8cd48b5be2c55f6e4f517e99190a35050565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b6001600160a01b03811681146103f057600080fd5b6000602082840312156104c157600080fd5b81356104cc8161049a565b9392505050565b634e487b7160e01b600052604160045260246000fd5b604051601f8201601f1916810167ffffffffffffffff81118282101715610512576105126104d3565b604052919050565b600067ffffffffffffffff821115610534576105346104d3565b5060051b60200190565b600082601f83011261054f57600080fd5b8135602061056461055f8361051a565b6104e9565b82815260059290921b8401810191818101908684111561058357600080fd5b8286015b848110156105a757803561059a8161049a565b8352918301918301610587565b509695505050505050565b600080604083850312156105c557600080fd5b823567ffffffffffffffff808211156105dd57600080fd5b818501915085601f8301126105f157600080fd5b8135602061060161055f8361051a565b82815260059290921b8401810191818101908984111561062057600080fd5b948201945b838610156106475785356106388161049a565b82529482019490820190610625565b9650508601359250508082111561065d57600080fd5b5061066a8582860161053e565b9150509250929050565b6020808252818101527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604082015260600190565b634e487b7160e01b600052603260045260246000fd5b60006000198214156106e157634e487b7160e01b600052601160045260246000fd5b5060010190565b6000602082840312156106fa57600080fd5b505191905056fea264697066735822122052182e4791e4542b33ec2d39eff8f35a063f987e2bb311787b24580832533f5564736f6c634300080a0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100625760003560e01c8063112cdab9146100675780633f9fb505146100ad578063715018a6146100c25780638da5cb5b146100ca578063b3596f07146100db578063f2fde38b146100fc575b600080fd5b6100906100753660046104af565b6001602052600090815260409020546001600160a01b031681565b6040516001600160a01b0390911681526020015b60405180910390f35b6100c06100bb3660046105b2565b61010f565b005b6100c0610279565b6000546001600160a01b0316610090565b6100ee6100e93660046104af565b6102af565b6040519081526020016100a4565b6100c061010a3660046104af565b610358565b6000546001600160a01b031633146101425760405162461bcd60e51b815260040161013990610674565b60405180910390fd5b80518251146101935760405162461bcd60e51b815260206004820152601a60248201527f494e434f4e53495354454e545f504152414d535f4c454e4754480000000000006044820152606401610139565b60005b82518110156102745760006001600160a01b03168282815181106101bc576101bc6106a9565b60200260200101516001600160a01b031614156102265760405162461bcd60e51b815260206004820152602260248201527f41474752454741544f525f43414e5f4e4f545f42455f5a45524f5f4144445245604482015261535360f01b6064820152608401610139565b61026283828151811061023b5761023b6106a9565b6020026020010151838381518110610255576102556106a9565b60200260200101516103f3565b8061026c816106bf565b915050610196565b505050565b6000546001600160a01b031633146102a35760405162461bcd60e51b815260040161013990610674565b6102ad600061044a565b565b6001600160a01b038181166000908152600160205260408120549091166102d857506000919050565b6001600160a01b038083166000908152600160209081526040918290205482516350d25bcd60e01b815292519316926350d25bcd9260048082019392918290030181865afa15801561032e573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061035291906106e8565b92915050565b6000546001600160a01b031633146103825760405162461bcd60e51b815260040161013990610674565b6001600160a01b0381166103e75760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b6064820152608401610139565b6103f08161044a565b50565b6001600160a01b0382811660008181526001602052604080822080546001600160a01b0319169486169485179055517fc437dd54e22b198f1cbc09dee1a8e823dec5346dd8cd48b5be2c55f6e4f517e99190a35050565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b6001600160a01b03811681146103f057600080fd5b6000602082840312156104c157600080fd5b81356104cc8161049a565b9392505050565b634e487b7160e01b600052604160045260246000fd5b604051601f8201601f1916810167ffffffffffffffff81118282101715610512576105126104d3565b604052919050565b600067ffffffffffffffff821115610534576105346104d3565b5060051b60200190565b600082601f83011261054f57600080fd5b8135602061056461055f8361051a565b6104e9565b82815260059290921b8401810191818101908684111561058357600080fd5b8286015b848110156105a757803561059a8161049a565b8352918301918301610587565b509695505050505050565b600080604083850312156105c557600080fd5b823567ffffffffffffffff808211156105dd57600080fd5b818501915085601f8301126105f157600080fd5b8135602061060161055f8361051a565b82815260059290921b8401810191818101908984111561062057600080fd5b948201945b838610156106475785356106388161049a565b82529482019490820190610625565b9650508601359250508082111561065d57600080fd5b5061066a8582860161053e565b9150509250929050565b6020808252818101527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604082015260600190565b634e487b7160e01b600052603260045260246000fd5b60006000198214156106e157634e487b7160e01b600052601160045260246000fd5b5060010190565b6000602082840312156106fa57600080fd5b505191905056fea264697066735822122052182e4791e4542b33ec2d39eff8f35a063f987e2bb311787b24580832533f5564736f6c634300080a0033",
+  "devdoc": {
+    "author": "OpenSky Labs",
+    "kind": "dev",
+    "methods": {
+      "getAssetPrice(address)": {
+        "params": {
+          "asset": "The nft collection address*"
+        }
+      },
+      "owner()": {
+        "details": "Returns the address of the current owner."
+      },
+      "renounceOwnership()": {
+        "details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+      },
+      "setAggregators(address[],address[])": {
+        "params": {
+          "_aggregators": "The address of the source of each asset*",
+          "assets": "The addresses of the assets"
+        }
+      },
+      "transferOwnership(address)": {
+        "details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+      }
+    },
+    "title": "OpenSkyPriceAggregator Contract",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "getAssetPrice(address)": {
+        "notice": "Gets the nft floor price by address"
+      },
+      "setAggregators(address[],address[])": {
+        "notice": "External function called by the OpenSky governance to set or replace price aggregators of assets"
+      }
+    },
+    "notice": "Proxy smart contract to get the price of a nft from a price aggregator, with Chainlink Aggregator         smart contracts as primary option - Owned by the OpenSky governance system, allowed to add aggregators for nfts, replace them*",
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 387,
+        "contract": "contracts/OpenSkyPriceAggregator.sol:OpenSkyPriceAggregator",
+        "label": "_owner",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 12648,
+        "contract": "contracts/OpenSkyPriceAggregator.sol:OpenSkyPriceAggregator",
+        "label": "aggregators",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_address,t_contract(AggregatorInterface)12638)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_contract(AggregatorInterface)12638": {
+        "encoding": "inplace",
+        "label": "contract AggregatorInterface",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_address,t_contract(AggregatorInterface)12638)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => contract AggregatorInterface)",
+        "numberOfBytes": "32",
+        "value": "t_contract(AggregatorInterface)12638"
+      }
+    }
+  }
+}
