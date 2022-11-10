@@ -217,6 +217,12 @@
     "inputs": [
       {
         "indexed": false,
+        "internalType": "bytes32",
+        "name": "offerHash",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
         "internalType": "uint256",
         "name": "oldLoanId",
         "type": "uint256"
@@ -461,116 +467,6 @@
       }
     ],
     "name": "claimERC721Airdrop",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "loanId",
-        "type": "uint256"
-      },
-      {
-        "components": [
-          {
-            "internalType": "uint256",
-            "name": "reserveId",
-            "type": "uint256"
-          },
-          {
-            "internalType": "address",
-            "name": "nftAddress",
-            "type": "address"
-          },
-          {
-            "internalType": "address",
-            "name": "signer",
-            "type": "address"
-          },
-          {
-            "internalType": "uint256",
-            "name": "borrowAmountMin",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "borrowAmountMax",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint40",
-            "name": "borrowDurationMin",
-            "type": "uint40"
-          },
-          {
-            "internalType": "uint40",
-            "name": "borrowDurationMax",
-            "type": "uint40"
-          },
-          {
-            "internalType": "uint128",
-            "name": "borrowRate",
-            "type": "uint128"
-          },
-          {
-            "internalType": "address",
-            "name": "currency",
-            "type": "address"
-          },
-          {
-            "internalType": "uint256",
-            "name": "nonce",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "deadline",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint8",
-            "name": "offerType",
-            "type": "uint8"
-          },
-          {
-            "internalType": "bytes",
-            "name": "params",
-            "type": "bytes"
-          },
-          {
-            "internalType": "uint8",
-            "name": "v",
-            "type": "uint8"
-          },
-          {
-            "internalType": "bytes32",
-            "name": "r",
-            "type": "bytes32"
-          },
-          {
-            "internalType": "bytes32",
-            "name": "s",
-            "type": "bytes32"
-          }
-        ],
-        "internalType": "struct BespokeTypes.LendOffer",
-        "name": "offerData",
-        "type": "tuple"
-      },
-      {
-        "internalType": "uint256",
-        "name": "supplyAmount",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "supplyDuration",
-        "type": "uint256"
-      }
-    ],
-    "name": "extend",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
@@ -838,110 +734,15 @@
       {
         "components": [
           {
-            "internalType": "uint256",
-            "name": "reserveId",
-            "type": "uint256"
-          },
-          {
-            "internalType": "address",
-            "name": "nftAddress",
-            "type": "address"
-          },
-          {
-            "internalType": "uint256",
-            "name": "tokenId",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "tokenAmount",
-            "type": "uint256"
-          },
-          {
-            "internalType": "address",
-            "name": "borrower",
-            "type": "address"
-          },
-          {
-            "internalType": "uint256",
-            "name": "borrowAmountMin",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "borrowAmountMax",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint40",
-            "name": "borrowDurationMin",
-            "type": "uint40"
-          },
-          {
-            "internalType": "uint40",
-            "name": "borrowDurationMax",
-            "type": "uint40"
-          },
-          {
-            "internalType": "uint128",
-            "name": "borrowRate",
-            "type": "uint128"
-          },
-          {
-            "internalType": "address",
-            "name": "currency",
-            "type": "address"
-          },
-          {
-            "internalType": "uint256",
-            "name": "nonce",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "deadline",
-            "type": "uint256"
-          },
-          {
             "internalType": "uint8",
-            "name": "v",
+            "name": "offerType",
             "type": "uint8"
           },
           {
-            "internalType": "bytes32",
-            "name": "r",
-            "type": "bytes32"
+            "internalType": "bool",
+            "name": "isProrated",
+            "type": "bool"
           },
-          {
-            "internalType": "bytes32",
-            "name": "s",
-            "type": "bytes32"
-          }
-        ],
-        "internalType": "struct BespokeTypes.BorrowOffer",
-        "name": "offerData",
-        "type": "tuple"
-      },
-      {
-        "internalType": "uint256",
-        "name": "supplyAmount",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "supplyDuration",
-        "type": "uint256"
-      }
-    ],
-    "name": "takeBorrowOffer",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "components": [
           {
             "internalType": "uint256",
             "name": "reserveId",
@@ -961,101 +762,6 @@
             "internalType": "uint256",
             "name": "tokenAmount",
             "type": "uint256"
-          },
-          {
-            "internalType": "address",
-            "name": "borrower",
-            "type": "address"
-          },
-          {
-            "internalType": "uint256",
-            "name": "borrowAmountMin",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "borrowAmountMax",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint40",
-            "name": "borrowDurationMin",
-            "type": "uint40"
-          },
-          {
-            "internalType": "uint40",
-            "name": "borrowDurationMax",
-            "type": "uint40"
-          },
-          {
-            "internalType": "uint128",
-            "name": "borrowRate",
-            "type": "uint128"
-          },
-          {
-            "internalType": "address",
-            "name": "currency",
-            "type": "address"
-          },
-          {
-            "internalType": "uint256",
-            "name": "nonce",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "deadline",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint8",
-            "name": "v",
-            "type": "uint8"
-          },
-          {
-            "internalType": "bytes32",
-            "name": "r",
-            "type": "bytes32"
-          },
-          {
-            "internalType": "bytes32",
-            "name": "s",
-            "type": "bytes32"
-          }
-        ],
-        "internalType": "struct BespokeTypes.BorrowOffer",
-        "name": "offerData",
-        "type": "tuple"
-      },
-      {
-        "internalType": "uint256",
-        "name": "supplyAmount",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "supplyDuration",
-        "type": "uint256"
-      }
-    ],
-    "name": "takeBorrowOfferETH",
-    "outputs": [],
-    "stateMutability": "payable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "components": [
-          {
-            "internalType": "uint256",
-            "name": "reserveId",
-            "type": "uint256"
-          },
-          {
-            "internalType": "address",
-            "name": "nftAddress",
-            "type": "address"
           },
           {
             "internalType": "address",
@@ -1103,9 +809,9 @@
             "type": "uint256"
           },
           {
-            "internalType": "uint8",
-            "name": "offerType",
-            "type": "uint8"
+            "internalType": "address",
+            "name": "strategy",
+            "type": "address"
           },
           {
             "internalType": "bytes",
@@ -1128,7 +834,7 @@
             "type": "bytes32"
           }
         ],
-        "internalType": "struct BespokeTypes.LendOffer",
+        "internalType": "struct BespokeTypes.Offer",
         "name": "offerData",
         "type": "tuple"
       },
@@ -1141,6 +847,266 @@
         "internalType": "uint256",
         "name": "supplyDuration",
         "type": "uint256"
+      }
+    ],
+    "name": "takeBorrowOffer",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint8",
+            "name": "offerType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bool",
+            "name": "isProrated",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "reserveId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "nftAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "signer",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowAmountMin",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowAmountMax",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint40",
+            "name": "borrowDurationMin",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "borrowDurationMax",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint128",
+            "name": "borrowRate",
+            "type": "uint128"
+          },
+          {
+            "internalType": "address",
+            "name": "currency",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nonce",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "strategy",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "params",
+            "type": "bytes"
+          },
+          {
+            "internalType": "uint8",
+            "name": "v",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "r",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "s",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct BespokeTypes.Offer",
+        "name": "offerData",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "supplyAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "supplyDuration",
+        "type": "uint256"
+      }
+    ],
+    "name": "takeBorrowOfferETH",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint8",
+            "name": "offerType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bool",
+            "name": "isProrated",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "reserveId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "nftAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "signer",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowAmountMin",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowAmountMax",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint40",
+            "name": "borrowDurationMin",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "borrowDurationMax",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint128",
+            "name": "borrowRate",
+            "type": "uint128"
+          },
+          {
+            "internalType": "address",
+            "name": "currency",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nonce",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "strategy",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "params",
+            "type": "bytes"
+          },
+          {
+            "internalType": "uint8",
+            "name": "v",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "r",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "s",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct BespokeTypes.Offer",
+        "name": "offerData",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "borrowAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "borrowDuration",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "params",
+        "type": "bytes"
       }
     ],
     "name": "takeLendOffer",

@@ -30,6 +30,50 @@
       {
         "indexed": false,
         "internalType": "address",
+        "name": "nftAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "adapterAddress",
+        "type": "address"
+      }
+    ],
+    "name": "AddNftTransferAdapter",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "address_",
+        "type": "address"
+      }
+    ],
+    "name": "AddStrategy",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
         "name": "nft",
         "type": "address"
       }
@@ -48,6 +92,25 @@
       }
     ],
     "name": "CloseWhitelist",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "ERC721DefaultTransferAdapter",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "ERC1155DefaultTransferAdapter",
+        "type": "address"
+      }
+    ],
+    "name": "InitDefaultNftTransferAdapter",
     "type": "event"
   },
   {
@@ -143,6 +206,44 @@
       }
     ],
     "name": "RemoveFromWhitelist",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "nftAddress",
+        "type": "address"
+      }
+    ],
+    "name": "RemoveNftTransferAdapter",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "address_",
+        "type": "address"
+      }
+    ],
+    "name": "RemoveStrategy",
     "type": "event"
   },
   {
@@ -299,6 +400,25 @@
     "inputs": [
       {
         "internalType": "address",
+        "name": "nftAddress",
+        "type": "address"
+      }
+    ],
+    "name": "getNftTransferAdapter",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
         "name": "nft",
         "type": "address"
       }
@@ -364,6 +484,25 @@
       }
     ],
     "name": "isCurrencyWhitelisted",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "address_",
+        "type": "address"
+      }
+    ],
+    "name": "isStrategyWhitelisted",
     "outputs": [
       {
         "internalType": "bool",

@@ -2,7 +2,46 @@
   {
     "inputs": [
       {
+        "internalType": "contract IOpenSkyBespokeSettings",
+        "name": "BESPOKE_SETTINGS",
+        "type": "IOpenSkyBespokeSettings"
+      },
+      {
+        "internalType": "uint256",
+        "name": "loanId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getLoanParties",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "borrower",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "lender",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
         "components": [
+          {
+            "internalType": "uint8",
+            "name": "offerType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bool",
+            "name": "isProrated",
+            "type": "bool"
+          },
           {
             "internalType": "uint256",
             "name": "reserveId",
@@ -22,97 +61,6 @@
             "internalType": "uint256",
             "name": "tokenAmount",
             "type": "uint256"
-          },
-          {
-            "internalType": "address",
-            "name": "borrower",
-            "type": "address"
-          },
-          {
-            "internalType": "uint256",
-            "name": "borrowAmountMin",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "borrowAmountMax",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint40",
-            "name": "borrowDurationMin",
-            "type": "uint40"
-          },
-          {
-            "internalType": "uint40",
-            "name": "borrowDurationMax",
-            "type": "uint40"
-          },
-          {
-            "internalType": "uint128",
-            "name": "borrowRate",
-            "type": "uint128"
-          },
-          {
-            "internalType": "address",
-            "name": "currency",
-            "type": "address"
-          },
-          {
-            "internalType": "uint256",
-            "name": "nonce",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "deadline",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint8",
-            "name": "v",
-            "type": "uint8"
-          },
-          {
-            "internalType": "bytes32",
-            "name": "r",
-            "type": "bytes32"
-          },
-          {
-            "internalType": "bytes32",
-            "name": "s",
-            "type": "bytes32"
-          }
-        ],
-        "internalType": "struct BespokeTypes.BorrowOffer",
-        "name": "offerData",
-        "type": "tuple"
-      }
-    ],
-    "name": "hashBorrowOffer",
-    "outputs": [
-      {
-        "internalType": "bytes32",
-        "name": "",
-        "type": "bytes32"
-      }
-    ],
-    "stateMutability": "pure",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "components": [
-          {
-            "internalType": "uint256",
-            "name": "reserveId",
-            "type": "uint256"
-          },
-          {
-            "internalType": "address",
-            "name": "nftAddress",
-            "type": "address"
           },
           {
             "internalType": "address",
@@ -160,9 +108,9 @@
             "type": "uint256"
           },
           {
-            "internalType": "uint8",
-            "name": "offerType",
-            "type": "uint8"
+            "internalType": "address",
+            "name": "strategy",
+            "type": "address"
           },
           {
             "internalType": "bytes",
@@ -185,12 +133,12 @@
             "type": "bytes32"
           }
         ],
-        "internalType": "struct BespokeTypes.LendOffer",
+        "internalType": "struct BespokeTypes.Offer",
         "name": "offerData",
         "type": "tuple"
       }
     ],
-    "name": "hashLendOffer",
+    "name": "hashOffer",
     "outputs": [
       {
         "internalType": "bytes32",

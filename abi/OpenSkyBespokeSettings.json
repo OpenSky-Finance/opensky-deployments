@@ -41,6 +41,50 @@
       {
         "indexed": false,
         "internalType": "address",
+        "name": "nftAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "adapterAddress",
+        "type": "address"
+      }
+    ],
+    "name": "AddNftTransferAdapter",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "address_",
+        "type": "address"
+      }
+    ],
+    "name": "AddStrategy",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
         "name": "nft",
         "type": "address"
       }
@@ -59,6 +103,25 @@
       }
     ],
     "name": "CloseWhitelist",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "ERC721DefaultTransferAdapter",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "ERC1155DefaultTransferAdapter",
+        "type": "address"
+      }
+    ],
+    "name": "InitDefaultNftTransferAdapter",
     "type": "event"
   },
   {
@@ -186,6 +249,44 @@
       },
       {
         "indexed": false,
+        "internalType": "address",
+        "name": "nftAddress",
+        "type": "address"
+      }
+    ],
+    "name": "RemoveNftTransferAdapter",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "address_",
+        "type": "address"
+      }
+    ],
+    "name": "RemoveStrategy",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
         "internalType": "uint256",
         "name": "factor",
         "type": "uint256"
@@ -285,12 +386,64 @@
   },
   {
     "inputs": [],
+    "name": "INTERFACE_ID_ERC1155",
+    "outputs": [
+      {
+        "internalType": "bytes4",
+        "name": "",
+        "type": "bytes4"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "INTERFACE_ID_ERC721",
+    "outputs": [
+      {
+        "internalType": "bytes4",
+        "name": "",
+        "type": "bytes4"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
     "name": "MAX_RESERVE_FACTOR",
     "outputs": [
       {
         "internalType": "uint256",
         "name": "",
         "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TRANSFER_ERC1155",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TRANSFER_ERC721",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
       }
     ],
     "stateMutability": "view",
@@ -319,11 +472,80 @@
     "inputs": [
       {
         "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "_strategyWhitelist",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "_transferAdapters",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
         "name": "currency",
         "type": "address"
       }
     ],
     "name": "addCurrency",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "nftAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "adapterAddress",
+        "type": "address"
+      }
+    ],
+    "name": "addNftTransferAdapter",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "address_",
+        "type": "address"
+      }
+    ],
+    "name": "addStrategy",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
@@ -409,6 +631,25 @@
     "inputs": [
       {
         "internalType": "address",
+        "name": "nftAddress",
+        "type": "address"
+      }
+    ],
+    "name": "getNftTransferAdapter",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "adapter",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
         "name": "nft",
         "type": "address"
       }
@@ -469,6 +710,24 @@
     "inputs": [
       {
         "internalType": "address",
+        "name": "ERC721Default",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "ERC1155Default",
+        "type": "address"
+      }
+    ],
+    "name": "initDefaultNftTransferAdapters",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
         "name": "borrowLoanAddress_",
         "type": "address"
       },
@@ -505,6 +764,25 @@
       }
     ],
     "name": "isCurrencyWhitelisted",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "address_",
+        "type": "address"
+      }
+    ],
+    "name": "isStrategyWhitelisted",
     "outputs": [
       {
         "internalType": "bool",
@@ -648,6 +926,32 @@
       }
     ],
     "name": "removeFromWhitelist",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "nftAddress",
+        "type": "address"
+      }
+    ],
+    "name": "removeNftTransferAdapter",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "address_",
+        "type": "address"
+      }
+    ],
+    "name": "removeStrategy",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
