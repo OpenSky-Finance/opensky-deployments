@@ -1,0 +1,103 @@
+{
+  "address": "0x6545eAd7D84B5C1c191EFE4A2A3DA7AE724c9a8b",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "startPrice",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "endPrice",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "startTime",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "endTime",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "priceTime",
+          "type": "uint256"
+        }
+      ],
+      "name": "calculatePrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "reservePrice",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "startTime",
+          "type": "uint256"
+        }
+      ],
+      "name": "getPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x7487de34efec706e1576e19d6a5d5a96c4f4c40d8c91504b99b7dd0b3a95f01d",
+  "receipt": {
+    "to": null,
+    "from": "0x1a347f2aac8758E139C7401aEC878aD174C19c8a",
+    "contractAddress": "0x6545eAd7D84B5C1c191EFE4A2A3DA7AE724c9a8b",
+    "transactionIndex": 155,
+    "gasUsed": "197329",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xf34a00a67acc6ae0d1322ba3c1b88e9be7fb41ba234d3cf1e82cc3fbcbb62d21",
+    "transactionHash": "0x7487de34efec706e1576e19d6a5d5a96c4f4c40d8c91504b99b7dd0b3a95f01d",
+    "logs": [],
+    "blockNumber": 15868681,
+    "cumulativeGasUsed": "13927851",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "f5dc045faa5109fc2d38e7d967614557",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"startPrice\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"endPrice\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"startTime\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"endTime\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"priceTime\",\"type\":\"uint256\"}],\"name\":\"calculatePrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"reservePrice\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"startTime\",\"type\":\"uint256\"}],\"name\":\"getPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/liquidation/OpenSkyDutchAuctionPriceOracle.sol\":\"OpenSkyDutchAuctionPriceOracle\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/interfaces/IOpenSkyDutchAuctionPriceOracle.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\ninterface IOpenSkyDutchAuctionPriceOracle {\\n    function getPrice(uint256 loanAmount, uint256 startTime) external view returns (uint256);\\n}\\n\",\"keccak256\":\"0xe5a879b51065978413c4a37969fd04c890db5af071dae577737659416088a178\",\"license\":\"MIT\"},\"contracts/liquidation/OpenSkyDutchAuctionPriceOracle.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nimport \\\"../interfaces/IOpenSkyDutchAuctionPriceOracle.sol\\\";\\n\\ncontract OpenSkyDutchAuctionPriceOracle is IOpenSkyDutchAuctionPriceOracle {\\n    uint256 constant DURATION_ONE = 6 hours;\\n    uint256 constant DURATION_TWO = 6 hours;\\n    uint256 constant SPACING = 5 minutes; // price descend every 5 minutes\\n\\n    function calculatePrice(\\n        uint256 startPrice,\\n        uint256 endPrice,\\n        uint256 startTime,\\n        uint256 endTime,\\n        uint256 priceTime\\n    ) public pure returns (uint256) {\\n        uint256 spacingAmount = (endTime - startTime) / SPACING;\\n        uint256 priceUint = (startPrice - endPrice) / spacingAmount;\\n        uint256 currentIndex = (priceTime - startTime) / SPACING;\\n        uint256 price = startPrice - currentIndex * priceUint;\\n        return price;\\n    }\\n\\n    function getPrice(uint256 reservePrice, uint256 startTime) external view override returns (uint256) {\\n        // 10*loan => 3*loan=> 1.2*loan\\n        uint256 startPrice = reservePrice * 2;\\n        uint256 turningPrice = (reservePrice * 12000) / 10000;\\n        uint256 endPrice = reservePrice;\\n        uint256 turnTime = startTime + DURATION_ONE;\\n        uint256 endTime = turnTime + DURATION_TWO;\\n\\n        uint256 price = endPrice;\\n\\n        if (block.timestamp <= startTime) {\\n            price = startPrice;\\n        } else if (block.timestamp <= turnTime) {\\n            // price = startPrice - ((block.timestamp - startTime) * (startPrice - turningPrice)) / DURATION_ONE;\\n            price = calculatePrice(startPrice, turningPrice, startTime, turnTime, block.timestamp);\\n        } else if (block.timestamp < endTime) {\\n            // price = turningPrice - ((block.timestamp - turnTime) * (turningPrice - endPrice)) / DURATION_TWO;\\n            price = calculatePrice(turningPrice, endPrice, turnTime, endTime, block.timestamp);\\n        } else {\\n            price = endPrice;\\n        }\\n        return price;\\n    }\\n}\\n\",\"keccak256\":\"0x6543d02500bd8f1583bf7a4293309023ce853989d85eec1e6c555f1c66a95b45\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061029c806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c8063207ad9ce1461003b5780635cf4ee9114610060575b600080fd5b61004e610049366004610183565b610073565b60405190815260200160405180910390f35b61004e61006e3660046101be565b6100e7565b60008061012c61008386866101f6565b61008d919061020d565b905060008161009c888a6101f6565b6100a6919061020d565b9050600061012c6100b788876101f6565b6100c1919061020d565b905060006100cf838361022f565b6100d9908b6101f6565b9a9950505050505050505050565b6000806100f584600261022f565b9050600061271061010886612ee061022f565b610112919061020d565b90508460006101236154608761024e565b905060006101336154608361024e565b905082428810610144575084610177565b82421161015f5761015886868a8642610073565b9050610177565b81421015610174576101588585858542610073565b50825b98975050505050505050565b600080600080600060a0868803121561019b57600080fd5b505083359560208501359550604085013594606081013594506080013592509050565b600080604083850312156101d157600080fd5b50508035926020909101359150565b634e487b7160e01b600052601160045260246000fd5b600082821015610208576102086101e0565b500390565b60008261022a57634e487b7160e01b600052601260045260246000fd5b500490565b6000816000190483118215151615610249576102496101e0565b500290565b60008219821115610261576102616101e0565b50019056fea2646970667358221220887387e28456db7c23fe8518e57b86b92e21320af07a5def7e0758548a37532c64736f6c634300080a0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c8063207ad9ce1461003b5780635cf4ee9114610060575b600080fd5b61004e610049366004610183565b610073565b60405190815260200160405180910390f35b61004e61006e3660046101be565b6100e7565b60008061012c61008386866101f6565b61008d919061020d565b905060008161009c888a6101f6565b6100a6919061020d565b9050600061012c6100b788876101f6565b6100c1919061020d565b905060006100cf838361022f565b6100d9908b6101f6565b9a9950505050505050505050565b6000806100f584600261022f565b9050600061271061010886612ee061022f565b610112919061020d565b90508460006101236154608761024e565b905060006101336154608361024e565b905082428810610144575084610177565b82421161015f5761015886868a8642610073565b9050610177565b81421015610174576101588585858542610073565b50825b98975050505050505050565b600080600080600060a0868803121561019b57600080fd5b505083359560208501359550604085013594606081013594506080013592509050565b600080604083850312156101d157600080fd5b50508035926020909101359150565b634e487b7160e01b600052601160045260246000fd5b600082821015610208576102086101e0565b500390565b60008261022a57634e487b7160e01b600052601260045260246000fd5b500490565b6000816000190483118215151615610249576102496101e0565b500290565b60008219821115610261576102616101e0565b50019056fea2646970667358221220887387e28456db7c23fe8518e57b86b92e21320af07a5def7e0758548a37532c64736f6c634300080a0033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}
