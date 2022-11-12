@@ -886,25 +886,6 @@
         "internalType": "address",
         "name": "",
         "type": "address"
-      }
-    ],
-    "name": "nftBorrowStat",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
       },
       {
         "internalType": "address",
@@ -1101,7 +1082,7 @@
       {
         "components": [
           {
-            "internalType": "uint8",
+            "internalType": "enum BespokeTypes.OfferType",
             "name": "offerType",
             "type": "uint8"
           },
@@ -1226,7 +1207,7 @@
       {
         "components": [
           {
-            "internalType": "uint8",
+            "internalType": "enum BespokeTypes.OfferType",
             "name": "offerType",
             "type": "uint8"
           },
@@ -1351,7 +1332,7 @@
       {
         "components": [
           {
-            "internalType": "uint8",
+            "internalType": "enum BespokeTypes.OfferType",
             "name": "offerType",
             "type": "uint8"
           },

@@ -33,9 +33,9 @@
       {
         "components": [
           {
-            "internalType": "uint8",
+            "internalType": "enum BespokeTypes.OfferType",
             "name": "offerType",
-            "type": "uint8"
+            "type": "BespokeTypes.OfferType"
           },
           {
             "internalType": "bool",
