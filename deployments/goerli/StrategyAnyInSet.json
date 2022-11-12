@@ -1,0 +1,186 @@
+{
+  "address": "0x5416843FF2E301eE2bA0A4fDd825E47688F282e3",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "enum BespokeTypes.OfferType",
+              "name": "offerType",
+              "type": "uint8"
+            },
+            {
+              "internalType": "bool",
+              "name": "isProrated",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "reserveId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "nftAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tokenAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "signer",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "borrowAmountMin",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "borrowAmountMax",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint40",
+              "name": "borrowDurationMin",
+              "type": "uint40"
+            },
+            {
+              "internalType": "uint40",
+              "name": "borrowDurationMax",
+              "type": "uint40"
+            },
+            {
+              "internalType": "uint128",
+              "name": "borrowRate",
+              "type": "uint128"
+            },
+            {
+              "internalType": "address",
+              "name": "currency",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "nonce",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "deadline",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "strategy",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes",
+              "name": "params",
+              "type": "bytes"
+            },
+            {
+              "internalType": "uint8",
+              "name": "v",
+              "type": "uint8"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "r",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "s",
+              "type": "bytes32"
+            }
+          ],
+          "internalType": "struct BespokeTypes.Offer",
+          "name": "offerData",
+          "type": "tuple"
+        },
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "taker",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "params",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct BespokeTypes.LendOfferTakeParams",
+          "name": "takeInfo",
+          "type": "tuple"
+        }
+      ],
+      "name": "tokenIdMatchOffer",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x86a744e7f289fbb34d282828dfc4bdba72ffdb032350eb11339f173d19ed77de",
+  "receipt": {
+    "to": null,
+    "from": "0x218513C58A4781a5B88De6230caA29aBCe2Ccd75",
+    "contractAddress": "0x5416843FF2E301eE2bA0A4fDd825E47688F282e3",
+    "transactionIndex": 29,
+    "gasUsed": "366167",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x2e4a8dabd6065221dcbe4699f6c72c65e92891c63e14b2408c8c7e64120569f7",
+    "transactionHash": "0x86a744e7f289fbb34d282828dfc4bdba72ffdb032350eb11339f173d19ed77de",
+    "logs": [],
+    "blockNumber": 7940860,
+    "cumulativeGasUsed": "3982460",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "5caf662bc955a4ee3750eea04101df77",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"components\":[{\"internalType\":\"enum BespokeTypes.OfferType\",\"name\":\"offerType\",\"type\":\"uint8\"},{\"internalType\":\"bool\",\"name\":\"isProrated\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"reserveId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"nftAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"tokenAmount\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"signer\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"borrowAmountMin\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"borrowAmountMax\",\"type\":\"uint256\"},{\"internalType\":\"uint40\",\"name\":\"borrowDurationMin\",\"type\":\"uint40\"},{\"internalType\":\"uint40\",\"name\":\"borrowDurationMax\",\"type\":\"uint40\"},{\"internalType\":\"uint128\",\"name\":\"borrowRate\",\"type\":\"uint128\"},{\"internalType\":\"address\",\"name\":\"currency\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"nonce\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"strategy\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"params\",\"type\":\"bytes\"},{\"internalType\":\"uint8\",\"name\":\"v\",\"type\":\"uint8\"},{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"s\",\"type\":\"bytes32\"}],\"internalType\":\"struct BespokeTypes.Offer\",\"name\":\"offerData\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"address\",\"name\":\"taker\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"params\",\"type\":\"bytes\"}],\"internalType\":\"struct BespokeTypes.LendOfferTakeParams\",\"name\":\"takeInfo\",\"type\":\"tuple\"}],\"name\":\"tokenIdMatchOffer\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/bespokemarket/offerStrategies/StrategyAnyInSet.sol\":\"StrategyAnyInSet\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/bespokemarket/libraries/BespokeTypes.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nlibrary BespokeTypes {\\n    struct Offer {\\n        OfferType offerType;\\n        bool isProrated;\\n        uint256 reserveId;\\n        address nftAddress;\\n        uint256 tokenId;\\n        uint256 tokenAmount; // 1 for ERC721, 1+ for ERC1155\\n        address signer; //borrower\\n        uint256 borrowAmountMin;\\n        uint256 borrowAmountMax;\\n        uint40 borrowDurationMin;\\n        uint40 borrowDurationMax;\\n        uint128 borrowRate;\\n        address currency;\\n        uint256 nonce;\\n        uint256 deadline;\\n        address strategy;\\n        bytes params;\\n        uint8 v; // v: parameter (27 or 28)\\n        bytes32 r; // r: parameter\\n        bytes32 s; // s: parameter\\n    }\\n\\n    enum OfferType {\\n        BORROW, // borrow offer\\n        SINGLE, // single\\n        COLLECTION, // offer to collection\\n        MULTIPLE, // many. only for ERC721\\n        ATTRIBUTE, // by attribute\\n        PRIVATE // private\\n    }\\n\\n    // params for takeLendOffer\\n    struct LendOfferTakeParams {\\n        address taker;\\n        uint256 tokenId;\\n        bytes params;\\n    }\\n\\n    struct validateTakeLendOfferParams {\\n        bytes32 offerHash;\\n        address underlyingSpecified;\\n        uint256 borrowAmount;\\n        uint256 borrowDuration;\\n        bytes32 domainSeparator;\\n        address bespokeSettings;\\n        address settings;\\n    }\\n\\n    struct executeTakeLendParams {\\n        uint256 tokenId;\\n        uint256 borrowAmount; // new borrow amount\\n        uint256 borrowDuration; // new borrow duration\\n        address bespokeSettings;\\n        address settings;\\n        bytes32 domainSeparator;\\n        bytes32 offerHash;\\n        bytes params;\\n    }\\n\\n    struct executeTakeBorrowParams {\\n        uint256 amount;\\n        uint256 duration;\\n        address bespokeSettings;\\n        address settings;\\n        bytes32 domainSeparator;\\n        bytes32 offerHash;\\n    }\\n\\n    // repayAmount?\\n    // adminFee\\n    struct LoanData {\\n        uint256 reserveId;\\n        address nftAddress;\\n        uint256 tokenId;\\n        uint256 tokenAmount; // 1 for ERC721, 1+ for ERC1155\\n        address borrower;\\n        uint256 amount;\\n        uint128 borrowRate;\\n        uint128 interestPerSecond;\\n        address currency;\\n        uint40 borrowDuration;\\n        // after take offer\\n        uint40 borrowBegin;\\n        uint40 borrowOverdueTime;\\n        uint40 liquidatableTime;\\n        address lender;\\n        LoanStatus status;\\n    }\\n\\n    enum LoanStatus {\\n        NONE,\\n        BORROWING,\\n        OVERDUE,\\n        LIQUIDATABLE\\n    }\\n\\n    struct WhitelistInfo {\\n        bool enabled;\\n        uint256 minBorrowDuration;\\n        uint256 maxBorrowDuration;\\n        uint256 overdueDuration;\\n    }\\n\\n    struct executeRolloverParams {\\n        uint256 loanId;\\n        uint256 borrowAmount; // new borrow amount\\n        uint256 borrowDuration; // new borrow duration\\n        address bespokeSettings;\\n        address settings;\\n        bytes32 domainSeparator;\\n        bytes32 offerHash;\\n    }\\n\\n    struct Counter {\\n        // This variable should never be directly accessed by users of the library: interactions must be restricted to\\n        // the library's function. As of Solidity v0.5.2, this cannot be enforced, though there is a proposal to add\\n        // this feature: see https://github.com/ethereum/solidity/issues/4637\\n        uint256 _value; // default: 0\\n    }\\n}\\n\",\"keccak256\":\"0x8bcb02170fcb5b2e7070d9e2db95fbf6bd8f0c61df8177039101b77d2e606b8e\",\"license\":\"MIT\"},\"contracts/bespokemarket/offerStrategies/StrategyAnyInSet.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\nimport '../libraries/BespokeTypes.sol';\\n\\ncontract StrategyAnyInSet {\\n    function tokenIdMatchOffer(BespokeTypes.Offer memory offerData, BespokeTypes.LendOfferTakeParams memory takeInfo)\\n        external\\n        view\\n        returns (bool)\\n    {\\n        if (offerData.offerType != BespokeTypes.OfferType.MULTIPLE) return false;\\n\\n        uint256[] memory tokenIds = abi.decode(takeInfo.params, (uint256[]));\\n\\n        bool inSet = false;\\n        for (uint256 i = 0; i < tokenIds.length; i++) {\\n            if (tokenIds[i] == takeInfo.tokenId) {\\n                inSet = true;\\n                break;\\n            }\\n        }\\n\\n        return inSet;\\n    }\\n}\\n\",\"keccak256\":\"0x4b7c19f9f6462c3a37ad81c7f78011dc05ea0987699d4f6175d6a9433dbdb658\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506105aa806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c80637c550d6014610030575b600080fd5b61004361003e3660046102d1565b610057565b604051901515815260200160405180910390f35b600060038351600581111561006e5761006e610479565b1461007b575060006100e9565b60008260400151806020019051810190610095919061048f565b90506000805b82518110156100e45784602001518382815181106100bb576100bb610535565b602002602001015114156100d257600191506100e4565b806100dc8161054b565b91505061009b565b509150505b92915050565b634e487b7160e01b600052604160045260246000fd5b604051610280810167ffffffffffffffff81118282101715610129576101296100ef565b60405290565b604051601f8201601f1916810167ffffffffffffffff81118282101715610158576101586100ef565b604052919050565b80356006811061016f57600080fd5b919050565b8035801515811461016f57600080fd5b80356001600160a01b038116811461016f57600080fd5b803564ffffffffff8116811461016f57600080fd5b80356fffffffffffffffffffffffffffffffff8116811461016f57600080fd5b600082601f8301126101e157600080fd5b813567ffffffffffffffff8111156101fb576101fb6100ef565b61020e601f8201601f191660200161012f565b81815284602083860101111561022357600080fd5b816020850160208301376000918101602001919091529392505050565b803560ff8116811461016f57600080fd5b60006060828403121561026357600080fd5b6040516060810167ffffffffffffffff8282108183111715610287576102876100ef565b8160405282935061029785610184565b83526020850135602084015260408501359150808211156102b757600080fd5b506102c4858286016101d0565b6040830152505092915050565b600080604083850312156102e457600080fd5b823567ffffffffffffffff808211156102fc57600080fd5b90840190610280828703121561031157600080fd5b610319610105565b61032283610160565b815261033060208401610174565b60208201526040830135604082015261034b60608401610184565b60608201526080830135608082015260a083013560a082015261037060c08401610184565b60c082015260e083013560e082015261010080840135818301525061012061039981850161019b565b908201526101406103ab84820161019b565b908201526101606103bd8482016101b0565b908201526101806103cf848201610184565b908201526101a083810135908201526101c080840135908201526101e06103f7818501610184565b90820152610200838101358381111561040f57600080fd5b61041b898287016101d0565b82840152505061022061042f818501610240565b90820152610240838101359082015261026092830135928101929092529092506020840135908082111561046257600080fd5b5061046f85828601610251565b9150509250929050565b634e487b7160e01b600052602160045260246000fd5b600060208083850312156104a257600080fd5b825167ffffffffffffffff808211156104ba57600080fd5b818501915085601f8301126104ce57600080fd5b8151818111156104e0576104e06100ef565b8060051b91506104f184830161012f565b818152918301840191848101908884111561050b57600080fd5b938501935b8385101561052957845182529385019390850190610510565b98975050505050505050565b634e487b7160e01b600052603260045260246000fd5b600060001982141561056d57634e487b7160e01b600052601160045260246000fd5b506001019056fea2646970667358221220d4261b67394edcb997b00959cd54abcad162ebe49a56964807d6d2ba7365d03d64736f6c634300080a0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c80637c550d6014610030575b600080fd5b61004361003e3660046102d1565b610057565b604051901515815260200160405180910390f35b600060038351600581111561006e5761006e610479565b1461007b575060006100e9565b60008260400151806020019051810190610095919061048f565b90506000805b82518110156100e45784602001518382815181106100bb576100bb610535565b602002602001015114156100d257600191506100e4565b806100dc8161054b565b91505061009b565b509150505b92915050565b634e487b7160e01b600052604160045260246000fd5b604051610280810167ffffffffffffffff81118282101715610129576101296100ef565b60405290565b604051601f8201601f1916810167ffffffffffffffff81118282101715610158576101586100ef565b604052919050565b80356006811061016f57600080fd5b919050565b8035801515811461016f57600080fd5b80356001600160a01b038116811461016f57600080fd5b803564ffffffffff8116811461016f57600080fd5b80356fffffffffffffffffffffffffffffffff8116811461016f57600080fd5b600082601f8301126101e157600080fd5b813567ffffffffffffffff8111156101fb576101fb6100ef565b61020e601f8201601f191660200161012f565b81815284602083860101111561022357600080fd5b816020850160208301376000918101602001919091529392505050565b803560ff8116811461016f57600080fd5b60006060828403121561026357600080fd5b6040516060810167ffffffffffffffff8282108183111715610287576102876100ef565b8160405282935061029785610184565b83526020850135602084015260408501359150808211156102b757600080fd5b506102c4858286016101d0565b6040830152505092915050565b600080604083850312156102e457600080fd5b823567ffffffffffffffff808211156102fc57600080fd5b90840190610280828703121561031157600080fd5b610319610105565b61032283610160565b815261033060208401610174565b60208201526040830135604082015261034b60608401610184565b60608201526080830135608082015260a083013560a082015261037060c08401610184565b60c082015260e083013560e082015261010080840135818301525061012061039981850161019b565b908201526101406103ab84820161019b565b908201526101606103bd8482016101b0565b908201526101806103cf848201610184565b908201526101a083810135908201526101c080840135908201526101e06103f7818501610184565b90820152610200838101358381111561040f57600080fd5b61041b898287016101d0565b82840152505061022061042f818501610240565b90820152610240838101359082015261026092830135928101929092529092506020840135908082111561046257600080fd5b5061046f85828601610251565b9150509250929050565b634e487b7160e01b600052602160045260246000fd5b600060208083850312156104a257600080fd5b825167ffffffffffffffff808211156104ba57600080fd5b818501915085601f8301126104ce57600080fd5b8151818111156104e0576104e06100ef565b8060051b91506104f184830161012f565b818152918301840191848101908884111561050b57600080fd5b938501935b8385101561052957845182529385019390850190610510565b98975050505050505050565b634e487b7160e01b600052603260045260246000fd5b600060001982141561056d57634e487b7160e01b600052601160045260246000fd5b506001019056fea2646970667358221220d4261b67394edcb997b00959cd54abcad162ebe49a56964807d6d2ba7365d03d64736f6c634300080a0033",
+  "libraries": {
+    "BespokeTypes": "0x18DBb065e137198b4eE32F212d8442918143FaDF"
+  },
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}
