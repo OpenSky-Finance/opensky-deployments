@@ -2,40 +2,11 @@
   {
     "inputs": [
       {
-        "internalType": "contract IOpenSkyBespokeSettings",
-        "name": "BESPOKE_SETTINGS",
-        "type": "IOpenSkyBespokeSettings"
-      },
-      {
-        "internalType": "uint256",
-        "name": "loanId",
-        "type": "uint256"
-      }
-    ],
-    "name": "getLoanParties",
-    "outputs": [
-      {
-        "internalType": "address",
-        "name": "borrower",
-        "type": "address"
-      },
-      {
-        "internalType": "address",
-        "name": "lender",
-        "type": "address"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
         "components": [
           {
             "internalType": "enum BespokeTypes.OfferType",
             "name": "offerType",
-            "type": "BespokeTypes.OfferType"
+            "type": "uint8"
           },
           {
             "internalType": "bool",
@@ -136,17 +107,39 @@
         "internalType": "struct BespokeTypes.Offer",
         "name": "offerData",
         "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "taker",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "params",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct BespokeTypes.LendOfferTakeParams",
+        "name": "takeInfo",
+        "type": "tuple"
       }
     ],
-    "name": "hashOffer",
+    "name": "tokenIdMatchOffer",
     "outputs": [
       {
-        "internalType": "bytes32",
+        "internalType": "bool",
         "name": "",
-        "type": "bytes32"
+        "type": "bool"
       }
     ],
-    "stateMutability": "pure",
+    "stateMutability": "view",
     "type": "function"
   }
 ]
