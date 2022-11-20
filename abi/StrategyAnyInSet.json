@@ -4,11 +4,6 @@
       {
         "components": [
           {
-            "internalType": "enum BespokeTypes.OfferType",
-            "name": "offerType",
-            "type": "uint8"
-          },
-          {
             "internalType": "bool",
             "name": "isProrated",
             "type": "bool"
@@ -17,6 +12,11 @@
             "internalType": "uint256",
             "name": "reserveId",
             "type": "uint256"
+          },
+          {
+            "internalType": "enum BespokeTypes.OfferType",
+            "name": "offerType",
+            "type": "uint8"
           },
           {
             "internalType": "address",

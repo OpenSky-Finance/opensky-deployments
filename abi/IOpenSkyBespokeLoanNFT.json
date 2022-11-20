@@ -228,7 +228,17 @@
           },
           {
             "internalType": "address",
+            "name": "nftManager",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
             "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "lender",
             "type": "address"
           },
           {
@@ -272,9 +282,9 @@
             "type": "uint40"
           },
           {
-            "internalType": "address",
-            "name": "lender",
-            "type": "address"
+            "internalType": "bool",
+            "name": "isProrated",
+            "type": "bool"
           },
           {
             "internalType": "enum BespokeTypes.LoanStatus",
