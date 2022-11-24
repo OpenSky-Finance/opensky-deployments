@@ -1,0 +1,112 @@
+{
+  "address": "0x9C3106e111a3317d3662F4a3f9622B6d17EC79fE",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "id",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getLendingPool",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "pool",
+          "type": "address"
+        }
+      ],
+      "name": "setLendingPool",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x60c71a7fbb838c9be107f55b9db83562d955976b2098f3b43e2515430c55939e",
+  "receipt": {
+    "to": null,
+    "from": "0x218513C58A4781a5B88De6230caA29aBCe2Ccd75",
+    "contractAddress": "0x9C3106e111a3317d3662F4a3f9622B6d17EC79fE",
+    "transactionIndex": 39,
+    "gasUsed": "149191",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x2cf52f13532081266050f0def9cbce91b1fdb8355259b5f9b17ca76007324448",
+    "transactionHash": "0x60c71a7fbb838c9be107f55b9db83562d955976b2098f3b43e2515430c55939e",
+    "logs": [],
+    "blockNumber": 8008946,
+    "cumulativeGasUsed": "13861079",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "e33bc92dec463f78c10363b5fa76cccf",
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"id\",\"type\":\"bytes32\"}],\"name\":\"getAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getLendingPool\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"pool\",\"type\":\"address\"}],\"name\":\"setLendingPool\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/mocks/aave/AAVELendingPoolAddressesProvider.sol\":\"AAVELendingPoolAddressesProvider\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":500},\"remappings\":[]},\"sources\":{\"contracts/mocks/aave/AAVELendingPoolAddressesProvider.sol\":{\"content\":\"pragma solidity =0.7.6;\\npragma experimental ABIEncoderV2;\\n\\ncontract AAVELendingPoolAddressesProvider {\\n\\n  mapping(bytes32 => address) private _addresses;\\n  bytes32 private constant LENDING_POOL = 'LENDING_POOL';\\n\\n  function getAddress(bytes32 id) public view  returns (address) {\\n    return _addresses[id];\\n  }\\n\\n  function getLendingPool() external view  returns (address) {\\n    return getAddress(LENDING_POOL);\\n  }\\n\\n  function setLendingPool(address pool) external  {\\n    _addresses[LENDING_POOL] =pool;\\n  }\\n}\\n\",\"keccak256\":\"0x9fae3a4eb451a741301d61e3a94be26ed716a5f126669dcc496af2957ecaee24\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506101bc806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80630261bf8b14610046578063113aa8b11461006457806321f8a72114610079575b600080fd5b61004e61008c565b60405161005b9190610172565b60405180910390f35b61007761007236600461012c565b6100ab565b005b61004e61008736600461015a565b610111565b60006100a66b13115391125391d7d413d3d360a21b610111565b905090565b6b13115391125391d7d413d3d360a21b60009081526020527f361037610d41e9e91694acae44756927f18da6b058d6570756f34a6c84422d54805473ffffffffffffffffffffffffffffffffffffffff19166001600160a01b0392909216919091179055565b6000908152602081905260409020546001600160a01b031690565b60006020828403121561013d578081fd5b81356001600160a01b0381168114610153578182fd5b9392505050565b60006020828403121561016b578081fd5b5035919050565b6001600160a01b039190911681526020019056fea2646970667358221220271f6a6a90963933edd8818ea1094191a354e405b2fd65dd1e9b5775c107674c64736f6c63430007060033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80630261bf8b14610046578063113aa8b11461006457806321f8a72114610079575b600080fd5b61004e61008c565b60405161005b9190610172565b60405180910390f35b61007761007236600461012c565b6100ab565b005b61004e61008736600461015a565b610111565b60006100a66b13115391125391d7d413d3d360a21b610111565b905090565b6b13115391125391d7d413d3d360a21b60009081526020527f361037610d41e9e91694acae44756927f18da6b058d6570756f34a6c84422d54805473ffffffffffffffffffffffffffffffffffffffff19166001600160a01b0392909216919091179055565b6000908152602081905260409020546001600160a01b031690565b60006020828403121561013d578081fd5b81356001600160a01b0381168114610153578182fd5b9392505050565b60006020828403121561016b578081fd5b5035919050565b6001600160a01b039190911681526020019056fea2646970667358221220271f6a6a90963933edd8818ea1094191a354e405b2fd65dd1e9b5775c107674c64736f6c63430007060033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 6,
+        "contract": "contracts/mocks/aave/AAVELendingPoolAddressesProvider.sol:AAVELendingPoolAddressesProvider",
+        "label": "_addresses",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_mapping(t_bytes32,t_address)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_bytes32": {
+        "encoding": "inplace",
+        "label": "bytes32",
+        "numberOfBytes": "32"
+      },
+      "t_mapping(t_bytes32,t_address)": {
+        "encoding": "mapping",
+        "key": "t_bytes32",
+        "label": "mapping(bytes32 => address)",
+        "numberOfBytes": "32",
+        "value": "t_address"
+      }
+    }
+  }
+}
