@@ -315,6 +315,21 @@
             "type": "address"
           },
           {
+            "internalType": "address",
+            "name": "lendAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "reserveFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "overdueLoanFeeFactor",
+            "type": "uint256"
+          },
+          {
             "internalType": "uint40",
             "name": "borrowDuration",
             "type": "uint40"
@@ -337,6 +352,11 @@
           {
             "internalType": "bool",
             "name": "isProrated",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "autoConvertWhenRepay",
             "type": "bool"
           },
           {

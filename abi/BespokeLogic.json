@@ -59,6 +59,21 @@
             "type": "address"
           },
           {
+            "internalType": "address",
+            "name": "lendAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "reserveFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "overdueLoanFeeFactor",
+            "type": "uint256"
+          },
+          {
             "internalType": "uint40",
             "name": "borrowDuration",
             "type": "uint40"
@@ -81,6 +96,11 @@
           {
             "internalType": "bool",
             "name": "isProrated",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "autoConvertWhenRepay",
             "type": "bool"
           },
           {
@@ -125,13 +145,8 @@
       {
         "components": [
           {
-            "internalType": "uint256",
-            "name": "reserveId",
-            "type": "uint256"
-          },
-          {
             "internalType": "address",
-            "name": "nftAddress",
+            "name": "tokenAddress",
             "type": "address"
           },
           {
@@ -180,6 +195,21 @@
             "type": "address"
           },
           {
+            "internalType": "address",
+            "name": "lendAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "reserveFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "overdueLoanFeeFactor",
+            "type": "uint256"
+          },
+          {
             "internalType": "uint40",
             "name": "borrowDuration",
             "type": "uint40"
@@ -202,6 +232,11 @@
           {
             "internalType": "bool",
             "name": "isProrated",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "autoConvertWhenRepay",
             "type": "bool"
           },
           {
@@ -231,13 +266,8 @@
       {
         "components": [
           {
-            "internalType": "uint256",
-            "name": "reserveId",
-            "type": "uint256"
-          },
-          {
             "internalType": "address",
-            "name": "nftAddress",
+            "name": "tokenAddress",
             "type": "address"
           },
           {
@@ -286,6 +316,21 @@
             "type": "address"
           },
           {
+            "internalType": "address",
+            "name": "lendAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "reserveFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "overdueLoanFeeFactor",
+            "type": "uint256"
+          },
+          {
             "internalType": "uint40",
             "name": "borrowDuration",
             "type": "uint40"
@@ -308,6 +353,11 @@
           {
             "internalType": "bool",
             "name": "isProrated",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "autoConvertWhenRepay",
             "type": "bool"
           },
           {
@@ -337,13 +387,8 @@
       {
         "components": [
           {
-            "internalType": "uint256",
-            "name": "reserveId",
-            "type": "uint256"
-          },
-          {
             "internalType": "address",
-            "name": "nftAddress",
+            "name": "tokenAddress",
             "type": "address"
           },
           {
@@ -390,6 +435,21 @@
             "internalType": "address",
             "name": "currency",
             "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "lendAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "reserveFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "overdueLoanFeeFactor",
+            "type": "uint256"
           },
           {
             "internalType": "uint40",
@@ -417,6 +477,11 @@
             "type": "bool"
           },
           {
+            "internalType": "bool",
+            "name": "autoConvertWhenRepay",
+            "type": "bool"
+          },
+          {
             "internalType": "enum BespokeTypes.LoanStatus",
             "name": "status",
             "type": "BespokeTypes.LoanStatus"
@@ -432,13 +497,8 @@
       {
         "components": [
           {
-            "internalType": "uint256",
-            "name": "reserveId",
-            "type": "uint256"
-          },
-          {
             "internalType": "address",
-            "name": "nftAddress",
+            "name": "tokenAddress",
             "type": "address"
           },
           {
@@ -487,6 +547,21 @@
             "type": "address"
           },
           {
+            "internalType": "address",
+            "name": "lendAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "reserveFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "overdueLoanFeeFactor",
+            "type": "uint256"
+          },
+          {
             "internalType": "uint40",
             "name": "borrowDuration",
             "type": "uint40"
@@ -509,6 +584,11 @@
           {
             "internalType": "bool",
             "name": "isProrated",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "autoConvertWhenRepay",
             "type": "bool"
           },
           {
@@ -559,13 +639,8 @@
       {
         "components": [
           {
-            "internalType": "uint256",
-            "name": "reserveId",
-            "type": "uint256"
-          },
-          {
             "internalType": "address",
-            "name": "nftAddress",
+            "name": "tokenAddress",
             "type": "address"
           },
           {
@@ -614,6 +689,21 @@
             "type": "address"
           },
           {
+            "internalType": "address",
+            "name": "lendAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "reserveFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "overdueLoanFeeFactor",
+            "type": "uint256"
+          },
+          {
             "internalType": "uint40",
             "name": "borrowDuration",
             "type": "uint40"
@@ -636,6 +726,11 @@
           {
             "internalType": "bool",
             "name": "isProrated",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "autoConvertWhenRepay",
             "type": "bool"
           },
           {
@@ -665,13 +760,8 @@
       {
         "components": [
           {
-            "internalType": "uint256",
-            "name": "reserveId",
-            "type": "uint256"
-          },
-          {
             "internalType": "address",
-            "name": "nftAddress",
+            "name": "tokenAddress",
             "type": "address"
           },
           {
@@ -720,6 +810,21 @@
             "type": "address"
           },
           {
+            "internalType": "address",
+            "name": "lendAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "reserveFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "overdueLoanFeeFactor",
+            "type": "uint256"
+          },
+          {
             "internalType": "uint40",
             "name": "borrowDuration",
             "type": "uint40"
@@ -742,6 +847,11 @@
           {
             "internalType": "bool",
             "name": "isProrated",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "autoConvertWhenRepay",
             "type": "bool"
           },
           {
@@ -776,23 +886,23 @@
       {
         "components": [
           {
-            "internalType": "bool",
-            "name": "isProrated",
-            "type": "bool"
-          },
-          {
-            "internalType": "uint256",
-            "name": "reserveId",
-            "type": "uint256"
-          },
-          {
             "internalType": "enum BespokeTypes.OfferType",
             "name": "offerType",
             "type": "BespokeTypes.OfferType"
           },
           {
+            "internalType": "bool",
+            "name": "isProrated",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "autoConvertWhenRepay",
+            "type": "bool"
+          },
+          {
             "internalType": "address",
-            "name": "nftAddress",
+            "name": "tokenAddress",
             "type": "address"
           },
           {
@@ -841,8 +951,18 @@
             "type": "address"
           },
           {
+            "internalType": "address",
+            "name": "lendAsset",
+            "type": "address"
+          },
+          {
             "internalType": "uint256",
             "name": "nonce",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nonceMaxTimes",
             "type": "uint256"
           },
           {
