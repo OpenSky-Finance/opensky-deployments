@@ -4,13 +4,8 @@
       {
         "components": [
           {
-            "internalType": "uint256",
-            "name": "reserveId",
-            "type": "uint256"
-          },
-          {
             "internalType": "address",
-            "name": "nftAddress",
+            "name": "tokenAddress",
             "type": "address"
           },
           {
@@ -112,11 +107,6 @@
         "internalType": "struct BespokeTypes.LoanData",
         "name": "loan",
         "type": "tuple"
-      },
-      {
-        "internalType": "contract IOpenSkyBespokeSettings",
-        "name": "BESPOKE_SETTINGS",
-        "type": "IOpenSkyBespokeSettings"
       }
     ],
     "name": "calculateRepayAmountAndProtocolFee",
@@ -377,6 +367,19 @@
         "internalType": "uint256",
         "name": "",
         "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getDomainSeparator",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
       }
     ],
     "stateMutability": "view",
@@ -863,11 +866,6 @@
         "internalType": "struct BespokeTypes.LoanData",
         "name": "loan",
         "type": "tuple"
-      },
-      {
-        "internalType": "contract IOpenSkyBespokeSettings",
-        "name": "BESPOKE_SETTINGS",
-        "type": "IOpenSkyBespokeSettings"
       }
     ],
     "name": "getPenalty",
@@ -886,11 +884,6 @@
       {
         "components": [
           {
-            "internalType": "enum BespokeTypes.OfferType",
-            "name": "offerType",
-            "type": "BespokeTypes.OfferType"
-          },
-          {
             "internalType": "bool",
             "name": "isProrated",
             "type": "bool"
@@ -899,6 +892,11 @@
             "internalType": "bool",
             "name": "autoConvertWhenRepay",
             "type": "bool"
+          },
+          {
+            "internalType": "enum BespokeTypes.OfferType",
+            "name": "offerType",
+            "type": "BespokeTypes.OfferType"
           },
           {
             "internalType": "address",

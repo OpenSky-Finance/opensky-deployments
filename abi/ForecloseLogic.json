@@ -11,7 +11,13 @@
       {
         "indexed": true,
         "internalType": "address",
-        "name": "lender",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "receiver",
         "type": "address"
       }
     ],

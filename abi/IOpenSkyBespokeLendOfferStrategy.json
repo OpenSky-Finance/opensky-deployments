@@ -9,9 +9,9 @@
             "type": "bool"
           },
           {
-            "internalType": "uint256",
-            "name": "reserveId",
-            "type": "uint256"
+            "internalType": "bool",
+            "name": "autoConvertWhenRepay",
+            "type": "bool"
           },
           {
             "internalType": "enum BespokeTypes.OfferType",
@@ -20,7 +20,7 @@
           },
           {
             "internalType": "address",
-            "name": "nftAddress",
+            "name": "tokenAddress",
             "type": "address"
           },
           {
@@ -69,8 +69,18 @@
             "type": "address"
           },
           {
+            "internalType": "address",
+            "name": "lendAsset",
+            "type": "address"
+          },
+          {
             "internalType": "uint256",
             "name": "nonce",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nonceMaxTimes",
             "type": "uint256"
           },
           {
@@ -126,19 +136,13 @@
             "type": "bytes"
           }
         ],
-        "internalType": "struct BespokeTypes.LendOfferTakeParams",
+        "internalType": "struct BespokeTypes.TakeLendInfoForStrategy",
         "name": "takeInfo",
         "type": "tuple"
       }
     ],
-    "name": "tokenIdMatchOffer",
-    "outputs": [
-      {
-        "internalType": "bool",
-        "name": "",
-        "type": "bool"
-      }
-    ],
+    "name": "validate",
+    "outputs": [],
     "stateMutability": "view",
     "type": "function"
   }

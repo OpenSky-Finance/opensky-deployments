@@ -41,6 +41,31 @@
       {
         "indexed": false,
         "internalType": "address",
+        "name": "currencyAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "adapterAddress",
+        "type": "address"
+      }
+    ],
+    "name": "AddCurrencyTransferAdapter",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
         "name": "nftAddress",
         "type": "address"
       },
@@ -103,6 +128,19 @@
       }
     ],
     "name": "CloseWhitelist",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "currencyDefaultTransferAdapter",
+        "type": "address"
+      }
+    ],
+    "name": "InitDefaultCurrencyTransferAdapter",
     "type": "event"
   },
   {
@@ -217,6 +255,25 @@
       }
     ],
     "name": "RemoveCurrency",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "currencyAddress",
+        "type": "address"
+      }
+    ],
+    "name": "RemoveCurrencyTransferAdapter",
     "type": "event"
   },
   {
@@ -425,6 +482,19 @@
   },
   {
     "inputs": [],
+    "name": "TRANSFER_CURRENCY",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
     "name": "TRANSFER_ERC1155",
     "outputs": [
       {
@@ -439,6 +509,25 @@
   {
     "inputs": [],
     "name": "TRANSFER_ERC721",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "_currencyTransferAdapters",
     "outputs": [
       {
         "internalType": "address",
@@ -515,6 +604,24 @@
       }
     ],
     "name": "addCurrency",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "currency",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "adapterAddress",
+        "type": "address"
+      }
+    ],
+    "name": "addCurrencyTransferAdapter",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
@@ -631,6 +738,25 @@
     "inputs": [
       {
         "internalType": "address",
+        "name": "currency",
+        "type": "address"
+      }
+    ],
+    "name": "getCurrencyTransferAdapter",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "adapter",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
         "name": "nftAddress",
         "type": "address"
       }
@@ -704,6 +830,19 @@
       }
     ],
     "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "currencyDefaultAdapter",
+        "type": "address"
+      }
+    ],
+    "name": "initDefaultCurrencyTransferAdapter",
+    "outputs": [],
+    "stateMutability": "nonpayable",
     "type": "function"
   },
   {
@@ -913,6 +1052,19 @@
       }
     ],
     "name": "removeCurrency",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "currency",
+        "type": "address"
+      }
+    ],
+    "name": "removeCurrencyTransferAdapter",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"

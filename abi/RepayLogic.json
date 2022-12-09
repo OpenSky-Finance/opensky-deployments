@@ -11,30 +11,17 @@
       {
         "indexed": true,
         "internalType": "address",
-        "name": "borrower",
+        "name": "operator",
         "type": "address"
-      }
-    ],
-    "name": "Repay",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": true,
-        "internalType": "uint256",
-        "name": "loanId",
-        "type": "uint256"
       },
       {
         "indexed": true,
         "internalType": "address",
-        "name": "borrower",
+        "name": "receiver",
         "type": "address"
       }
     ],
-    "name": "RepayETH",
+    "name": "Repay",
     "type": "event"
   }
 ]

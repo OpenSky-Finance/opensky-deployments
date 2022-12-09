@@ -30,6 +30,31 @@
       {
         "indexed": false,
         "internalType": "address",
+        "name": "currencyAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "adapterAddress",
+        "type": "address"
+      }
+    ],
+    "name": "AddCurrencyTransferAdapter",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
         "name": "nftAddress",
         "type": "address"
       },
@@ -92,6 +117,19 @@
       }
     ],
     "name": "CloseWhitelist",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "currencyDefaultTransferAdapter",
+        "type": "address"
+      }
+    ],
+    "name": "InitDefaultCurrencyTransferAdapter",
     "type": "event"
   },
   {
@@ -187,6 +225,25 @@
       }
     ],
     "name": "RemoveCurrency",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "currencyAddress",
+        "type": "address"
+      }
+    ],
+    "name": "RemoveCurrencyTransferAdapter",
     "type": "event"
   },
   {
@@ -391,6 +448,25 @@
         "internalType": "uint256",
         "name": "overdueDuration",
         "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "currency",
+        "type": "address"
+      }
+    ],
+    "name": "getCurrencyTransferAdapter",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "adapter",
+        "type": "address"
       }
     ],
     "stateMutability": "view",
