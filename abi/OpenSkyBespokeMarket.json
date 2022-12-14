@@ -742,6 +742,16 @@
         "internalType": "uint256",
         "name": "supplyDuration",
         "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "lendAsset",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "autoConvertWhenRepay",
+        "type": "bool"
       }
     ],
     "name": "takeBorrowOffer",
