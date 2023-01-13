@@ -10,6 +10,11 @@
         "internalType": "contract IOpenSkyBespokeSettings",
         "name": "bespokeSettings",
         "type": "address"
+      },
+      {
+        "internalType": "contract IOpenSkyPool",
+        "name": "pool",
+        "type": "address"
       }
     ],
     "stateMutability": "nonpayable",
@@ -74,6 +79,19 @@
   },
   {
     "inputs": [],
+    "name": "OpenSkyPool",
+    "outputs": [
+      {
+        "internalType": "contract IOpenSkyPool",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
     "name": "aavePool",
     "outputs": [
       {
@@ -82,7 +100,7 @@
         "type": "address"
       }
     ],
-    "stateMutability": "view",
+    "stateMutability": "nonpayable",
     "type": "function"
   },
   {
