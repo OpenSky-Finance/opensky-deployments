@@ -1,0 +1,1166 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_recipient",
+        "type": "address"
+      }
+    ],
+    "name": "claimApeCoin",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint128",
+            "name": "mainTokenId",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "bakcTokenId",
+            "type": "uint128"
+          }
+        ],
+        "internalType": "struct IApeCoinStaking.PairNft[]",
+        "name": "_baycPairs",
+        "type": "tuple[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint128",
+            "name": "mainTokenId",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "bakcTokenId",
+            "type": "uint128"
+          }
+        ],
+        "internalType": "struct IApeCoinStaking.PairNft[]",
+        "name": "_maycPairs",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "address",
+        "name": "_recipient",
+        "type": "address"
+      }
+    ],
+    "name": "claimBAKC",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "_nfts",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "address",
+        "name": "_recipient",
+        "type": "address"
+      }
+    ],
+    "name": "claimBAYC",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "_nfts",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "address",
+        "name": "_recipient",
+        "type": "address"
+      }
+    ],
+    "name": "claimMAYC",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "claimSelfApeCoin",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint128",
+            "name": "mainTokenId",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "bakcTokenId",
+            "type": "uint128"
+          }
+        ],
+        "internalType": "struct IApeCoinStaking.PairNft[]",
+        "name": "_baycPairs",
+        "type": "tuple[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint128",
+            "name": "mainTokenId",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "bakcTokenId",
+            "type": "uint128"
+          }
+        ],
+        "internalType": "struct IApeCoinStaking.PairNft[]",
+        "name": "_maycPairs",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "claimSelfBAKC",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "_nfts",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "claimSelfBAYC",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "_nfts",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "claimSelfMAYC",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_recipient",
+        "type": "address"
+      }
+    ],
+    "name": "depositApeCoin",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint32",
+            "name": "mainTokenId",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "bakcTokenId",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint184",
+            "name": "amount",
+            "type": "uint184"
+          }
+        ],
+        "internalType": "struct IApeCoinStaking.PairNftDepositWithAmount[]",
+        "name": "_baycPairs",
+        "type": "tuple[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint32",
+            "name": "mainTokenId",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "bakcTokenId",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint184",
+            "name": "amount",
+            "type": "uint184"
+          }
+        ],
+        "internalType": "struct IApeCoinStaking.PairNftDepositWithAmount[]",
+        "name": "_maycPairs",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "depositBAKC",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint32",
+            "name": "tokenId",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint224",
+            "name": "amount",
+            "type": "uint224"
+          }
+        ],
+        "internalType": "struct IApeCoinStaking.SingleNft[]",
+        "name": "_nfts",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "depositBAYC",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint32",
+            "name": "tokenId",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint224",
+            "name": "amount",
+            "type": "uint224"
+          }
+        ],
+        "internalType": "struct IApeCoinStaking.SingleNft[]",
+        "name": "_nfts",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "depositMAYC",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "depositSelfApeCoin",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_address",
+        "type": "address"
+      }
+    ],
+    "name": "getAllStakes",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "poolId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deposited",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unclaimed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rewards24hr",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "mainTokenId",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "mainTypePoolId",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IApeCoinStaking.DashboardPair",
+            "name": "pair",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct IApeCoinStaking.DashboardStake[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_address",
+        "type": "address"
+      }
+    ],
+    "name": "getApeCoinStake",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "poolId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deposited",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unclaimed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rewards24hr",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "mainTokenId",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "mainTypePoolId",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IApeCoinStaking.DashboardPair",
+            "name": "pair",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct IApeCoinStaking.DashboardStake",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_address",
+        "type": "address"
+      }
+    ],
+    "name": "getBakcStakes",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "poolId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deposited",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unclaimed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rewards24hr",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "mainTokenId",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "mainTypePoolId",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IApeCoinStaking.DashboardPair",
+            "name": "pair",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct IApeCoinStaking.DashboardStake[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_address",
+        "type": "address"
+      }
+    ],
+    "name": "getBaycStakes",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "poolId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deposited",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unclaimed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rewards24hr",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "mainTokenId",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "mainTypePoolId",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IApeCoinStaking.DashboardPair",
+            "name": "pair",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct IApeCoinStaking.DashboardStake[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_address",
+        "type": "address"
+      }
+    ],
+    "name": "getMaycStakes",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "poolId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deposited",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unclaimed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rewards24hr",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "mainTokenId",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "mainTypePoolId",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IApeCoinStaking.DashboardPair",
+            "name": "pair",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct IApeCoinStaking.DashboardStake[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getPoolsUI",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "poolId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "stakedAmount",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint48",
+                "name": "startTimestampHour",
+                "type": "uint48"
+              },
+              {
+                "internalType": "uint48",
+                "name": "endTimestampHour",
+                "type": "uint48"
+              },
+              {
+                "internalType": "uint256",
+                "name": "rewardsPerHour",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint96",
+                "name": "capPerPosition",
+                "type": "uint96"
+              }
+            ],
+            "internalType": "struct IApeCoinStaking.TimeRange",
+            "name": "currentTimeRange",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct IApeCoinStaking.PoolUI",
+        "name": "",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "poolId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "stakedAmount",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint48",
+                "name": "startTimestampHour",
+                "type": "uint48"
+              },
+              {
+                "internalType": "uint48",
+                "name": "endTimestampHour",
+                "type": "uint48"
+              },
+              {
+                "internalType": "uint256",
+                "name": "rewardsPerHour",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint96",
+                "name": "capPerPosition",
+                "type": "uint96"
+              }
+            ],
+            "internalType": "struct IApeCoinStaking.TimeRange",
+            "name": "currentTimeRange",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct IApeCoinStaking.PoolUI",
+        "name": "",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "poolId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "stakedAmount",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint48",
+                "name": "startTimestampHour",
+                "type": "uint48"
+              },
+              {
+                "internalType": "uint48",
+                "name": "endTimestampHour",
+                "type": "uint48"
+              },
+              {
+                "internalType": "uint256",
+                "name": "rewardsPerHour",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint96",
+                "name": "capPerPosition",
+                "type": "uint96"
+              }
+            ],
+            "internalType": "struct IApeCoinStaking.TimeRange",
+            "name": "currentTimeRange",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct IApeCoinStaking.PoolUI",
+        "name": "",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "poolId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "stakedAmount",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint48",
+                "name": "startTimestampHour",
+                "type": "uint48"
+              },
+              {
+                "internalType": "uint48",
+                "name": "endTimestampHour",
+                "type": "uint48"
+              },
+              {
+                "internalType": "uint256",
+                "name": "rewardsPerHour",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint96",
+                "name": "capPerPosition",
+                "type": "uint96"
+              }
+            ],
+            "internalType": "struct IApeCoinStaking.TimeRange",
+            "name": "currentTimeRange",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct IApeCoinStaking.PoolUI",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_address",
+        "type": "address"
+      }
+    ],
+    "name": "getSplitStakes",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "poolId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deposited",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unclaimed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rewards24hr",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "mainTokenId",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "mainTypePoolId",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IApeCoinStaking.DashboardPair",
+            "name": "pair",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct IApeCoinStaking.DashboardStake[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_poolId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_address",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_tokenId",
+        "type": "uint256"
+      }
+    ],
+    "name": "pendingRewards",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_poolId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_from",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_to",
+        "type": "uint256"
+      }
+    ],
+    "name": "rewardsBy",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_addr",
+        "type": "address"
+      }
+    ],
+    "name": "stakedTotal",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_poolId",
+        "type": "uint256"
+      }
+    ],
+    "name": "updatePool",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_recipient",
+        "type": "address"
+      }
+    ],
+    "name": "withdrawApeCoin",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint32",
+            "name": "mainTokenId",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "bakcTokenId",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint184",
+            "name": "amount",
+            "type": "uint184"
+          },
+          {
+            "internalType": "bool",
+            "name": "isUncommit",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IApeCoinStaking.PairNftWithdrawWithAmount[]",
+        "name": "_baycPairs",
+        "type": "tuple[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint32",
+            "name": "mainTokenId",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "bakcTokenId",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint184",
+            "name": "amount",
+            "type": "uint184"
+          },
+          {
+            "internalType": "bool",
+            "name": "isUncommit",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IApeCoinStaking.PairNftWithdrawWithAmount[]",
+        "name": "_maycPairs",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "withdrawBAKC",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint32",
+            "name": "tokenId",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint224",
+            "name": "amount",
+            "type": "uint224"
+          }
+        ],
+        "internalType": "struct IApeCoinStaking.SingleNft[]",
+        "name": "_nfts",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "address",
+        "name": "_recipient",
+        "type": "address"
+      }
+    ],
+    "name": "withdrawBAYC",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint32",
+            "name": "tokenId",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint224",
+            "name": "amount",
+            "type": "uint224"
+          }
+        ],
+        "internalType": "struct IApeCoinStaking.SingleNft[]",
+        "name": "_nfts",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "address",
+        "name": "_recipient",
+        "type": "address"
+      }
+    ],
+    "name": "withdrawMAYC",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "withdrawSelfApeCoin",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint32",
+            "name": "tokenId",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint224",
+            "name": "amount",
+            "type": "uint224"
+          }
+        ],
+        "internalType": "struct IApeCoinStaking.SingleNft[]",
+        "name": "_nfts",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "withdrawSelfBAYC",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint32",
+            "name": "tokenId",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint224",
+            "name": "amount",
+            "type": "uint224"
+          }
+        ],
+        "internalType": "struct IApeCoinStaking.SingleNft[]",
+        "name": "_nfts",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "withdrawSelfMAYC",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

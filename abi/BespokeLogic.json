@@ -4,13 +4,8 @@
       {
         "components": [
           {
-            "internalType": "uint256",
-            "name": "reserveId",
-            "type": "uint256"
-          },
-          {
             "internalType": "address",
-            "name": "nftAddress",
+            "name": "tokenAddress",
             "type": "address"
           },
           {
@@ -25,7 +20,902 @@
           },
           {
             "internalType": "address",
+            "name": "nftManager",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
             "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "lender",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint128",
+            "name": "borrowRate",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "interestPerSecond",
+            "type": "uint128"
+          },
+          {
+            "internalType": "address",
+            "name": "currency",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "lendAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "reserveFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "overdueLoanFeeFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint40",
+            "name": "borrowDuration",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "borrowBegin",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "borrowOverdueTime",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "liquidatableTime",
+            "type": "uint40"
+          },
+          {
+            "internalType": "bool",
+            "name": "isProrated",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "autoConvertWhenRepay",
+            "type": "bool"
+          },
+          {
+            "internalType": "enum BespokeTypes.LoanStatus",
+            "name": "status",
+            "type": "BespokeTypes.LoanStatus"
+          }
+        ],
+        "internalType": "struct BespokeTypes.LoanData",
+        "name": "loan",
+        "type": "tuple"
+      }
+    ],
+    "name": "calculateRepayAmountAndProtocolFee",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "total",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "lenderAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "protocolFee",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "nftManager",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "lender",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint128",
+            "name": "borrowRate",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "interestPerSecond",
+            "type": "uint128"
+          },
+          {
+            "internalType": "address",
+            "name": "currency",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "lendAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "reserveFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "overdueLoanFeeFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint40",
+            "name": "borrowDuration",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "borrowBegin",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "borrowOverdueTime",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "liquidatableTime",
+            "type": "uint40"
+          },
+          {
+            "internalType": "bool",
+            "name": "isProrated",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "autoConvertWhenRepay",
+            "type": "bool"
+          },
+          {
+            "internalType": "enum BespokeTypes.LoanStatus",
+            "name": "status",
+            "type": "BespokeTypes.LoanStatus"
+          }
+        ],
+        "internalType": "struct BespokeTypes.LoanData",
+        "name": "loan",
+        "type": "tuple"
+      }
+    ],
+    "name": "getBorrowBalance",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "nftManager",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "lender",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint128",
+            "name": "borrowRate",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "interestPerSecond",
+            "type": "uint128"
+          },
+          {
+            "internalType": "address",
+            "name": "currency",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "lendAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "reserveFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "overdueLoanFeeFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint40",
+            "name": "borrowDuration",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "borrowBegin",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "borrowOverdueTime",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "liquidatableTime",
+            "type": "uint40"
+          },
+          {
+            "internalType": "bool",
+            "name": "isProrated",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "autoConvertWhenRepay",
+            "type": "bool"
+          },
+          {
+            "internalType": "enum BespokeTypes.LoanStatus",
+            "name": "status",
+            "type": "BespokeTypes.LoanStatus"
+          }
+        ],
+        "internalType": "struct BespokeTypes.LoanData",
+        "name": "loan",
+        "type": "tuple"
+      }
+    ],
+    "name": "getBorrowInterest",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getDomainSeparator",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "nftManager",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "lender",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint128",
+            "name": "borrowRate",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "interestPerSecond",
+            "type": "uint128"
+          },
+          {
+            "internalType": "address",
+            "name": "currency",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "lendAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "reserveFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "overdueLoanFeeFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint40",
+            "name": "borrowDuration",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "borrowBegin",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "borrowOverdueTime",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "liquidatableTime",
+            "type": "uint40"
+          },
+          {
+            "internalType": "bool",
+            "name": "isProrated",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "autoConvertWhenRepay",
+            "type": "bool"
+          },
+          {
+            "internalType": "enum BespokeTypes.LoanStatus",
+            "name": "status",
+            "type": "BespokeTypes.LoanStatus"
+          }
+        ],
+        "internalType": "struct BespokeTypes.LoanData",
+        "name": "loan",
+        "type": "tuple"
+      }
+    ],
+    "name": "getLoanDataWithStatus",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "nftManager",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "lender",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint128",
+            "name": "borrowRate",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "interestPerSecond",
+            "type": "uint128"
+          },
+          {
+            "internalType": "address",
+            "name": "currency",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "lendAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "reserveFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "overdueLoanFeeFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint40",
+            "name": "borrowDuration",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "borrowBegin",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "borrowOverdueTime",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "liquidatableTime",
+            "type": "uint40"
+          },
+          {
+            "internalType": "bool",
+            "name": "isProrated",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "autoConvertWhenRepay",
+            "type": "bool"
+          },
+          {
+            "internalType": "enum BespokeTypes.LoanStatus",
+            "name": "status",
+            "type": "BespokeTypes.LoanStatus"
+          }
+        ],
+        "internalType": "struct BespokeTypes.LoanData",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IOpenSkyBespokeSettings",
+        "name": "BESPOKE_SETTINGS",
+        "type": "IOpenSkyBespokeSettings"
+      },
+      {
+        "internalType": "uint256",
+        "name": "loanId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getLoanParties",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "borrower",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "lender",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "nftManager",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "lender",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint128",
+            "name": "borrowRate",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "interestPerSecond",
+            "type": "uint128"
+          },
+          {
+            "internalType": "address",
+            "name": "currency",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "lendAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "reserveFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "overdueLoanFeeFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint40",
+            "name": "borrowDuration",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "borrowBegin",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "borrowOverdueTime",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "liquidatableTime",
+            "type": "uint40"
+          },
+          {
+            "internalType": "bool",
+            "name": "isProrated",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "autoConvertWhenRepay",
+            "type": "bool"
+          },
+          {
+            "internalType": "enum BespokeTypes.LoanStatus",
+            "name": "status",
+            "type": "BespokeTypes.LoanStatus"
+          }
+        ],
+        "internalType": "struct BespokeTypes.LoanData",
+        "name": "loan",
+        "type": "tuple"
+      }
+    ],
+    "name": "getLoanStatus",
+    "outputs": [
+      {
+        "internalType": "enum BespokeTypes.LoanStatus",
+        "name": "",
+        "type": "BespokeTypes.LoanStatus"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "nftManager",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "lender",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint128",
+            "name": "borrowRate",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "interestPerSecond",
+            "type": "uint128"
+          },
+          {
+            "internalType": "address",
+            "name": "currency",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "lendAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "reserveFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "overdueLoanFeeFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint40",
+            "name": "borrowDuration",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "borrowBegin",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "borrowOverdueTime",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "liquidatableTime",
+            "type": "uint40"
+          },
+          {
+            "internalType": "bool",
+            "name": "isProrated",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "autoConvertWhenRepay",
+            "type": "bool"
+          },
+          {
+            "internalType": "enum BespokeTypes.LoanStatus",
+            "name": "status",
+            "type": "BespokeTypes.LoanStatus"
+          }
+        ],
+        "internalType": "struct BespokeTypes.LoanData",
+        "name": "loan",
+        "type": "tuple"
+      }
+    ],
+    "name": "getPenalty",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "isProrated",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "autoConvertWhenRepay",
+            "type": "bool"
+          },
+          {
+            "internalType": "enum BespokeTypes.OfferType",
+            "name": "offerType",
+            "type": "BespokeTypes.OfferType"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "signer",
             "type": "address"
           },
           {
@@ -59,14 +949,34 @@
             "type": "address"
           },
           {
+            "internalType": "address",
+            "name": "lendAsset",
+            "type": "address"
+          },
+          {
             "internalType": "uint256",
             "name": "nonce",
             "type": "uint256"
           },
           {
             "internalType": "uint256",
+            "name": "nonceMaxTimes",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
             "name": "deadline",
             "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "strategy",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "params",
+            "type": "bytes"
           },
           {
             "internalType": "uint8",
@@ -84,12 +994,12 @@
             "type": "bytes32"
           }
         ],
-        "internalType": "struct BespokeTypes.BorrowOffer",
+        "internalType": "struct BespokeTypes.Offer",
         "name": "offerData",
         "type": "tuple"
       }
     ],
-    "name": "hashBorrowOffer",
+    "name": "hashOffer",
     "outputs": [
       {
         "internalType": "bytes32",

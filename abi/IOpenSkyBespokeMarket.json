@@ -42,124 +42,6 @@
     "inputs": [
       {
         "indexed": true,
-        "internalType": "address",
-        "name": "token",
-        "type": "address"
-      },
-      {
-        "indexed": true,
-        "internalType": "address",
-        "name": "to",
-        "type": "address"
-      },
-      {
-        "indexed": false,
-        "internalType": "uint256[]",
-        "name": "ids",
-        "type": "uint256[]"
-      },
-      {
-        "indexed": false,
-        "internalType": "uint256[]",
-        "name": "amounts",
-        "type": "uint256[]"
-      },
-      {
-        "indexed": false,
-        "internalType": "bytes",
-        "name": "data",
-        "type": "bytes"
-      }
-    ],
-    "name": "ClaimERC1155Airdrop",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": true,
-        "internalType": "address",
-        "name": "token",
-        "type": "address"
-      },
-      {
-        "indexed": true,
-        "internalType": "address",
-        "name": "to",
-        "type": "address"
-      },
-      {
-        "indexed": false,
-        "internalType": "uint256",
-        "name": "amount",
-        "type": "uint256"
-      }
-    ],
-    "name": "ClaimERC20Airdrop",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": true,
-        "internalType": "address",
-        "name": "token",
-        "type": "address"
-      },
-      {
-        "indexed": true,
-        "internalType": "address",
-        "name": "to",
-        "type": "address"
-      },
-      {
-        "indexed": false,
-        "internalType": "uint256[]",
-        "name": "ids",
-        "type": "uint256[]"
-      }
-    ],
-    "name": "ClaimERC721Airdrop",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": true,
-        "internalType": "address",
-        "name": "receiver",
-        "type": "address"
-      },
-      {
-        "indexed": false,
-        "internalType": "address",
-        "name": "sender",
-        "type": "address"
-      },
-      {
-        "indexed": true,
-        "internalType": "address",
-        "name": "nftAddress",
-        "type": "address"
-      },
-      {
-        "indexed": true,
-        "internalType": "uint256",
-        "name": "tokenId",
-        "type": "uint256"
-      }
-    ],
-    "name": "FlashClaim",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": true,
         "internalType": "uint256",
         "name": "loanId",
         "type": "uint256"
@@ -167,7 +49,13 @@
       {
         "indexed": true,
         "internalType": "address",
-        "name": "lender",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "receiver",
         "type": "address"
       }
     ],
@@ -186,30 +74,17 @@
       {
         "indexed": true,
         "internalType": "address",
-        "name": "borrower",
+        "name": "operator",
         "type": "address"
-      }
-    ],
-    "name": "Repay",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": true,
-        "internalType": "uint256",
-        "name": "loanId",
-        "type": "uint256"
       },
       {
         "indexed": true,
         "internalType": "address",
-        "name": "borrower",
+        "name": "receiver",
         "type": "address"
       }
     ],
-    "name": "RepayETH",
+    "name": "Repay",
     "type": "event"
   },
   {
@@ -278,12 +153,24 @@
       },
       {
         "indexed": false,
+        "internalType": "address",
+        "name": "onBehalfOf",
+        "type": "address"
+      },
+      {
+        "indexed": false,
         "internalType": "uint256",
         "name": "nonce",
         "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "nonceOrder",
+        "type": "uint256"
       }
     ],
-    "name": "TakeBorrowOfferETH",
+    "name": "TakeLendOffer",
     "type": "event"
   },
   {
@@ -308,108 +195,6 @@
       }
     ],
     "name": "cancelMultipleBorrowOffers",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "token",
-        "type": "address"
-      },
-      {
-        "internalType": "address",
-        "name": "to",
-        "type": "address"
-      },
-      {
-        "internalType": "uint256[]",
-        "name": "ids",
-        "type": "uint256[]"
-      },
-      {
-        "internalType": "uint256[]",
-        "name": "amounts",
-        "type": "uint256[]"
-      },
-      {
-        "internalType": "bytes",
-        "name": "data",
-        "type": "bytes"
-      }
-    ],
-    "name": "claimERC1155Airdrop",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "token",
-        "type": "address"
-      },
-      {
-        "internalType": "address",
-        "name": "to",
-        "type": "address"
-      },
-      {
-        "internalType": "uint256",
-        "name": "amount",
-        "type": "uint256"
-      }
-    ],
-    "name": "claimERC20Airdrop",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "token",
-        "type": "address"
-      },
-      {
-        "internalType": "address",
-        "name": "to",
-        "type": "address"
-      },
-      {
-        "internalType": "uint256[]",
-        "name": "ids",
-        "type": "uint256[]"
-      }
-    ],
-    "name": "claimERC721Airdrop",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "receiverAddress",
-        "type": "address"
-      },
-      {
-        "internalType": "uint256[]",
-        "name": "loanIds",
-        "type": "uint256[]"
-      },
-      {
-        "internalType": "bytes",
-        "name": "params",
-        "type": "bytes"
-      }
-    ],
-    "name": "flashClaim",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
@@ -478,13 +263,8 @@
       {
         "components": [
           {
-            "internalType": "uint256",
-            "name": "reserveId",
-            "type": "uint256"
-          },
-          {
             "internalType": "address",
-            "name": "nftAddress",
+            "name": "tokenAddress",
             "type": "address"
           },
           {
@@ -499,7 +279,17 @@
           },
           {
             "internalType": "address",
+            "name": "nftManager",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
             "name": "borrower",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "lender",
             "type": "address"
           },
           {
@@ -523,6 +313,21 @@
             "type": "address"
           },
           {
+            "internalType": "address",
+            "name": "lendAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "reserveFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "overdueLoanFeeFactor",
+            "type": "uint256"
+          },
+          {
             "internalType": "uint40",
             "name": "borrowDuration",
             "type": "uint40"
@@ -543,9 +348,14 @@
             "type": "uint40"
           },
           {
-            "internalType": "address",
-            "name": "lender",
-            "type": "address"
+            "internalType": "bool",
+            "name": "isProrated",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "autoConvertWhenRepay",
+            "type": "bool"
           },
           {
             "internalType": "enum BespokeTypes.LoanStatus",
@@ -639,28 +449,25 @@
   {
     "inputs": [
       {
-        "internalType": "uint256",
-        "name": "loanId",
-        "type": "uint256"
-      }
-    ],
-    "name": "repayETH",
-    "outputs": [],
-    "stateMutability": "payable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
         "components": [
           {
-            "internalType": "uint256",
-            "name": "reserveId",
-            "type": "uint256"
+            "internalType": "bool",
+            "name": "isProrated",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "autoConvertWhenRepay",
+            "type": "bool"
+          },
+          {
+            "internalType": "enum BespokeTypes.OfferType",
+            "name": "offerType",
+            "type": "uint8"
           },
           {
             "internalType": "address",
-            "name": "nftAddress",
+            "name": "tokenAddress",
             "type": "address"
           },
           {
@@ -675,7 +482,7 @@
           },
           {
             "internalType": "address",
-            "name": "borrower",
+            "name": "signer",
             "type": "address"
           },
           {
@@ -709,14 +516,34 @@
             "type": "address"
           },
           {
+            "internalType": "address",
+            "name": "lendAsset",
+            "type": "address"
+          },
+          {
             "internalType": "uint256",
             "name": "nonce",
             "type": "uint256"
           },
           {
             "internalType": "uint256",
+            "name": "nonceMaxTimes",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
             "name": "deadline",
             "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "strategy",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "params",
+            "type": "bytes"
           },
           {
             "internalType": "uint8",
@@ -734,7 +561,7 @@
             "type": "bytes32"
           }
         ],
-        "internalType": "struct BespokeTypes.BorrowOffer",
+        "internalType": "struct BespokeTypes.Offer",
         "name": "offerData",
         "type": "tuple"
       },
@@ -747,10 +574,26 @@
         "internalType": "uint256",
         "name": "supplyDuration",
         "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "lendAsset",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "autoConvertWhenRepay",
+        "type": "bool"
       }
     ],
     "name": "takeBorrowOffer",
-    "outputs": [],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "nonpayable",
     "type": "function"
   },
@@ -759,13 +602,23 @@
       {
         "components": [
           {
-            "internalType": "uint256",
-            "name": "reserveId",
-            "type": "uint256"
+            "internalType": "bool",
+            "name": "isProrated",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "autoConvertWhenRepay",
+            "type": "bool"
+          },
+          {
+            "internalType": "enum BespokeTypes.OfferType",
+            "name": "offerType",
+            "type": "uint8"
           },
           {
             "internalType": "address",
-            "name": "nftAddress",
+            "name": "tokenAddress",
             "type": "address"
           },
           {
@@ -780,7 +633,7 @@
           },
           {
             "internalType": "address",
-            "name": "borrower",
+            "name": "signer",
             "type": "address"
           },
           {
@@ -814,14 +667,34 @@
             "type": "address"
           },
           {
+            "internalType": "address",
+            "name": "lendAsset",
+            "type": "address"
+          },
+          {
             "internalType": "uint256",
             "name": "nonce",
             "type": "uint256"
           },
           {
             "internalType": "uint256",
+            "name": "nonceMaxTimes",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
             "name": "deadline",
             "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "strategy",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "params",
+            "type": "bytes"
           },
           {
             "internalType": "uint8",
@@ -839,24 +712,45 @@
             "type": "bytes32"
           }
         ],
-        "internalType": "struct BespokeTypes.BorrowOffer",
+        "internalType": "struct BespokeTypes.Offer",
         "name": "offerData",
         "type": "tuple"
       },
       {
         "internalType": "uint256",
-        "name": "supplyAmount",
+        "name": "tokenId",
         "type": "uint256"
       },
       {
         "internalType": "uint256",
-        "name": "supplyDuration",
+        "name": "borrowAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "borrowDuration",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "onBehalfOf",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "params",
+        "type": "bytes"
+      }
+    ],
+    "name": "takeLendOffer",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
         "type": "uint256"
       }
     ],
-    "name": "takeBorrowOfferETH",
-    "outputs": [],
-    "stateMutability": "payable",
+    "stateMutability": "nonpayable",
     "type": "function"
   }
 ]

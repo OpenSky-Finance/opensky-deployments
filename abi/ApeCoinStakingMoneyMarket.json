@@ -2,8 +2,8 @@
   {
     "inputs": [
       {
-        "internalType": "contract IPool",
-        "name": "aave_",
+        "internalType": "contract IApeCoinStaking",
+        "name": "apeCoinStaking_",
         "type": "address"
       }
     ],
@@ -16,10 +16,10 @@
   },
   {
     "inputs": [],
-    "name": "aave",
+    "name": "apeCoinStaking",
     "outputs": [
       {
-        "internalType": "contract IPool",
+        "internalType": "contract IApeCoinStaking",
         "name": "",
         "type": "address"
       }
