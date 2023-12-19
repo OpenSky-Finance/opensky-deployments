@@ -1,0 +1,103 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IAaveLendPoolAddressesProvider",
+        "name": "provider",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IOpenSkyBespokeMarket",
+        "name": "bespokeMarket",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IOpenSkyPool",
+        "name": "pool",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AAVE2_ADDRESSES_PROVIDER",
+    "outputs": [
+      {
+        "internalType": "contract IAaveLendPoolAddressesProvider",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "OpenSkyBespokeMarket",
+    "outputs": [
+      {
+        "internalType": "contract IOpenSkyBespokeMarket",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "OpenSkyPool",
+    "outputs": [
+      {
+        "internalType": "contract IOpenSkyPool",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "aavePool",
+    "outputs": [
+      {
+        "internalType": "contract IAaveLendPool",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "adapter",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "flashBorrowAssetAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "flashBorrowAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "refinance",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

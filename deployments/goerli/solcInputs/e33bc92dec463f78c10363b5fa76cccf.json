@@ -1,0 +1,35 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/mocks/aave/AAVELendingPoolAddressesProvider.sol": {
+      "content": "pragma solidity =0.7.6;\npragma experimental ABIEncoderV2;\n\ncontract AAVELendingPoolAddressesProvider {\n\n  mapping(bytes32 => address) private _addresses;\n  bytes32 private constant LENDING_POOL = 'LENDING_POOL';\n\n  function getAddress(bytes32 id) public view  returns (address) {\n    return _addresses[id];\n  }\n\n  function getLendingPool() external view  returns (address) {\n    return getAddress(LENDING_POOL);\n  }\n\n  function setLendingPool(address pool) external  {\n    _addresses[LENDING_POOL] =pool;\n  }\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 500
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}
