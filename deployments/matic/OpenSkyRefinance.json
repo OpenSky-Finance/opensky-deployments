@@ -1,0 +1,124 @@
+{
+  "address": "0x6061374E458D75EB807cAD044D08756A1aF84656",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract IAaveLendPoolAddressesProvider",
+          "name": "provider",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "AAVE2_ADDRESSES_PROVIDER",
+      "outputs": [
+        {
+          "internalType": "contract IAaveLendPoolAddressesProvider",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "aavePool",
+      "outputs": [
+        {
+          "internalType": "contract IAaveLendPool",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "adapter",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "flashBorrowAssetAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "flashBorrowAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "refinance",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xb0ee5ff79c105b0c246600d72d7b2d859d23fcd4a9aff5495c997bf2e50eb960",
+  "receipt": {
+    "to": null,
+    "from": "0x218513C58A4781a5B88De6230caA29aBCe2Ccd75",
+    "contractAddress": "0x6061374E458D75EB807cAD044D08756A1aF84656",
+    "transactionIndex": 136,
+    "gasUsed": "350191",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000800000000000440000000100000000000000000000000000400000000000000000000000000000000080000000000000000000000000000000000000000400000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000004000000000000000000001000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000100000",
+    "blockHash": "0xab048f166f741fc2d4d766127de1c3a35401a3481375f6966473ac7efea6e231",
+    "transactionHash": "0xb0ee5ff79c105b0c246600d72d7b2d859d23fcd4a9aff5495c997bf2e50eb960",
+    "logs": [
+      {
+        "transactionIndex": 136,
+        "blockNumber": 53072050,
+        "transactionHash": "0xb0ee5ff79c105b0c246600d72d7b2d859d23fcd4a9aff5495c997bf2e50eb960",
+        "address": "0x0000000000000000000000000000000000001010",
+        "topics": [
+          "0x4dfe1bbbcf077ddc3e01291eea2d5c70c2b422b415d95645b9adcfd678cb1d63",
+          "0x0000000000000000000000000000000000000000000000000000000000001010",
+          "0x000000000000000000000000218513c58a4781a5b88de6230caa29abce2ccd75",
+          "0x0000000000000000000000007c7379531b2aee82e4ca06d4175d13b9cbeafd49"
+        ],
+        "data": "0x0000000000000000000000000000000000000000000000000013538737a7dceb00000000000000000000000000000000000000000000000012a12869924a9d6a00000000000000000000000000000000000000000002bd00b3e5fe545a225529000000000000000000000000000000000000000000000000128dd4e25aa2c07f00000000000000000000000000000000000000000002bd00b3f951db91ca3214",
+        "logIndex": 856,
+        "blockHash": "0xab048f166f741fc2d4d766127de1c3a35401a3481375f6966473ac7efea6e231"
+      }
+    ],
+    "blockNumber": 53072050,
+    "cumulativeGasUsed": "22428487",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0xd05e3E715d945B59290df0ae8eF85c1BdB684744"
+  ],
+  "solcInputHash": "e69850385af8196781c724d9be9002bd",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract IAaveLendPoolAddressesProvider\",\"name\":\"provider\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"AAVE2_ADDRESSES_PROVIDER\",\"outputs\":[{\"internalType\":\"contract IAaveLendPoolAddressesProvider\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"aavePool\",\"outputs\":[{\"internalType\":\"contract IAaveLendPool\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"adapter\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"flashBorrowAssetAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"flashBorrowAmount\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"refinance\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/refinance/OpenSkyRefinance.sol\":\"OpenSkyRefinance\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/bespokemarket/libraries/BespokeTypes.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nlibrary BespokeTypes {\\n    struct Offer {\\n        bool isProrated; // whether to pay interest a fixed-time when repay early\\n        bool autoConvertWhenRepay; // when currency!=lendAsset, whether to convert currency to lendAsset for lender when repay. Determined by lender.\\n        OfferType offerType;\\n        address tokenAddress;\\n        uint256 tokenId;\\n        uint256 tokenAmount; // 1 for ERC721, 1+ for ERC1155\\n        address signer; //borrower or lender\\n        uint256 borrowAmountMin;\\n        uint256 borrowAmountMax;\\n        uint40 borrowDurationMin;\\n        uint40 borrowDurationMax;\\n        uint128 borrowRate;\\n        address currency;  // Asset to borrow or receive when loan created. Borrower should also use it for repay.\\n        address lendAsset; // Using which token to lend. Determined by lender and should be zero address for borrow offer.\\n        uint256 nonce;\\n        uint256 nonceMaxTimes;// should be 1 for a borrow offer\\n        uint256 deadline;\\n        address strategy; // used for lend offer. should be zero address for borrow offer\\n        bytes params;\\n        uint8 v; // v: parameter (27 or 28)\\n        bytes32 r; // r: parameter\\n        bytes32 s; // s: parameter\\n    }\\n\\n    struct LoanData {\\n        address tokenAddress;\\n        uint256 tokenId;\\n        uint256 tokenAmount; // 1 for ERC721, 1+ for ERC1155\\n        address nftManager;\\n        address borrower;\\n        address lender;\\n        uint256 amount;\\n        uint128 borrowRate;\\n        uint128 interestPerSecond;\\n        address currency;\\n        address lendAsset;\\n        uint256 reserveFactor;\\n        uint256 overdueLoanFeeFactor;\\n        uint40 borrowDuration;\\n        uint40 borrowBegin;\\n        uint40 borrowOverdueTime;\\n        uint40 liquidatableTime;\\n        bool isProrated;\\n        bool autoConvertWhenRepay;\\n        LoanStatus status;\\n    }\\n\\n    enum OfferType {\\n        BORROW, // borrow offer\\n        LEND // lend offer\\n    }\\n\\n    struct TakeBorrowInfo {\\n        uint256 borrowAmount;\\n        uint256 borrowDuration;\\n        address lendAsset;\\n        bool autoConvertWhenRepay;\\n    }\\n\\n    struct TakeLendInfo {\\n        uint256 borrowAmount;\\n        uint256 borrowDuration;\\n        uint256 tokenId;\\n        address onBehalfOf;\\n        bytes params;\\n    }\\n\\n    // params for lend strategy\\n    struct TakeLendInfoForStrategy {\\n        address taker;\\n        uint256 tokenId;\\n        bytes params;\\n    }\\n\\n    enum LoanStatus {\\n        NONE,\\n        BORROWING,\\n        OVERDUE,\\n        LIQUIDATABLE\\n    }\\n\\n    struct WhitelistInfo {\\n        bool enabled;\\n        uint256 minBorrowDuration;\\n        uint256 maxBorrowDuration;\\n        uint256 overdueDuration;\\n    }\\n\\n    struct Counter {\\n        // This variable should never be directly accessed by users of the library: interactions must be restricted to\\n        // the library's function. As of Solidity v0.5.2, this cannot be enforced, though there is a proposal to add\\n        // this feature: see https://github.com/ethereum/solidity/issues/4637\\n        uint256 _value; // default: 0\\n    }\\n\\n    struct NonceInfo {\\n        bool invalid;\\n        uint256 usedTimes;\\n        bytes32 offerHash;\\n    }\\n}\\n\",\"keccak256\":\"0xc1c1fdc3ed498c4e500329e331e52c682d8b8f99cbc96337644ff3723de7191f\",\"license\":\"MIT\"},\"contracts/refinance/IOpenSkyRefinance.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nimport '../bespokemarket/libraries/BespokeTypes.sol';\\n\\ninterface IOpenSkyRefinance {\\n\\n    function refinance(\\n        address adapter,\\n        address flashBorrowAssetAddress,\\n        uint256 flashBorrowAmount,\\n        bytes calldata data\\n    ) external;\\n}\\n\",\"keccak256\":\"0x0f6d04439e22ff888c52fe89643e99c3a4046b677840514df1b0e52d9673921b\",\"license\":\"MIT\"},\"contracts/refinance/OpenSkyRefinance.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nimport './interfaces/IAaveLendPoolAddressesProvider.sol';\\nimport './interfaces/IAaveLendPool.sol';\\n\\nimport './IOpenSkyRefinance.sol';\\n\\ncontract OpenSkyRefinance is IOpenSkyRefinance {\\n    IAaveLendPoolAddressesProvider public immutable AAVE2_ADDRESSES_PROVIDER;\\n\\n    constructor(IAaveLendPoolAddressesProvider provider) {\\n        AAVE2_ADDRESSES_PROVIDER = provider;\\n    }\\n\\n    function aavePool() public view returns (IAaveLendPool) {\\n        return IAaveLendPool(AAVE2_ADDRESSES_PROVIDER.getLendingPool());\\n    }\\n\\n    function refinance(\\n        address adapter,\\n        address flashBorrowAssetAddress,\\n        uint256 flashBorrowAmount,\\n        bytes calldata data\\n    ) public override {\\n        address[] memory assets = new address[](1);\\n        assets[0] = flashBorrowAssetAddress;\\n        uint256[] memory amounts = new uint256[](1);\\n        amounts[0] = flashBorrowAmount;\\n        uint256[] memory modes = new uint256[](1);\\n        modes[0] = 0;\\n        bytes memory params = abi.encode(data, msg.sender);\\n        aavePool().flashLoan(adapter, assets, amounts, modes, address(0), params, 0);\\n    }\\n}\\n\",\"keccak256\":\"0xb3ee1a20b93155a523e8b28892b08001f009ec30147929f6c922ca263f28e2c9\",\"license\":\"MIT\"},\"contracts/refinance/interfaces/IAaveLendPool.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\ninterface IAaveLendPool {\\n    /**\\n     * @dev Allows smartcontracts to access the liquidity of the pool within one transaction,\\n     * as long as the amount taken plus a fee is returned.\\n     * IMPORTANT There are security concerns for developers of flashloan receiver contracts that must be kept into consideration.\\n     * For further details please visit https://developers.aave.com\\n     * @param receiverAddress The address of the contract receiving the funds, implementing the IFlashLoanReceiver interface\\n     * @param assets The addresses of the assets being flash-borrowed\\n     * @param amounts The amounts amounts being flash-borrowed\\n     * @param modes Types of the debt to open if the flash loan is not returned:\\n     *   0 -> Don't open any debt, just revert if funds can't be transferred from the receiver\\n     *   1 -> Open debt at stable rate for the value of the amount flash-borrowed to the `onBehalfOf` address\\n     *   2 -> Open debt at variable rate for the value of the amount flash-borrowed to the `onBehalfOf` address\\n     * @param onBehalfOf The address  that will receive the debt in the case of using on `modes` 1 or 2\\n     * @param params Variadic packed params to pass to the receiver as extra information\\n     * @param referralCode Code used to register the integrator originating the operation, for potential rewards.\\n     *   0 if the action is executed directly by the user, without any middle-man\\n     **/\\n    function flashLoan(\\n        address receiverAddress,\\n        address[] calldata assets,\\n        uint256[] calldata amounts,\\n        uint256[] calldata modes,\\n        address onBehalfOf,\\n        bytes calldata params,\\n        uint16 referralCode\\n    ) external;\\n}\\n\",\"keccak256\":\"0x59f9382730ef35f1275f305a4150d2f0bb8915a59c26afb36fa79c70ba3c7163\",\"license\":\"MIT\"},\"contracts/refinance/interfaces/IAaveLendPoolAddressesProvider.sol\":{\"content\":\"// SPDX-License-Identifier: agpl-3.0\\npragma solidity 0.8.10;\\n\\n/**\\n * @title IAaveLendPoolAddressesProvider contract\\n * @dev Main registry of addresses part of or connected to the aave protocol, including permissioned roles\\n * - Acting also as factory of proxies and admin of those, so with right to change its implementations\\n * - Owned by the Aave Governance\\n * @author Bend\\n **/\\n// aave-v2\\ninterface IAaveLendPoolAddressesProvider {\\n    function getLendingPool() external view returns (address);\\n    \\n}\\n\",\"keccak256\":\"0x0b17e9759fac19511e4b73c150e9a03c115e2c41fa200fe800f45cce91417e3e\",\"license\":\"agpl-3.0\"}},\"version\":1}",
+  "bytecode": "0x60a060405234801561001057600080fd5b506040516105e93803806105e983398101604081905261002f91610040565b6001600160a01b0316608052610070565b60006020828403121561005257600080fd5b81516001600160a01b038116811461006957600080fd5b9392505050565b60805161055861009160003960008181604b015261022701526105586000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c806311ea536e1461004657806367960bf814610089578063a03e4bc31461009e575b600080fd5b61006d7f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b03909116815260200160405180910390f35b61009c6100973660046102c4565b6100a6565b005b61006d610223565b6040805160018082528183019092526000916020808301908036833701905050905084816000815181106100dc576100dc610363565b6001600160a01b039290921660209283029190910190910152604080516001808252818301909252600091816020016020820280368337019050509050848160008151811061012d5761012d610363565b602090810291909101015260408051600180825281830190925260009181602001602082028036833701905050905060008160008151811061017157610171610363565b602002602001018181525050600085853360405160200161019493929190610379565b60405160208183030381529060405290506101ad610223565b6001600160a01b031663ab9c4b5d8a86868660008760006040518863ffffffff1660e01b81526004016101e69796959493929190610442565b600060405180830381600087803b15801561020057600080fd5b505af1158015610214573d6000803e3d6000fd5b50505050505050505050505050565b60007f00000000000000000000000000000000000000000000000000000000000000006001600160a01b0316630261bf8b6040518163ffffffff1660e01b8152600401602060405180830381865afa158015610283573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102a791906104fe565b905090565b6001600160a01b03811681146102c157600080fd5b50565b6000806000806000608086880312156102dc57600080fd5b85356102e7816102ac565b945060208601356102f7816102ac565b935060408601359250606086013567ffffffffffffffff8082111561031b57600080fd5b818801915088601f83011261032f57600080fd5b81358181111561033e57600080fd5b89602082850101111561035057600080fd5b9699959850939650602001949392505050565b634e487b7160e01b600052603260045260246000fd5b6040815282604082015282846060830137600060608483018101919091526001600160a01b03929092166020820152601f909201601f191690910101919050565b600081518084526020808501945080840160005b838110156103ea578151875295820195908201906001016103ce565b509495945050505050565b6000815180845260005b8181101561041b576020818501810151868301820152016103ff565b8181111561042d576000602083870101525b50601f01601f19169290920160200192915050565b6001600160a01b03888116825260e0602080840182905289519184018290526000928a820192909190610100860190855b81811015610491578551851683529483019491830191600101610473565b505085810360408701526104a5818c6103ba565b935050505082810360608401526104bc81886103ba565b6001600160a01b0387166080850152905082810360a08401526104df81866103f5565b9150506104f260c083018461ffff169052565b98975050505050505050565b60006020828403121561051057600080fd5b815161051b816102ac565b939250505056fea2646970667358221220ff160aecbb23fe06b012f74cd4a9c765de0f5d15659e689642f082406af8aa1864736f6c634300080a0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c806311ea536e1461004657806367960bf814610089578063a03e4bc31461009e575b600080fd5b61006d7f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b03909116815260200160405180910390f35b61009c6100973660046102c4565b6100a6565b005b61006d610223565b6040805160018082528183019092526000916020808301908036833701905050905084816000815181106100dc576100dc610363565b6001600160a01b039290921660209283029190910190910152604080516001808252818301909252600091816020016020820280368337019050509050848160008151811061012d5761012d610363565b602090810291909101015260408051600180825281830190925260009181602001602082028036833701905050905060008160008151811061017157610171610363565b602002602001018181525050600085853360405160200161019493929190610379565b60405160208183030381529060405290506101ad610223565b6001600160a01b031663ab9c4b5d8a86868660008760006040518863ffffffff1660e01b81526004016101e69796959493929190610442565b600060405180830381600087803b15801561020057600080fd5b505af1158015610214573d6000803e3d6000fd5b50505050505050505050505050565b60007f00000000000000000000000000000000000000000000000000000000000000006001600160a01b0316630261bf8b6040518163ffffffff1660e01b8152600401602060405180830381865afa158015610283573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102a791906104fe565b905090565b6001600160a01b03811681146102c157600080fd5b50565b6000806000806000608086880312156102dc57600080fd5b85356102e7816102ac565b945060208601356102f7816102ac565b935060408601359250606086013567ffffffffffffffff8082111561031b57600080fd5b818801915088601f83011261032f57600080fd5b81358181111561033e57600080fd5b89602082850101111561035057600080fd5b9699959850939650602001949392505050565b634e487b7160e01b600052603260045260246000fd5b6040815282604082015282846060830137600060608483018101919091526001600160a01b03929092166020820152601f909201601f191690910101919050565b600081518084526020808501945080840160005b838110156103ea578151875295820195908201906001016103ce565b509495945050505050565b6000815180845260005b8181101561041b576020818501810151868301820152016103ff565b8181111561042d576000602083870101525b50601f01601f19169290920160200192915050565b6001600160a01b03888116825260e0602080840182905289519184018290526000928a820192909190610100860190855b81811015610491578551851683529483019491830191600101610473565b505085810360408701526104a5818c6103ba565b935050505082810360608401526104bc81886103ba565b6001600160a01b0387166080850152905082810360a08401526104df81866103f5565b9150506104f260c083018461ffff169052565b98975050505050505050565b60006020828403121561051057600080fd5b815161051b816102ac565b939250505056fea2646970667358221220ff160aecbb23fe06b012f74cd4a9c765de0f5d15659e689642f082406af8aa1864736f6c634300080a0033",
+  "libraries": {},
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}
