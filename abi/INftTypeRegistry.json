@@ -1,0 +1,39 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_nftType",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getNftTypeWrapper",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_nftType",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "_nftWrapper",
+        "type": "address"
+      }
+    ],
+    "name": "setNftType",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

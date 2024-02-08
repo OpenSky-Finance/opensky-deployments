@@ -5,23 +5,29 @@
       {
         "indexed": true,
         "internalType": "address",
-        "name": "owner",
+        "name": "_from",
         "type": "address"
       },
       {
         "indexed": true,
+        "internalType": "uint256",
+        "name": "_tokenId",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
         "internalType": "address",
-        "name": "spender",
+        "name": "_erc20Contract",
         "type": "address"
       },
       {
         "indexed": false,
         "internalType": "uint256",
-        "name": "value",
+        "name": "_value",
         "type": "uint256"
       }
     ],
-    "name": "Approval",
+    "name": "ReceivedERC20",
     "type": "event"
   },
   {
@@ -29,40 +35,46 @@
     "inputs": [
       {
         "indexed": true,
+        "internalType": "uint256",
+        "name": "_tokenId",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
         "internalType": "address",
-        "name": "from",
+        "name": "_to",
         "type": "address"
       },
       {
         "indexed": true,
         "internalType": "address",
-        "name": "to",
+        "name": "_erc20Contract",
         "type": "address"
       },
       {
         "indexed": false,
         "internalType": "uint256",
-        "name": "value",
+        "name": "_value",
         "type": "uint256"
       }
     ],
-    "name": "Transfer",
+    "name": "TransferERC20",
     "type": "event"
   },
   {
     "inputs": [
       {
-        "internalType": "address",
-        "name": "owner",
-        "type": "address"
+        "internalType": "uint256",
+        "name": "_tokenId",
+        "type": "uint256"
       },
       {
         "internalType": "address",
-        "name": "spender",
+        "name": "__erc20Contract",
         "type": "address"
       }
     ],
-    "name": "allowance",
+    "name": "balanceOfERC20",
     "outputs": [
       {
         "internalType": "uint256",
@@ -77,64 +89,26 @@
     "inputs": [
       {
         "internalType": "address",
-        "name": "spender",
+        "name": "_from",
         "type": "address"
       },
       {
         "internalType": "uint256",
-        "name": "amount",
+        "name": "_tokenId",
         "type": "uint256"
-      }
-    ],
-    "name": "approve",
-    "outputs": [
-      {
-        "internalType": "bool",
-        "name": "",
-        "type": "bool"
-      }
-    ],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "account",
-        "type": "address"
-      }
-    ],
-    "name": "balanceOf",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "user",
-        "type": "address"
       },
       {
         "internalType": "address",
-        "name": "receiverOfUnderlying",
+        "name": "_erc20Contract",
         "type": "address"
       },
       {
         "internalType": "uint256",
-        "name": "amount",
+        "name": "_value",
         "type": "uint256"
       }
     ],
-    "name": "burn",
+    "name": "getERC20",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
@@ -143,106 +117,82 @@
     "inputs": [
       {
         "internalType": "address",
-        "name": "user",
+        "name": "_from",
         "type": "address"
       },
       {
         "internalType": "uint256",
-        "name": "amount",
+        "name": "_value",
         "type": "uint256"
-      }
-    ],
-    "name": "mint",
-    "outputs": [
-      {
-        "internalType": "bool",
-        "name": "",
-        "type": "bool"
-      }
-    ],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "totalSupply",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "recipient",
-        "type": "address"
       },
       {
-        "internalType": "uint256",
-        "name": "amount",
-        "type": "uint256"
+        "internalType": "bytes",
+        "name": "_data",
+        "type": "bytes"
       }
     ],
-    "name": "transfer",
-    "outputs": [
-      {
-        "internalType": "bool",
-        "name": "",
-        "type": "bool"
-      }
-    ],
+    "name": "tokenFallback",
+    "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
   },
   {
     "inputs": [
       {
+        "internalType": "uint256",
+        "name": "_tokenId",
+        "type": "uint256"
+      },
+      {
         "internalType": "address",
-        "name": "sender",
+        "name": "_to",
         "type": "address"
       },
       {
         "internalType": "address",
-        "name": "recipient",
+        "name": "_erc20Contract",
         "type": "address"
       },
       {
         "internalType": "uint256",
-        "name": "amount",
+        "name": "_value",
         "type": "uint256"
       }
     ],
-    "name": "transferFrom",
-    "outputs": [
-      {
-        "internalType": "bool",
-        "name": "",
-        "type": "bool"
-      }
-    ],
+    "name": "transferERC20",
+    "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
   },
   {
     "inputs": [
       {
+        "internalType": "uint256",
+        "name": "_tokenId",
+        "type": "uint256"
+      },
+      {
         "internalType": "address",
-        "name": "target",
+        "name": "_to",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_erc223Contract",
         "type": "address"
       },
       {
         "internalType": "uint256",
-        "name": "amount",
+        "name": "_value",
         "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_data",
+        "type": "bytes"
       }
     ],
-    "name": "transferUnderlyingTo",
+    "name": "transferERC223",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"

@@ -1,0 +1,149 @@
+[
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "isProrated",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "autoConvertWhenRepay",
+            "type": "bool"
+          },
+          {
+            "internalType": "enum BespokeTypes.OfferType",
+            "name": "offerType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "signer",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowAmountMin",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowAmountMax",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint40",
+            "name": "borrowDurationMin",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "borrowDurationMax",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint128",
+            "name": "borrowRate",
+            "type": "uint128"
+          },
+          {
+            "internalType": "address",
+            "name": "currency",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "lendAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nonce",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nonceMaxTimes",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "strategy",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "params",
+            "type": "bytes"
+          },
+          {
+            "internalType": "uint8",
+            "name": "v",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "r",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "s",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct BespokeTypes.Offer",
+        "name": "offerData",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "taker",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "params",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct BespokeTypes.TakeLendInfoForStrategy",
+        "name": "takeInfo",
+        "type": "tuple"
+      }
+    ],
+    "name": "validate",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

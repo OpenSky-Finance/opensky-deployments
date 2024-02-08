@@ -5,16 +5,6 @@
         "internalType": "contract IAaveLendPoolAddressesProvider",
         "name": "provider",
         "type": "address"
-      },
-      {
-        "internalType": "contract IOpenSkyBespokeMarket",
-        "name": "bespokeMarket",
-        "type": "address"
-      },
-      {
-        "internalType": "contract IOpenSkyPool",
-        "name": "pool",
-        "type": "address"
       }
     ],
     "stateMutability": "nonpayable",
@@ -35,32 +25,6 @@
   },
   {
     "inputs": [],
-    "name": "OpenSkyBespokeMarket",
-    "outputs": [
-      {
-        "internalType": "contract IOpenSkyBespokeMarket",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "OpenSkyPool",
-    "outputs": [
-      {
-        "internalType": "contract IOpenSkyPool",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
     "name": "aavePool",
     "outputs": [
       {
@@ -69,7 +33,7 @@
         "type": "address"
       }
     ],
-    "stateMutability": "nonpayable",
+    "stateMutability": "view",
     "type": "function"
   },
   {
