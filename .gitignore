@@ -3,4 +3,5 @@ cache
 kovan
 rinkeby
 
-.idea
+deployments/.idea
+/.idea
