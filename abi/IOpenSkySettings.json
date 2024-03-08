@@ -97,6 +97,25 @@
         "type": "address"
       }
     ],
+    "name": "InitIncentiveControllerAddressForLoan",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "address_",
+        "type": "address"
+      }
+    ],
     "name": "InitLoanAddress",
     "type": "event"
   },
@@ -523,6 +542,19 @@
   {
     "inputs": [],
     "name": "incentiveControllerAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "incentiveControllerAddressForLoan",
     "outputs": [
       {
         "internalType": "address",

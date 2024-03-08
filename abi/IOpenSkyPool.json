@@ -276,6 +276,25 @@
     "anonymous": false,
     "inputs": [
       {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "reserveId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "moneyMarket",
+        "type": "address"
+      }
+    ],
+    "name": "SetMoneyMarket",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
         "indexed": true,
         "internalType": "uint256",
         "name": "reserveId",
@@ -755,6 +774,24 @@
       }
     ],
     "name": "setInterestModelAddress",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "reserveId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "moneyMarket",
+        "type": "address"
+      }
+    ],
+    "name": "setMoneyMarket",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"

@@ -73,6 +73,11 @@
         "internalType": "uint256",
         "name": "totalSupply",
         "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "params",
+        "type": "bytes"
       }
     ],
     "name": "handleAction",

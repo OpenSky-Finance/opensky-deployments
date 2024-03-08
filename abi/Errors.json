@@ -378,6 +378,19 @@
   },
   {
     "inputs": [],
+    "name": "MONEY_MARKET_ADDRESS_ZERO_WHEN_OPEN",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
     "name": "MONEY_MARKET_APPROVAL_FAILED",
     "outputs": [
       {
@@ -613,6 +626,19 @@
   {
     "inputs": [],
     "name": "RESERVE_TREASURY_FACTOR_NOT_ALLOWED",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "SETTING_ADDRESS_ALREADY_INITIALIZED",
     "outputs": [
       {
         "internalType": "string",
