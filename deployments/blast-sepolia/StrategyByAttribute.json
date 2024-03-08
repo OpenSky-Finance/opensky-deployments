@@ -1,0 +1,190 @@
+{
+  "address": "0xc65032b70475da75Fc89b9F7B620fCEEafD67df9",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "bool",
+              "name": "isProrated",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "autoConvertWhenRepay",
+              "type": "bool"
+            },
+            {
+              "internalType": "enum BespokeTypes.OfferType",
+              "name": "offerType",
+              "type": "uint8"
+            },
+            {
+              "internalType": "address",
+              "name": "tokenAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tokenAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "signer",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "borrowAmountMin",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "borrowAmountMax",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint40",
+              "name": "borrowDurationMin",
+              "type": "uint40"
+            },
+            {
+              "internalType": "uint40",
+              "name": "borrowDurationMax",
+              "type": "uint40"
+            },
+            {
+              "internalType": "uint128",
+              "name": "borrowRate",
+              "type": "uint128"
+            },
+            {
+              "internalType": "address",
+              "name": "currency",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "lendAsset",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "nonce",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "nonceMaxTimes",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "deadline",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "strategy",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes",
+              "name": "params",
+              "type": "bytes"
+            },
+            {
+              "internalType": "uint8",
+              "name": "v",
+              "type": "uint8"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "r",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "s",
+              "type": "bytes32"
+            }
+          ],
+          "internalType": "struct BespokeTypes.Offer",
+          "name": "offerData",
+          "type": "tuple"
+        },
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "taker",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "params",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct BespokeTypes.TakeLendInfoForStrategy",
+          "name": "takeInfo",
+          "type": "tuple"
+        }
+      ],
+      "name": "validate",
+      "outputs": [],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xbdcd8224f06aeccc39df67fd33da9a9691c033b52f2f77f8ea3810d03bb26023",
+  "receipt": {
+    "to": null,
+    "from": "0x218513C58A4781a5B88De6230caA29aBCe2Ccd75",
+    "contractAddress": "0xc65032b70475da75Fc89b9F7B620fCEEafD67df9",
+    "transactionIndex": 1,
+    "gasUsed": "419990",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x02bbbc3bafc2f1feb0b1f9e48d1ad93cd644a51e25ec494957d49867c957a334",
+    "transactionHash": "0xbdcd8224f06aeccc39df67fd33da9a9691c033b52f2f77f8ea3810d03bb26023",
+    "logs": [],
+    "blockNumber": 2569360,
+    "cumulativeGasUsed": "466923",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "88f70ef30a97ad95dcfad3d4587a7e7c",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"components\":[{\"internalType\":\"bool\",\"name\":\"isProrated\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"autoConvertWhenRepay\",\"type\":\"bool\"},{\"internalType\":\"enum BespokeTypes.OfferType\",\"name\":\"offerType\",\"type\":\"uint8\"},{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"tokenAmount\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"signer\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"borrowAmountMin\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"borrowAmountMax\",\"type\":\"uint256\"},{\"internalType\":\"uint40\",\"name\":\"borrowDurationMin\",\"type\":\"uint40\"},{\"internalType\":\"uint40\",\"name\":\"borrowDurationMax\",\"type\":\"uint40\"},{\"internalType\":\"uint128\",\"name\":\"borrowRate\",\"type\":\"uint128\"},{\"internalType\":\"address\",\"name\":\"currency\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"lendAsset\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"nonce\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"nonceMaxTimes\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"strategy\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"params\",\"type\":\"bytes\"},{\"internalType\":\"uint8\",\"name\":\"v\",\"type\":\"uint8\"},{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"s\",\"type\":\"bytes32\"}],\"internalType\":\"struct BespokeTypes.Offer\",\"name\":\"offerData\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"address\",\"name\":\"taker\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"params\",\"type\":\"bytes\"}],\"internalType\":\"struct BespokeTypes.TakeLendInfoForStrategy\",\"name\":\"takeInfo\",\"type\":\"tuple\"}],\"name\":\"validate\",\"outputs\":[],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/bespokemarket/offerStrategies/StrategyByAttribute.sol\":\"StrategyByAttribute\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/utils/cryptography/MerkleProof.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev These functions deal with verification of Merkle Trees proofs.\\n *\\n * The proofs can be generated using the JavaScript library\\n * https://github.com/miguelmota/merkletreejs[merkletreejs].\\n * Note: the hashing algorithm should be keccak256 and pair sorting should be enabled.\\n *\\n * See `test/utils/cryptography/MerkleProof.test.js` for some examples.\\n */\\nlibrary MerkleProof {\\n    /**\\n     * @dev Returns true if a `leaf` can be proved to be a part of a Merkle tree\\n     * defined by `root`. For this, a `proof` must be provided, containing\\n     * sibling hashes on the branch from the leaf to the root of the tree. Each\\n     * pair of leaves and each pair of pre-images are assumed to be sorted.\\n     */\\n    function verify(\\n        bytes32[] memory proof,\\n        bytes32 root,\\n        bytes32 leaf\\n    ) internal pure returns (bool) {\\n        bytes32 computedHash = leaf;\\n\\n        for (uint256 i = 0; i < proof.length; i++) {\\n            bytes32 proofElement = proof[i];\\n\\n            if (computedHash <= proofElement) {\\n                // Hash(current computed hash + current element of the proof)\\n                computedHash = keccak256(abi.encodePacked(computedHash, proofElement));\\n            } else {\\n                // Hash(current element of the proof + current computed hash)\\n                computedHash = keccak256(abi.encodePacked(proofElement, computedHash));\\n            }\\n        }\\n\\n        // Check if the computed hash (root) is equal to the provided root\\n        return computedHash == root;\\n    }\\n}\\n\",\"keccak256\":\"0x86c1bbdc6813c021e138da527c44d2615931b0e5c7fa2f58369846ed288324a8\",\"license\":\"MIT\"},\"contracts/bespokemarket/libraries/BespokeTypes.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nlibrary BespokeTypes {\\n    struct Offer {\\n        bool isProrated; // whether to pay interest a fixed-time when repay early\\n        bool autoConvertWhenRepay; // when currency!=lendAsset, whether to convert currency to lendAsset for lender when repay. Determined by lender.\\n        OfferType offerType;\\n        address tokenAddress;\\n        uint256 tokenId;\\n        uint256 tokenAmount; // 1 for ERC721, 1+ for ERC1155\\n        address signer; //borrower or lender\\n        uint256 borrowAmountMin;\\n        uint256 borrowAmountMax;\\n        uint40 borrowDurationMin;\\n        uint40 borrowDurationMax;\\n        uint128 borrowRate;\\n        address currency;  // Asset to borrow or receive when loan created. Borrower should also use it for repay.\\n        address lendAsset; // Using which token to lend. Determined by lender and should be zero address for borrow offer.\\n        uint256 nonce;\\n        uint256 nonceMaxTimes;// should be 1 for a borrow offer\\n        uint256 deadline;\\n        address strategy; // used for lend offer. should be zero address for borrow offer\\n        bytes params;\\n        uint8 v; // v: parameter (27 or 28)\\n        bytes32 r; // r: parameter\\n        bytes32 s; // s: parameter\\n    }\\n\\n    struct LoanData {\\n        address tokenAddress;\\n        uint256 tokenId;\\n        uint256 tokenAmount; // 1 for ERC721, 1+ for ERC1155\\n        address nftManager;\\n        address borrower;\\n        address lender;\\n        uint256 amount;\\n        uint128 borrowRate;\\n        uint128 interestPerSecond;\\n        address currency;\\n        address lendAsset;\\n        uint256 reserveFactor;\\n        uint256 overdueLoanFeeFactor;\\n        uint40 borrowDuration;\\n        uint40 borrowBegin;\\n        uint40 borrowOverdueTime;\\n        uint40 liquidatableTime;\\n        bool isProrated;\\n        bool autoConvertWhenRepay;\\n        LoanStatus status;\\n    }\\n\\n    enum OfferType {\\n        BORROW, // borrow offer\\n        LEND // lend offer\\n    }\\n\\n    struct TakeBorrowInfo {\\n        uint256 borrowAmount;\\n        uint256 borrowDuration;\\n        address lendAsset;\\n        bool autoConvertWhenRepay;\\n    }\\n\\n    struct TakeLendInfo {\\n        uint256 borrowAmount;\\n        uint256 borrowDuration;\\n        uint256 tokenId;\\n        address onBehalfOf;\\n        bytes params;\\n    }\\n\\n    // params for lend strategy\\n    struct TakeLendInfoForStrategy {\\n        address taker;\\n        uint256 tokenId;\\n        bytes params;\\n    }\\n\\n    enum LoanStatus {\\n        NONE,\\n        BORROWING,\\n        OVERDUE,\\n        LIQUIDATABLE\\n    }\\n\\n    struct WhitelistInfo {\\n        bool enabled;\\n        uint256 minBorrowDuration;\\n        uint256 maxBorrowDuration;\\n        uint256 overdueDuration;\\n    }\\n\\n    struct Counter {\\n        // This variable should never be directly accessed by users of the library: interactions must be restricted to\\n        // the library's function. As of Solidity v0.5.2, this cannot be enforced, though there is a proposal to add\\n        // this feature: see https://github.com/ethereum/solidity/issues/4637\\n        uint256 _value; // default: 0\\n    }\\n\\n    struct NonceInfo {\\n        bool invalid;\\n        uint256 usedTimes;\\n        bytes32 offerHash;\\n    }\\n}\\n\",\"keccak256\":\"0xc1c1fdc3ed498c4e500329e331e52c682d8b8f99cbc96337644ff3723de7191f\",\"license\":\"MIT\"},\"contracts/bespokemarket/offerStrategies/StrategyByAttribute.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\nimport {MerkleProof} from '@openzeppelin/contracts/utils/cryptography/MerkleProof.sol';\\n\\nimport '../libraries/BespokeTypes.sol';\\n\\ncontract StrategyByAttribute {\\n    function validate(BespokeTypes.Offer memory offerData, BespokeTypes.TakeLendInfoForStrategy memory takeInfo)\\n        external\\n        view\\n    {\\n        // Precomputed merkleRoot (that contains the tokenIds that match a common characteristic)\\n        bytes32 merkleRoot = abi.decode(offerData.params, (bytes32));\\n\\n        // MerkleProof + indexInTree + tokenId\\n        bytes32[] memory merkleProof = abi.decode(takeInfo.params, (bytes32[]));\\n\\n        // Compute the node\\n        bytes32 node = keccak256(abi.encodePacked(takeInfo.tokenId));\\n\\n        require(MerkleProof.verify(merkleProof, merkleRoot, node), 'BM_STRATEGY_BY_ATTRIBUTE_FAILED');\\n    }\\n}\\n\",\"keccak256\":\"0x3bfacfe26bcf7d6a1eb423a79f9f86a8c34f07c33965ff8badc581185be0810d\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506106a2806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c8063169b8d6714610030575b600080fd5b61004361003e3660046103a2565b610045565b005b6000826102400151806020019051810190610060919061056e565b90506000826040015180602001905181019061007c9190610587565b90506000836020015160405160200161009791815260200190565b6040516020818303038152906040528051906020012090506100ba828483610111565b61010a5760405162461bcd60e51b815260206004820152601f60248201527f424d5f53545241544547595f42595f4154545249425554455f4641494c454400604482015260640160405180910390fd5b5050505050565b600081815b85518110156101b55760008682815181106101335761013361062d565b602002602001015190508083116101755760408051602081018590529081018290526060016040516020818303038152906040528051906020012092506101a2565b60408051602081018390529081018490526060016040516020818303038152906040528051906020012092505b50806101ad81610643565b915050610116565b509092149392505050565b634e487b7160e01b600052604160045260246000fd5b6040516102c0810167ffffffffffffffff811182821017156101fa576101fa6101c0565b60405290565b604051601f8201601f1916810167ffffffffffffffff81118282101715610229576102296101c0565b604052919050565b8035801515811461024157600080fd5b919050565b80356002811061024157600080fd5b80356001600160a01b038116811461024157600080fd5b803564ffffffffff8116811461024157600080fd5b80356fffffffffffffffffffffffffffffffff8116811461024157600080fd5b600082601f8301126102b257600080fd5b813567ffffffffffffffff8111156102cc576102cc6101c0565b6102df601f8201601f1916602001610200565b8181528460208386010111156102f457600080fd5b816020850160208301376000918101602001919091529392505050565b803560ff8116811461024157600080fd5b60006060828403121561033457600080fd5b6040516060810167ffffffffffffffff8282108183111715610358576103586101c0565b8160405282935061036885610255565b835260208501356020840152604085013591508082111561038857600080fd5b50610395858286016102a1565b6040830152505092915050565b600080604083850312156103b557600080fd5b823567ffffffffffffffff808211156103cd57600080fd5b908401906102c082870312156103e257600080fd5b6103ea6101d6565b6103f383610231565b815261040160208401610231565b602082015261041260408401610246565b604082015261042360608401610255565b60608201526080830135608082015260a083013560a082015261044860c08401610255565b60c082015260e083013560e082015261010080840135818301525061012061047181850161026c565b9082015261014061048384820161026c565b90820152610160610495848201610281565b908201526101806104a7848201610255565b908201526101a06104b9848201610255565b908201526101c083810135908201526101e0808401359082015261020080840135908201526102206104ec818501610255565b90820152610240838101358381111561050457600080fd5b610510898287016102a1565b828401525050610260610524818501610311565b9082015261028083810135908201526102a092830135928101929092529092506020840135908082111561055757600080fd5b5061056485828601610322565b9150509250929050565b60006020828403121561058057600080fd5b5051919050565b6000602080838503121561059a57600080fd5b825167ffffffffffffffff808211156105b257600080fd5b818501915085601f8301126105c657600080fd5b8151818111156105d8576105d86101c0565b8060051b91506105e9848301610200565b818152918301840191848101908884111561060357600080fd5b938501935b8385101561062157845182529385019390850190610608565b98975050505050505050565b634e487b7160e01b600052603260045260246000fd5b600060001982141561066557634e487b7160e01b600052601160045260246000fd5b506001019056fea264697066735822122065f8afd1b6a0d175732368330968dd7612987d0add5deea449343198a07f78a764736f6c634300080a0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c8063169b8d6714610030575b600080fd5b61004361003e3660046103a2565b610045565b005b6000826102400151806020019051810190610060919061056e565b90506000826040015180602001905181019061007c9190610587565b90506000836020015160405160200161009791815260200190565b6040516020818303038152906040528051906020012090506100ba828483610111565b61010a5760405162461bcd60e51b815260206004820152601f60248201527f424d5f53545241544547595f42595f4154545249425554455f4641494c454400604482015260640160405180910390fd5b5050505050565b600081815b85518110156101b55760008682815181106101335761013361062d565b602002602001015190508083116101755760408051602081018590529081018290526060016040516020818303038152906040528051906020012092506101a2565b60408051602081018390529081018490526060016040516020818303038152906040528051906020012092505b50806101ad81610643565b915050610116565b509092149392505050565b634e487b7160e01b600052604160045260246000fd5b6040516102c0810167ffffffffffffffff811182821017156101fa576101fa6101c0565b60405290565b604051601f8201601f1916810167ffffffffffffffff81118282101715610229576102296101c0565b604052919050565b8035801515811461024157600080fd5b919050565b80356002811061024157600080fd5b80356001600160a01b038116811461024157600080fd5b803564ffffffffff8116811461024157600080fd5b80356fffffffffffffffffffffffffffffffff8116811461024157600080fd5b600082601f8301126102b257600080fd5b813567ffffffffffffffff8111156102cc576102cc6101c0565b6102df601f8201601f1916602001610200565b8181528460208386010111156102f457600080fd5b816020850160208301376000918101602001919091529392505050565b803560ff8116811461024157600080fd5b60006060828403121561033457600080fd5b6040516060810167ffffffffffffffff8282108183111715610358576103586101c0565b8160405282935061036885610255565b835260208501356020840152604085013591508082111561038857600080fd5b50610395858286016102a1565b6040830152505092915050565b600080604083850312156103b557600080fd5b823567ffffffffffffffff808211156103cd57600080fd5b908401906102c082870312156103e257600080fd5b6103ea6101d6565b6103f383610231565b815261040160208401610231565b602082015261041260408401610246565b604082015261042360608401610255565b60608201526080830135608082015260a083013560a082015261044860c08401610255565b60c082015260e083013560e082015261010080840135818301525061012061047181850161026c565b9082015261014061048384820161026c565b90820152610160610495848201610281565b908201526101806104a7848201610255565b908201526101a06104b9848201610255565b908201526101c083810135908201526101e0808401359082015261020080840135908201526102206104ec818501610255565b90820152610240838101358381111561050457600080fd5b610510898287016102a1565b828401525050610260610524818501610311565b9082015261028083810135908201526102a092830135928101929092529092506020840135908082111561055757600080fd5b5061056485828601610322565b9150509250929050565b60006020828403121561058057600080fd5b5051919050565b6000602080838503121561059a57600080fd5b825167ffffffffffffffff808211156105b257600080fd5b818501915085601f8301126105c657600080fd5b8151818111156105d8576105d86101c0565b8060051b91506105e9848301610200565b818152918301840191848101908884111561060357600080fd5b938501935b8385101561062157845182529385019390850190610608565b98975050505050505050565b634e487b7160e01b600052603260045260246000fd5b600060001982141561066557634e487b7160e01b600052601160045260246000fd5b506001019056fea264697066735822122065f8afd1b6a0d175732368330968dd7612987d0add5deea449343198a07f78a764736f6c634300080a0033",
+  "libraries": {
+    "BespokeTypes": "0x473482d4940F9075B8E3C42ccE22B71eA74D0d2A"
+  },
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}

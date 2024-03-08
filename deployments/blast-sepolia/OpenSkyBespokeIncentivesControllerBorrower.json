@@ -1,0 +1,952 @@
+{
+  "address": "0x1548f9D16b0cD8D64C67064D4C5f5cCd55CFE402",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract IERC20",
+          "name": "rewardToken",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "emissionManager",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "emission",
+          "type": "uint256"
+        }
+      ],
+      "name": "AssetConfigUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "AssetIndexUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "BespokeAddress",
+          "type": "address"
+        }
+      ],
+      "name": "BespokeMarketUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "claimer",
+          "type": "address"
+        }
+      ],
+      "name": "ClaimerSet",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "newDistributionEnd",
+          "type": "uint256"
+        }
+      ],
+      "name": "DistributionEndUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "RewardsAccrued",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "claimer",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "RewardsClaimed",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "vault",
+          "type": "address"
+        }
+      ],
+      "name": "RewardsVaultUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "UserIndexUpdated",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "DISTRIBUTION_END",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "EMISSION_MANAGER",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "OPENSKY_BESPOKE_MARKET",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "PRECISION",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "REVISION",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "REWARD_TOKEN",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "assets",
+      "outputs": [
+        {
+          "internalType": "uint104",
+          "name": "emissionPerSecond",
+          "type": "uint104"
+        },
+        {
+          "internalType": "uint104",
+          "name": "index",
+          "type": "uint104"
+        },
+        {
+          "internalType": "uint40",
+          "name": "lastUpdateTimestamp",
+          "type": "uint40"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "assets",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        }
+      ],
+      "name": "claimRewards",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "assets",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        }
+      ],
+      "name": "claimRewardsOnBehalf",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "assets",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "claimRewardsToSelf",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "assets",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "emissionsPerSecond",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "configureAssets",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        }
+      ],
+      "name": "getAssetData",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "getClaimer",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getDistributionEnd",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "assets",
+          "type": "address[]"
+        },
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "getRewardsBalance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getRewardsVault",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        }
+      ],
+      "name": "getUserAssetData",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_user",
+          "type": "address"
+        }
+      ],
+      "name": "getUserUnclaimedRewards",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "totalSupply",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "userBalance",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "params",
+          "type": "bytes"
+        }
+      ],
+      "name": "handleAction",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "rewardsVault",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "OPENSKY_BESPOKE_MARKET_",
+          "type": "address"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "caller",
+          "type": "address"
+        }
+      ],
+      "name": "setClaimer",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "distributionEnd",
+          "type": "uint256"
+        }
+      ],
+      "name": "setDistributionEnd",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "rewardsVault",
+          "type": "address"
+        }
+      ],
+      "name": "setRewardsVault",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xc6a4aacf9904b8da6768c60ff395a8d7e785f4c444cb3c358edb5d6f00e517ca",
+  "receipt": {
+    "to": null,
+    "from": "0x218513C58A4781a5B88De6230caA29aBCe2Ccd75",
+    "contractAddress": "0x1548f9D16b0cD8D64C67064D4C5f5cCd55CFE402",
+    "transactionIndex": 2,
+    "gasUsed": "1859088",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xb5fc0f0804ecd4fee5cfbab3a92333cf648668a5011977fb4adefa2eb48104e8",
+    "transactionHash": "0xc6a4aacf9904b8da6768c60ff395a8d7e785f4c444cb3c358edb5d6f00e517ca",
+    "logs": [],
+    "blockNumber": 2569517,
+    "cumulativeGasUsed": "3770695",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0xb47c287eB1d8D9675eB456934FC0A1F557A1f657",
+    "0x218513C58A4781a5B88De6230caA29aBCe2Ccd75"
+  ],
+  "solcInputHash": "9b4eb64291b836b34a0d4d73e41b5cea",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract IERC20\",\"name\":\"rewardToken\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"emissionManager\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"emission\",\"type\":\"uint256\"}],\"name\":\"AssetConfigUpdated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"AssetIndexUpdated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"BespokeAddress\",\"type\":\"address\"}],\"name\":\"BespokeMarketUpdated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"claimer\",\"type\":\"address\"}],\"name\":\"ClaimerSet\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"newDistributionEnd\",\"type\":\"uint256\"}],\"name\":\"DistributionEndUpdated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"RewardsAccrued\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"claimer\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"RewardsClaimed\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"vault\",\"type\":\"address\"}],\"name\":\"RewardsVaultUpdated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"UserIndexUpdated\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"DISTRIBUTION_END\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"EMISSION_MANAGER\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"OPENSKY_BESPOKE_MARKET\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"PRECISION\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"REVISION\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"REWARD_TOKEN\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"assets\",\"outputs\":[{\"internalType\":\"uint104\",\"name\":\"emissionPerSecond\",\"type\":\"uint104\"},{\"internalType\":\"uint104\",\"name\":\"index\",\"type\":\"uint104\"},{\"internalType\":\"uint40\",\"name\":\"lastUpdateTimestamp\",\"type\":\"uint40\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"assets\",\"type\":\"address[]\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"}],\"name\":\"claimRewards\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"assets\",\"type\":\"address[]\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"}],\"name\":\"claimRewardsOnBehalf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"assets\",\"type\":\"address[]\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"claimRewardsToSelf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"assets\",\"type\":\"address[]\"},{\"internalType\":\"uint256[]\",\"name\":\"emissionsPerSecond\",\"type\":\"uint256[]\"}],\"name\":\"configureAssets\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"getAssetData\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"name\":\"getClaimer\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getDistributionEnd\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"assets\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"name\":\"getRewardsBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getRewardsVault\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"getUserAssetData\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"}],\"name\":\"getUserUnclaimedRewards\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"totalSupply\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"userBalance\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"params\",\"type\":\"bytes\"}],\"name\":\"handleAction\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"rewardsVault\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"OPENSKY_BESPOKE_MARKET_\",\"type\":\"address\"}],\"name\":\"initialize\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"caller\",\"type\":\"address\"}],\"name\":\"setClaimer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"distributionEnd\",\"type\":\"uint256\"}],\"name\":\"setDistributionEnd\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"rewardsVault\",\"type\":\"address\"}],\"name\":\"setRewardsVault\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"DISTRIBUTION_END()\":{\"details\":\"for backwards compatibility with the previous DistributionManager used\",\"returns\":{\"_0\":\"The end of the distribution*\"}},\"claimRewards(address[],uint256,address)\":{\"details\":\"Claims reward for an user to the desired address, on all the assets of the lending pool, accumulating the pending rewards\",\"params\":{\"amount\":\"Amount of rewards to claim\",\"to\":\"Address that will be receiving the rewards\"},\"returns\":{\"_0\":\"Rewards claimed*\"}},\"claimRewardsOnBehalf(address[],uint256,address,address)\":{\"details\":\"Claims reward for an user on behalf, on all the assets of the lending pool, accumulating the pending rewards. The caller must be whitelisted via \\\"allowClaimOnBehalf\\\" function by the RewardsAdmin role manager\",\"params\":{\"amount\":\"Amount of rewards to claim\",\"to\":\"Address that will be receiving the rewards\",\"user\":\"Address to check and claim rewards\"},\"returns\":{\"_0\":\"Rewards claimed*\"}},\"claimRewardsToSelf(address[],uint256)\":{\"details\":\"Claims reward for msg.sender, on all the assets of the lending pool, accumulating the pending rewards\",\"params\":{\"amount\":\"Amount of rewards to claim\"},\"returns\":{\"_0\":\"Rewards claimed*\"}},\"configureAssets(address[],uint256[])\":{\"details\":\"Configure assets for a certain rewards emission\",\"params\":{\"assets\":\"The assets to incentivize\",\"emissionsPerSecond\":\"The emission for each asset\"}},\"getAssetData(address)\":{\"details\":\"Returns the configuration of the distribution for a certain asset\",\"params\":{\"asset\":\"The address of the reference asset of the distribution\"},\"returns\":{\"_0\":\"The asset index, the emission per second and the last updated timestamp*\"}},\"getClaimer(address)\":{\"details\":\"Returns the whitelisted claimer for a certain address (0x0 if not set)\",\"params\":{\"user\":\"The address of the user\"},\"returns\":{\"_0\":\"The claimer address\"}},\"getDistributionEnd()\":{\"details\":\"Gets the end date for the distribution\",\"returns\":{\"_0\":\"The end of the distribution*\"}},\"getRewardsBalance(address[],address)\":{\"details\":\"Returns the total of rewards of an user, already accrued + not yet accrued\",\"params\":{\"user\":\"The address of the user\"},\"returns\":{\"_0\":\"The rewards*\"}},\"getRewardsVault()\":{\"details\":\"returns the current rewards vault contract\",\"returns\":{\"_0\":\"address\"}},\"getUserAssetData(address,address)\":{\"details\":\"Returns the data of an user on a distribution\",\"params\":{\"asset\":\"The address of the reference asset of the distribution\",\"user\":\"Address of the user\"},\"returns\":{\"_0\":\"The new index*\"}},\"getUserUnclaimedRewards(address)\":{\"details\":\"returns the unclaimed rewards of the user\",\"params\":{\"user\":\"the address of the user\"},\"returns\":{\"_0\":\"the unclaimed user rewards\"}},\"initialize(address,address)\":{\"details\":\"Initialize AaveIncentivesController\",\"params\":{\"rewardsVault\":\"rewards vault to pull ERC20 funds*\"}},\"setClaimer(address,address)\":{\"details\":\"Whitelists an address to claim the rewards on behalf of another address\",\"params\":{\"claimer\":\"The address of the claimer\",\"user\":\"The address of the user\"}},\"setDistributionEnd(uint256)\":{\"details\":\"Sets the end date for the distribution\",\"params\":{\"distributionEnd\":\"The end date timestamp*\"}},\"setRewardsVault(address)\":{\"details\":\"update the rewards vault address, only allowed by the Rewards admin\",\"params\":{\"rewardsVault\":\"The address of the rewards vault*\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/incentives/OpenSkyBespokeIncentivesControllerBorrower.sol\":\"OpenSkyBespokeIncentivesControllerBorrower\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/incentives/OpenSkyBespokeIncentivesControllerBorrower.sol\":{\"content\":\"// SPDX-License-Identifier: agpl-3.0\\npragma solidity 0.8.10;\\n\\n\\nimport {IERC20} from './interfaces/IERC20.sol';\\nimport {SafeERC20} from './lib/SafeERC20.sol';\\nimport {SafeMath} from './lib/SafeMath.sol';\\n\\nimport {BaseIncentivesController} from './base/BaseIncentivesController.sol';\\nimport {IScaledBalanceToken} from './interfaces/IScaledBalanceToken.sol';\\n\\nimport {IOpenSkyBespoke} from './interfaces/IOpenSkyBespoke.sol';\\n\\ncontract OpenSkyBespokeIncentivesControllerBorrower is\\nBaseIncentivesController\\n{\\n    using SafeERC20 for IERC20;\\n    using SafeMath for uint256;\\n\\n    address internal _rewardsVault;\\n    address public OPENSKY_BESPOKE_MARKET;\\n\\n    event RewardsVaultUpdated(address indexed vault);\\n    event BespokeMarketUpdated(address indexed BespokeAddress);\\n\\n\\n    modifier onlyBespokeMarketCanCall() {\\n        require(OPENSKY_BESPOKE_MARKET == msg.sender, 'UNAUTHORIZED');\\n        _;\\n    }\\n\\n    constructor(IERC20 rewardToken, address emissionManager)\\n    BaseIncentivesController(rewardToken, emissionManager)\\n    {}\\n\\n    /**\\n     * @dev Initialize AaveIncentivesController\\n   * @param rewardsVault rewards vault to pull ERC20 funds\\n   **/\\n    function initialize(address rewardsVault, address OPENSKY_BESPOKE_MARKET_) external initializer {\\n        require(rewardsVault != address(0));\\n        require(OPENSKY_BESPOKE_MARKET_ != address(0));\\n\\n        _rewardsVault = rewardsVault;\\n        OPENSKY_BESPOKE_MARKET = OPENSKY_BESPOKE_MARKET_; // TODO event?\\n        emit RewardsVaultUpdated(_rewardsVault);\\n        emit BespokeMarketUpdated(OPENSKY_BESPOKE_MARKET_);\\n    }\\n\\n    /**\\n     * @dev returns the current rewards vault contract\\n   * @return address\\n   */\\n    function getRewardsVault() external view returns (address) {\\n        return _rewardsVault;\\n    }\\n\\n    /**\\n   * @dev update the rewards vault address, only allowed by the Rewards admin\\n   * @param rewardsVault The address of the rewards vault\\n   **/\\n    function setRewardsVault(address rewardsVault) external onlyEmissionManager {\\n        _rewardsVault = rewardsVault;\\n        emit RewardsVaultUpdated(rewardsVault);\\n    }\\n\\n    /// @inheritdoc BaseIncentivesController\\n    function _transferRewards(address to, uint256 amount) internal override {\\n        IERC20(REWARD_TOKEN).safeTransferFrom(_rewardsVault, to, amount);\\n    }\\n\\n    function _getUserBalanceAndSupply(address asset, address user) internal view override returns (uint256, uint256) {\\n\\n        return (\\n            IOpenSkyBespoke(OPENSKY_BESPOKE_MARKET).userBorrow(asset, user),\\n            IOpenSkyBespoke(OPENSKY_BESPOKE_MARKET).totalBorrow(asset)\\n        );\\n    }\\n\\n    function _getTotalSupply(address asset) internal view override returns (uint256){\\n        return IOpenSkyBespoke(OPENSKY_BESPOKE_MARKET).totalBorrow(asset);\\n    }\\n\\n    // customize\\n    function handleAction(\\n        address user,\\n        uint256 totalSupply,\\n        uint256 userBalance,\\n        bytes calldata params   //address currency\\n    ) external override onlyBespokeMarketCanCall{\\n        address currency = abi.decode(params,(address));\\n        uint256 accruedRewards = _updateUserAssetInternal(user, currency, userBalance, totalSupply);\\n        if (accruedRewards != 0) {\\n            _usersUnclaimedRewards[user] = _usersUnclaimedRewards[user].add(accruedRewards);\\n            emit RewardsAccrued(user, accruedRewards);\\n        }\\n    }\\n}\\n\",\"keccak256\":\"0xc3b98cf40f35816f3e87210e1da3726310e05e6583bffac4e00c4fe3ab89b77b\",\"license\":\"agpl-3.0\"},\"contracts/incentives/base/BaseIncentivesController.sol\":{\"content\":\"// SPDX-License-Identifier: agpl-3.0\\npragma solidity 0.8.10;\\n\\nimport {SafeMath} from '../lib/SafeMath.sol';\\nimport {DistributionTypes} from '../lib/DistributionTypes.sol';\\nimport {VersionedInitializable} from '../utils/VersionedInitializable.sol';\\nimport {DistributionManager} from './DistributionManager.sol';\\nimport {IERC20} from '../interfaces/IERC20.sol';\\nimport {IAaveIncentivesController} from '../interfaces/IAaveIncentivesController.sol';\\n\\n/**\\n * @title BaseIncentivesController\\n * @notice Abstract contract template to build Distributors contracts for ERC20 rewards to protocol participants\\n * @author Aave\\n **/\\nabstract contract BaseIncentivesController is\\nIAaveIncentivesController,\\nVersionedInitializable,\\nDistributionManager\\n{\\n    using SafeMath for uint256;\\n\\n    uint256 public constant REVISION = 1;\\n\\n    address public immutable override REWARD_TOKEN;\\n\\n    mapping(address => uint256) internal _usersUnclaimedRewards;\\n\\n    // this mapping allows whitelisted addresses to claim on behalf of others\\n    // useful for contracts that hold tokens to be rewarded but don't have any native logic to claim Liquidity Mining rewards\\n    mapping(address => address) internal _authorizedClaimers;\\n\\n    modifier onlyAuthorizedClaimers(address claimer, address user) {\\n        require(_authorizedClaimers[user] == claimer, 'CLAIMER_UNAUTHORIZED');\\n        _;\\n    }\\n\\n    constructor(IERC20 rewardToken, address emissionManager)\\n    DistributionManager(emissionManager)\\n    {\\n        REWARD_TOKEN = address(rewardToken);\\n    }\\n\\n    /// @inheritdoc IAaveIncentivesController\\n    function configureAssets(address[] calldata assets, uint256[] calldata emissionsPerSecond)\\n    external\\n    override\\n    onlyEmissionManager\\n    {\\n        require(assets.length == emissionsPerSecond.length, 'INVALID_CONFIGURATION');\\n\\n        DistributionTypes.AssetConfigInput[] memory assetsConfig =\\n                    new DistributionTypes.AssetConfigInput[](assets.length);\\n\\n        for (uint256 i = 0; i < assets.length; i++) {\\n            require(uint104(emissionsPerSecond[i]) == emissionsPerSecond[i], 'Index overflow at emissionsPerSecond');\\n            assetsConfig[i].underlyingAsset = assets[i];\\n            assetsConfig[i].emissionPerSecond = uint104(emissionsPerSecond[i]);\\n            assetsConfig[i].totalStaked = _getTotalSupply(assets[i]);\\n        }\\n        _configureAssets(assetsConfig);\\n    }\\n\\n    /// @inheritdoc IAaveIncentivesController\\n    function getRewardsBalance(address[] calldata assets, address user)\\n    external\\n    view\\n    override\\n    returns (uint256)\\n    {\\n        uint256 unclaimedRewards = _usersUnclaimedRewards[user];\\n\\n        DistributionTypes.UserStakeInput[] memory userState =\\n                    new DistributionTypes.UserStakeInput[](assets.length);\\n        for (uint256 i = 0; i < assets.length; i++) {\\n            userState[i].underlyingAsset = assets[i];\\n            (userState[i].stakedByUser, userState[i].totalStaked) = _getUserBalanceAndSupply(assets[i], user);\\n        }\\n        unclaimedRewards = unclaimedRewards.add(_getUnclaimedRewards(user, userState));\\n        return unclaimedRewards;\\n    }\\n\\n    /// @inheritdoc IAaveIncentivesController\\n    function claimRewards(\\n        address[] calldata assets,\\n        uint256 amount,\\n        address to\\n    ) external override returns (uint256) {\\n        require(to != address(0), 'INVALID_TO_ADDRESS');\\n        return _claimRewards(assets, amount, msg.sender, msg.sender, to);\\n    }\\n\\n    /// @inheritdoc IAaveIncentivesController\\n    function claimRewardsOnBehalf(\\n        address[] calldata assets,\\n        uint256 amount,\\n        address user,\\n        address to\\n    ) external override onlyAuthorizedClaimers(msg.sender, user) returns (uint256) {\\n        require(user != address(0), 'INVALID_USER_ADDRESS');\\n        require(to != address(0), 'INVALID_TO_ADDRESS');\\n        return _claimRewards(assets, amount, msg.sender, user, to);\\n    }\\n\\n    /// @inheritdoc IAaveIncentivesController\\n    function claimRewardsToSelf(address[] calldata assets, uint256 amount)\\n    external\\n    override\\n    returns (uint256)\\n    {\\n        return _claimRewards(assets, amount, msg.sender, msg.sender, msg.sender);\\n    }\\n\\n    /// @inheritdoc IAaveIncentivesController\\n    function setClaimer(address user, address caller) external override onlyEmissionManager {\\n        _authorizedClaimers[user] = caller;\\n        emit ClaimerSet(user, caller);\\n    }\\n\\n    /// @inheritdoc IAaveIncentivesController\\n    function getClaimer(address user) external view override returns (address) {\\n        return _authorizedClaimers[user];\\n    }\\n\\n    /// @inheritdoc IAaveIncentivesController\\n    function getUserUnclaimedRewards(address _user) external view override returns (uint256) {\\n        return _usersUnclaimedRewards[_user];\\n    }\\n\\n    /**\\n     * @dev returns the revision of the implementation contract\\n   */\\n    function getRevision() internal pure override returns (uint256) {\\n        return REVISION;\\n    }\\n\\n    /**\\n     * @dev Claims reward for an user on behalf, on all the assets of the lending pool, accumulating the pending rewards.\\n   * @param amount Amount of rewards to claim\\n   * @param user Address to check and claim rewards\\n   * @param to Address that will be receiving the rewards\\n   * @return Rewards claimed\\n   **/\\n    function _claimRewards(\\n        address[] calldata assets,\\n        uint256 amount,\\n        address claimer,\\n        address user,\\n        address to\\n    ) internal returns (uint256) {\\n        if (amount == 0) {\\n            return 0;\\n        }\\n        uint256 unclaimedRewards = _usersUnclaimedRewards[user];\\n\\n        if (amount > unclaimedRewards) {\\n            DistributionTypes.UserStakeInput[] memory userState =\\n                        new DistributionTypes.UserStakeInput[](assets.length);\\n            for (uint256 i = 0; i < assets.length; i++) {\\n                userState[i].underlyingAsset = assets[i];\\n                (userState[i].stakedByUser, userState[i].totalStaked) = _getUserBalanceAndSupply(assets[i], user);\\n            }\\n\\n            uint256 accruedRewards = _claimRewards(user, userState);\\n            if (accruedRewards != 0) {\\n                unclaimedRewards = unclaimedRewards.add(accruedRewards);\\n                emit RewardsAccrued(user, accruedRewards);\\n            }\\n        }\\n\\n        if (unclaimedRewards == 0) {\\n            return 0;\\n        }\\n\\n        uint256 amountToClaim = amount > unclaimedRewards ? unclaimedRewards : amount;\\n        _usersUnclaimedRewards[user] = unclaimedRewards - amountToClaim; // Safe due to the previous line\\n\\n        _transferRewards(to, amountToClaim);\\n        emit RewardsClaimed(user, to, claimer, amountToClaim);\\n\\n        return amountToClaim;\\n    }\\n\\n    /**\\n     * @dev Abstract function to transfer rewards to the desired account\\n   * @param to Account address to send the rewards\\n   * @param amount Amount of rewards to transfer\\n   */\\n    function _transferRewards(address to, uint256 amount) internal virtual;\\n\\n    function _getUserBalanceAndSupply(address asset, address user) internal view virtual returns (uint256, uint256);\\n\\n    function _getTotalSupply(address asset) internal view virtual returns (uint256);\\n\\n    function handleAction(\\n        address user,\\n        uint256 totalSupply,\\n        uint256 userBalance,\\n        bytes calldata params\\n    ) external virtual;\\n}\\n\",\"keccak256\":\"0x7a3202ed21ab1da80d2cae5dcd6c16b10f221f05fb48f2820e4379a5b7bfdd97\",\"license\":\"agpl-3.0\"},\"contracts/incentives/base/DistributionManager.sol\":{\"content\":\"// SPDX-License-Identifier: agpl-3.0\\npragma solidity 0.8.10;\\n\\nimport {IAaveDistributionManager} from '../interfaces/IAaveDistributionManager.sol';\\nimport {SafeMath} from '../lib/SafeMath.sol';\\nimport {DistributionTypes} from '../lib/DistributionTypes.sol';\\n\\n/**\\n * @title DistributionManager\\n * @notice Accounting contract to manage multiple staking distributions\\n * @author Aave\\n **/\\ncontract DistributionManager is IAaveDistributionManager {\\n  using SafeMath for uint256;\\n\\n  struct AssetData {\\n    uint104 emissionPerSecond;\\n    uint104 index;\\n    uint40 lastUpdateTimestamp;\\n    mapping(address => uint256) users;\\n  }\\n\\n  address public immutable EMISSION_MANAGER;\\n\\n  uint8 public constant PRECISION = 18;\\n\\n  mapping(address => AssetData) public assets;\\n\\n  uint256 internal _distributionEnd;\\n\\n  modifier onlyEmissionManager() {\\n    require(msg.sender == EMISSION_MANAGER, 'ONLY_EMISSION_MANAGER');\\n    _;\\n  }\\n\\n  constructor(address emissionManager) {\\n    EMISSION_MANAGER = emissionManager;\\n  }\\n\\n  /// @inheritdoc IAaveDistributionManager\\n  function setDistributionEnd(uint256 distributionEnd) external override onlyEmissionManager {\\n    _distributionEnd = distributionEnd;\\n    emit DistributionEndUpdated(distributionEnd);\\n  }\\n\\n  /// @inheritdoc IAaveDistributionManager\\n  function getDistributionEnd() external view override returns (uint256) {\\n    return _distributionEnd;\\n  }\\n\\n  /// @inheritdoc IAaveDistributionManager\\n  function DISTRIBUTION_END() external view override returns (uint256) {\\n    return _distributionEnd;\\n  }\\n\\n  /// @inheritdoc IAaveDistributionManager\\n  function getUserAssetData(address user, address asset) public view override returns (uint256) {\\n    return assets[asset].users[user];\\n  }\\n\\n  /// @inheritdoc IAaveDistributionManager\\n  function getAssetData(address asset) public view override returns (uint256, uint256, uint256) {\\n    return (assets[asset].index, assets[asset].emissionPerSecond, assets[asset].lastUpdateTimestamp);\\n  }\\n\\n  /**\\n   * @dev Configure the assets for a specific emission\\n   * @param assetsConfigInput The array of each asset configuration\\n   **/\\n  function _configureAssets(DistributionTypes.AssetConfigInput[] memory assetsConfigInput)\\n    internal\\n  {\\n    for (uint256 i = 0; i < assetsConfigInput.length; i++) {\\n      AssetData storage assetConfig = assets[assetsConfigInput[i].underlyingAsset];\\n\\n      _updateAssetStateInternal(\\n        assetsConfigInput[i].underlyingAsset,\\n        assetConfig,\\n        assetsConfigInput[i].totalStaked\\n      );\\n\\n      assetConfig.emissionPerSecond = assetsConfigInput[i].emissionPerSecond;\\n\\n      emit AssetConfigUpdated(\\n        assetsConfigInput[i].underlyingAsset,\\n        assetsConfigInput[i].emissionPerSecond\\n      );\\n    }\\n  }\\n\\n  /**\\n   * @dev Updates the state of one distribution, mainly rewards index and timestamp\\n   * @param asset The address of the asset being updated\\n   * @param assetConfig Storage pointer to the distribution's config\\n   * @param totalStaked Current total of staked assets for this distribution\\n   * @return The new distribution index\\n   **/\\n  function _updateAssetStateInternal(\\n    address asset,\\n    AssetData storage assetConfig,\\n    uint256 totalStaked\\n  ) internal returns (uint256) {\\n    uint256 oldIndex = assetConfig.index;\\n    uint256 emissionPerSecond = assetConfig.emissionPerSecond;\\n    uint128 lastUpdateTimestamp = assetConfig.lastUpdateTimestamp;\\n\\n    if (block.timestamp == lastUpdateTimestamp) {\\n      return oldIndex;\\n    }\\n\\n    uint256 newIndex =\\n      _getAssetIndex(oldIndex, emissionPerSecond, lastUpdateTimestamp, totalStaked);\\n\\n    if (newIndex != oldIndex) {\\n      require(uint104(newIndex) == newIndex, 'Index overflow');\\n      //optimization: storing one after another saves one SSTORE\\n      assetConfig.index = uint104(newIndex);\\n      assetConfig.lastUpdateTimestamp = uint40(block.timestamp);\\n      emit AssetIndexUpdated(asset, newIndex);\\n    } else {\\n      assetConfig.lastUpdateTimestamp = uint40(block.timestamp);\\n    }\\n\\n    return newIndex;\\n  }\\n\\n  /**\\n   * @dev Updates the state of an user in a distribution\\n   * @param user The user's address\\n   * @param asset The address of the reference asset of the distribution\\n   * @param stakedByUser Amount of tokens staked by the user in the distribution at the moment\\n   * @param totalStaked Total tokens staked in the distribution\\n   * @return The accrued rewards for the user until the moment\\n   **/\\n  function _updateUserAssetInternal(\\n    address user,\\n    address asset,\\n    uint256 stakedByUser,\\n    uint256 totalStaked\\n  ) internal returns (uint256) {\\n    AssetData storage assetData = assets[asset];\\n    uint256 userIndex = assetData.users[user];\\n    uint256 accruedRewards = 0;\\n\\n    uint256 newIndex = _updateAssetStateInternal(asset, assetData, totalStaked);\\n\\n    if (userIndex != newIndex) {\\n      if (stakedByUser != 0) {\\n        accruedRewards = _getRewards(stakedByUser, newIndex, userIndex);\\n      }\\n\\n      assetData.users[user] = newIndex;\\n      emit UserIndexUpdated(user, asset, newIndex);\\n    }\\n\\n    return accruedRewards;\\n  }\\n\\n  /**\\n   * @dev Used by \\\"frontend\\\" stake contracts to update the data of an user when claiming rewards from there\\n   * @param user The address of the user\\n   * @param stakes List of structs of the user data related with his stake\\n   * @return The accrued rewards for the user until the moment\\n   **/\\n  function _claimRewards(address user, DistributionTypes.UserStakeInput[] memory stakes)\\n    internal\\n    returns (uint256)\\n  {\\n    uint256 accruedRewards = 0;\\n\\n    for (uint256 i = 0; i < stakes.length; i++) {\\n      accruedRewards = accruedRewards.add(\\n        _updateUserAssetInternal(\\n          user,\\n          stakes[i].underlyingAsset,\\n          stakes[i].stakedByUser,\\n          stakes[i].totalStaked\\n        )\\n      );\\n    }\\n\\n    return accruedRewards;\\n  }\\n\\n  /**\\n   * @dev Return the accrued rewards for an user over a list of distribution\\n   * @param user The address of the user\\n   * @param stakes List of structs of the user data related with his stake\\n   * @return The accrued rewards for the user until the moment\\n   **/\\n  function _getUnclaimedRewards(address user, DistributionTypes.UserStakeInput[] memory stakes)\\n    internal\\n    view\\n    returns (uint256)\\n  {\\n    uint256 accruedRewards = 0;\\n\\n    for (uint256 i = 0; i < stakes.length; i++) {\\n      AssetData storage assetConfig = assets[stakes[i].underlyingAsset];\\n      uint256 assetIndex =\\n        _getAssetIndex(\\n          assetConfig.index,\\n          assetConfig.emissionPerSecond,\\n          assetConfig.lastUpdateTimestamp,\\n          stakes[i].totalStaked\\n        );\\n\\n      accruedRewards = accruedRewards.add(\\n        _getRewards(stakes[i].stakedByUser, assetIndex, assetConfig.users[user])\\n      );\\n    }\\n    return accruedRewards;\\n  }\\n\\n  /**\\n   * @dev Internal function for the calculation of user's rewards on a distribution\\n   * @param principalUserBalance Amount staked by the user on a distribution\\n   * @param reserveIndex Current index of the distribution\\n   * @param userIndex Index stored for the user, representation his staking moment\\n   * @return The rewards\\n   **/\\n  function _getRewards(\\n    uint256 principalUserBalance,\\n    uint256 reserveIndex,\\n    uint256 userIndex\\n  ) internal pure returns (uint256) {\\n    return principalUserBalance.mul(reserveIndex.sub(userIndex)) / 10**uint256(PRECISION);\\n  }\\n\\n  /**\\n   * @dev Calculates the next value of an specific distribution index, with validations\\n   * @param currentIndex Current index of the distribution\\n   * @param emissionPerSecond Representing the total rewards distributed per second per asset unit, on the distribution\\n   * @param lastUpdateTimestamp Last moment this distribution was updated\\n   * @param totalBalance of tokens considered for the distribution\\n   * @return The new index.\\n   **/\\n  function _getAssetIndex(\\n    uint256 currentIndex,\\n    uint256 emissionPerSecond,\\n    uint128 lastUpdateTimestamp,\\n    uint256 totalBalance\\n  ) internal view returns (uint256) {\\n    uint256 distributionEnd = _distributionEnd;\\n    if (\\n      emissionPerSecond == 0 ||\\n      totalBalance == 0 ||\\n      lastUpdateTimestamp == block.timestamp ||\\n      lastUpdateTimestamp >= distributionEnd\\n    ) {\\n      return currentIndex;\\n    }\\n\\n    uint256 currentTimestamp =\\n      block.timestamp > distributionEnd ? distributionEnd : block.timestamp;\\n    uint256 timeDelta = currentTimestamp.sub(lastUpdateTimestamp);\\n    return\\n      emissionPerSecond.mul(timeDelta).mul(10**uint256(PRECISION)).div(totalBalance).add(\\n        currentIndex\\n      );\\n  }\\n}\\n\",\"keccak256\":\"0x478bd598fd4f486dedd2219529a3a0bf3f713f1e140e16d91fd5ac6b467f8654\",\"license\":\"agpl-3.0\"},\"contracts/incentives/interfaces/IAaveDistributionManager.sol\":{\"content\":\"// SPDX-License-Identifier: agpl-3.0\\npragma solidity 0.8.10;\\n\\n\\nimport {DistributionTypes} from '../lib/DistributionTypes.sol';\\n\\ninterface IAaveDistributionManager {\\n  \\n  event AssetConfigUpdated(address indexed asset, uint256 emission);\\n  event AssetIndexUpdated(address indexed asset, uint256 index);\\n  event UserIndexUpdated(address indexed user, address indexed asset, uint256 index);\\n  event DistributionEndUpdated(uint256 newDistributionEnd);\\n\\n  /**\\n  * @dev Sets the end date for the distribution\\n  * @param distributionEnd The end date timestamp\\n  **/\\n  function setDistributionEnd(uint256 distributionEnd) external;\\n\\n  /**\\n  * @dev Gets the end date for the distribution\\n  * @return The end of the distribution\\n  **/\\n  function getDistributionEnd() external view returns (uint256);\\n\\n  /**\\n  * @dev for backwards compatibility with the previous DistributionManager used\\n  * @return The end of the distribution\\n  **/\\n  function DISTRIBUTION_END() external view returns(uint256);\\n\\n   /**\\n   * @dev Returns the data of an user on a distribution\\n   * @param user Address of the user\\n   * @param asset The address of the reference asset of the distribution\\n   * @return The new index\\n   **/\\n   function getUserAssetData(address user, address asset) external view returns (uint256);\\n\\n   /**\\n   * @dev Returns the configuration of the distribution for a certain asset\\n   * @param asset The address of the reference asset of the distribution\\n   * @return The asset index, the emission per second and the last updated timestamp\\n   **/\\n   function getAssetData(address asset) external view returns (uint256, uint256, uint256);\\n}\\n\",\"keccak256\":\"0x8b548a40a0f456d3c26b5d523c3e8385181bb65087bbaedef601d47ba7cf574f\",\"license\":\"agpl-3.0\"},\"contracts/incentives/interfaces/IAaveIncentivesController.sol\":{\"content\":\"// SPDX-License-Identifier: agpl-3.0\\npragma solidity 0.8.10;\\n\\nimport {IAaveDistributionManager} from '../interfaces/IAaveDistributionManager.sol';\\n\\ninterface IAaveIncentivesController is IAaveDistributionManager {\\n  event RewardsAccrued(address indexed user, uint256 amount);\\n\\n  event RewardsClaimed(\\n    address indexed user,\\n    address indexed to,\\n    address indexed claimer,\\n    uint256 amount\\n  );\\n\\n  event ClaimerSet(address indexed user, address indexed claimer);\\n\\n  /**\\n   * @dev Whitelists an address to claim the rewards on behalf of another address\\n   * @param user The address of the user\\n   * @param claimer The address of the claimer\\n   */\\n  function setClaimer(address user, address claimer) external;\\n\\n  /**\\n   * @dev Returns the whitelisted claimer for a certain address (0x0 if not set)\\n   * @param user The address of the user\\n   * @return The claimer address\\n   */\\n  function getClaimer(address user) external view returns (address);\\n\\n  /**\\n   * @dev Configure assets for a certain rewards emission\\n   * @param assets The assets to incentivize\\n   * @param emissionsPerSecond The emission for each asset\\n   */\\n  function configureAssets(address[] calldata assets, uint256[] calldata emissionsPerSecond)\\n    external;\\n\\n  /**\\n   * @dev Called by the corresponding asset on any update that affects the rewards distribution\\n   * @param asset The address of the user\\n   * @param userBalance The balance of the user of the asset in the lending pool\\n   * @param totalSupply The total supply of the asset in the lending pool\\n   * @param params extra params\\n   **/\\n  function handleAction(\\n    address asset,\\n    uint256 userBalance,\\n    uint256 totalSupply,\\n    bytes calldata params\\n  ) external;\\n\\n  /**\\n   * @dev Returns the total of rewards of an user, already accrued + not yet accrued\\n   * @param user The address of the user\\n   * @return The rewards\\n   **/\\n  function getRewardsBalance(address[] calldata assets, address user)\\n    external\\n    view\\n    returns (uint256);\\n\\n  /**\\n   * @dev Claims reward for an user to the desired address, on all the assets of the lending pool, accumulating the pending rewards\\n   * @param amount Amount of rewards to claim\\n   * @param to Address that will be receiving the rewards\\n   * @return Rewards claimed\\n   **/\\n  function claimRewards(\\n    address[] calldata assets,\\n    uint256 amount,\\n    address to\\n  ) external returns (uint256);\\n\\n  /**\\n   * @dev Claims reward for an user on behalf, on all the assets of the lending pool, accumulating the pending rewards. The caller must\\n   * be whitelisted via \\\"allowClaimOnBehalf\\\" function by the RewardsAdmin role manager\\n   * @param amount Amount of rewards to claim\\n   * @param user Address to check and claim rewards\\n   * @param to Address that will be receiving the rewards\\n   * @return Rewards claimed\\n   **/\\n  function claimRewardsOnBehalf(\\n    address[] calldata assets,\\n    uint256 amount,\\n    address user,\\n    address to\\n  ) external returns (uint256);\\n\\n  /**\\n   * @dev Claims reward for msg.sender, on all the assets of the lending pool, accumulating the pending rewards\\n   * @param amount Amount of rewards to claim\\n   * @return Rewards claimed\\n   **/\\n  function claimRewardsToSelf(address[] calldata assets, uint256 amount) external returns (uint256);\\n\\n  /**\\n   * @dev returns the unclaimed rewards of the user\\n   * @param user the address of the user\\n   * @return the unclaimed user rewards\\n   */\\n  function getUserUnclaimedRewards(address user) external view returns (uint256);\\n\\n  /**\\n   * @dev for backward compatibility with previous implementation of the Incentives controller\\n   */\\n  function REWARD_TOKEN() external view returns (address);\\n}\\n\",\"keccak256\":\"0xa864c72c4da4ccb069433c15ece0fa829513852ff996271885b99826fd271408\",\"license\":\"agpl-3.0\"},\"contracts/incentives/interfaces/IERC20.sol\":{\"content\":\"pragma solidity 0.8.10;\\n\\n/**\\n * @dev Interface of the ERC20 standard as defined in the EIP.\\n * From https://github.com/OpenZeppelin/openzeppelin-contracts\\n */\\ninterface IERC20 {\\n  /**\\n   * @dev Returns the amount of tokens in existence.\\n   */\\n  function totalSupply() external view returns (uint256);\\n\\n  /**\\n   * @dev Returns the amount of tokens owned by `account`.\\n   */\\n  function balanceOf(address account) external view returns (uint256);\\n\\n  /**\\n   * @dev Moves `amount` tokens from the caller's account to `recipient`.\\n   *\\n   * Returns a boolean value indicating whether the operation succeeded.\\n   *\\n   * Emits a {Transfer} event.\\n   */\\n  function transfer(address recipient, uint256 amount) external returns (bool);\\n\\n  /**\\n   * @dev Returns the remaining number of tokens that `spender` will be\\n   * allowed to spend on behalf of `owner` through {transferFrom}. This is\\n   * zero by default.\\n   *\\n   * This value changes when {approve} or {transferFrom} are called.\\n   */\\n  function allowance(address owner, address spender) external view returns (uint256);\\n\\n  /**\\n   * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.\\n   *\\n   * Returns a boolean value indicating whether the operation succeeded.\\n   *\\n   * IMPORTANT: Beware that changing an allowance with this method brings the risk\\n   * that someone may use both the old and the new allowance by unfortunate\\n   * transaction ordering. One possible solution to mitigate this race\\n   * condition is to first reduce the spender's allowance to 0 and set the\\n   * desired value afterwards:\\n   * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729\\n   *\\n   * Emits an {Approval} event.\\n   */\\n  function approve(address spender, uint256 amount) external returns (bool);\\n\\n  /**\\n   * @dev Moves `amount` tokens from `sender` to `recipient` using the\\n   * allowance mechanism. `amount` is then deducted from the caller's\\n   * allowance.\\n   *\\n   * Returns a boolean value indicating whether the operation succeeded.\\n   *\\n   * Emits a {Transfer} event.\\n   */\\n  function transferFrom(\\n    address sender,\\n    address recipient,\\n    uint256 amount\\n  ) external returns (bool);\\n\\n  /**\\n   * @dev Emitted when `value` tokens are moved from one account (`from`) to\\n   * another (`to`).\\n   *\\n   * Note that `value` may be zero.\\n   */\\n  event Transfer(address indexed from, address indexed to, uint256 value);\\n\\n  /**\\n   * @dev Emitted when the allowance of a `spender` for an `owner` is set by\\n   * a call to {approve}. `value` is the new allowance.\\n   */\\n  event Approval(address indexed owner, address indexed spender, uint256 value);\\n}\\n\",\"keccak256\":\"0x490b6d09af9d487952a3ccb8f531d8abfb8a299b667b436e8ba1fa064cada07f\"},\"contracts/incentives/interfaces/IOpenSkyBespoke.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\npragma solidity 0.8.10;\\n\\ninterface IOpenSkyBespoke {\\n\\n    //settings\\n    function marketAddress() external view returns (address);\\n\\n    // market\\n    function totalBorrow(address currency) external view returns (uint256);\\n    function userBorrow(address currency, address account) external view returns (uint256);\\n    function totalLend(address currency) external view returns (uint256);\\n    function userLend(address currency, address account) external view returns (uint256);\\n    \\n}\\n\",\"keccak256\":\"0x19580f10a4bde6c086450a789e73f57f5a0712c6441f10cd23fd2b96e08a6e2d\",\"license\":\"UNLICENSED\"},\"contracts/incentives/interfaces/IScaledBalanceToken.sol\":{\"content\":\"// SPDX-License-Identifier: agpl-3.0\\npragma solidity 0.8.10;\\n\\ninterface IScaledBalanceToken {\\n  /**\\n   * @dev Returns the scaled balance of the user. The scaled balance is the sum of all the\\n   * updated stored balance divided by the reserve's liquidity index at the moment of the update\\n   * @param user The user whose balance is calculated\\n   * @return The scaled balance of the user\\n   **/\\n  function scaledBalanceOf(address user) external view returns (uint256);\\n\\n  /**\\n   * @dev Returns the scaled balance of the user and the scaled total supply.\\n   * @param user The address of the user\\n   * @return The scaled balance of the user\\n   * @return The scaled balance and the scaled total supply\\n   **/\\n  function getScaledUserBalanceAndSupply(address user) external view returns (uint256, uint256);\\n\\n  /**\\n   * @dev Returns the scaled total supply of the token. Represents sum(debt/index)\\n   * @return The scaled total supply\\n   **/\\n  function scaledTotalSupply() external view returns (uint256);\\n}\\n\",\"keccak256\":\"0x515a72da609a85086c1b3d3c968cea26147a869ec902b227348ec0343d62b766\",\"license\":\"agpl-3.0\"},\"contracts/incentives/lib/Address.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\n/**\\n * @dev Collection of functions related to the address type\\n * From https://github.com/OpenZeppelin/openzeppelin-contracts\\n */\\nlibrary Address {\\n  /**\\n   * @dev Returns true if `account` is a contract.\\n   *\\n   * [IMPORTANT]\\n   * ====\\n   * It is unsafe to assume that an address for which this function returns\\n   * false is an externally-owned account (EOA) and not a contract.\\n   *\\n   * Among others, `isContract` will return false for the following\\n   * types of addresses:\\n   *\\n   *  - an externally-owned account\\n   *  - a contract in construction\\n   *  - an address where a contract will be created\\n   *  - an address where a contract lived, but was destroyed\\n   * ====\\n   */\\n  function isContract(address account) internal view returns (bool) {\\n    // According to EIP-1052, 0x0 is the value returned for not-yet created accounts\\n    // and 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470 is returned\\n    // for accounts without code, i.e. `keccak256('')`\\n    bytes32 codehash;\\n    bytes32 accountHash = 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470;\\n    // solhint-disable-next-line no-inline-assembly\\n    assembly {\\n      codehash := extcodehash(account)\\n    }\\n    return (codehash != accountHash && codehash != 0x0);\\n  }\\n\\n  /**\\n   * @dev Replacement for Solidity's `transfer`: sends `amount` wei to\\n   * `recipient`, forwarding all available gas and reverting on errors.\\n   *\\n   * https://eips.ethereum.org/EIPS/eip-1884[EIP1884] increases the gas cost\\n   * of certain opcodes, possibly making contracts go over the 2300 gas limit\\n   * imposed by `transfer`, making them unable to receive funds via\\n   * `transfer`. {sendValue} removes this limitation.\\n   *\\n   * https://diligence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].\\n   *\\n   * IMPORTANT: because control is transferred to `recipient`, care must be\\n   * taken to not create reentrancy vulnerabilities. Consider using\\n   * {ReentrancyGuard} or the\\n   * https://solidity.readthedocs.io/en/v0.5.11/security-considerations.html#use-the-checks-effects-interactions-pattern[checks-effects-interactions pattern].\\n   */\\n  function sendValue(address payable recipient, uint256 amount) internal {\\n    require(address(this).balance >= amount, 'Address: insufficient balance');\\n\\n    // solhint-disable-next-line avoid-low-level-calls, avoid-call-value\\n    (bool success, ) = recipient.call{value: amount}('');\\n    require(success, 'Address: unable to send value, recipient may have reverted');\\n  }\\n}\\n\",\"keccak256\":\"0x77e3e320efee1f58065d38cf9b09f797714f5cdc76a8ed7b861bfc9d1433e21e\",\"license\":\"MIT\"},\"contracts/incentives/lib/DistributionTypes.sol\":{\"content\":\"// SPDX-License-Identifier: agpl-3.0\\npragma solidity 0.8.10;\\n\\nlibrary DistributionTypes {\\n  struct AssetConfigInput {\\n    uint104 emissionPerSecond;\\n    uint256 totalStaked;\\n    address underlyingAsset;\\n  }\\n\\n  struct UserStakeInput {\\n    address underlyingAsset;\\n    uint256 stakedByUser;\\n    uint256 totalStaked;\\n  }\\n}\\n\",\"keccak256\":\"0x9e402be2a5c15ee9984c8f2b2b1060df0d715ba097e00d8b4ab810fc17178f33\",\"license\":\"agpl-3.0\"},\"contracts/incentives/lib/SafeERC20.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity 0.8.10;\\n\\nimport {IERC20} from '../interfaces/IERC20.sol';\\nimport {SafeMath} from './SafeMath.sol';\\nimport {Address} from './Address.sol';\\n\\n/**\\n * @title SafeERC20\\n * @dev From https://github.com/OpenZeppelin/openzeppelin-contracts\\n * Wrappers around ERC20 operations that throw on failure (when the token\\n * contract returns false). Tokens that return no value (and instead revert or\\n * throw on failure) are also supported, non-reverting calls are assumed to be\\n * successful.\\n * To use this library you can add a `using SafeERC20 for IERC20;` statement to your contract,\\n * which allows you to call the safe operations as `token.safeTransfer(...)`, etc.\\n */\\nlibrary SafeERC20 {\\n  using SafeMath for uint256;\\n  using Address for address;\\n\\n  function safeTransfer(\\n    IERC20 token,\\n    address to,\\n    uint256 value\\n  ) internal {\\n    callOptionalReturn(token, abi.encodeWithSelector(token.transfer.selector, to, value));\\n  }\\n\\n  function safeTransferFrom(\\n    IERC20 token,\\n    address from,\\n    address to,\\n    uint256 value\\n  ) internal {\\n    callOptionalReturn(token, abi.encodeWithSelector(token.transferFrom.selector, from, to, value));\\n  }\\n\\n  function safeApprove(\\n    IERC20 token,\\n    address spender,\\n    uint256 value\\n  ) internal {\\n    require(\\n      (value == 0) || (token.allowance(address(this), spender) == 0),\\n      'SafeERC20: approve from non-zero to non-zero allowance'\\n    );\\n    callOptionalReturn(token, abi.encodeWithSelector(token.approve.selector, spender, value));\\n  }\\n\\n  function callOptionalReturn(IERC20 token, bytes memory data) private {\\n    require(address(token).isContract(), 'SafeERC20: call to non-contract');\\n\\n    // solhint-disable-next-line avoid-low-level-calls\\n    (bool success, bytes memory returndata) = address(token).call(data);\\n    require(success, 'SafeERC20: low-level call failed');\\n\\n    if (returndata.length > 0) {\\n      // Return data is optional\\n      // solhint-disable-next-line max-line-length\\n      require(abi.decode(returndata, (bool)), 'SafeERC20: ERC20 operation did not succeed');\\n    }\\n  }\\n}\\n\",\"keccak256\":\"0x680e1d7b7222eb25fb2228d661b71a59aa0d67ce85ae86d58a67c8a11f0581f9\",\"license\":\"MIT\"},\"contracts/incentives/lib/SafeMath.sol\":{\"content\":\"// SPDX-License-Identifier: agpl-3.0\\npragma solidity 0.8.10;\\n\\n/// @title Optimized overflow and underflow safe math operations\\n/// @notice Contains methods for doing math operations that revert on overflow or underflow for minimal gas cost\\n/// inspired by uniswap V3\\nlibrary SafeMath {\\n    /// @notice Returns x + y, reverts if sum overflows uint256\\n    /// @param x The augend\\n    /// @param y The addend\\n    /// @return z The sum of x and y\\n    function add(uint256 x, uint256 y) internal pure returns (uint256 z) {\\n        require((z = x + y) >= x);\\n    }\\n\\n    /// @notice Returns x - y, reverts if underflows\\n    /// @param x The minuend\\n    /// @param y The subtrahend\\n    /// @return z The difference of x and y\\n    function sub(uint256 x, uint256 y) internal pure returns (uint256 z) {\\n        require((z = x - y) <= x);\\n    }\\n\\n    /// @notice Returns x * y, reverts if overflows\\n    /// @param x The multiplicand\\n    /// @param y The multiplier\\n    /// @return z The product of x and y\\n    function mul(uint256 x, uint256 y) internal pure returns (uint256 z) {\\n        require(x == 0 || (z = x * y) / x == y);\\n    }\\n\\n    function div(uint256 x, uint256 y) internal pure returns(uint256) {\\n        // no need to check for division by zero - solidity already reverts\\n        return x / y;\\n    }\\n}\\n\",\"keccak256\":\"0x4d3fa4e6313b524109a70baac997324def188de873ff9dd8d98aa024329e2cc0\",\"license\":\"agpl-3.0\"},\"contracts/incentives/utils/VersionedInitializable.sol\":{\"content\":\"// SPDX-License-Identifier: agpl-3.0\\npragma solidity 0.8.10;\\n\\n/**\\n * @title VersionedInitializable\\n *\\n * @dev Helper contract to support initializer functions. To use it, replace\\n * the constructor with a function that has the `initializer` modifier.\\n * WARNING: Unlike constructors, initializer functions must be manually\\n * invoked. This applies both to deploying an Initializable contract, as well\\n * as extending an Initializable contract via inheritance.\\n * WARNING: When used with inheritance, manual care must be taken to not invoke\\n * a parent initializer twice, or ensure that all initializers are idempotent,\\n * because this is not dealt with automatically as with constructors.\\n *\\n * @author Aave, inspired by the OpenZeppelin Initializable contract\\n */\\nabstract contract VersionedInitializable {\\n  /**\\n   * @dev Indicates that the contract has been initialized.\\n   */\\n  uint256 internal lastInitializedRevision = 0;\\n\\n  /**\\n   * @dev Modifier to use in the initializer function of a contract.\\n   */\\n  modifier initializer() {\\n    uint256 revision = getRevision();\\n    require(revision > lastInitializedRevision, 'Contract instance has already been initialized');\\n\\n    lastInitializedRevision = revision;\\n\\n    _;\\n  }\\n\\n  /// @dev returns the revision number of the contract.\\n  /// Needs to be defined in the inherited class as a constant.\\n  function getRevision() internal pure virtual returns (uint256);\\n\\n  // Reserved storage space to allow for layout changes in the future.\\n  uint256[50] private ______gap;\\n}\\n\",\"keccak256\":\"0x583c1b942560b3a99bd2d17a0972d3ced0c4c6a21e24b4dd3ae654ecb1e82941\",\"license\":\"agpl-3.0\"}},\"version\":1}",
+  "bytecode": "0x60c0604052600080553480156200001557600080fd5b506040516200218638038062002186833981016040819052620000389162000069565b6001600160a01b039081166080521660a052620000a8565b6001600160a01b03811681146200006657600080fd5b50565b600080604083850312156200007d57600080fd5b82516200008a8162000050565b60208401519092506200009d8162000050565b809150509250929050565b60805160a051612095620000f1600039600081816102e201526115fb015260008181610349015281816104c30152818161079e01528181610ccd0152610d5f01526120956000f3fe608060405234801561001057600080fd5b506004361061014d5760003560e01c8063919cd40f116100c3578063cc69afec1161007c578063cc69afec146102d5578063dde43cba1461036b578063e23ddec514610373578063f11b818814610384578063f5bb3e02146103f6578063f5cf673b1461040957600080fd5b8063919cd40f146102d557806399248ea7146102dd5780639ab99ddf14610304578063aaf5eb6814610317578063ac509b1a14610331578063cbcbb5071461034457600080fd5b806341485304116101155780634148530414610232578063485cc955146102455780636d34b96e1461025857806374d945ec1461026b57806379f171b2146102af5780638b599f26146102c257600080fd5b80631652e7b714610152578063198fa81e146101c05780633111e7b3146101f75780633373ee4c1461020a57806339ccbdd31461021d575b600080fd5b6101a0610160366004611ad1565b6001600160a01b0316600090815260336020526040902054600160681b81046001600160681b039081169290821691600160d01b900464ffffffffff1690565b604080519384526020840192909252908201526060015b60405180910390f35b6101e96101ce366004611ad1565b6001600160a01b031660009081526035602052604090205490565b6040519081526020016101b7565b6101e9610205366004611b33565b61041c565b6101e9610218366004611b92565b610487565b61023061022b366004611bcb565b6104b8565b005b6101e9610240366004611be4565b61053b565b610230610253366004611b92565b610555565b6101e9610266366004611c30565b61067b565b610297610279366004611ad1565b6001600160a01b039081166000908152603660205260409020541690565b6040516001600160a01b0390911681526020016101b7565b6102306102bd366004611ca4565b610793565b6101e96102d0366004611d10565b610a3c565b6034546101e9565b6102977f000000000000000000000000000000000000000000000000000000000000000081565b610230610312366004611d67565b610bcf565b61031f601281565b60405160ff90911681526020016101b7565b603854610297906001600160a01b031681565b6102977f000000000000000000000000000000000000000000000000000000000000000081565b6101e9600181565b6037546001600160a01b0316610297565b6103c9610392366004611ad1565b6033602052600090815260409020546001600160681b0380821691600160681b810490911690600160d01b900464ffffffffff1683565b604080516001600160681b03948516815293909216602084015264ffffffffff16908201526060016101b7565b610230610404366004611ad1565b610cc2565b610230610417366004611b92565b610d54565b60006001600160a01b03821661046e5760405162461bcd60e51b8152602060048201526012602482015271494e56414c49445f544f5f4144445245535360701b60448201526064015b60405180910390fd5b61047c858585333387610df3565b90505b949350505050565b6001600160a01b03808216600090815260336020908152604080832093861683526001909301905220545b92915050565b336001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016146105005760405162461bcd60e51b815260040161046590611dfd565b60348190556040518181527f1cc1849a6602c3e91f2088cadea4381cc5717f2f28584197060ed2ebb434c16f9060200160405180910390a150565b600061054b848484333333610df3565b90505b9392505050565b60005460019081116105c05760405162461bcd60e51b815260206004820152602e60248201527f436f6e747261637420696e7374616e63652068617320616c726561647920626560448201526d195b881a5b9a5d1a585b1a5e995960921b6064820152608401610465565b60008190556001600160a01b0383166105d857600080fd5b6001600160a01b0382166105eb57600080fd5b603780546001600160a01b038086166001600160a01b0319928316811790935560388054918616919092161790556040517f28a48cbce43190d77247f342cf319b1607bff4ef716cf26b76cf7bb71baebaa590600090a26040516001600160a01b038316907f1edd2924f6393072c2968a5760a5137279a53938a172f9ae9a0e280368ea3f4690600090a2505050565b6001600160a01b038083166000908152603660205260408120549091339185911682146106e15760405162461bcd60e51b815260206004820152601460248201527310d3105253515497d5539055551213d49256915160621b6044820152606401610465565b6001600160a01b03851661072e5760405162461bcd60e51b8152602060048201526014602482015273494e56414c49445f555345525f4144445245535360601b6044820152606401610465565b6001600160a01b0384166107795760405162461bcd60e51b8152602060048201526012602482015271494e56414c49445f544f5f4144445245535360701b6044820152606401610465565b610787888888338989610df3565b98975050505050505050565b336001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016146107db5760405162461bcd60e51b815260040161046590611dfd565b8281146108225760405162461bcd60e51b815260206004820152601560248201527424a72b20a624a22fa1a7a72324a3aaa920aa24a7a760591b6044820152606401610465565b60008367ffffffffffffffff81111561083d5761083d611e2c565b60405190808252806020026020018201604052801561088857816020015b604080516060810182526000808252602080830182905292820152825260001990920191018161085b5790505b50905060005b84811015610a2b578383828181106108a8576108a8611e42565b905060200201358484838181106108c1576108c1611e42565b905060200201356001600160681b03161461092a5760405162461bcd60e51b8152602060048201526024808201527f496e646578206f766572666c6f7720617420656d697373696f6e73506572536560448201526318dbdb9960e21b6064820152608401610465565b85858281811061093c5761093c611e42565b90506020020160208101906109519190611ad1565b82828151811061096357610963611e42565b6020026020010151604001906001600160a01b031690816001600160a01b03168152505083838281811061099957610999611e42565b905060200201358282815181106109b2576109b2611e42565b60209081029190910101516001600160681b0390911690526109f98686838181106109df576109df611e42565b90506020020160208101906109f49190611ad1565b611099565b828281518110610a0b57610a0b611e42565b602090810291909101810151015280610a2381611e6e565b91505061088e565b50610a3581611108565b5050505050565b6001600160a01b038116600090815260356020526040812054818467ffffffffffffffff811115610a6f57610a6f611e2c565b604051908082528060200260200182016040528015610acd57816020015b610aba604051806060016040528060006001600160a01b0316815260200160008152602001600081525090565b815260200190600190039081610a8d5790505b50905060005b85811015610bb057868682818110610aed57610aed611e42565b9050602002016020810190610b029190611ad1565b828281518110610b1457610b14611e42565b60209081029190910101516001600160a01b039091169052610b5c878783818110610b4157610b41611e42565b9050602002016020810190610b569190611ad1565b86611277565b838381518110610b6e57610b6e611e42565b6020026020010151602001848481518110610b8b57610b8b611e42565b6020908102919091010151604001919091525280610ba881611e6e565b915050610ad3565b50610bc5610bbe858361136b565b8390611486565b9695505050505050565b6038546001600160a01b03163314610c185760405162461bcd60e51b815260206004820152600c60248201526b15539055551213d49256915160a21b6044820152606401610465565b6000610c2682840184611ad1565b90506000610c36878387896114a1565b90508015610cb9576001600160a01b038716600090815260356020526040902054610c619082611486565b6001600160a01b038816600081815260356020526040908190209290925590517f2468f9268c60ad90e2d49edb0032c8a001e733ae888b3ab8e982edf535be1a7690610cb09084815260200190565b60405180910390a25b50505050505050565b336001600160a01b037f00000000000000000000000000000000000000000000000000000000000000001614610d0a5760405162461bcd60e51b815260040161046590611dfd565b603780546001600160a01b0319166001600160a01b0383169081179091556040517f28a48cbce43190d77247f342cf319b1607bff4ef716cf26b76cf7bb71baebaa590600090a250565b336001600160a01b037f00000000000000000000000000000000000000000000000000000000000000001614610d9c5760405162461bcd60e51b815260040161046590611dfd565b6001600160a01b0382811660008181526036602052604080822080546001600160a01b0319169486169485179055517f4925eafc82d0c4d67889898eeed64b18488ab19811e61620f387026dec126a289190a35050565b600084610e0257506000610bc5565b6001600160a01b03831660009081526035602052604090205480861115610fe75760008767ffffffffffffffff811115610e3e57610e3e611e2c565b604051908082528060200260200182016040528015610e9c57816020015b610e89604051806060016040528060006001600160a01b0316815260200160008152602001600081525090565b815260200190600190039081610e5c5790505b50905060005b88811015610f7f57898982818110610ebc57610ebc611e42565b9050602002016020810190610ed19190611ad1565b828281518110610ee357610ee3611e42565b60209081029190910101516001600160a01b039091169052610f2b8a8a83818110610f1057610f10611e42565b9050602002016020810190610f259190611ad1565b87611277565b838381518110610f3d57610f3d611e42565b6020026020010151602001848481518110610f5a57610f5a611e42565b6020908102919091010151604001919091525280610f7781611e6e565b915050610ea2565b506000610f8c8683611562565b90508015610fe457610f9e8382611486565b9250856001600160a01b03167f2468f9268c60ad90e2d49edb0032c8a001e733ae888b3ab8e982edf535be1a7682604051610fdb91815260200190565b60405180910390a25b50505b80610ff6576000915050610bc5565b60008187116110055786611007565b815b90506110138183611e89565b6001600160a01b03861660009081526035602052604090205561103684826115ea565b856001600160a01b0316846001600160a01b0316866001600160a01b03167f5637d7f962248a7f05a7ab69eec6446e31f3d0a299d997f135a65c62806e78918460405161108591815260200190565b60405180910390a498975050505050505050565b60385460405163375b465560e21b81526001600160a01b038381166004830152600092169063dd6d195490602401602060405180830381865afa1580156110e4573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906104b29190611ea0565b60005b81518110156112735760006033600084848151811061112c5761112c611e42565b6020026020010151604001516001600160a01b03166001600160a01b03168152602001908152602001600020905061119f83838151811061116f5761116f611e42565b6020026020010151604001518285858151811061118e5761118e611e42565b602002602001015160200151611625565b508282815181106111b2576111b2611e42565b60209081029190910101515181546cffffffffffffffffffffffffff19166001600160681b0390911617815582518390839081106111f2576111f2611e42565b6020026020010151604001516001600160a01b03167f87fa03892a0556cb6b8f97e6d533a150d4d55fcbf275fff5fa003fa636bcc7fa84848151811061123a5761123a611e42565b602090810291909101810151516040516001600160681b0390911681520160405180910390a2508061126b81611e6e565b91505061110b565b5050565b60385460405163046e43b360e51b81526001600160a01b03848116600483015283811660248301526000928392911690638dc8766090604401602060405180830381865afa1580156112cd573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906112f19190611ea0565b60385460405163375b465560e21b81526001600160a01b0387811660048301529091169063dd6d195490602401602060405180830381865afa15801561133b573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061135f9190611ea0565b915091505b9250929050565b600080805b835181101561147e5760006033600086848151811061139157611391611e42565b602090810291909101810151516001600160a01b0316825281019190915260400160009081208054875191935061140c91600160681b82046001600160681b039081169290811691600160d01b90910464ffffffffff16908a90889081106113fb576113fb611e42565b602002602001015160400151611776565b905061146761146087858151811061142657611426611e42565b602002602001015160200151838560010160008c6001600160a01b03166001600160a01b0316815260200190815260200160002054611819565b8590611486565b93505050808061147690611e6e565b915050611370565b509392505050565b6000826114938382611eb9565b91508110156104b257600080fd5b6001600160a01b03808416600090815260336020908152604080832093881683526001840190915281205490919082806114dc888588611625565b90508083146115565786156114f9576114f6878285611819565b91505b6001600160a01b03808a1660008181526001870160205260409081902084905551918a16917fbb123b5c06d5408bbea3c4fef481578175cfb432e3b482c6186f02ed9086585b9061154d9085815260200190565b60405180910390a35b50979650505050505050565b600080805b835181101561147e576115d6610bbe8686848151811061158957611589611e42565b6020026020010151600001518785815181106115a7576115a7611e42565b6020026020010151602001518886815181106115c5576115c5611e42565b6020026020010151604001516114a1565b9150806115e281611e6e565b915050611567565b603754611273906001600160a01b037f0000000000000000000000000000000000000000000000000000000000000000811691168484611845565b81546000906001600160681b03600160681b82048116919081169064ffffffffff600160d01b90910416428114156116625782935050505061054e565b600061167084848489611776565b905083811461174c5780816001600160681b0316146116c25760405162461bcd60e51b815260206004820152600e60248201526d496e646578206f766572666c6f7760901b6044820152606401610465565b865471ffffffffffffffffffffffffffffffffffff60681b1916600160681b6001600160681b0383160264ffffffffff60d01b191617600160d01b4264ffffffffff16021787556040518181526001600160a01b038916907f5777ca300dfe5bead41006fbce4389794dbc0ed8d6cccebfaf94630aa04184bc9060200160405180910390a261176b565b865464ffffffffff60d01b1916600160d01b4264ffffffffff16021787555b979650505050505050565b603454600090841580611787575082155b8061179a575042846001600160801b0316145b806117ae575080846001600160801b031610155b156117bc578591505061047f565b60008142116117cb57426117cd565b815b905060006117e4826001600160801b0388166118a5565b9050610787886118138761180d6117fd6012600a611fb5565b6118078d886118c0565b906118c0565b906118ed565b90611486565b60006118276012600a611fb5565b61183b61183485856118a5565b86906118c0565b61054b9190611fc1565b604080516001600160a01b0385811660248301528416604482015260648082018490528251808303909101815260849091019091526020810180516001600160e01b03166323b872dd60e01b17905261189f9085906118f9565b50505050565b6000826118b28382611e89565b91508111156104b257600080fd5b60008215806118e4575081836118d68282611fe3565b92506118e29083611fc1565b145b6104b257600080fd5b600061054e8284611fc1565b61190b826001600160a01b0316611a80565b6119575760405162461bcd60e51b815260206004820152601f60248201527f5361666545524332303a2063616c6c20746f206e6f6e2d636f6e7472616374006044820152606401610465565b600080836001600160a01b0316836040516119729190612002565b6000604051808303816000865af19150503d80600081146119af576040519150601f19603f3d011682016040523d82523d6000602084013e6119b4565b606091505b509150915081611a065760405162461bcd60e51b815260206004820181905260248201527f5361666545524332303a206c6f772d6c6576656c2063616c6c206661696c65646044820152606401610465565b80511561189f5780806020019051810190611a21919061203d565b61189f5760405162461bcd60e51b815260206004820152602a60248201527f5361666545524332303a204552433230206f7065726174696f6e20646964206e6044820152691bdd081cdd58d8d9595960b21b6064820152608401610465565b6000813f7fc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a47081811480159061047f575050151592915050565b6001600160a01b0381168114611ace57600080fd5b50565b600060208284031215611ae357600080fd5b813561054e81611ab9565b60008083601f840112611b0057600080fd5b50813567ffffffffffffffff811115611b1857600080fd5b6020830191508360208260051b850101111561136457600080fd5b60008060008060608587031215611b4957600080fd5b843567ffffffffffffffff811115611b6057600080fd5b611b6c87828801611aee565b909550935050602085013591506040850135611b8781611ab9565b939692955090935050565b60008060408385031215611ba557600080fd5b8235611bb081611ab9565b91506020830135611bc081611ab9565b809150509250929050565b600060208284031215611bdd57600080fd5b5035919050565b600080600060408486031215611bf957600080fd5b833567ffffffffffffffff811115611c1057600080fd5b611c1c86828701611aee565b909790965060209590950135949350505050565b600080600080600060808688031215611c4857600080fd5b853567ffffffffffffffff811115611c5f57600080fd5b611c6b88828901611aee565b909650945050602086013592506040860135611c8681611ab9565b91506060860135611c9681611ab9565b809150509295509295909350565b60008060008060408587031215611cba57600080fd5b843567ffffffffffffffff80821115611cd257600080fd5b611cde88838901611aee565b90965094506020870135915080821115611cf757600080fd5b50611d0487828801611aee565b95989497509550505050565b600080600060408486031215611d2557600080fd5b833567ffffffffffffffff811115611d3c57600080fd5b611d4886828701611aee565b9094509250506020840135611d5c81611ab9565b809150509250925092565b600080600080600060808688031215611d7f57600080fd5b8535611d8a81611ab9565b94506020860135935060408601359250606086013567ffffffffffffffff80821115611db557600080fd5b818801915088601f830112611dc957600080fd5b813581811115611dd857600080fd5b896020828501011115611dea57600080fd5b9699959850939650602001949392505050565b60208082526015908201527427a7262cafa2a6a4a9a9a4a7a72fa6a0a720a3a2a960591b604082015260600190565b634e487b7160e01b600052604160045260246000fd5b634e487b7160e01b600052603260045260246000fd5b634e487b7160e01b600052601160045260246000fd5b6000600019821415611e8257611e82611e58565b5060010190565b600082821015611e9b57611e9b611e58565b500390565b600060208284031215611eb257600080fd5b5051919050565b60008219821115611ecc57611ecc611e58565b500190565b600181815b80851115611f0c578160001904821115611ef257611ef2611e58565b80851615611eff57918102915b93841c9390800290611ed6565b509250929050565b600082611f23575060016104b2565b81611f30575060006104b2565b8160018114611f465760028114611f5057611f6c565b60019150506104b2565b60ff841115611f6157611f61611e58565b50506001821b6104b2565b5060208310610133831016604e8410600b8410161715611f8f575081810a6104b2565b611f998383611ed1565b8060001904821115611fad57611fad611e58565b029392505050565b600061054e8383611f14565b600082611fde57634e487b7160e01b600052601260045260246000fd5b500490565b6000816000190483118215151615611ffd57611ffd611e58565b500290565b6000825160005b818110156120235760208186018101518583015201612009565b81811115612032576000828501525b509190910192915050565b60006020828403121561204f57600080fd5b8151801515811461054e57600080fdfea26469706673582212203d3d55dfe34e7abfbd8e614c4ab8a1245961561c62d5ef4d58bfcde2c922c34764736f6c634300080a0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061014d5760003560e01c8063919cd40f116100c3578063cc69afec1161007c578063cc69afec146102d5578063dde43cba1461036b578063e23ddec514610373578063f11b818814610384578063f5bb3e02146103f6578063f5cf673b1461040957600080fd5b8063919cd40f146102d557806399248ea7146102dd5780639ab99ddf14610304578063aaf5eb6814610317578063ac509b1a14610331578063cbcbb5071461034457600080fd5b806341485304116101155780634148530414610232578063485cc955146102455780636d34b96e1461025857806374d945ec1461026b57806379f171b2146102af5780638b599f26146102c257600080fd5b80631652e7b714610152578063198fa81e146101c05780633111e7b3146101f75780633373ee4c1461020a57806339ccbdd31461021d575b600080fd5b6101a0610160366004611ad1565b6001600160a01b0316600090815260336020526040902054600160681b81046001600160681b039081169290821691600160d01b900464ffffffffff1690565b604080519384526020840192909252908201526060015b60405180910390f35b6101e96101ce366004611ad1565b6001600160a01b031660009081526035602052604090205490565b6040519081526020016101b7565b6101e9610205366004611b33565b61041c565b6101e9610218366004611b92565b610487565b61023061022b366004611bcb565b6104b8565b005b6101e9610240366004611be4565b61053b565b610230610253366004611b92565b610555565b6101e9610266366004611c30565b61067b565b610297610279366004611ad1565b6001600160a01b039081166000908152603660205260409020541690565b6040516001600160a01b0390911681526020016101b7565b6102306102bd366004611ca4565b610793565b6101e96102d0366004611d10565b610a3c565b6034546101e9565b6102977f000000000000000000000000000000000000000000000000000000000000000081565b610230610312366004611d67565b610bcf565b61031f601281565b60405160ff90911681526020016101b7565b603854610297906001600160a01b031681565b6102977f000000000000000000000000000000000000000000000000000000000000000081565b6101e9600181565b6037546001600160a01b0316610297565b6103c9610392366004611ad1565b6033602052600090815260409020546001600160681b0380821691600160681b810490911690600160d01b900464ffffffffff1683565b604080516001600160681b03948516815293909216602084015264ffffffffff16908201526060016101b7565b610230610404366004611ad1565b610cc2565b610230610417366004611b92565b610d54565b60006001600160a01b03821661046e5760405162461bcd60e51b8152602060048201526012602482015271494e56414c49445f544f5f4144445245535360701b60448201526064015b60405180910390fd5b61047c858585333387610df3565b90505b949350505050565b6001600160a01b03808216600090815260336020908152604080832093861683526001909301905220545b92915050565b336001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016146105005760405162461bcd60e51b815260040161046590611dfd565b60348190556040518181527f1cc1849a6602c3e91f2088cadea4381cc5717f2f28584197060ed2ebb434c16f9060200160405180910390a150565b600061054b848484333333610df3565b90505b9392505050565b60005460019081116105c05760405162461bcd60e51b815260206004820152602e60248201527f436f6e747261637420696e7374616e63652068617320616c726561647920626560448201526d195b881a5b9a5d1a585b1a5e995960921b6064820152608401610465565b60008190556001600160a01b0383166105d857600080fd5b6001600160a01b0382166105eb57600080fd5b603780546001600160a01b038086166001600160a01b0319928316811790935560388054918616919092161790556040517f28a48cbce43190d77247f342cf319b1607bff4ef716cf26b76cf7bb71baebaa590600090a26040516001600160a01b038316907f1edd2924f6393072c2968a5760a5137279a53938a172f9ae9a0e280368ea3f4690600090a2505050565b6001600160a01b038083166000908152603660205260408120549091339185911682146106e15760405162461bcd60e51b815260206004820152601460248201527310d3105253515497d5539055551213d49256915160621b6044820152606401610465565b6001600160a01b03851661072e5760405162461bcd60e51b8152602060048201526014602482015273494e56414c49445f555345525f4144445245535360601b6044820152606401610465565b6001600160a01b0384166107795760405162461bcd60e51b8152602060048201526012602482015271494e56414c49445f544f5f4144445245535360701b6044820152606401610465565b610787888888338989610df3565b98975050505050505050565b336001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016146107db5760405162461bcd60e51b815260040161046590611dfd565b8281146108225760405162461bcd60e51b815260206004820152601560248201527424a72b20a624a22fa1a7a72324a3aaa920aa24a7a760591b6044820152606401610465565b60008367ffffffffffffffff81111561083d5761083d611e2c565b60405190808252806020026020018201604052801561088857816020015b604080516060810182526000808252602080830182905292820152825260001990920191018161085b5790505b50905060005b84811015610a2b578383828181106108a8576108a8611e42565b905060200201358484838181106108c1576108c1611e42565b905060200201356001600160681b03161461092a5760405162461bcd60e51b8152602060048201526024808201527f496e646578206f766572666c6f7720617420656d697373696f6e73506572536560448201526318dbdb9960e21b6064820152608401610465565b85858281811061093c5761093c611e42565b90506020020160208101906109519190611ad1565b82828151811061096357610963611e42565b6020026020010151604001906001600160a01b031690816001600160a01b03168152505083838281811061099957610999611e42565b905060200201358282815181106109b2576109b2611e42565b60209081029190910101516001600160681b0390911690526109f98686838181106109df576109df611e42565b90506020020160208101906109f49190611ad1565b611099565b828281518110610a0b57610a0b611e42565b602090810291909101810151015280610a2381611e6e565b91505061088e565b50610a3581611108565b5050505050565b6001600160a01b038116600090815260356020526040812054818467ffffffffffffffff811115610a6f57610a6f611e2c565b604051908082528060200260200182016040528015610acd57816020015b610aba604051806060016040528060006001600160a01b0316815260200160008152602001600081525090565b815260200190600190039081610a8d5790505b50905060005b85811015610bb057868682818110610aed57610aed611e42565b9050602002016020810190610b029190611ad1565b828281518110610b1457610b14611e42565b60209081029190910101516001600160a01b039091169052610b5c878783818110610b4157610b41611e42565b9050602002016020810190610b569190611ad1565b86611277565b838381518110610b6e57610b6e611e42565b6020026020010151602001848481518110610b8b57610b8b611e42565b6020908102919091010151604001919091525280610ba881611e6e565b915050610ad3565b50610bc5610bbe858361136b565b8390611486565b9695505050505050565b6038546001600160a01b03163314610c185760405162461bcd60e51b815260206004820152600c60248201526b15539055551213d49256915160a21b6044820152606401610465565b6000610c2682840184611ad1565b90506000610c36878387896114a1565b90508015610cb9576001600160a01b038716600090815260356020526040902054610c619082611486565b6001600160a01b038816600081815260356020526040908190209290925590517f2468f9268c60ad90e2d49edb0032c8a001e733ae888b3ab8e982edf535be1a7690610cb09084815260200190565b60405180910390a25b50505050505050565b336001600160a01b037f00000000000000000000000000000000000000000000000000000000000000001614610d0a5760405162461bcd60e51b815260040161046590611dfd565b603780546001600160a01b0319166001600160a01b0383169081179091556040517f28a48cbce43190d77247f342cf319b1607bff4ef716cf26b76cf7bb71baebaa590600090a250565b336001600160a01b037f00000000000000000000000000000000000000000000000000000000000000001614610d9c5760405162461bcd60e51b815260040161046590611dfd565b6001600160a01b0382811660008181526036602052604080822080546001600160a01b0319169486169485179055517f4925eafc82d0c4d67889898eeed64b18488ab19811e61620f387026dec126a289190a35050565b600084610e0257506000610bc5565b6001600160a01b03831660009081526035602052604090205480861115610fe75760008767ffffffffffffffff811115610e3e57610e3e611e2c565b604051908082528060200260200182016040528015610e9c57816020015b610e89604051806060016040528060006001600160a01b0316815260200160008152602001600081525090565b815260200190600190039081610e5c5790505b50905060005b88811015610f7f57898982818110610ebc57610ebc611e42565b9050602002016020810190610ed19190611ad1565b828281518110610ee357610ee3611e42565b60209081029190910101516001600160a01b039091169052610f2b8a8a83818110610f1057610f10611e42565b9050602002016020810190610f259190611ad1565b87611277565b838381518110610f3d57610f3d611e42565b6020026020010151602001848481518110610f5a57610f5a611e42565b6020908102919091010151604001919091525280610f7781611e6e565b915050610ea2565b506000610f8c8683611562565b90508015610fe457610f9e8382611486565b9250856001600160a01b03167f2468f9268c60ad90e2d49edb0032c8a001e733ae888b3ab8e982edf535be1a7682604051610fdb91815260200190565b60405180910390a25b50505b80610ff6576000915050610bc5565b60008187116110055786611007565b815b90506110138183611e89565b6001600160a01b03861660009081526035602052604090205561103684826115ea565b856001600160a01b0316846001600160a01b0316866001600160a01b03167f5637d7f962248a7f05a7ab69eec6446e31f3d0a299d997f135a65c62806e78918460405161108591815260200190565b60405180910390a498975050505050505050565b60385460405163375b465560e21b81526001600160a01b038381166004830152600092169063dd6d195490602401602060405180830381865afa1580156110e4573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906104b29190611ea0565b60005b81518110156112735760006033600084848151811061112c5761112c611e42565b6020026020010151604001516001600160a01b03166001600160a01b03168152602001908152602001600020905061119f83838151811061116f5761116f611e42565b6020026020010151604001518285858151811061118e5761118e611e42565b602002602001015160200151611625565b508282815181106111b2576111b2611e42565b60209081029190910101515181546cffffffffffffffffffffffffff19166001600160681b0390911617815582518390839081106111f2576111f2611e42565b6020026020010151604001516001600160a01b03167f87fa03892a0556cb6b8f97e6d533a150d4d55fcbf275fff5fa003fa636bcc7fa84848151811061123a5761123a611e42565b602090810291909101810151516040516001600160681b0390911681520160405180910390a2508061126b81611e6e565b91505061110b565b5050565b60385460405163046e43b360e51b81526001600160a01b03848116600483015283811660248301526000928392911690638dc8766090604401602060405180830381865afa1580156112cd573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906112f19190611ea0565b60385460405163375b465560e21b81526001600160a01b0387811660048301529091169063dd6d195490602401602060405180830381865afa15801561133b573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061135f9190611ea0565b915091505b9250929050565b600080805b835181101561147e5760006033600086848151811061139157611391611e42565b602090810291909101810151516001600160a01b0316825281019190915260400160009081208054875191935061140c91600160681b82046001600160681b039081169290811691600160d01b90910464ffffffffff16908a90889081106113fb576113fb611e42565b602002602001015160400151611776565b905061146761146087858151811061142657611426611e42565b602002602001015160200151838560010160008c6001600160a01b03166001600160a01b0316815260200190815260200160002054611819565b8590611486565b93505050808061147690611e6e565b915050611370565b509392505050565b6000826114938382611eb9565b91508110156104b257600080fd5b6001600160a01b03808416600090815260336020908152604080832093881683526001840190915281205490919082806114dc888588611625565b90508083146115565786156114f9576114f6878285611819565b91505b6001600160a01b03808a1660008181526001870160205260409081902084905551918a16917fbb123b5c06d5408bbea3c4fef481578175cfb432e3b482c6186f02ed9086585b9061154d9085815260200190565b60405180910390a35b50979650505050505050565b600080805b835181101561147e576115d6610bbe8686848151811061158957611589611e42565b6020026020010151600001518785815181106115a7576115a7611e42565b6020026020010151602001518886815181106115c5576115c5611e42565b6020026020010151604001516114a1565b9150806115e281611e6e565b915050611567565b603754611273906001600160a01b037f0000000000000000000000000000000000000000000000000000000000000000811691168484611845565b81546000906001600160681b03600160681b82048116919081169064ffffffffff600160d01b90910416428114156116625782935050505061054e565b600061167084848489611776565b905083811461174c5780816001600160681b0316146116c25760405162461bcd60e51b815260206004820152600e60248201526d496e646578206f766572666c6f7760901b6044820152606401610465565b865471ffffffffffffffffffffffffffffffffffff60681b1916600160681b6001600160681b0383160264ffffffffff60d01b191617600160d01b4264ffffffffff16021787556040518181526001600160a01b038916907f5777ca300dfe5bead41006fbce4389794dbc0ed8d6cccebfaf94630aa04184bc9060200160405180910390a261176b565b865464ffffffffff60d01b1916600160d01b4264ffffffffff16021787555b979650505050505050565b603454600090841580611787575082155b8061179a575042846001600160801b0316145b806117ae575080846001600160801b031610155b156117bc578591505061047f565b60008142116117cb57426117cd565b815b905060006117e4826001600160801b0388166118a5565b9050610787886118138761180d6117fd6012600a611fb5565b6118078d886118c0565b906118c0565b906118ed565b90611486565b60006118276012600a611fb5565b61183b61183485856118a5565b86906118c0565b61054b9190611fc1565b604080516001600160a01b0385811660248301528416604482015260648082018490528251808303909101815260849091019091526020810180516001600160e01b03166323b872dd60e01b17905261189f9085906118f9565b50505050565b6000826118b28382611e89565b91508111156104b257600080fd5b60008215806118e4575081836118d68282611fe3565b92506118e29083611fc1565b145b6104b257600080fd5b600061054e8284611fc1565b61190b826001600160a01b0316611a80565b6119575760405162461bcd60e51b815260206004820152601f60248201527f5361666545524332303a2063616c6c20746f206e6f6e2d636f6e7472616374006044820152606401610465565b600080836001600160a01b0316836040516119729190612002565b6000604051808303816000865af19150503d80600081146119af576040519150601f19603f3d011682016040523d82523d6000602084013e6119b4565b606091505b509150915081611a065760405162461bcd60e51b815260206004820181905260248201527f5361666545524332303a206c6f772d6c6576656c2063616c6c206661696c65646044820152606401610465565b80511561189f5780806020019051810190611a21919061203d565b61189f5760405162461bcd60e51b815260206004820152602a60248201527f5361666545524332303a204552433230206f7065726174696f6e20646964206e6044820152691bdd081cdd58d8d9595960b21b6064820152608401610465565b6000813f7fc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a47081811480159061047f575050151592915050565b6001600160a01b0381168114611ace57600080fd5b50565b600060208284031215611ae357600080fd5b813561054e81611ab9565b60008083601f840112611b0057600080fd5b50813567ffffffffffffffff811115611b1857600080fd5b6020830191508360208260051b850101111561136457600080fd5b60008060008060608587031215611b4957600080fd5b843567ffffffffffffffff811115611b6057600080fd5b611b6c87828801611aee565b909550935050602085013591506040850135611b8781611ab9565b939692955090935050565b60008060408385031215611ba557600080fd5b8235611bb081611ab9565b91506020830135611bc081611ab9565b809150509250929050565b600060208284031215611bdd57600080fd5b5035919050565b600080600060408486031215611bf957600080fd5b833567ffffffffffffffff811115611c1057600080fd5b611c1c86828701611aee565b909790965060209590950135949350505050565b600080600080600060808688031215611c4857600080fd5b853567ffffffffffffffff811115611c5f57600080fd5b611c6b88828901611aee565b909650945050602086013592506040860135611c8681611ab9565b91506060860135611c9681611ab9565b809150509295509295909350565b60008060008060408587031215611cba57600080fd5b843567ffffffffffffffff80821115611cd257600080fd5b611cde88838901611aee565b90965094506020870135915080821115611cf757600080fd5b50611d0487828801611aee565b95989497509550505050565b600080600060408486031215611d2557600080fd5b833567ffffffffffffffff811115611d3c57600080fd5b611d4886828701611aee565b9094509250506020840135611d5c81611ab9565b809150509250925092565b600080600080600060808688031215611d7f57600080fd5b8535611d8a81611ab9565b94506020860135935060408601359250606086013567ffffffffffffffff80821115611db557600080fd5b818801915088601f830112611dc957600080fd5b813581811115611dd857600080fd5b896020828501011115611dea57600080fd5b9699959850939650602001949392505050565b60208082526015908201527427a7262cafa2a6a4a9a9a4a7a72fa6a0a720a3a2a960591b604082015260600190565b634e487b7160e01b600052604160045260246000fd5b634e487b7160e01b600052603260045260246000fd5b634e487b7160e01b600052601160045260246000fd5b6000600019821415611e8257611e82611e58565b5060010190565b600082821015611e9b57611e9b611e58565b500390565b600060208284031215611eb257600080fd5b5051919050565b60008219821115611ecc57611ecc611e58565b500190565b600181815b80851115611f0c578160001904821115611ef257611ef2611e58565b80851615611eff57918102915b93841c9390800290611ed6565b509250929050565b600082611f23575060016104b2565b81611f30575060006104b2565b8160018114611f465760028114611f5057611f6c565b60019150506104b2565b60ff841115611f6157611f61611e58565b50506001821b6104b2565b5060208310610133831016604e8410600b8410161715611f8f575081810a6104b2565b611f998383611ed1565b8060001904821115611fad57611fad611e58565b029392505050565b600061054e8383611f14565b600082611fde57634e487b7160e01b600052601260045260246000fd5b500490565b6000816000190483118215151615611ffd57611ffd611e58565b500290565b6000825160005b818110156120235760208186018101518583015201612009565b81811115612032576000828501525b509190910192915050565b60006020828403121561204f57600080fd5b8151801515811461054e57600080fdfea26469706673582212203d3d55dfe34e7abfbd8e614c4ab8a1245961561c62d5ef4d58bfcde2c922c34764736f6c634300080a0033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "DISTRIBUTION_END()": {
+        "details": "for backwards compatibility with the previous DistributionManager used",
+        "returns": {
+          "_0": "The end of the distribution*"
+        }
+      },
+      "claimRewards(address[],uint256,address)": {
+        "details": "Claims reward for an user to the desired address, on all the assets of the lending pool, accumulating the pending rewards",
+        "params": {
+          "amount": "Amount of rewards to claim",
+          "to": "Address that will be receiving the rewards"
+        },
+        "returns": {
+          "_0": "Rewards claimed*"
+        }
+      },
+      "claimRewardsOnBehalf(address[],uint256,address,address)": {
+        "details": "Claims reward for an user on behalf, on all the assets of the lending pool, accumulating the pending rewards. The caller must be whitelisted via \"allowClaimOnBehalf\" function by the RewardsAdmin role manager",
+        "params": {
+          "amount": "Amount of rewards to claim",
+          "to": "Address that will be receiving the rewards",
+          "user": "Address to check and claim rewards"
+        },
+        "returns": {
+          "_0": "Rewards claimed*"
+        }
+      },
+      "claimRewardsToSelf(address[],uint256)": {
+        "details": "Claims reward for msg.sender, on all the assets of the lending pool, accumulating the pending rewards",
+        "params": {
+          "amount": "Amount of rewards to claim"
+        },
+        "returns": {
+          "_0": "Rewards claimed*"
+        }
+      },
+      "configureAssets(address[],uint256[])": {
+        "details": "Configure assets for a certain rewards emission",
+        "params": {
+          "assets": "The assets to incentivize",
+          "emissionsPerSecond": "The emission for each asset"
+        }
+      },
+      "getAssetData(address)": {
+        "details": "Returns the configuration of the distribution for a certain asset",
+        "params": {
+          "asset": "The address of the reference asset of the distribution"
+        },
+        "returns": {
+          "_0": "The asset index, the emission per second and the last updated timestamp*"
+        }
+      },
+      "getClaimer(address)": {
+        "details": "Returns the whitelisted claimer for a certain address (0x0 if not set)",
+        "params": {
+          "user": "The address of the user"
+        },
+        "returns": {
+          "_0": "The claimer address"
+        }
+      },
+      "getDistributionEnd()": {
+        "details": "Gets the end date for the distribution",
+        "returns": {
+          "_0": "The end of the distribution*"
+        }
+      },
+      "getRewardsBalance(address[],address)": {
+        "details": "Returns the total of rewards of an user, already accrued + not yet accrued",
+        "params": {
+          "user": "The address of the user"
+        },
+        "returns": {
+          "_0": "The rewards*"
+        }
+      },
+      "getRewardsVault()": {
+        "details": "returns the current rewards vault contract",
+        "returns": {
+          "_0": "address"
+        }
+      },
+      "getUserAssetData(address,address)": {
+        "details": "Returns the data of an user on a distribution",
+        "params": {
+          "asset": "The address of the reference asset of the distribution",
+          "user": "Address of the user"
+        },
+        "returns": {
+          "_0": "The new index*"
+        }
+      },
+      "getUserUnclaimedRewards(address)": {
+        "details": "returns the unclaimed rewards of the user",
+        "params": {
+          "user": "the address of the user"
+        },
+        "returns": {
+          "_0": "the unclaimed user rewards"
+        }
+      },
+      "initialize(address,address)": {
+        "details": "Initialize AaveIncentivesController",
+        "params": {
+          "rewardsVault": "rewards vault to pull ERC20 funds*"
+        }
+      },
+      "setClaimer(address,address)": {
+        "details": "Whitelists an address to claim the rewards on behalf of another address",
+        "params": {
+          "claimer": "The address of the claimer",
+          "user": "The address of the user"
+        }
+      },
+      "setDistributionEnd(uint256)": {
+        "details": "Sets the end date for the distribution",
+        "params": {
+          "distributionEnd": "The end date timestamp*"
+        }
+      },
+      "setRewardsVault(address)": {
+        "details": "update the rewards vault address, only allowed by the Rewards admin",
+        "params": {
+          "rewardsVault": "The address of the rewards vault*"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 3160,
+        "contract": "contracts/incentives/OpenSkyBespokeIncentivesControllerBorrower.sol:OpenSkyBespokeIncentivesControllerBorrower",
+        "label": "lastInitializedRevision",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 3191,
+        "contract": "contracts/incentives/OpenSkyBespokeIncentivesControllerBorrower.sol:OpenSkyBespokeIncentivesControllerBorrower",
+        "label": "______gap",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_array(t_uint256)50_storage"
+      },
+      {
+        "astId": 1661,
+        "contract": "contracts/incentives/OpenSkyBespokeIncentivesControllerBorrower.sol:OpenSkyBespokeIncentivesControllerBorrower",
+        "label": "assets",
+        "offset": 0,
+        "slot": "51",
+        "type": "t_mapping(t_address,t_struct(AssetData)1651_storage)"
+      },
+      {
+        "astId": 1663,
+        "contract": "contracts/incentives/OpenSkyBespokeIncentivesControllerBorrower.sol:OpenSkyBespokeIncentivesControllerBorrower",
+        "label": "_distributionEnd",
+        "offset": 0,
+        "slot": "52",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 1042,
+        "contract": "contracts/incentives/OpenSkyBespokeIncentivesControllerBorrower.sol:OpenSkyBespokeIncentivesControllerBorrower",
+        "label": "_usersUnclaimedRewards",
+        "offset": 0,
+        "slot": "53",
+        "type": "t_mapping(t_address,t_uint256)"
+      },
+      {
+        "astId": 1046,
+        "contract": "contracts/incentives/OpenSkyBespokeIncentivesControllerBorrower.sol:OpenSkyBespokeIncentivesControllerBorrower",
+        "label": "_authorizedClaimers",
+        "offset": 0,
+        "slot": "54",
+        "type": "t_mapping(t_address,t_address)"
+      },
+      {
+        "astId": 24,
+        "contract": "contracts/incentives/OpenSkyBespokeIncentivesControllerBorrower.sol:OpenSkyBespokeIncentivesControllerBorrower",
+        "label": "_rewardsVault",
+        "offset": 0,
+        "slot": "55",
+        "type": "t_address"
+      },
+      {
+        "astId": 26,
+        "contract": "contracts/incentives/OpenSkyBespokeIncentivesControllerBorrower.sol:OpenSkyBespokeIncentivesControllerBorrower",
+        "label": "OPENSKY_BESPOKE_MARKET",
+        "offset": 0,
+        "slot": "56",
+        "type": "t_address"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_array(t_uint256)50_storage": {
+        "base": "t_uint256",
+        "encoding": "inplace",
+        "label": "uint256[50]",
+        "numberOfBytes": "1600"
+      },
+      "t_mapping(t_address,t_address)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => address)",
+        "numberOfBytes": "32",
+        "value": "t_address"
+      },
+      "t_mapping(t_address,t_struct(AssetData)1651_storage)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => struct DistributionManager.AssetData)",
+        "numberOfBytes": "32",
+        "value": "t_struct(AssetData)1651_storage"
+      },
+      "t_mapping(t_address,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_struct(AssetData)1651_storage": {
+        "encoding": "inplace",
+        "label": "struct DistributionManager.AssetData",
+        "members": [
+          {
+            "astId": 1642,
+            "contract": "contracts/incentives/OpenSkyBespokeIncentivesControllerBorrower.sol:OpenSkyBespokeIncentivesControllerBorrower",
+            "label": "emissionPerSecond",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint104"
+          },
+          {
+            "astId": 1644,
+            "contract": "contracts/incentives/OpenSkyBespokeIncentivesControllerBorrower.sol:OpenSkyBespokeIncentivesControllerBorrower",
+            "label": "index",
+            "offset": 13,
+            "slot": "0",
+            "type": "t_uint104"
+          },
+          {
+            "astId": 1646,
+            "contract": "contracts/incentives/OpenSkyBespokeIncentivesControllerBorrower.sol:OpenSkyBespokeIncentivesControllerBorrower",
+            "label": "lastUpdateTimestamp",
+            "offset": 26,
+            "slot": "0",
+            "type": "t_uint40"
+          },
+          {
+            "astId": 1650,
+            "contract": "contracts/incentives/OpenSkyBespokeIncentivesControllerBorrower.sol:OpenSkyBespokeIncentivesControllerBorrower",
+            "label": "users",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_address,t_uint256)"
+          }
+        ],
+        "numberOfBytes": "64"
+      },
+      "t_uint104": {
+        "encoding": "inplace",
+        "label": "uint104",
+        "numberOfBytes": "13"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      },
+      "t_uint40": {
+        "encoding": "inplace",
+        "label": "uint40",
+        "numberOfBytes": "5"
+      }
+    }
+  }
+}

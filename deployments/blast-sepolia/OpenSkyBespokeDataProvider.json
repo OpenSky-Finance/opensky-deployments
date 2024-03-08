@@ -1,0 +1,210 @@
+{
+  "address": "0xc64338F56C3AD8d16Db4f915fdD4545bD74D037b",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract IOpenSkyBespokeMarket",
+          "name": "MARKET_",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "MARKET",
+      "outputs": [
+        {
+          "internalType": "contract IOpenSkyBespokeMarket",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "loanId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getLoanData",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "tokenAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tokenAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "nftManager",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "borrower",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "lender",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint128",
+              "name": "borrowRate",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "interestPerSecond",
+              "type": "uint128"
+            },
+            {
+              "internalType": "address",
+              "name": "currency",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "lendAsset",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "reserveFactor",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "overdueLoanFeeFactor",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint40",
+              "name": "borrowDuration",
+              "type": "uint40"
+            },
+            {
+              "internalType": "uint40",
+              "name": "borrowBegin",
+              "type": "uint40"
+            },
+            {
+              "internalType": "uint40",
+              "name": "borrowOverdueTime",
+              "type": "uint40"
+            },
+            {
+              "internalType": "uint40",
+              "name": "liquidatableTime",
+              "type": "uint40"
+            },
+            {
+              "internalType": "bool",
+              "name": "isProrated",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "autoConvertWhenRepay",
+              "type": "bool"
+            },
+            {
+              "internalType": "enum BespokeTypes.LoanStatus",
+              "name": "status",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "loanId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "borrowBalance",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "penalty",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "borrowInterest",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct IOpenSkyBespokeDataProvider.LoanDataUI",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x63ebf999e25d863494c603430a90e8f875db3f0dff1e7277d384305e1c7ceede",
+  "receipt": {
+    "to": null,
+    "from": "0x218513C58A4781a5B88De6230caA29aBCe2Ccd75",
+    "contractAddress": "0xc64338F56C3AD8d16Db4f915fdD4545bD74D037b",
+    "transactionIndex": 2,
+    "gasUsed": "564597",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xc2465e386ff5803e499b80d5fcca347c5ca2d685803dd69c28432dfd138f6e32",
+    "transactionHash": "0x63ebf999e25d863494c603430a90e8f875db3f0dff1e7277d384305e1c7ceede",
+    "logs": [],
+    "blockNumber": 2569338,
+    "cumulativeGasUsed": "663528",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0xa7Fb3F5F731955fB9cAd08bE3Ffb095d1cA18AEB"
+  ],
+  "solcInputHash": "88f70ef30a97ad95dcfad3d4587a7e7c",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract IOpenSkyBespokeMarket\",\"name\":\"MARKET_\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"MARKET\",\"outputs\":[{\"internalType\":\"contract IOpenSkyBespokeMarket\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"loanId\",\"type\":\"uint256\"}],\"name\":\"getLoanData\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"tokenAmount\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"nftManager\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"borrower\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"lender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"uint128\",\"name\":\"borrowRate\",\"type\":\"uint128\"},{\"internalType\":\"uint128\",\"name\":\"interestPerSecond\",\"type\":\"uint128\"},{\"internalType\":\"address\",\"name\":\"currency\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"lendAsset\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"reserveFactor\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"overdueLoanFeeFactor\",\"type\":\"uint256\"},{\"internalType\":\"uint40\",\"name\":\"borrowDuration\",\"type\":\"uint40\"},{\"internalType\":\"uint40\",\"name\":\"borrowBegin\",\"type\":\"uint40\"},{\"internalType\":\"uint40\",\"name\":\"borrowOverdueTime\",\"type\":\"uint40\"},{\"internalType\":\"uint40\",\"name\":\"liquidatableTime\",\"type\":\"uint40\"},{\"internalType\":\"bool\",\"name\":\"isProrated\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"autoConvertWhenRepay\",\"type\":\"bool\"},{\"internalType\":\"enum BespokeTypes.LoanStatus\",\"name\":\"status\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"loanId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"borrowBalance\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"penalty\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"borrowInterest\",\"type\":\"uint256\"}],\"internalType\":\"struct IOpenSkyBespokeDataProvider.LoanDataUI\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/bespokemarket/OpenSkyBespokeDataProvider.sol\":\"OpenSkyBespokeDataProvider\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/bespokemarket/OpenSkyBespokeDataProvider.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nimport './interfaces/IOpenSkyBespokeMarket.sol';\\nimport './interfaces/IOpenSkyBespokeDataProvider.sol';\\nimport './libraries/BespokeTypes.sol';\\n\\n/*\\n *  a helper contract to aggregate data for front-end\\n */\\ncontract OpenSkyBespokeDataProvider is  IOpenSkyBespokeDataProvider{\\n    IOpenSkyBespokeMarket public immutable MARKET;\\n\\n    constructor(IOpenSkyBespokeMarket MARKET_) {\\n        MARKET = MARKET_;\\n    }\\n\\n    function getLoanData(uint256 loanId) external view override returns (LoanDataUI memory) {\\n        BespokeTypes.LoanData memory loan = MARKET.getLoanData(loanId);\\n        return\\n            LoanDataUI({\\n                tokenAddress: loan.tokenAddress,\\n                tokenId: loan.tokenId,\\n                tokenAmount: loan.tokenAmount,\\n                nftManager:loan.nftManager,\\n                borrower: loan.borrower,\\n                lender: loan.lender,\\n                amount:loan.amount,\\n                borrowRate: loan.borrowRate,\\n                interestPerSecond: loan.interestPerSecond,\\n                currency: loan.currency,\\n                lendAsset:loan.lendAsset,\\n                reserveFactor:loan.reserveFactor,\\n                overdueLoanFeeFactor:loan.overdueLoanFeeFactor,\\n                borrowDuration: loan.borrowDuration,\\n                borrowBegin: loan.borrowBegin,\\n                borrowOverdueTime: loan.borrowOverdueTime,\\n                liquidatableTime: loan.liquidatableTime,\\n                isProrated:loan.isProrated,\\n                autoConvertWhenRepay:loan.autoConvertWhenRepay,\\n                status: loan.status,\\n                // extra\\n                loanId: loanId,\\n                borrowBalance: MARKET.getBorrowBalance(loanId),\\n                penalty: MARKET.getPenalty(loanId),\\n                borrowInterest:MARKET.getBorrowInterest(loanId)\\n            });\\n    }\\n}\\n\",\"keccak256\":\"0x6c2cea6cd26a70ff033f0b33f3ed1187d71992bddac54c98aaae11e6517b58ef\",\"license\":\"MIT\"},\"contracts/bespokemarket/interfaces/IOpenSkyBespokeDataProvider.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nimport './IOpenSkyBespokeMarket.sol';\\nimport '../libraries/BespokeTypes.sol';\\n\\ninterface IOpenSkyBespokeDataProvider {\\n    struct LoanDataUI {\\n        address tokenAddress;\\n        uint256 tokenId;\\n        uint256 tokenAmount; // 1 for ERC721, 1+ for ERC1155\\n        address nftManager;\\n        address borrower;\\n        address lender;\\n        uint256 amount;\\n        uint128 borrowRate;\\n        uint128 interestPerSecond;\\n        address currency;\\n        address lendAsset;\\n        uint256 reserveFactor;\\n        uint256 overdueLoanFeeFactor;\\n        uint40 borrowDuration;\\n        uint40 borrowBegin;\\n        uint40 borrowOverdueTime;\\n        uint40 liquidatableTime;\\n        bool isProrated;\\n        bool autoConvertWhenRepay;\\n        BespokeTypes.LoanStatus status;\\n        \\n        // extra fields\\n        uint256 loanId;\\n        uint256 borrowBalance;\\n        uint256 penalty;\\n        uint256 borrowInterest;\\n    }\\n\\n    function getLoanData(uint256 loanId) external view returns (LoanDataUI memory);\\n}\\n\",\"keccak256\":\"0xa48ceda741bcc96eef777ed8cf996c2c5de70ffdddb8777e1d600e7b64e644c1\",\"license\":\"MIT\"},\"contracts/bespokemarket/interfaces/IOpenSkyBespokeMarket.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nimport '../libraries/BespokeTypes.sol';\\n\\ninterface IOpenSkyBespokeMarket {\\n    event CancelAllOffers(address indexed sender, uint256 nonce);\\n\\n    event CancelMultipleOffers(address indexed sender, uint256[] nonces);\\n\\n    event TakeBorrowOffer(\\n        bytes32 offerHash,\\n        uint256 indexed loanId,\\n        address indexed lender,\\n        address indexed borrower,\\n        uint256 nonce\\n    );\\n\\n    event TakeLendOffer(\\n        bytes32 offerHash,\\n        uint256 indexed loanId,\\n        address indexed lender,\\n        address indexed borrower,\\n        address onBehalfOf,\\n        uint256 nonce,\\n        uint256 nonceOrder\\n    );\\n\\n    event Repay(uint256 indexed loanId, address indexed operator, address indexed receiver);\\n\\n    event Foreclose(uint256 indexed loanId, address indexed operator, address indexed receiver);\\n\\n    function takeBorrowOffer(\\n        BespokeTypes.Offer memory offerData,\\n        uint256 supplyAmount,\\n        uint256 supplyDuration,\\n        address lendAsset,\\n        bool autoConvertWhenRepay\\n    ) external returns (uint256);\\n\\n    function takeLendOffer(\\n        BespokeTypes.Offer memory offerData,\\n        uint256 tokenId,\\n        uint256 borrowAmount,\\n        uint256 borrowDuration,\\n        address onBehalfOf,\\n        bytes memory params\\n    ) external returns (uint256);\\n\\n    function repay(uint256 loanId) external;\\n\\n    function foreclose(uint256 loanId) external;\\n\\n    function cancelAllBorrowOffersForSender(uint256 minNonce_) external;\\n\\n    function cancelMultipleBorrowOffers(uint256[] calldata offerNonces) external;\\n\\n    function isValidNonce(address account, uint256 nonce) external view returns (bool);\\n\\n    function getLoanData(uint256 loanId) external view returns (BespokeTypes.LoanData memory);\\n\\n    function getStatus(uint256 loanId) external view returns (BespokeTypes.LoanStatus);\\n\\n    function getBorrowInterest(uint256 loanId) external view returns (uint256);\\n\\n    function getBorrowBalance(uint256 loanId) external view returns (uint256);\\n\\n    function getPenalty(uint256 loanId) external view returns (uint256);\\n}\\n\",\"keccak256\":\"0x26e2311705ef5467421b2c14655f968cf91672decf9776eae50ac528c1122bee\",\"license\":\"MIT\"},\"contracts/bespokemarket/libraries/BespokeTypes.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.10;\\n\\nlibrary BespokeTypes {\\n    struct Offer {\\n        bool isProrated; // whether to pay interest a fixed-time when repay early\\n        bool autoConvertWhenRepay; // when currency!=lendAsset, whether to convert currency to lendAsset for lender when repay. Determined by lender.\\n        OfferType offerType;\\n        address tokenAddress;\\n        uint256 tokenId;\\n        uint256 tokenAmount; // 1 for ERC721, 1+ for ERC1155\\n        address signer; //borrower or lender\\n        uint256 borrowAmountMin;\\n        uint256 borrowAmountMax;\\n        uint40 borrowDurationMin;\\n        uint40 borrowDurationMax;\\n        uint128 borrowRate;\\n        address currency;  // Asset to borrow or receive when loan created. Borrower should also use it for repay.\\n        address lendAsset; // Using which token to lend. Determined by lender and should be zero address for borrow offer.\\n        uint256 nonce;\\n        uint256 nonceMaxTimes;// should be 1 for a borrow offer\\n        uint256 deadline;\\n        address strategy; // used for lend offer. should be zero address for borrow offer\\n        bytes params;\\n        uint8 v; // v: parameter (27 or 28)\\n        bytes32 r; // r: parameter\\n        bytes32 s; // s: parameter\\n    }\\n\\n    struct LoanData {\\n        address tokenAddress;\\n        uint256 tokenId;\\n        uint256 tokenAmount; // 1 for ERC721, 1+ for ERC1155\\n        address nftManager;\\n        address borrower;\\n        address lender;\\n        uint256 amount;\\n        uint128 borrowRate;\\n        uint128 interestPerSecond;\\n        address currency;\\n        address lendAsset;\\n        uint256 reserveFactor;\\n        uint256 overdueLoanFeeFactor;\\n        uint40 borrowDuration;\\n        uint40 borrowBegin;\\n        uint40 borrowOverdueTime;\\n        uint40 liquidatableTime;\\n        bool isProrated;\\n        bool autoConvertWhenRepay;\\n        LoanStatus status;\\n    }\\n\\n    enum OfferType {\\n        BORROW, // borrow offer\\n        LEND // lend offer\\n    }\\n\\n    struct TakeBorrowInfo {\\n        uint256 borrowAmount;\\n        uint256 borrowDuration;\\n        address lendAsset;\\n        bool autoConvertWhenRepay;\\n    }\\n\\n    struct TakeLendInfo {\\n        uint256 borrowAmount;\\n        uint256 borrowDuration;\\n        uint256 tokenId;\\n        address onBehalfOf;\\n        bytes params;\\n    }\\n\\n    // params for lend strategy\\n    struct TakeLendInfoForStrategy {\\n        address taker;\\n        uint256 tokenId;\\n        bytes params;\\n    }\\n\\n    enum LoanStatus {\\n        NONE,\\n        BORROWING,\\n        OVERDUE,\\n        LIQUIDATABLE\\n    }\\n\\n    struct WhitelistInfo {\\n        bool enabled;\\n        uint256 minBorrowDuration;\\n        uint256 maxBorrowDuration;\\n        uint256 overdueDuration;\\n    }\\n\\n    struct Counter {\\n        // This variable should never be directly accessed by users of the library: interactions must be restricted to\\n        // the library's function. As of Solidity v0.5.2, this cannot be enforced, though there is a proposal to add\\n        // this feature: see https://github.com/ethereum/solidity/issues/4637\\n        uint256 _value; // default: 0\\n    }\\n\\n    struct NonceInfo {\\n        bool invalid;\\n        uint256 usedTimes;\\n        bytes32 offerHash;\\n    }\\n}\\n\",\"keccak256\":\"0xc1c1fdc3ed498c4e500329e331e52c682d8b8f99cbc96337644ff3723de7191f\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x60a060405234801561001057600080fd5b506040516109e13803806109e183398101604081905261002f91610040565b6001600160a01b0316608052610070565b60006020828403121561005257600080fd5b81516001600160a01b038116811461006957600080fd5b9392505050565b60805161093b6100a66000396000818160690152818161018001528181610357015281816103eb015261047f015261093b6000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c8063622fe39f1461003b578063f46f16c214610064575b600080fd5b61004e610049366004610515565b6100a3565b60405161005b9190610566565b60405180910390f35b61008b7f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b03909116815260200161005b565b6101676040805161030081018252600080825260208201819052918101829052606081018290526080810182905260a0810182905260c0810182905260e08101829052610100810182905261012081018290526101408101829052610160810182905261018081018290526101a081018290526101c081018290526101e08101829052610200810182905261022081018290526102408101829052906102608201908152602001600081526020016000815260200160008152602001600081525090565b60405163622fe39f60e01b8152600481018390526000907f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03169063622fe39f9060240161028060405180830381865afa1580156101d0573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906101f49190610793565b905060405180610300016040528082600001516001600160a01b03168152602001826020015181526020018260400151815260200182606001516001600160a01b0316815260200182608001516001600160a01b031681526020018260a001516001600160a01b031681526020018260c0015181526020018260e001516001600160801b031681526020018261010001516001600160801b031681526020018261012001516001600160a01b031681526020018261014001516001600160a01b0316815260200182610160015181526020018261018001518152602001826101a0015164ffffffffff168152602001826101c0015164ffffffffff168152602001826101e0015164ffffffffff16815260200182610200015164ffffffffff1681526020018261022001511515815260200182610240015115158152602001826102600151600381111561034a5761034a61052e565b81526020018481526020017f00000000000000000000000000000000000000000000000000000000000000006001600160a01b0316636b52b365866040518263ffffffff1660e01b81526004016103a391815260200190565b602060405180830381865afa1580156103c0573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906103e491906108ec565b81526020017f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03166396e59682866040518263ffffffff1660e01b815260040161043791815260200190565b602060405180830381865afa158015610454573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061047891906108ec565b81526020017f00000000000000000000000000000000000000000000000000000000000000006001600160a01b0316631c187495866040518263ffffffff1660e01b81526004016104cb91815260200190565b602060405180830381865afa1580156104e8573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061050c91906108ec565b90529392505050565b60006020828403121561052757600080fd5b5035919050565b634e487b7160e01b600052602160045260246000fd5b6004811061056257634e487b7160e01b600052602160045260246000fd5b9052565b81516001600160a01b031681526103008101602083015160208301526040830151604083015260608301516105a660608401826001600160a01b03169052565b5060808301516105c160808401826001600160a01b03169052565b5060a08301516105dc60a08401826001600160a01b03169052565b5060c083015160c083015260e083015161060160e08401826001600160801b03169052565b50610100838101516001600160801b031690830152610120808401516001600160a01b03908116918401919091526101408085015190911690830152610160808401519083015261018080840151908301526101a08084015164ffffffffff908116918401919091526101c0808501518216908401526101e08085015182169084015261020080850151909116908301526102208084015115159083015261024080840151151590830152610260808401516106bf82850182610544565b505061028083810151908301526102a080840151908301526102c080840151908301526102e092830151929091019190915290565b604051610280810167ffffffffffffffff8111828210171561072657634e487b7160e01b600052604160045260246000fd5b60405290565b80516001600160a01b038116811461074357600080fd5b919050565b80516001600160801b038116811461074357600080fd5b805164ffffffffff8116811461074357600080fd5b8051801515811461074357600080fd5b80516004811061074357600080fd5b600061028082840312156107a657600080fd5b6107ae6106f4565b6107b78361072c565b815260208301516020820152604083015160408201526107d96060840161072c565b60608201526107ea6080840161072c565b60808201526107fb60a0840161072c565b60a082015260c083015160c082015261081660e08401610748565b60e0820152610100610829818501610748565b9082015261012061083b84820161072c565b9082015261014061084d84820161072c565b90820152610160838101519082015261018080840151908201526101a061087581850161075f565b908201526101c061088784820161075f565b908201526101e061089984820161075f565b908201526102006108ab84820161075f565b908201526102206108bd848201610774565b908201526102406108cf848201610774565b908201526102606108e1848201610784565b908201529392505050565b6000602082840312156108fe57600080fd5b505191905056fea26469706673582212202d46dece14fbcee94a50db1377025aacf2c60c2a1762e6e7b35436609f267cdc64736f6c634300080a0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c8063622fe39f1461003b578063f46f16c214610064575b600080fd5b61004e610049366004610515565b6100a3565b60405161005b9190610566565b60405180910390f35b61008b7f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b03909116815260200161005b565b6101676040805161030081018252600080825260208201819052918101829052606081018290526080810182905260a0810182905260c0810182905260e08101829052610100810182905261012081018290526101408101829052610160810182905261018081018290526101a081018290526101c081018290526101e08101829052610200810182905261022081018290526102408101829052906102608201908152602001600081526020016000815260200160008152602001600081525090565b60405163622fe39f60e01b8152600481018390526000907f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03169063622fe39f9060240161028060405180830381865afa1580156101d0573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906101f49190610793565b905060405180610300016040528082600001516001600160a01b03168152602001826020015181526020018260400151815260200182606001516001600160a01b0316815260200182608001516001600160a01b031681526020018260a001516001600160a01b031681526020018260c0015181526020018260e001516001600160801b031681526020018261010001516001600160801b031681526020018261012001516001600160a01b031681526020018261014001516001600160a01b0316815260200182610160015181526020018261018001518152602001826101a0015164ffffffffff168152602001826101c0015164ffffffffff168152602001826101e0015164ffffffffff16815260200182610200015164ffffffffff1681526020018261022001511515815260200182610240015115158152602001826102600151600381111561034a5761034a61052e565b81526020018481526020017f00000000000000000000000000000000000000000000000000000000000000006001600160a01b0316636b52b365866040518263ffffffff1660e01b81526004016103a391815260200190565b602060405180830381865afa1580156103c0573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906103e491906108ec565b81526020017f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03166396e59682866040518263ffffffff1660e01b815260040161043791815260200190565b602060405180830381865afa158015610454573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061047891906108ec565b81526020017f00000000000000000000000000000000000000000000000000000000000000006001600160a01b0316631c187495866040518263ffffffff1660e01b81526004016104cb91815260200190565b602060405180830381865afa1580156104e8573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061050c91906108ec565b90529392505050565b60006020828403121561052757600080fd5b5035919050565b634e487b7160e01b600052602160045260246000fd5b6004811061056257634e487b7160e01b600052602160045260246000fd5b9052565b81516001600160a01b031681526103008101602083015160208301526040830151604083015260608301516105a660608401826001600160a01b03169052565b5060808301516105c160808401826001600160a01b03169052565b5060a08301516105dc60a08401826001600160a01b03169052565b5060c083015160c083015260e083015161060160e08401826001600160801b03169052565b50610100838101516001600160801b031690830152610120808401516001600160a01b03908116918401919091526101408085015190911690830152610160808401519083015261018080840151908301526101a08084015164ffffffffff908116918401919091526101c0808501518216908401526101e08085015182169084015261020080850151909116908301526102208084015115159083015261024080840151151590830152610260808401516106bf82850182610544565b505061028083810151908301526102a080840151908301526102c080840151908301526102e092830151929091019190915290565b604051610280810167ffffffffffffffff8111828210171561072657634e487b7160e01b600052604160045260246000fd5b60405290565b80516001600160a01b038116811461074357600080fd5b919050565b80516001600160801b038116811461074357600080fd5b805164ffffffffff8116811461074357600080fd5b8051801515811461074357600080fd5b80516004811061074357600080fd5b600061028082840312156107a657600080fd5b6107ae6106f4565b6107b78361072c565b815260208301516020820152604083015160408201526107d96060840161072c565b60608201526107ea6080840161072c565b60808201526107fb60a0840161072c565b60a082015260c083015160c082015261081660e08401610748565b60e0820152610100610829818501610748565b9082015261012061083b84820161072c565b9082015261014061084d84820161072c565b90820152610160838101519082015261018080840151908201526101a061087581850161075f565b908201526101c061088784820161075f565b908201526101e061089984820161075f565b908201526102006108ab84820161075f565b908201526102206108bd848201610774565b908201526102406108cf848201610774565b908201526102606108e1848201610784565b908201529392505050565b6000602082840312156108fe57600080fd5b505191905056fea26469706673582212202d46dece14fbcee94a50db1377025aacf2c60c2a1762e6e7b35436609f267cdc64736f6c634300080a0033",
+  "libraries": {
+    "BespokeTypes": "0x473482d4940F9075B8E3C42ccE22B71eA74D0d2A"
+  },
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}
